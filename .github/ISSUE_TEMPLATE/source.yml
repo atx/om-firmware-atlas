@@ -1,0 +1,21 @@
+name: Source or correction
+description: Add a useful source, correction or community venue.
+title: '[Source] '
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Source URL
+      description: Link the specific repo, release, post, message or public venue.
+    validations: {required: true}
+  - type: textarea
+    id: delta
+    attributes:
+      label: What should the Atlas learn or correct?
+      description: Include exact camera/project/build context and gaps. For a community venue, explain its scope and access.
+    validations: {required: true}
+  - type: textarea
+    id: permission
+    attributes:
+      label: Publication context
+      description: For private material, explain what information is authorised for public synthesis. Do not paste private transcripts or personal details.

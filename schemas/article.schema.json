@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "id", "title", "summary", "load_when", "topics", "camera_ids", "project_ids", "depends_on", "source_refs", "last_reviewed"],
+  "properties": {
+    "schema_version": {"const": 1}, "id": {"type": "string", "pattern": "^guide\\.[a-z0-9.-]+$"},
+    "title": {"type": "string", "minLength": 1}, "summary": {"type": "string", "minLength": 1},
+    "load_when": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "topics": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "camera_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "project_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "depends_on": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "source_refs": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "last_reviewed": {"type": "string", "format": "date"}
+  }
+}

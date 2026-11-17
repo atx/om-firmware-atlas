@@ -1,0 +1,17 @@
+schema_version: 1
+records:
+- type: firmware
+  id: firmware.om5-ii-1100
+  title: om5-ii firmware 1.1, build 1100
+  summary: Add a full digest from a pinned manifest before byte-exact input work.
+  source_refs:
+  - source.om5.readme
+  - source.om5.alpha12
+  topics:
+  - platform
+  last_reviewed: '2026-11-17'
+  camera_id: camera.om5-ii
+  version: '1.1'
+  internal_build: '1100'
+  container_sha256: null
+  identity_note: Add a full digest from a pinned manifest before byte-exact input work.

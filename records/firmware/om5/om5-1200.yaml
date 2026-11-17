@@ -1,0 +1,16 @@
+schema_version: 1
+records:
+- type: firmware
+  id: firmware.om5-1200
+  title: om5 firmware 1.2, build 1200
+  summary: Version/build scope only; exact stock-container digest is not imported.
+  source_refs:
+  - source.om5.readme
+  topics:
+  - platform
+  last_reviewed: '2026-11-17'
+  camera_id: camera.om5
+  version: '1.2'
+  internal_build: '1200'
+  container_sha256: null
+  identity_note: Version/build scope only; exact stock-container digest is not imported.

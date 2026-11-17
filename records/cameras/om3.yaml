@@ -1,0 +1,24 @@
+schema_version: 1
+records:
+- type: camera
+  id: camera.om3
+  title: OM SYSTEM OM-3
+  summary: 'E147: advanced Caduceus work, other modifications and an established research notebook.'
+  source_refs:
+  - source.om3.readme
+  topics: []
+  last_reviewed: '2026-11-17'
+  aliases:
+  - OM-3
+  - OM3
+  - E147
+  model_codes:
+  - E147
+  project_ids:
+  - project.caduceus-om3
+  - project.db-firmware
+  - project.oly-fw-analysis
+  - project.om-emu
+  - project.camera-stuff
+  - project.manual-update
+  coverage: initial-review

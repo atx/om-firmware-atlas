@@ -1,0 +1,32 @@
+schema_version: 1
+records:
+- type: project
+  id: project.caduceus-ep7
+  title: Caduceus for E-P7
+  summary: E-P7 modifications and shared-panel/port research.
+  source_refs:
+  - source.ep7.readme
+  - source.ep7.bodies
+  - source.ep7.panel
+  topics:
+  - colour
+  - interfaces
+  - capture
+  - tooling
+  last_reviewed: '2026-11-17'
+  url: https://github.com/cakelesscoder/caduceus-ep7
+  kind: mod
+  camera_ids:
+  - camera.ep7
+  - camera.em10-iv
+  contribution_home: https://github.com/cakelesscoder/caduceus-ep7/issues
+  status_summary: The reviewed documentation names v0.34a. E-M10 IV is a research target seeking physical
+    testing, not a released port.
+  related_projects:
+  - project.caduceus-om3
+  - project.oly-fw-analysis
+  work_items:
+  - summary: E-M10 IV target needs physical-camera evidence
+    state: needs-evidence
+    url: https://github.com/cakelesscoder/caduceus-ep7/issues/21
+    owner: null

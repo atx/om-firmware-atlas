@@ -1,0 +1,17 @@
+schema_version: 1
+records:
+- type: firmware
+  id: firmware.om3-1100
+  title: om3 firmware 1.1, build 1100
+  summary: Several official filenames appear upstream; advertised version alone is not byte identity.
+  source_refs:
+  - source.om3.readme
+  - source.om3.formats
+  topics:
+  - platform
+  last_reviewed: '2026-11-17'
+  camera_id: camera.om3
+  version: '1.1'
+  internal_build: '1100'
+  container_sha256: null
+  identity_note: Several official filenames appear upstream; advertised version alone is not byte identity.

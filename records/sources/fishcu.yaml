@@ -1,0 +1,82 @@
+schema_version: 1
+records:
+- type: source
+  id: source.fishcu.readme
+  title: Olympus research overview
+  summary: PEN-F depth, cross-model work and hardware-report policy.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-17'
+  url: https://github.com/fishcu/oly_fw_analysis/blob/d565cb664d3bc37f883f844a3a0c9620efe018e4/README.md
+  source_kind: github-file
+  upstream_repo: fishcu/oly_fw_analysis
+  revision: d565cb664d3bc37f883f844a3a0c9620efe018e4
+  locator: README.md
+  retrieved_on: '2026-11-17'
+  last_checked: '2026-11-17'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.fishcu.containers
+  title: OE container reference
+  summary: Component wrappers, transform and checksum scope.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-17'
+  url: https://github.com/fishcu/oly_fw_analysis/blob/d565cb664d3bc37f883f844a3a0c9620efe018e4/docs/format/CONTAINERS.md
+  source_kind: github-file
+  upstream_repo: fishcu/oly_fw_analysis
+  revision: d565cb664d3bc37f883f844a3a0c9620efe018e4
+  locator: docs/format/CONTAINERS.md
+  retrieved_on: '2026-11-17'
+  last_checked: '2026-11-17'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.fishcu.validation
+  title: Validation reference
+  summary: Scoped checks and alignment blind spots.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-17'
+  url: https://github.com/fishcu/oly_fw_analysis/blob/d565cb664d3bc37f883f844a3a0c9620efe018e4/docs/safety/VALIDATION.md
+  source_kind: github-file
+  upstream_repo: fishcu/oly_fw_analysis
+  revision: d565cb664d3bc37f883f844a3a0c9620efe018e4
+  locator: docs/safety/VALIDATION.md
+  retrieved_on: '2026-11-17'
+  last_checked: '2026-11-17'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.fishcu.reproduce
+  title: Research reproduction
+  summary: Exact PEN-F input identity and bounded native probes.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-17'
+  url: https://github.com/fishcu/oly_fw_analysis/blob/d565cb664d3bc37f883f844a3a0c9620efe018e4/REPRODUCING.md
+  source_kind: github-file
+  upstream_repo: fishcu/oly_fw_analysis
+  revision: d565cb664d3bc37f883f844a3a0c9620efe018e4
+  locator: REPRODUCING.md
+  retrieved_on: '2026-11-17'
+  last_checked: '2026-11-17'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.fishcu.ida
+  title: IDA 4.9 profile
+  summary: The specific optional tested IDA/MN103 combination.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-17'
+  url: https://github.com/fishcu/oly_fw_analysis/blob/d565cb664d3bc37f883f844a3a0c9620efe018e4/docs/tooling/ida/README.md
+  source_kind: github-file
+  upstream_repo: fishcu/oly_fw_analysis
+  revision: d565cb664d3bc37f883f844a3a0c9620efe018e4
+  locator: docs/tooling/ida/README.md
+  retrieved_on: '2026-11-17'
+  last_checked: '2026-11-17'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.

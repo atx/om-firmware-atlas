@@ -1,0 +1,21 @@
+schema_version: 1
+records:
+- type: camera
+  id: camera.pen-f
+  title: Olympus PEN-F
+  summary: 'E122: foundational HSL research; exact internal build identity matters.'
+  source_refs:
+  - source.fishcu.readme
+  topics: []
+  last_reviewed: '2026-11-17'
+  aliases:
+  - PEN-F
+  - PENF
+  - E122
+  model_codes:
+  - E122
+  project_ids:
+  - project.oly-fw-analysis
+  - project.db-firmware
+  - project.om-emu
+  coverage: initial-review

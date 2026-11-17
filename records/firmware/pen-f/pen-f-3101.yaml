@@ -1,0 +1,16 @@
+schema_version: 1
+records:
+- type: firmware
+  id: firmware.pen-f-3101
+  title: pen-f firmware 3.1, build 3101
+  summary: The guide specifically targets build 3101, not every file labelled 3.1.
+  source_refs:
+  - source.fishcu.reproduce
+  topics:
+  - platform
+  last_reviewed: '2026-11-17'
+  camera_id: camera.pen-f
+  version: '3.1'
+  internal_build: '3101'
+  container_sha256: 77398610b379f80238117f31a6d5bbf65d608b49ec563666c64d84367e969f2c
+  identity_note: The guide specifically targets build 3101, not every file labelled 3.1.

@@ -1,0 +1,24 @@
+schema_version: 1
+records:
+- type: capability
+  id: capability.om5-db-aperture
+  title: db firmware OM-5 aperture-ring claim
+  summary: The release advertises Panasonic lens aperture-ring support among its modifications.
+  source_refs:
+  - source.db.release041
+  topics:
+  - capture
+  last_reviewed: '2026-11-17'
+  camera_id: camera.om5
+  firmware_id: null
+  project_id: project.db-firmware
+  mod_build: dbv0.4.1
+  feature_id: feature.controls.aperture-ring
+  assertion: The release advertises Panasonic lens aperture-ring support among its modifications.
+  availability: published-release
+  implementation: reported
+  evidence_refs: []
+  contradicting_refs: []
+  limitations:
+  - Model/package reports are not normalised; the release separately lists known issues for its Mark II-based
+    OM-5 work.

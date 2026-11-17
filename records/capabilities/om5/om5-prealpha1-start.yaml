@@ -1,0 +1,24 @@
+schema_version: 1
+records:
+- type: capability
+  id: capability.om5-prealpha1-start
+  title: Original OM-5 pre-alpha 1 startup
+  summary: One tester reports this package failed to reach a usable interface.
+  source_refs:
+  - source.om5.prealpha1
+  topics:
+  - platform
+  last_reviewed: '2026-11-17'
+  camera_id: camera.om5
+  firmware_id: firmware.om5-1200
+  project_id: project.caduceus-om5
+  mod_build: original-om5-prealpha1
+  feature_id: feature.startup
+  assertion: One tester reports this package failed to reach a usable interface.
+  availability: candidate
+  implementation: reported
+  evidence_refs:
+  - evidence.om5-prealpha1-boot
+  contradicting_refs: []
+  limitations:
+  - No verdict on other packages, projects or Mark II hardware.

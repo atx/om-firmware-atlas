@@ -1,0 +1,57 @@
+schema_version: 1
+cases:
+  - id: original-om5-discovery-v1
+    prompt: I have an original OM-5. Is anyone working on it?
+    request: {job: research, camera: camera.om5}
+    required: [agents/roles/researcher.md, agents/routes/cameras/om5.md]
+    forbidden: [agents/routes/cameras/om5-ii.md, research/NOTES.md]
+    max_routing_tokens: 2500
+  - id: mark-ii-alpha12-report-v1
+    prompt: Does the OM-5 Mark II alpha12 have a complete camera report?
+    request: {job: status, camera: om5-ii}
+    required: [agents/roles/librarian.md, agents/workflows/update-status.md, agents/routes/cameras/om5-ii.md]
+    ordered: [[AGENTS.md, agents/start.md], [agents/start.md, agents/roles/librarian.md]]
+    max_routing_tokens: 3000
+  - id: em10-iv-port-v1
+    prompt: I want to port HSL to an E-M10 IV. Where should I start?
+    request: {job: research, camera: em10-iv, topic: platform}
+    required: [agents/routes/cameras/em10-iv.md, knowledge/platform/identity.md, knowledge/comparisons/models.md]
+    ordered: [[knowledge/platform/identity.md, knowledge/comparisons/models.md]]
+    max_routing_tokens: 3000
+  - id: looks-between-bodies-v1
+    prompt: Can I use this OM-3 LOOKS.BIN on an OM-5 Mark II?
+    request: {job: research, camera: om5-ii, topic: interfaces}
+    required: [agents/routes/topics/interfaces.md, knowledge/interfaces/looks.md]
+    forbidden: [knowledge/tooling/analysis.md]
+    max_routing_tokens: 3000
+  - id: ep7-ghidra-v1
+    prompt: Set up Ghidra/MCP for an E-P7 investigation.
+    request: {job: research, camera: ep7, topic: tooling}
+    required: [knowledge/platform/identity.md, knowledge/tooling/analysis.md]
+    ordered: [[knowledge/platform/identity.md, knowledge/tooling/analysis.md]]
+    max_routing_tokens: 3000
+  - id: sparse-readme-release-v1
+    prompt: Add this release URL from a repo with an almost empty README.
+    request: {job: ingest, source: 'https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.1'}
+    required: [agents/workflows/ingest-source.md, agents/routes/projects/db-firmware.md]
+    max_routing_tokens: 3000
+  - id: emulator-pass-camera-fail-v1
+    prompt: An emulator passes but a camera fails. Update the status.
+    request: {job: status, camera: om5-ii, topic: emulation}
+    required: [agents/workflows/update-status.md, knowledge/emulation/coverage.md]
+    max_routing_tokens: 3500
+  - id: explain-camera-v1
+    prompt: Write a plain-English camera page after a new report.
+    request: {job: write, camera: camera.om5}
+    required: [agents/roles/editor.md, agents/routes/cameras/om5.md]
+    max_routing_tokens: 2500
+  - id: community-discovery-v1
+    prompt: Where can I discuss Caduceus with other owners?
+    request: {job: community}
+    required: [agents/roles/researcher.md, agents/routes/topics/community.md]
+    forbidden: [knowledge/platform/identity.md]
+    max_routing_tokens: 2000
+  - id: ambiguous-om5-v1
+    prompt: What should I install on my OM5?
+    request: {job: research, camera: OM5}
+    expect_error: ambiguous

@@ -1,0 +1,21 @@
+schema_version: 1
+records:
+- type: project
+  id: project.manual-update
+  title: Historical manual update research
+  summary: Historical SD update procedure and model naming.
+  source_refs:
+  - source.manual.readme
+  topics:
+  - platform
+  - patching
+  last_reviewed: '2026-11-17'
+  url: https://github.com/iKenndac/om-1-manual-firmware-install
+  kind: reference
+  camera_ids:
+  - camera.om5
+  - camera.om3
+  contribution_home: https://github.com/iKenndac/om-1-manual-firmware-install/issues
+  status_summary: The source says static firmware links stopped working in late 2025. Use current acquisition
+    references.
+  related_projects: []

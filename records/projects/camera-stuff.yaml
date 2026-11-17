@@ -1,0 +1,21 @@
+schema_version: 1
+records:
+- type: project
+  id: project.camera-stuff
+  title: OM-3 downstream experiments
+  summary: Downstream experiments intended to send fixes upstream.
+  source_refs:
+  - source.fork.readme
+  topics:
+  - patching
+  - interfaces
+  last_reviewed: '2026-11-17'
+  url: https://github.com/fernandezk26/camera-stuff
+  kind: experimental-fork
+  camera_ids:
+  - camera.om3
+  contribution_home: https://github.com/fernandezk26/camera-stuff/issues
+  status_summary: The fork note distinguishes its experimental branch from upstream main; it is not a
+    replacement implementation home.
+  related_projects:
+  - project.caduceus-om3

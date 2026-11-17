@@ -1,0 +1,19 @@
+schema_version: 1
+records:
+- type: source
+  id: source.community.m43
+  title: r/M43 community page
+  summary: Public photography venue; Caduceus relevance supplied by the Atlas maintainer.
+  source_refs: []
+  topics:
+  - community
+  last_reviewed: '2026-11-17'
+  url: https://www.reddit.com/r/M43/
+  source_kind: web-page
+  upstream_repo: null
+  revision: null
+  locator: Subreddit landing page; relevance supplied by the community maintainer on 17 November 2026
+  retrieved_on: '2026-11-17'
+  last_checked: '2026-11-17'
+  publication: public
+  reuse_note: Link and original description only; no copied posts or membership data.

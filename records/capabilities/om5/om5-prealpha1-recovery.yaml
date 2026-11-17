@@ -1,0 +1,24 @@
+schema_version: 1
+records:
+- type: capability
+  id: capability.om5-prealpha1-recovery
+  title: Restoration after pre-alpha 1
+  summary: A tester reports stock restoration after this named failed experiment.
+  source_refs:
+  - source.om5.prealpha1
+  topics:
+  - patching
+  last_reviewed: '2026-11-17'
+  camera_id: camera.om5
+  firmware_id: firmware.om5-1200
+  project_id: project.caduceus-om5
+  mod_build: original-om5-prealpha1
+  feature_id: feature.recovery
+  assertion: A tester reports stock restoration after this named failed experiment.
+  availability: candidate
+  implementation: reported
+  evidence_refs:
+  - evidence.om5-prealpha1-restore
+  contradicting_refs: []
+  limitations:
+  - Specific to that incident; the restore digest is unknown.

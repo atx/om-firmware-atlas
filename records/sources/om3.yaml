@@ -1,0 +1,66 @@
+schema_version: 1
+records:
+- type: source
+  id: source.om3.readme
+  title: Caduceus OM-3 overview
+  summary: Features and maintainer-reported camera results at the reviewed revision.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-17'
+  url: https://github.com/androidfanman/caduceus-om3/blob/78a809e163d96f468d796c7f5b42a9846e43b19b/README.md
+  source_kind: github-file
+  upstream_repo: androidfanman/caduceus-om3
+  revision: 78a809e163d96f468d796c7f5b42a9846e43b19b
+  locator: README.md
+  retrieved_on: '2026-11-17'
+  last_checked: '2026-11-17'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.om3.formats
+  title: OM-3 card formats
+  summary: OM3P layout and release-dependent field semantics.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-17'
+  url: https://github.com/androidfanman/caduceus-om3/blob/78a809e163d96f468d796c7f5b42a9846e43b19b/docs/FORMATS.md
+  source_kind: github-file
+  upstream_repo: androidfanman/caduceus-om3
+  revision: 78a809e163d96f468d796c7f5b42a9846e43b19b
+  locator: docs/FORMATS.md
+  retrieved_on: '2026-11-17'
+  last_checked: '2026-11-17'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.om3.looklab
+  title: OM-3 LookLab
+  summary: OM-3-only editor, sharing schema and export targets.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-17'
+  url: https://github.com/androidfanman/caduceus-om3/blob/78a809e163d96f468d796c7f5b42a9846e43b19b/webapp/README.md
+  source_kind: github-file
+  upstream_repo: androidfanman/caduceus-om3
+  revision: 78a809e163d96f468d796c7f5b42a9846e43b19b
+  locator: webapp/README.md
+  retrieved_on: '2026-11-17'
+  last_checked: '2026-11-17'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.om3.research
+  title: OM-3 research index
+  summary: Scoped entry points into the notebook, tools and tests.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-17'
+  url: https://github.com/androidfanman/caduceus-om3/blob/78a809e163d96f468d796c7f5b42a9846e43b19b/research/README.md
+  source_kind: github-file
+  upstream_repo: androidfanman/caduceus-om3
+  revision: 78a809e163d96f468d796c7f5b42a9846e43b19b
+  locator: research/README.md
+  retrieved_on: '2026-11-17'
+  last_checked: '2026-11-17'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.

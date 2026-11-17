@@ -1,0 +1,98 @@
+schema_version: 1
+records:
+- type: source
+  id: source.ep7.readme
+  title: Caduceus E-P7 overview
+  summary: Advertised modifications and feature-specific limitations.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-17'
+  url: https://github.com/cakelesscoder/caduceus-ep7/blob/0cb1dbcc50595cd87f56648810762ffbbb8e17f3/README.md
+  source_kind: github-file
+  upstream_repo: cakelesscoder/caduceus-ep7
+  revision: 0cb1dbcc50595cd87f56648810762ffbbb8e17f3
+  locator: README.md
+  retrieved_on: '2026-11-17'
+  last_checked: '2026-11-17'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.ep7.guide
+  title: E-P7 firmware guide
+  summary: Containers, mapping, loaders and patching lessons.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-17'
+  url: https://github.com/cakelesscoder/caduceus-ep7/blob/0cb1dbcc50595cd87f56648810762ffbbb8e17f3/docs/FIRMWARE_GUIDE.md
+  source_kind: github-file
+  upstream_repo: cakelesscoder/caduceus-ep7
+  revision: 0cb1dbcc50595cd87f56648810762ffbbb8e17f3
+  locator: docs/FIRMWARE_GUIDE.md
+  retrieved_on: '2026-11-17'
+  last_checked: '2026-11-17'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.ep7.bodies
+  title: Caduceus body survey
+  summary: Related projects and method-specific signature comparisons.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-17'
+  url: https://github.com/cakelesscoder/caduceus-ep7/blob/0cb1dbcc50595cd87f56648810762ffbbb8e17f3/docs/BODIES.md
+  source_kind: github-file
+  upstream_repo: cakelesscoder/caduceus-ep7
+  revision: 0cb1dbcc50595cd87f56648810762ffbbb8e17f3
+  locator: docs/BODIES.md
+  retrieved_on: '2026-11-17'
+  last_checked: '2026-11-17'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.ep7.rea
+  title: E-P7 Ghidra/REA profile
+  summary: A specific locally patched setup and decompiler limitations.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-17'
+  url: https://github.com/cakelesscoder/caduceus-ep7/blob/0cb1dbcc50595cd87f56648810762ffbbb8e17f3/docs/REA_SETUP.md
+  source_kind: github-file
+  upstream_repo: cakelesscoder/caduceus-ep7
+  revision: 0cb1dbcc50595cd87f56648810762ffbbb8e17f3
+  locator: docs/REA_SETUP.md
+  retrieved_on: '2026-11-17'
+  last_checked: '2026-11-17'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.ep7.panel
+  title: Shared Control Panel direction
+  summary: Maintainer proposal for common settings and camera exporters.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-17'
+  url: https://github.com/cakelesscoder/caduceus-ep7/blob/0cb1dbcc50595cd87f56648810762ffbbb8e17f3/docs/CONTROL_PANEL.md
+  source_kind: github-file
+  upstream_repo: cakelesscoder/caduceus-ep7
+  revision: 0cb1dbcc50595cd87f56648810762ffbbb8e17f3
+  locator: docs/CONTROL_PANEL.md
+  retrieved_on: '2026-11-17'
+  last_checked: '2026-11-17'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.ep7.look-v4
+  title: E-P7 look-format additions
+  summary: Curve/matrix fields and older-consumer behaviour.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-17'
+  url: https://github.com/cakelesscoder/caduceus-ep7/blob/0cb1dbcc50595cd87f56648810762ffbbb8e17f3/docs/LOOK_FORMAT_V4.md
+  source_kind: github-file
+  upstream_repo: cakelesscoder/caduceus-ep7
+  revision: 0cb1dbcc50595cd87f56648810762ffbbb8e17f3
+  locator: docs/LOOK_FORMAT_V4.md
+  retrieved_on: '2026-11-17'
+  last_checked: '2026-11-17'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.

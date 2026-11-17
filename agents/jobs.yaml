@@ -1,0 +1,17 @@
+schema_version: 1
+jobs:
+  research:
+    role: agents/roles/researcher.md
+  ingest:
+    role: agents/roles/librarian.md
+    workflow: agents/workflows/ingest-source.md
+  status:
+    role: agents/roles/librarian.md
+    workflow: agents/workflows/update-status.md
+  freshness:
+    role: agents/roles/librarian.md
+    workflow: agents/workflows/review-freshness.md
+  write:
+    role: agents/roles/editor.md
+  community:
+    role: agents/roles/researcher.md

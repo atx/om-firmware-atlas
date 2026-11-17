@@ -1,0 +1,30 @@
+# Contribute to the Atlas
+
+Bring a useful source, correction, project or test result. You can open an issue using the intake forms, or ask an agent to read [AGENTS.md](AGENTS.md), follow the ingestion workflow and raise a PR.
+
+## What belongs here
+
+Sourced camera/project records, precise observations, explanations of shared research, tool setup references, contribution destinations and community discovery links. Contribute implementation changes to their upstream project. The Atlas does not host firmware, decoded images, executable research tools or whole chat transcripts.
+
+Read [the record format](maintenance/record-format.md) before changing data. Record what a source establishes, its target and its limitations. Missing evidence means unknown, not failure. A new version does not inherit an older package's camera results. Preserve failures when later packages succeed.
+
+For a source URL, inspect the relevant release, branch, issue/comment or report; a README alone may miss the work. Compare with existing records before adding content. Pin repository sources to a commit; identify mutable comments/releases by URL, date and content digest when useful. Attribute interpretations and proposals to their authors.
+
+## Community information
+
+Add venues to `records/community/` with their scope, public link, listing basis, sources and last check. Keep broad photography forums distinct from project-specific spaces. A venue's existence or invite does not establish the activity, endorsement or claims of its members. Use a particular post or message as the source of a technical finding.
+
+Private discussions require explicit permission for the information being published. Summarise the useful finding with provenance; do not copy personal details or entire conversations. No unsolicited contact is part of the agent workflow.
+
+## Validate and submit
+
+```sh
+python scripts/atlas.py generate
+python scripts/atlas.py check
+python -m unittest discover -s tests -v
+python scripts/atlas.py build
+```
+
+Inspect affected pages in `site/`. A PR includes sources/revisions, changed assertions, gaps/conflicts, human pages affected and checks performed. Generated diffs belong in the same PR. Changes to schemas, routing or policy include appropriate regression cases and a decision record when consequential.
+
+Humans review and merge. Avoid unrelated formatting or importing an entire upstream knowledge base. Original contributions follow [LICENSE](LICENSE); linking to an external work does not change its terms.

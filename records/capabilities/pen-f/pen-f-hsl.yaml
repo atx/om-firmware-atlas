@@ -1,0 +1,23 @@
+schema_version: 1
+records:
+- type: capability
+  id: capability.pen-f-hsl
+  title: PEN-F HSL release
+  summary: The research README links a PEN-F HSL release and source build.
+  source_refs:
+  - source.fishcu.readme
+  topics:
+  - colour
+  last_reviewed: '2026-11-17'
+  camera_id: camera.pen-f
+  firmware_id: firmware.pen-f-3101
+  project_id: project.oly-fw-analysis
+  mod_build: alpha-20261017
+  feature_id: feature.colour.hsl
+  assertion: The research README links a PEN-F HSL release and source build.
+  availability: published-release
+  implementation: reported
+  evidence_refs: []
+  contradicting_refs: []
+  limitations:
+  - Tests and policy remain upstream; the Atlas did not test this package.

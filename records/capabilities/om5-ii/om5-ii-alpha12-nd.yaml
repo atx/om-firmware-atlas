@@ -1,0 +1,23 @@
+schema_version: 1
+records:
+- type: capability
+  id: capability.om5-ii-alpha12-nd
+  title: Mark II alpha12 ND32/ND64
+  summary: The project describes ND32 and ND64 additions.
+  source_refs:
+  - source.om5.readme
+  topics:
+  - capture
+  last_reviewed: '2026-11-17'
+  camera_id: camera.om5-ii
+  firmware_id: firmware.om5-ii-1100
+  project_id: project.caduceus-om5
+  mod_build: v0.1.0-alpha12
+  feature_id: feature.capture.nd
+  assertion: The project describes ND32 and ND64 additions.
+  availability: published-release
+  implementation: reported
+  evidence_refs: []
+  contradicting_refs: []
+  limitations:
+  - An upstream description, not a new camera test.

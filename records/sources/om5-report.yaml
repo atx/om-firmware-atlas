@@ -1,0 +1,20 @@
+schema_version: 1
+records:
+- type: source
+  id: source.om5.prealpha1
+  title: Original OM-5 tester comment
+  summary: One named-package startup failure and restoration report.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-17'
+  url: https://github.com/xulfr/caduceus-om5/issues/4#issuecomment-6941382886
+  source_kind: github-comment
+  upstream_repo: xulfr/caduceus-om5
+  revision: null
+  locator: Issue 4, comment 6941382886 by huubinh-git; posted 2026-11-17T07:12:23Z
+  retrieved_on: '2026-11-17'
+  last_checked: '2026-11-17'
+  published_on: '2026-11-17'
+  publication: public
+  reuse_note: Public report paraphrased with attribution; comment text is mutable.
+  content_sha256: 463a243a89181fcb8630071c28a7a9c1cded6b3bf901c10acabe457e06c00310

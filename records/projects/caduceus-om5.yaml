@@ -1,0 +1,28 @@
+schema_version: 1
+records:
+- type: project
+  id: project.caduceus-om5
+  title: Caduceus for OM-5
+  summary: Separate original OM-5 and Mark II work, strict builders and failures.
+  source_refs:
+  - source.om5.readme
+  - source.om5.alpha12
+  topics:
+  - platform
+  - patching
+  - colour
+  - interfaces
+  last_reviewed: '2026-11-17'
+  url: https://github.com/xulfr/caduceus-om5
+  kind: mod
+  camera_ids:
+  - camera.om5
+  - camera.om5-ii
+  contribution_home: https://github.com/xulfr/caduceus-om5/issues
+  status_summary: The reviewed revision has Mark II alpha12 and a separate original-body experiment. Results
+    are package-specific.
+  related_projects:
+  - project.caduceus-om3
+  - project.caduceus-ep7
+  - project.oly-fw-analysis
+  - project.om-emu

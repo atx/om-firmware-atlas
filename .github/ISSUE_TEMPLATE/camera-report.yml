@@ -1,0 +1,22 @@
+name: Camera observation
+description: Record a physical result, including failures and incomplete reports.
+title: '[Camera report] '
+body:
+  - type: input
+    id: target
+    attributes: {label: Exact camera and stock firmware, description: Include model generation and internal code/build if known.}
+    validations: {required: true}
+  - type: input
+    id: package
+    attributes: {label: Project and mod build/package hash, description: Use unknown for details you did not record. An expected manifest hash is not an observed installer hash.}
+    validations: {required: true}
+  - type: input
+    id: date
+    attributes: {label: Test date, description: State the test date or unknown; this issue's posting date is recorded separately.}
+  - type: textarea
+    id: procedure
+    attributes: {label: Steps and observed result, description: What did you do and what happened? Include failures and things not checked. Do not include serial numbers.}
+    validations: {required: true}
+  - type: textarea
+    id: recovery
+    attributes: {label: Recovery observation, description: If attempted, describe the failed state, procedure and result. One recovery does not establish universal recovery.}

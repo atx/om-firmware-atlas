@@ -1,0 +1,24 @@
+schema_version: 1
+records:
+- type: camera
+  id: camera.om5
+  title: OM SYSTEM OM-5
+  summary: 'Original E144: several projects have distinct experiments. Mark II results do not apply.'
+  source_refs:
+  - source.om5.readme
+  - source.db.release041
+  topics: []
+  last_reviewed: '2026-11-17'
+  aliases:
+  - Original OM-5
+  - OM5
+  - E144
+  model_codes:
+  - E144
+  project_ids:
+  - project.caduceus-om5
+  - project.db-firmware
+  - project.oly-fw-analysis
+  - project.om-emu
+  - project.manual-update
+  coverage: initial-review

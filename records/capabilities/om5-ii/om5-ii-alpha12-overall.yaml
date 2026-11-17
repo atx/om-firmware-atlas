@@ -1,0 +1,24 @@
+schema_version: 1
+records:
+- type: capability
+  id: capability.om5-ii-alpha12-overall
+  title: Mark II alpha12 overall report
+  summary: The release note records an overall positive owner report.
+  source_refs:
+  - source.om5.alpha12
+  topics:
+  - platform
+  last_reviewed: '2026-11-17'
+  camera_id: camera.om5-ii
+  firmware_id: firmware.om5-ii-1100
+  project_id: project.caduceus-om5
+  mod_build: v0.1.0-alpha12
+  feature_id: feature.startup
+  assertion: The release note records an overall positive owner report.
+  availability: published-release
+  implementation: reported
+  evidence_refs:
+  - evidence.om5-ii-alpha12-owner
+  contradicting_refs: []
+  limitations:
+  - Partial report; expected digest is not observed installed-package identity.

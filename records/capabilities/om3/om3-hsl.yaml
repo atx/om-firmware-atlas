@@ -1,0 +1,23 @@
+schema_version: 1
+records:
+- type: capability
+  id: capability.om3-hsl
+  title: OM-3 HSL editor
+  summary: The README describes a full on-camera colour editor and reports camera-tested feature history.
+  source_refs:
+  - source.om3.readme
+  topics:
+  - colour
+  last_reviewed: '2026-11-17'
+  camera_id: camera.om3
+  firmware_id: firmware.om3-1100
+  project_id: project.caduceus-om3
+  mod_build: v0.30.3
+  feature_id: feature.colour.hsl
+  assertion: The README describes a full on-camera colour editor and reports camera-tested feature history.
+  availability: published-release
+  implementation: reported
+  evidence_refs: []
+  contradicting_refs: []
+  limitations:
+  - No complete per-package v0.30.3 physical report has been imported.

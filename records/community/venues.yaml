@@ -1,0 +1,44 @@
+schema_version: 1
+records:
+- type: community
+  id: community.m43
+  title: r/M43
+  summary: Broad Micro Four Thirds photography discussion, including Caduceus discussion identified by
+    the Atlas maintainer.
+  source_refs:
+  - source.community.m43
+  topics:
+  - community
+  last_reviewed: '2026-11-17'
+  url: https://www.reddit.com/r/M43/
+  platform: reddit
+  scope: Broad public photography discussion, not a Caduceus-only support channel. Read its rules before
+    posting.
+  listing_basis: community-reported
+  access: public-content
+  project_ids:
+  - project.caduceus-om3
+  - project.caduceus-ep7
+  - project.caduceus-om5
+  link_state: reachable
+  checked_on: '2026-11-17'
+- type: community
+  id: community.caduceus-discord
+  title: Caduceus Discord
+  summary: Public invite linked by the OM-3 project and confirmed for this directory by the Atlas maintainer.
+  source_refs:
+  - source.om3.readme
+  topics:
+  - community
+  last_reviewed: '2026-11-17'
+  url: https://discord.gg/fKpcKGsNPY
+  platform: discord
+  scope: Join via the published invite. Private contents and current activity were not inspected.
+  listing_basis: upstream-linked
+  access: invite-required
+  project_ids:
+  - project.caduceus-om3
+  - project.caduceus-ep7
+  - project.caduceus-om5
+  link_state: linked-not-joined
+  checked_on: '2026-11-17'

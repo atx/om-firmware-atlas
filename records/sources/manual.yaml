@@ -1,0 +1,18 @@
+schema_version: 1
+records:
+- type: source
+  id: source.manual.readme
+  title: Historical manual updates
+  summary: SD update research and explicitly obsolete static download links.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-17'
+  url: https://github.com/iKenndac/om-1-manual-firmware-install/blob/11df6ecf0cb2af97c6d51aded3f5e9c8d9e139cc/README.md
+  source_kind: github-file
+  upstream_repo: iKenndac/om-1-manual-firmware-install
+  revision: 11df6ecf0cb2af97c6d51aded3f5e9c8d9e139cc
+  locator: README.md
+  retrieved_on: '2026-11-17'
+  last_checked: '2026-11-17'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.

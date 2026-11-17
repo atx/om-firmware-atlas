@@ -1,0 +1,33 @@
+schema_version: 1
+topics:
+  platform:
+    title: Firmware identity and layout
+    summary: Containers, exact inputs, components, addressing and startup.
+  patching:
+    title: Patching and validation
+    summary: Existing build methods, bounded changes and evidence limits.
+  tooling:
+    title: Analysis tools
+    summary: Binutils, Ghidra/REA and optional IDA setups.
+  emulation:
+    title: Emulation and test scope
+    summary: Emulator profiles, assumptions and the limits of modeled hardware.
+  colour:
+    title: Colour and settings
+    summary: HSL, profiles, image effects and persistence research.
+  interfaces:
+    title: Looks and interoperability
+    summary: Card wrappers, shared settings, exporters and sharing formats.
+  capture:
+    title: Capture, controls and connectivity
+    summary: ND, recording, lens controls, localisation and network features.
+  community:
+    title: Find the community
+    summary: Public discussion venues and how to turn a message into a source.
+features:
+  feature.startup: {title: Startup, topic: platform}
+  feature.recovery: {title: Recovery from a specified failure, topic: patching}
+  feature.colour.hsl: {title: Per-colour Hue/Saturation/Lightness, topic: colour}
+  feature.looks: {title: Card-loaded film looks, topic: interfaces}
+  feature.capture.nd: {title: Live ND, topic: capture}
+  feature.controls.aperture-ring: {title: Panasonic lens aperture ring, topic: capture}

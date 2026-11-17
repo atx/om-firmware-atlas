@@ -1,0 +1,25 @@
+schema_version: 1
+records:
+- type: project
+  id: project.db-firmware
+  title: db firmware / om-c-firmware
+  summary: Release-centred controls, localisation and other modifications.
+  source_refs:
+  - source.db.release041
+  topics:
+  - capture
+  - colour
+  - patching
+  last_reviewed: '2026-11-17'
+  url: https://github.com/azqeurio/om-c-firmware
+  kind: mod
+  camera_ids:
+  - camera.om5
+  - camera.om5-ii
+  - camera.om3
+  - camera.ep7
+  - camera.pen-f
+  contribution_home: https://github.com/azqeurio/om-c-firmware/issues
+  status_summary: Reviewed v0.4.1 has substantial release claims despite a minimal main README. Individual
+    test reports are not yet catalogued.
+  related_projects: []

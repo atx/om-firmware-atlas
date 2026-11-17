@@ -1,0 +1,28 @@
+schema_version: 1
+records:
+- type: project
+  id: project.om-emu
+  title: OM-Emu
+  summary: Firmware lab, model ports, traces and patch overlays.
+  source_refs:
+  - source.emu.readme
+  - source.emu.architecture
+  topics:
+  - emulation
+  - platform
+  - tooling
+  last_reviewed: '2026-11-17'
+  url: https://github.com/flatpanda/om-emu
+  kind: emulator
+  camera_ids:
+  - camera.om5
+  - camera.om5-ii
+  - camera.om3
+  - camera.ep7
+  - camera.pen-f
+  - camera.em10-iv
+  contribution_home: https://github.com/flatpanda/om-emu/issues
+  status_summary: These cameras are only the Atlas subset. Named stand-ins and harness-driven startup
+    limit what results establish.
+  related_projects:
+  - project.oly-fw-analysis

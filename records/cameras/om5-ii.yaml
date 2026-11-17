@@ -1,0 +1,23 @@
+schema_version: 1
+records:
+- type: camera
+  id: camera.om5-ii
+  title: OM SYSTEM OM-5 Mark II
+  summary: 'E148: alpha12 has an incomplete positive owner report; original OM-5 work is separate.'
+  source_refs:
+  - source.om5.readme
+  - source.om5.alpha12
+  topics: []
+  last_reviewed: '2026-11-17'
+  aliases:
+  - OM-5 II
+  - OM5
+  - OM5II
+  - E148
+  model_codes:
+  - E148
+  project_ids:
+  - project.caduceus-om5
+  - project.db-firmware
+  - project.om-emu
+  coverage: initial-review

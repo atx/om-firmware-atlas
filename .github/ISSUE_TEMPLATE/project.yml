@@ -1,0 +1,12 @@
+name: Project discovery or update
+description: Help readers find existing work and its contribution home.
+title: '[Project] '
+body:
+  - type: input
+    id: url
+    attributes: {label: Project URL, description: Include a relevant branch/release when the work is not on main.}
+    validations: {required: true}
+  - type: textarea
+    id: scope
+    attributes: {label: Scope and useful entry points, description: Camera/firmware, what the project does, sources for state, and where contributions belong.}
+    validations: {required: true}

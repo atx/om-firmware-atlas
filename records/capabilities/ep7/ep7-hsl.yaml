@@ -1,0 +1,23 @@
+schema_version: 1
+records:
+- type: capability
+  id: capability.ep7-hsl
+  title: E-P7 HSLFX
+  summary: The README describes HSLFX with feature-specific states and caveats.
+  source_refs:
+  - source.ep7.readme
+  topics:
+  - colour
+  last_reviewed: '2026-11-17'
+  camera_id: camera.ep7
+  firmware_id: firmware.ep7-1100
+  project_id: project.caduceus-ep7
+  mod_build: v0.34a
+  feature_id: feature.colour.hsl
+  assertion: The README describes HSLFX with feature-specific states and caveats.
+  availability: published-release
+  implementation: reported
+  evidence_refs: []
+  contradicting_refs: []
+  limitations:
+  - Individual physical test reports are not normalised here yet.

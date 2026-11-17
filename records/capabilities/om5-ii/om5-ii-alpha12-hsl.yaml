@@ -1,0 +1,23 @@
+schema_version: 1
+records:
+- type: capability
+  id: capability.om5-ii-alpha12-hsl
+  title: Mark II alpha12 HSL
+  summary: The project describes per-colour Hue, Saturation and Lightness.
+  source_refs:
+  - source.om5.readme
+  topics:
+  - colour
+  last_reviewed: '2026-11-17'
+  camera_id: camera.om5-ii
+  firmware_id: firmware.om5-ii-1100
+  project_id: project.caduceus-om5
+  mod_build: v0.1.0-alpha12
+  feature_id: feature.colour.hsl
+  assertion: The project describes per-colour Hue, Saturation and Lightness.
+  availability: published-release
+  implementation: reported
+  evidence_refs: []
+  contradicting_refs: []
+  limitations:
+  - No separate feature-by-feature alpha12 report is catalogued.

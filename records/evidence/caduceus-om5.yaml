@@ -1,0 +1,125 @@
+schema_version: 1
+records:
+- type: evidence
+  id: evidence.om5-prealpha1-boot
+  title: 'Original OM-5 pre-alpha 1: startup failure'
+  summary: One tester identifies a package and reports a dark, unusable start.
+  source_refs:
+  - source.om5.prealpha1
+  topics:
+  - patching
+  last_reviewed: '2026-11-17'
+  camera_id: camera.om5
+  firmware_id: firmware.om5-1200
+  project_id: project.caduceus-om5
+  mod_build: original-om5-prealpha1
+  method: physical-camera
+  provenance: firsthand-tester-report
+  identity_level: reported-hash
+  package_sha256: 70788992f032dad53bfa4e145b2147e376d3f25a62e2b1ce2929973fec26d1b4
+  expected_package_sha256: null
+  outcome: reported-fail
+  quality: partial
+  reported_on: '2026-11-17'
+  tested_on: null
+  procedure: Tester installed the named SD package, restarted and reported no usable interface.
+  coverage:
+  - Startup to a visible usable interface failed.
+  limitations:
+  - Exact event date, stock input digest and detailed light sequence were not recorded.
+  - One public report; not independently reproduced by the Atlas.
+  assumptions: []
+- type: evidence
+  id: evidence.om5-prealpha1-restore
+  title: 'Original OM-5: restoration after that failure'
+  summary: The tester reports stock 1.2 restoration after the failed experiment.
+  source_refs:
+  - source.om5.prealpha1
+  topics:
+  - patching
+  last_reviewed: '2026-11-17'
+  camera_id: camera.om5
+  firmware_id: firmware.om5-1200
+  project_id: project.caduceus-om5
+  mod_build: original-om5-prealpha1
+  method: physical-camera
+  provenance: firsthand-tester-report
+  identity_level: reported-hash
+  package_sha256: 70788992f032dad53bfa4e145b2147e376d3f25a62e2b1ce2929973fec26d1b4
+  expected_package_sha256: null
+  outcome: reported-pass
+  quality: partial
+  reported_on: '2026-11-17'
+  tested_on: null
+  procedure: After the failed mod, the tester reports SD restoration of official 1.2 and normal operation.
+  coverage:
+  - Stock restoration following this particular failed installation.
+  limitations:
+  - The hash identifies the failed mod; the restore-file digest was not recorded.
+  - One incident does not establish recovery from every failure state.
+  assumptions: []
+- type: evidence
+  id: evidence.om5-ii-alpha12-owner
+  title: 'Mark II alpha12: overall owner report'
+  summary: A positive overall report with explicitly missing details.
+  source_refs:
+  - source.om5.alpha12
+  topics:
+  - patching
+  last_reviewed: '2026-11-17'
+  camera_id: camera.om5-ii
+  firmware_id: firmware.om5-ii-1100
+  project_id: project.caduceus-om5
+  mod_build: v0.1.0-alpha12
+  method: physical-camera
+  provenance: maintainer-summary
+  identity_level: release-label-only
+  package_sha256: null
+  expected_package_sha256: cddd7a1f1320e7680bec9e8430e25c69857c2f4bf764e571d6bfffb775acd3fa
+  outcome: reported-pass
+  quality: partial
+  reported_on: '2026-11-16'
+  tested_on: null
+  procedure: null
+  coverage:
+  - Owner reports the remaining defects from the previous round fixed.
+  limitations:
+  - No installer hash readout, step-by-step checks or explicit physical test date.
+  - This overall statement is not a separate test of every advertised feature.
+  assumptions: []
+- type: evidence
+  id: evidence.om5-ii-image-store-probe
+  title: Mark II image-store probe
+  summary: Upstream GUI tracing reports no patch writes into the watched image after correction.
+  source_refs:
+  - source.om5.image-store
+  topics:
+  - emulation
+  last_reviewed: '2026-11-17'
+  camera_id: camera.om5-ii
+  firmware_id: firmware.om5-ii-1100
+  project_id: project.caduceus-om5
+  mod_build: image-store-fix-2026-11-11
+  method: emulator
+  provenance: upstream-documentation
+  identity_level: release-label-only
+  package_sha256: null
+  expected_package_sha256: null
+  outcome: reported-pass
+  quality: partial
+  reported_on: '2026-11-11'
+  tested_on: null
+  procedure: Upstream ran a GUI write-watch session with corrected state placement.
+  coverage:
+  - No patch writes to the watched image in the described session.
+  limitations:
+  - A bounded upstream offline observation, not an Atlas run.
+  - The note does not establish a corrected physical-camera result.
+  assumptions:
+  - E148 loader was not run; completion flags were published by the harness.
+  emulator:
+    url: https://github.com/xulfr/om-emu
+    revision: bdb3347
+    model: E148
+    stand_ins:
+    - Loader completion flags supplied by the harness

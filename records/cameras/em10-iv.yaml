@@ -1,0 +1,22 @@
+schema_version: 1
+records:
+- type: camera
+  id: camera.em10-iv
+  title: Olympus OM-D E-M10 Mark IV
+  summary: 'E140: port/signature research and emulator coverage; no physical feature report imported.'
+  source_refs:
+  - source.ep7.bodies
+  - source.emu.readme
+  topics: []
+  last_reviewed: '2026-11-17'
+  aliases:
+  - E-M10 IV
+  - E-M10 Mark IV
+  - EM10IV
+  - E140
+  model_codes:
+  - E140
+  project_ids:
+  - project.caduceus-ep7
+  - project.om-emu
+  coverage: discovery-only

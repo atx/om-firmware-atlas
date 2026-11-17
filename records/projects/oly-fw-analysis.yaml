@@ -1,0 +1,28 @@
+schema_version: 1
+records:
+- type: project
+  id: project.oly-fw-analysis
+  title: Olympus firmware research
+  summary: Foundational firmware work with deep PEN-F coverage.
+  source_refs:
+  - source.fishcu.readme
+  - source.fishcu.reproduce
+  - source.fishcu.validation
+  topics:
+  - platform
+  - patching
+  - tooling
+  - colour
+  last_reviewed: '2026-11-17'
+  url: https://github.com/fishcu/oly_fw_analysis
+  kind: research
+  camera_ids:
+  - camera.pen-f
+  - camera.om5
+  - camera.ep7
+  - camera.om3
+  contribution_home: https://github.com/fishcu/oly_fw_analysis/issues
+  status_summary: Existing topic-based references and PEN-F HSL releases are useful upstream homes; coverage
+    varies by model.
+  related_projects:
+  - project.om-emu

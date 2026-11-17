@@ -1,0 +1,11 @@
+# Human ownership; enable required review in repository settings after bootstrap.
+/AGENTS.md @xulfr
+/CLAUDE.md @xulfr
+/agents/ @xulfr
+/schemas/ @xulfr
+/scripts/ @xulfr
+/taxonomy/ @xulfr
+/.github/ @xulfr
+/maintenance/decisions/ @xulfr
+/maintenance/git-identity* @xulfr
+/.githooks/ @xulfr

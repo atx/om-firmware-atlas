@@ -1,0 +1,82 @@
+schema_version: 1
+records:
+- type: source
+  id: source.om5.readme
+  title: Caduceus OM-5 overview
+  summary: Separate model status, features and project lineage.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-17'
+  url: https://github.com/xulfr/caduceus-om5/blob/a72851a4ada5eab8eed02f7a06afd7f9297bbe81/README.md
+  source_kind: github-file
+  upstream_repo: xulfr/caduceus-om5
+  revision: a72851a4ada5eab8eed02f7a06afd7f9297bbe81
+  locator: README.md
+  retrieved_on: '2026-11-17'
+  last_checked: '2026-11-17'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.om5.formats
+  title: OM-5 Mark II card format
+  summary: OM5F wrapper, names and supported record fields.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-17'
+  url: https://github.com/xulfr/caduceus-om5/blob/a72851a4ada5eab8eed02f7a06afd7f9297bbe81/docs/FORMATS.md
+  source_kind: github-file
+  upstream_repo: xulfr/caduceus-om5
+  revision: a72851a4ada5eab8eed02f7a06afd7f9297bbe81
+  locator: docs/FORMATS.md
+  retrieved_on: '2026-11-17'
+  last_checked: '2026-11-17'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.om5.alpha12
+  title: Mark II alpha12 report
+  summary: Expected digest and an explicitly incomplete owner report.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-17'
+  url: https://github.com/xulfr/caduceus-om5/blob/a72851a4ada5eab8eed02f7a06afd7f9297bbe81/releases/v0.1.0-alpha12/README.md
+  source_kind: github-file
+  upstream_repo: xulfr/caduceus-om5
+  revision: a72851a4ada5eab8eed02f7a06afd7f9297bbe81
+  locator: releases/v0.1.0-alpha12/README.md
+  retrieved_on: '2026-11-17'
+  last_checked: '2026-11-17'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.om5.image-store
+  title: Image-store fault investigation
+  summary: Offline observations, emulator revision and remaining physical uncertainty.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-17'
+  url: https://github.com/xulfr/caduceus-om5/blob/a72851a4ada5eab8eed02f7a06afd7f9297bbe81/research/OM5II-IMAGE-STORE-FAULT-2026-11-11.md
+  source_kind: github-file
+  upstream_repo: xulfr/caduceus-om5
+  revision: a72851a4ada5eab8eed02f7a06afd7f9297bbe81
+  locator: research/OM5II-IMAGE-STORE-FAULT-2026-11-11.md
+  retrieved_on: '2026-11-17'
+  last_checked: '2026-11-17'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.om5.builder
+  title: OM-5 strict builder
+  summary: Declarative patch scope, bounds and recorded hashes.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-17'
+  url: https://github.com/xulfr/caduceus-om5/blob/a72851a4ada5eab8eed02f7a06afd7f9297bbe81/tools/oly_patch.py
+  source_kind: github-file
+  upstream_repo: xulfr/caduceus-om5
+  revision: a72851a4ada5eab8eed02f7a06afd7f9297bbe81
+  locator: tools/oly_patch.py
+  retrieved_on: '2026-11-17'
+  last_checked: '2026-11-17'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.

@@ -1,0 +1,23 @@
+schema_version: 1
+records:
+- type: camera
+  id: camera.ep7
+  title: Olympus PEN E-P7
+  summary: 'E142: original Caduceus project and a documented Ghidra/REA setup.'
+  source_refs:
+  - source.ep7.readme
+  topics: []
+  last_reviewed: '2026-11-17'
+  aliases:
+  - E-P7
+  - EP7
+  - PEN E-P7
+  - E142
+  model_codes:
+  - E142
+  project_ids:
+  - project.caduceus-ep7
+  - project.db-firmware
+  - project.oly-fw-analysis
+  - project.om-emu
+  coverage: initial-review

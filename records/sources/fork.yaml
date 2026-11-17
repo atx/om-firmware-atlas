@@ -1,0 +1,18 @@
+schema_version: 1
+records:
+- type: source
+  id: source.fork.readme
+  title: OM-3 downstream experiment
+  summary: Experimental changes intended to contribute upstream.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-17'
+  url: https://github.com/fernandezk26/camera-stuff/blob/47903fddb08731d8bb662093138de92d15f66743/FORK.md
+  source_kind: github-file
+  upstream_repo: fernandezk26/camera-stuff
+  revision: 47903fddb08731d8bb662093138de92d15f66743
+  locator: FORK.md
+  retrieved_on: '2026-11-17'
+  last_checked: '2026-11-17'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.

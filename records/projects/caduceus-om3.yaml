@@ -1,0 +1,26 @@
+schema_version: 1
+records:
+- type: project
+  id: project.caduceus-om3
+  title: Caduceus for OM-3
+  summary: OM-3 looks, colour editing, persistence and research.
+  source_refs:
+  - source.om3.readme
+  - source.om3.looklab
+  - source.om3.research
+  topics:
+  - colour
+  - interfaces
+  - capture
+  - emulation
+  last_reviewed: '2026-11-17'
+  url: https://github.com/androidfanman/caduceus-om3
+  kind: mod
+  camera_ids:
+  - camera.om3
+  contribution_home: https://github.com/androidfanman/caduceus-om3/issues
+  status_summary: The reviewed README names v0.30.3. Camera-test descriptions remain attributed; this
+    catalogue has not reproduced them.
+  related_projects:
+  - project.caduceus-ep7
+  - project.om-emu

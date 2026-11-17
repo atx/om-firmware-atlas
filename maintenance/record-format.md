@@ -1,0 +1,29 @@
+# Canonical record format
+
+Collections in `records/<type>/` contain `schema_version: 1` and a non-empty `records` list. Each row has `type`, a stable prefixed `id`, `title`, `summary`, `last_reviewed`, and source/topic references. Keep related source/observation rows together; split a costly batch by investigation or period without changing IDs. Full definitions are in [records.schema.json](../schemas/records.schema.json).
+
+| Kind | Required scope beyond the common fields |
+|---|---|
+| camera | Aliases, model codes, project IDs and catalogue depth |
+| firmware | Camera, advertised/internal version, full hash or explicit null, identity limitations |
+| project | URL/kind, catalogued cameras, contribution destination, attributed state and related work |
+| capability | Camera, firmware/project/build, feature ID, availability, implementation basis, evidence/contradiction refs and limits |
+| evidence | Target/build, method/provenance, identity strength, separate expected and reported/observed hashes, result, procedure/coverage, dates, completeness and assumptions |
+| source | URL, source kind, repository/revision where relevant, locator, retrieval/check date, publication scope and reuse note |
+| community | URL/platform, audience/scope, listing basis, access, project links and precise link-check state/date |
+
+Use `null` for an unknown nullable field, not an invented value. A null firmware hash still permits an honest discovery entry but cannot support byte-exact work. Referenced firmware and evidence must match the capability's camera/project/build. Shared method does not authorise transferring a result.
+
+Physical evidence marked `complete` requires target/build, package hash from the report or observation, steps and explicit test date. `quality: partial` preserves a useful but incomplete account. `identity_level: release-label-only` cannot carry a reported package digest. Keep a manifest's expected digest in `expected_package_sha256`.
+
+Repository file sources use the same full commit in `revision` and `/blob/<commit>/` URL. Release descriptions and comments are mutable; a reviewed body digest can provide a baseline for future checks. The freshness checker reports missing baselines rather than claiming unchanged content.
+
+## Guides and dependencies
+
+Subject guides under `knowledge/` have the metadata in [article.schema.json](../schemas/article.schema.json): ID, title, summary, load conditions, topic/camera/project coverage, required guide dependencies, sources and substantive-review date. Dependencies must resolve without cycles and use at most three guides along a path. A specialised guide explains its delta; it does not repeat the base.
+
+Update `last_reviewed` after checking the facts. A move, reformat or successful HTTP response does not renew it. Historical observations preserve event dates; source check, publication, report and test dates have different meanings.
+
+Add taxonomy IDs when a useful new concept needs them. Keep existing IDs/aliases stable. Generated `views/` and `agents/routes/` compose these records and metadata; `python scripts/atlas.py generate` is their only editing interface.
+
+Examples to inspect: [camera](../records/cameras/om5-ii.yaml), [firmware](../records/firmware/ep7/ep7-1100.yaml), [project](../records/projects/caduceus-om3.yaml), [capability](../records/capabilities/om5-ii/om5-ii-alpha12-overall.yaml), [observations](../records/evidence/caduceus-om5.yaml), [sources](../records/sources/om5.yaml), [community](../records/community/venues.yaml).

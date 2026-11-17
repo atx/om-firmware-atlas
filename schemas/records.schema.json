@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Atlas record collection",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "records"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "records": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/record"}}
+  },
+  "$defs": {
+    "ids": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "text": {"type": "string", "minLength": 1},
+    "date": {"type": "string", "format": "date"},
+    "hash": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+    "base": {
+      "type": "object",
+      "required": ["type", "id", "title", "summary", "last_reviewed"],
+      "properties": {
+        "type": {"type": "string"},
+        "id": {"type": "string", "pattern": "^[a-z]+\\.[a-z0-9][a-z0-9.-]*$"},
+        "title": {"$ref": "#/$defs/text"},
+        "summary": {"$ref": "#/$defs/text"},
+        "source_refs": {"$ref": "#/$defs/ids"},
+        "topics": {"$ref": "#/$defs/ids"},
+        "last_reviewed": {"$ref": "#/$defs/date"},
+        "supersedes": {"$ref": "#/$defs/ids"}
+      }
+    },
+    "camera": {
+      "allOf": [
+        {"$ref": "#/$defs/base"},
+        {"required": ["aliases", "model_codes", "project_ids", "coverage"], "properties": {
+          "type": {"const": "camera"}, "id": {"pattern": "^camera\\."},
+          "aliases": {"$ref": "#/$defs/ids"}, "model_codes": {"$ref": "#/$defs/ids"},
+          "project_ids": {"$ref": "#/$defs/ids"},
+          "coverage": {"enum": ["initial-review", "discovery-only"]}
+        }}
+      ], "unevaluatedProperties": false
+    },
+    "firmware": {
+      "allOf": [
+        {"$ref": "#/$defs/base"},
+        {"required": ["camera_id", "version", "internal_build", "container_sha256", "identity_note"], "properties": {
+          "type": {"const": "firmware"}, "id": {"pattern": "^firmware\\."},
+          "camera_id": {"$ref": "#/$defs/text"}, "version": {"$ref": "#/$defs/text"},
+          "internal_build": {"type": ["string", "null"]}, "container_sha256": {"$ref": "#/$defs/hash"},
+          "identity_note": {"$ref": "#/$defs/text"},
+          "addresses": {"type": "array", "items": {"type": "object", "additionalProperties": false,
+            "required": ["name", "space", "value", "source_ref"], "properties": {
+              "name": {"$ref": "#/$defs/text"}, "space": {"enum": ["container", "decoded-offset", "expanded-offset", "runtime-cached", "runtime-uncached", "disassembly"]},
+              "value": {"type": "string", "pattern": "^0x[0-9a-fA-F]+$"}, "source_ref": {"$ref": "#/$defs/text"}
+            }}}
+        }}
+      ], "unevaluatedProperties": false
+    },
+    "project": {
+      "allOf": [
+        {"$ref": "#/$defs/base"},
+        {"required": ["url", "kind", "camera_ids", "contribution_home", "status_summary", "related_projects"], "properties": {
+          "type": {"const": "project"}, "id": {"pattern": "^project\\."},
+          "url": {"type": "string", "format": "uri"},
+          "kind": {"enum": ["mod", "research", "emulator", "tool", "reference", "experimental-fork"]},
+          "camera_ids": {"$ref": "#/$defs/ids"}, "related_projects": {"$ref": "#/$defs/ids"},
+          "contribution_home": {"type": "string", "format": "uri"},
+          "status_summary": {"$ref": "#/$defs/text"},
+          "work_items": {"type": "array", "items": {"type": "object", "additionalProperties": false,
+            "required": ["summary", "state", "url"], "properties": {
+              "summary": {"$ref": "#/$defs/text"}, "state": {"enum": ["proposed", "open", "paused", "needs-evidence"]},
+              "url": {"type": "string", "format": "uri"}, "owner": {"type": ["string", "null"]}
+            }}}
+        }}
+      ], "unevaluatedProperties": false
+    },
+    "capability": {
+      "allOf": [
+        {"$ref": "#/$defs/base"},
+        {"required": ["camera_id", "firmware_id", "project_id", "mod_build", "feature_id", "assertion", "availability", "implementation", "evidence_refs", "contradicting_refs", "limitations"], "properties": {
+          "type": {"const": "capability"}, "id": {"pattern": "^capability\\."},
+          "camera_id": {"$ref": "#/$defs/text"}, "firmware_id": {"type": ["string", "null"]},
+          "project_id": {"$ref": "#/$defs/text"}, "mod_build": {"type": ["string", "null"]},
+          "feature_id": {"$ref": "#/$defs/text"}, "assertion": {"$ref": "#/$defs/text"},
+          "availability": {"enum": ["research", "experimental-branch", "candidate", "published-release", "withdrawn"]},
+          "implementation": {"enum": ["proposed", "reported", "inspected"]},
+          "evidence_refs": {"$ref": "#/$defs/ids"}, "contradicting_refs": {"$ref": "#/$defs/ids"},
+          "limitations": {"$ref": "#/$defs/ids"}
+        }}
+      ], "unevaluatedProperties": false
+    },
+    "evidence": {
+      "allOf": [
+        {"$ref": "#/$defs/base"},
+        {"required": ["camera_id", "firmware_id", "project_id", "mod_build", "method", "provenance", "identity_level", "package_sha256", "expected_package_sha256", "outcome", "quality", "reported_on", "tested_on", "procedure", "coverage", "limitations", "assumptions"], "properties": {
+          "type": {"const": "evidence"}, "id": {"pattern": "^evidence\\."},
+          "camera_id": {"type": ["string", "null"]}, "firmware_id": {"type": ["string", "null"]},
+          "project_id": {"$ref": "#/$defs/text"}, "mod_build": {"type": ["string", "null"]},
+          "method": {"enum": ["physical-camera", "emulator", "static", "upstream-description"]},
+          "provenance": {"enum": ["firsthand-tester-report", "maintainer-summary", "upstream-documentation", "inspected-source"]},
+          "identity_level": {"enum": ["release-label-only", "reported-hash", "observed-hash", "not-applicable"]},
+          "package_sha256": {"$ref": "#/$defs/hash"}, "expected_package_sha256": {"$ref": "#/$defs/hash"},
+          "outcome": {"enum": ["pass", "fail", "reported-pass", "reported-fail", "inconclusive"]},
+          "quality": {"enum": ["complete", "partial"]},
+          "reported_on": {"$ref": "#/$defs/date"}, "tested_on": {"type": ["string", "null"], "format": "date"},
+          "procedure": {"type": ["string", "null"]}, "coverage": {"allOf": [{"$ref": "#/$defs/ids"}], "minItems": 1},
+          "limitations": {"$ref": "#/$defs/ids"}, "assumptions": {"$ref": "#/$defs/ids"},
+          "emulator": {"type": "object", "additionalProperties": false, "required": ["url", "revision", "model", "stand_ins"], "properties": {
+            "url": {"type": "string", "format": "uri"}, "revision": {"$ref": "#/$defs/text"},
+            "model": {"$ref": "#/$defs/text"}, "stand_ins": {"$ref": "#/$defs/ids"}
+          }}
+        }}
+      ], "unevaluatedProperties": false
+    },
+    "source": {
+      "allOf": [
+        {"$ref": "#/$defs/base"},
+        {"required": ["url", "source_kind", "upstream_repo", "revision", "locator", "retrieved_on", "last_checked", "publication", "reuse_note"], "properties": {
+          "type": {"const": "source"}, "id": {"pattern": "^source\\."},
+          "url": {"type": "string", "format": "uri"},
+          "source_kind": {"enum": ["github-file", "github-release", "github-comment", "web-page"]},
+          "upstream_repo": {"type": ["string", "null"]}, "revision": {"type": ["string", "null"]},
+          "locator": {"$ref": "#/$defs/text"}, "retrieved_on": {"$ref": "#/$defs/date"},
+          "last_checked": {"$ref": "#/$defs/date"}, "published_on": {"type": ["string", "null"], "format": "date"},
+          "publication": {"enum": ["public", "authorised-summary"]}, "reuse_note": {"$ref": "#/$defs/text"},
+          "content_sha256": {"$ref": "#/$defs/hash"}
+        }}
+      ], "unevaluatedProperties": false
+    },
+    "community": {
+      "allOf": [
+        {"$ref": "#/$defs/base"},
+        {"required": ["url", "platform", "scope", "listing_basis", "access", "project_ids", "link_state", "checked_on"], "properties": {
+          "type": {"const": "community"}, "id": {"pattern": "^community\\."},
+          "url": {"type": "string", "format": "uri"}, "platform": {"enum": ["reddit", "discord", "forum", "other"]},
+          "scope": {"$ref": "#/$defs/text"}, "listing_basis": {"enum": ["community-reported", "upstream-linked"]},
+          "access": {"enum": ["public-content", "invite-required"]}, "project_ids": {"$ref": "#/$defs/ids"},
+          "link_state": {"enum": ["reachable", "linked-not-joined", "unchecked", "expired"]}, "checked_on": {"$ref": "#/$defs/date"}
+        }}
+      ], "unevaluatedProperties": false
+    },
+    "record": {"oneOf": [
+      {"$ref": "#/$defs/camera"}, {"$ref": "#/$defs/firmware"}, {"$ref": "#/$defs/project"},
+      {"$ref": "#/$defs/capability"}, {"$ref": "#/$defs/evidence"}, {"$ref": "#/$defs/source"}, {"$ref": "#/$defs/community"}
+    ]}
+  }
+}
