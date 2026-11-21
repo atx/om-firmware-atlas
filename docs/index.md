@@ -2,18 +2,13 @@
 
 <div class="hero-copy" markdown="1">
 
-<p class="eyebrow-pill"><span class="dot"></span>Olympus / OM SYSTEM · Community firmware</p>
+# Community firmware <span class="accent">for your camera.</span>
 
-# Get more from your camera. <span class="accent">See what the community built.</span>
+<p class="lede">Find mods for your Olympus or OM SYSTEM camera, see what owners have tested and follow the project's installation guide.</p>
 
-<p class="lede">Film looks, colour editors, log video, new burst rates and more, made by camera owners for Olympus and OM SYSTEM bodies. The Atlas shows what each project does, what has been tested, and where to find the people behind it.</p>
+<!-- atlas:camera-finder -->
 
-<div class="cta-row" markdown="1">
-
-[Find your camera](../views/cameras/index.md){ .btn .btn-primary }
-[Explore projects](../views/projects/index.md){ .btn .btn-ghost }
-
-</div>
+[Browse all cameras](../views/cameras/index.md) · [Explore projects](../views/projects/index.md)
 
 **[Before you install](before-you-install.md)** · Unofficial firmware can leave your camera stuck restarting or unable to start. Recovery from a memory card is not guaranteed.
 { .install-note }

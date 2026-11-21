@@ -119,7 +119,7 @@ Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to
 **For this camera:** Panasonic aperture rings, Korean menus and Hybrid Shutter, all beta. The v0.4.3 notes list the OM-5 build as not working, so read each release's notes for this camera before installing.
 { .card-for }
 
-**Get it:** [dbv0.4.3](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3), 21 Nov 2026 · [Read the project instructions](https://github.com/azqeurio/om-c-firmware)
+**Get it:** [dbv0.4.3](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3), 21 Nov 2026. Check the release notes for files and instructions for this model.
 { .card-get }
 
 Mod
@@ -263,12 +263,57 @@ Tool
 
 ## Claims and test evidence { #evidence }
 
-| Scoped assertion | Project / build | Availability | Evidence |
-|---|---|---|---|
-| [db firmware OM-5 aperture-ring claim](../capabilities/om5-db-aperture.md) | [db firmware / om-c-firmware](../projects/db-firmware.md) / dbv0.4.1 | published release | Upstream description; no separate test observation catalogued |
-| [Restoration after pre-alpha 1](../capabilities/om5-prealpha1-recovery.md) | [Caduceus for OM-5](../projects/caduceus-om5.md) / original-om5-prealpha1 | candidate | physical camera; reported pass; partial report; reported hash |
-| [Original OM-5 pre-alpha 1 startup](../capabilities/om5-prealpha1-start.md) | [Caduceus for OM-5](../projects/caduceus-om5.md) / original-om5-prealpha1 | candidate | physical camera; reported fail; partial report; reported hash |
-| [Original OM-5 patched startup, tadejs ladder C5](../capabilities/om5-tadejs-ladder-start.md) | [Caduceus port for the original OM-5 (tadejs)](../projects/caduceus-om5-tadejs.md) / om5-ladder-c5 | experimental branch | physical camera; reported pass; partial report; release label only |
+<div class="evidence-list" markdown="1">
+
+<div class="evidence-entry" markdown="1">
+
+**[db firmware OM-5 aperture-ring claim](../capabilities/om5-db-aperture.md)**
+
+Project and build · [db firmware / om-c-firmware](../projects/db-firmware.md) / dbv0.4.1
+
+Availability · published release
+
+Evidence · Upstream description; no separate test observation catalogued
+
+</div>
+
+<div class="evidence-entry" markdown="1">
+
+**[Restoration after pre-alpha 1](../capabilities/om5-prealpha1-recovery.md)**
+
+Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md) / original-om5-prealpha1
+
+Availability · candidate
+
+Evidence · physical camera; reported pass; partial report; reported hash
+
+</div>
+
+<div class="evidence-entry" markdown="1">
+
+**[Original OM-5 pre-alpha 1 startup](../capabilities/om5-prealpha1-start.md)**
+
+Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md) / original-om5-prealpha1
+
+Availability · candidate
+
+Evidence · physical camera; reported fail; partial report; reported hash
+
+</div>
+
+<div class="evidence-entry" markdown="1">
+
+**[Original OM-5 patched startup, tadejs ladder C5](../capabilities/om5-tadejs-ladder-start.md)**
+
+Project and build · [Caduceus port for the original OM-5 (tadejs)](../projects/caduceus-om5-tadejs.md) / om5-ladder-c5
+
+Availability · experimental branch
+
+Evidence · physical camera; reported pass; partial report; release label only
+
+</div>
+
+</div>
 
 Results belong to the named project and package. Emulator output does not establish physical-camera behaviour.
 

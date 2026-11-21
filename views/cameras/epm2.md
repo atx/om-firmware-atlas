@@ -133,9 +133,21 @@ Mod
 
 ## Claims and test evidence { #evidence }
 
-| Scoped assertion | Project / build | Availability | Evidence |
-|---|---|---|---|
-| [E-PM2 card-loaded film simulations, films-look-exif](../capabilities/epm2-films-look-exif.md) | [EPM2Mod](../projects/epm2mod.md) / films-look-exif | candidate | physical camera; reported pass; complete report; reported hash |
+<div class="evidence-list" markdown="1">
+
+<div class="evidence-entry" markdown="1">
+
+**[E-PM2 card-loaded film simulations, films-look-exif](../capabilities/epm2-films-look-exif.md)**
+
+Project and build · [EPM2Mod](../projects/epm2mod.md) / films-look-exif
+
+Availability · candidate
+
+Evidence · physical camera; reported pass; complete report; reported hash
+
+</div>
+
+</div>
 
 Results belong to the named project and package. Emulator output does not establish physical-camera behaviour.
 

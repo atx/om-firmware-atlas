@@ -9,7 +9,7 @@ E140: port/signature research and emulator coverage; no physical feature report 
 
 <div class="glance" markdown="1">
 
-**Releases for this camera:** none yet.
+**Releases for this camera:** none recorded yet.
 
 **No release for this camera yet:** [Caduceus for E-P7](../projects/caduceus-ep7.md).
 

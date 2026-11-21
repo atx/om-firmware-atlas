@@ -57,7 +57,7 @@ The research base: PEN-F HSL, firmware formats and tools for many bodies.
 **For this camera:** Publishes the PEN-F HSL patch as alpha releases: hue and lightness added to the 12-colour saturation editor in COLOR1–3. The project asks for a firsthand hardware report before publishing a flashable patch.
 { .card-for }
 
-**Get it:** [alpha-20261017 (pre-release)](https://github.com/fishcu/oly_fw_analysis/releases/tag/alpha-20261017), 18 Oct 2026 · [Read the project instructions](https://github.com/fishcu/oly_fw_analysis)
+**Get it:** [alpha-20261017 (pre-release)](https://github.com/fishcu/oly_fw_analysis/releases/tag/alpha-20261017), 18 Oct 2026. Check the release notes for files and instructions for this model.
 { .card-get }
 
 Research
@@ -77,7 +77,7 @@ Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to
 **For this camera:** No PEN-F feature is catalogued. Release v0.3.2 lists the PEN-F, but its notes do not say what it adds for this camera.
 { .card-for }
 
-**Get it:** [dbv0.3.2](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.3.2), 31 Oct 2026 · [Read the project instructions](https://github.com/azqeurio/om-c-firmware)
+**Get it:** [dbv0.3.2](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.3.2), 31 Oct 2026. Check the release notes for files and instructions for this model.
 { .card-get }
 
 Mod
@@ -141,9 +141,21 @@ Tool
 
 ## Claims and test evidence { #evidence }
 
-| Scoped assertion | Project / build | Availability | Evidence |
-|---|---|---|---|
-| [PEN-F HSL release](../capabilities/pen-f-hsl.md) | [Olympus firmware research](../projects/oly-fw-analysis.md) / alpha-20261017 | published release | Upstream description; no separate test observation catalogued |
+<div class="evidence-list" markdown="1">
+
+<div class="evidence-entry" markdown="1">
+
+**[PEN-F HSL release](../capabilities/pen-f-hsl.md)**
+
+Project and build · [Olympus firmware research](../projects/oly-fw-analysis.md) / alpha-20261017
+
+Availability · published release
+
+Evidence · Upstream description; no separate test observation catalogued
+
+</div>
+
+</div>
 
 Results belong to the named project and package. Emulator output does not establish physical-camera behaviour.
 

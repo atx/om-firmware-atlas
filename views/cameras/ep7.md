@@ -281,7 +281,7 @@ Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to
 **For this camera:** Listed for this camera: Hybrid Shutter (beta).
 { .card-for }
 
-**Get it:** [dbv0.4.3](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3), 21 Nov 2026 · [Read the project instructions](https://github.com/azqeurio/om-c-firmware)
+**Get it:** [dbv0.4.3](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3), 21 Nov 2026. Check the release notes for files and instructions for this model.
 { .card-get }
 
 Mod
@@ -365,9 +365,21 @@ Tool
 
 ## Claims and test evidence { #evidence }
 
-| Scoped assertion | Project / build | Availability | Evidence |
-|---|---|---|---|
-| [E-P7 HSLFX](../capabilities/ep7-hsl.md) | [Caduceus for E-P7](../projects/caduceus-ep7.md) / v0.34a | published release | Upstream description; no separate test observation catalogued |
+<div class="evidence-list" markdown="1">
+
+<div class="evidence-entry" markdown="1">
+
+**[E-P7 HSLFX](../capabilities/ep7-hsl.md)**
+
+Project and build · [Caduceus for E-P7](../projects/caduceus-ep7.md) / v0.34a
+
+Availability · published release
+
+Evidence · Upstream description; no separate test observation catalogued
+
+</div>
+
+</div>
 
 Results belong to the named project and package. Emulator output does not establish physical-camera behaviour.
 

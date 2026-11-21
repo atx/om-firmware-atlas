@@ -6,7 +6,7 @@ Ask about a build, discuss an idea or find the people working on your camera. Fo
 
 ## Help test a project
 
-The [Caduceus for E-P7 project](../views/projects/caduceus-ep7.md) lists a volunteer tester for its **E-M10 Mark IV port** among its goals. Check the project's [port notes](https://github.com/cakelesscoder/caduceus-ep7/blob/main/docs/BODIES.md) for current needs and [read the risks](before-you-install.md) before volunteering.
+The [Caduceus for E-P7 project](../views/projects/caduceus-ep7.md) says its **E-M10 Mark IV port** needs a volunteer tester. Check the project's [port notes](https://github.com/cakelesscoder/caduceus-ep7/blob/main/docs/BODIES.md) for current needs and [read the risks](before-you-install.md) before volunteering.
 
 ## Contribute to the Atlas
 
