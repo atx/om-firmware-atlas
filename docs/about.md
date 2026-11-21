@@ -4,7 +4,7 @@ OM Firmware Atlas connects independent Olympus and OM SYSTEM firmware work. It g
 
 The repository holds documentation, structured research records and the scripts that validate and publish them. It does not host vendor firmware, firmware builders, emulators or a new look editor. [Upstream projects](../views/projects/index.md) retain their implementation, support and licensing decisions.
 
-The initial material is a bounded synthesis of public sources examined on 17 November 2026. It is neither an exhaustive camera inventory nor an independent reproduction of upstream tests. Evidence pages expose their provenance and missing details. [Read the evidence model](evidence.md).
+The initial material was a bounded synthesis of public sources examined on 17 November 2026; the catalogue has since grown through reviewed source PRs. It is neither an exhaustive camera inventory nor an independent reproduction of upstream tests. Evidence pages expose their provenance and missing details. [Read the evidence model](evidence.md).
 
 Original Atlas contributions use the repository's [Apache-2.0 licence](../LICENSE). Third-party works remain under their own terms. No affiliation with Olympus or OM Digital Solutions is implied.
 

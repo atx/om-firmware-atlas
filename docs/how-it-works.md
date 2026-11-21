@@ -36,7 +36,7 @@ The [CODEOWNERS](https://github.com/xulfr/om-firmware-atlas/blob/main/.github/CO
 The library is larger than an agent should read at once. The entry point is deliberately small, and it points to only what a given task needs.
 
 1. **[AGENTS.md](../AGENTS.md)** sets the ground rules: where facts live, what must not be done, and how changes are submitted.
-2. **[agents/start.md](../agents/start.md)** asks the agent to pick a **job**: research a camera, add a source, update a test result, refresh sources, improve a page or find discussion spaces.
+2. **[agents/start.md](../agents/start.md)** asks the agent to pick a **job**: research a camera, add a source or technical-reference fact, update a test result, refresh sources or add a release, improve a page or find discussion spaces.
 3. Each job maps to one **role** and, where needed, one **workflow**. The mapping is in [agents/jobs.yaml](../agents/jobs.yaml).
 4. The agent then reads only the **route** for the relevant camera, project or topic. Routes are short generated files in `agents/routes/` that list what to read next, with its size and an estimated token cost.
 
@@ -45,11 +45,11 @@ The optional command `python scripts/atlas.py route` prints the same reading pla
 ```text
 python scripts/atlas.py route --job ingest --source https://github.com/xulfr/caduceus-om5/releases/tag/v0.1.0-alpha12
 
-AGENTS.md | 1623 bytes | ~406 tokens
-agents/start.md | 1289 bytes | ~323 tokens
-agents/roles/librarian.md | 726 bytes | ~182 tokens
-agents/workflows/ingest-source.md | 1792 bytes | ~448 tokens
-agents/routes/projects/caduceus-om5.md | 996 bytes | ~249 tokens
+AGENTS.md | 1390 bytes | ~348 tokens
+agents/start.md | 1279 bytes | ~320 tokens
+agents/roles/librarian.md | 904 bytes | ~226 tokens
+agents/workflows/ingest-source.md | 1918 bytes | ~480 tokens
+agents/routes/projects/caduceus-om5.md | 985 bytes | ~247 tokens
 ```
 
 The command prints a reading list; it does not answer the question or change any files.
@@ -229,7 +229,7 @@ The built site is in `site/`. The [contribution steps](https://github.com/xulfr/
 
 ## Implemented now, and planned
 
-**Implemented now:** structured records with schemas and scope checks, generated camera and project showcase pages and agent routes, drift detection, fixed routing tests, strict site builds, PR previews, the weekly source and release check with its update-queue issue, and publication from `main`.
+**Implemented now:** structured records with schemas and scope checks, a per-build technical reference (addresses, hazards, platform facts and built-in features), generated camera and project showcase pages and agent routes, drift detection, fixed routing tests, strict site builds, PR previews, the weekly source and release check with its update-queue issue, and publication from `main`.
 
 **Planned or possible later** (from the [implementation plan](https://github.com/xulfr/om-firmware-atlas/blob/main/maintenance/plan.md); none of these exist yet):
 
