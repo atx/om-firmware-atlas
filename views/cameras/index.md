@@ -45,7 +45,7 @@ E148
 
 E148: v0.2.0-alpha1 has an overall positive owner report; original OM-5 work is separate.
 
-4 projects · 5 features catalogued
+5 projects · 7 features catalogued
 { .card-meta }
 
 </div>

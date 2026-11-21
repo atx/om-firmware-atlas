@@ -3,15 +3,17 @@ records:
 - type: firmware
   id: firmware.om5-ii-1100
   title: om5-ii firmware 1.1, build 1100
-  summary: Add a full digest from a pinned manifest before byte-exact input work.
+  summary: Stock update file OLY_E_148_1100_0000_0000.BIN, 90,832,896 bytes, with its SHA-256 from OMKit's pinned manifest.
   source_refs:
   - source.om5.readme
   - source.om5.alpha12
+  - source.omkit.identity
   topics:
   - platform
-  last_reviewed: '2026-11-17'
+  last_reviewed: '2026-11-21'
   camera_id: camera.om5-ii
   version: '1.1'
   internal_build: '1100'
-  container_sha256: null
-  identity_note: Add a full digest from a pinned manifest before byte-exact input work.
+  container_sha256: 9de5d77e1d290fa2ed4ebc7d75cee0ed490befbc89566722467d1d421d66d637
+  identity_note: SHA-256 of the official file as published by OMKit, whose firmware tool accepts the stock file only
+    by this digest (docs and release/platforms/om5m2/fw1100/platform.json at a29db07). Not hashed by the Atlas.

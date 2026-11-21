@@ -75,6 +75,20 @@ Latest: dbv0.4.2, 20 Nov 2026
 
 <div class="project-card" markdown="1">
 
+[OMKit](omkit.md){ .card-title }
+
+A loader flashed once, then core, modules and settings from the SD card. OM-5 Mark II.
+
+Card-loaded core and modules · Creative profiles (CREATPRF) · Film look (FILMLOOK)
+{ .card-features }
+
+Latest: v0.1.0, 20 Nov 2026
+{ .card-meta }
+
+</div>
+
+<div class="project-card" markdown="1">
+
 [EPM2Mod](epm2mod.md){ .card-title }
 
 Film simulations, interval shooting, focus peaking and a level gauge for the PEN E-PM2.

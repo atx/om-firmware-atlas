@@ -123,6 +123,19 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | [OM-5 Mark II startup readiness correction](om5.startup-fix.md) | E148 section-ready words, the section 5 loaded extent and an overlay defect. |
 | [Mark II v0.2.0-alpha1 release notes](om5.v020-alpha1.md) | Owner's overall result, new tone and tint controls, and the expected on-card checksum. |
 | [OM-5 Mark II v0.2.0 development handover](om5.v020-dev.md) | Emulator regressions and pending camera checks for grain, Black/White and split tone. |
+| [OMKit preset programs](omkit.apps.md) | ISP player, ISP fitter (.cube to preset) and ISP neurofit (RAW plus film scans, driven by an AI agent). |
+| [OMKit architecture](omkit.architecture.md) | How the loader, core, driver and modules fit together: card files, boot sequence, hooks, services and failure handling. |
+| [OMKit changelog](omkit.changelog.md) | Contents of release 0.1.0 (2026-11-20), the first public release. |
+| [CREATPRF module](omkit.creatprf.md) | Three colour and three monochrome profiles shown and applied from memory, their editors and OM Workspace import. |
+| [FILMLOOK module](omkit.filmlook.md) | Film look in one picture mode slot, .ISP presets on the card, tone curve, grain, settings, store and limits. |
+| [OM-5 Mark II firmware, startup, updates and recovery](omkit.firmware.md) | Update file structure, section load order and the sections-loaded word, the card updater and recovery paths, with basis labels. |
+| [OM-5 Mark II firmware 1.1 identity](omkit.identity.md) | Official file name, size and SHA-256, and the fingerprint and per-hook checks core makes before running. |
+| [Installing OMKit on the OM-5 Mark II 1.1](omkit.install.md) | Firmware tool, one-time loader flash, the OMKIT card folder, updating by copying files, what to expect, going back and troubleshooting. |
+| [The .isp picture profile file](omkit.isp-format.md) | Card format of FILMLOOK presets: a set of the camera's own colour tables with a name and cassette picture. |
+| [OMKit loader patch for OM-5 Mark II 1.1](omkit.patch.md) | The one hook, two code caves and flag word the patch changes, what the loader task does at boot, failure paths and camera status. |
+| [OMKit overview](omkit.readme.md) | Supported camera, the two bundled modules, install in short, the preset programs and licences. |
+| [OMKit releases](omkit.releases.md) | One release, v0.1.0 (core 1.32, CREATPRF 1.5, FILMLOOK 1.12), published 2026-11-20 and marked Latest, with the ZIP's SHA-256. |
+| [OM-5 Mark II 1.1 system catalogue](omkit.system.md) | Memory layout, sections, heaps, the free DRAM gap OMKit uses, protection and RTOS entries, with basis labels. |
 | [Original OM-5 port notes (tadejs)](tom5.port.md) | Static and emulator analysis of OM-5 1.2, the C1–C5 camera ladder and the emulator-only COLOR 1–3 back end. |
 | [OM-5 port pull request (tadejs)](tom5.pr1.md) | Open PR bringing branch om5-port into the fork's main; summarises scope, camera results and open items. |
 | [OM-5 camera ladder log (tadejs)](tom5.worklog.md) | Dated owner results for C1–C5 on an original OM-5 and the COLOR back-end batch. |

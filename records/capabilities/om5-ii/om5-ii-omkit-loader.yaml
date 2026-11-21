@@ -1,0 +1,54 @@
+schema_version: 1
+records:
+- type: capability
+  id: capability.om5-ii-omkit-loader
+  title: OM-5 Mark II code loaded from the card, OMKit loader
+  summary: After one flash, the loader runs OMKIT\CORE.BIN from the card on every full power-on, so core and modules update by copying files.
+  source_refs:
+  - source.omkit.patch
+  - source.omkit.install
+  topics:
+  - patching
+  last_reviewed: '2026-11-21'
+  camera_id: camera.om5-ii
+  firmware_id: firmware.om5-ii-1100
+  project_id: project.omkit
+  mod_build: loader fw1100 (OMKit 0.1.0)
+  feature_id: feature.loader.card
+  assertion: With the OMKit loader patch on firmware 1.1, the camera reads, checks and starts OMKIT\CORE.BIN from the
+    card at each full power-on, and runs as stock with no card, no file, a bad file or OK held.
+  availability: published-release
+  implementation: reported
+  evidence_refs:
+  - evidence.om5-ii-omkit-loader
+  contradicting_refs: []
+  limitations:
+  - Reported on one developers' camera; Wi-Fi and USB start paths are not verified.
+  - There is no isolation between modules and the firmware; a crashing module resets the camera and is not disabled automatically.
+  - Any official firmware update removes the loader; a new firmware needs a new loader and driver.
+- type: capability
+  id: capability.om5-ii-omkit-filmlook
+  title: OM-5 Mark II FILMLOOK presets from the card, OMKit 0.1.0
+  summary: The film look steps through .ISP presets on the card in one picture mode slot; the developers report it coming back after light sleep.
+  source_refs:
+  - source.omkit.filmlook
+  - source.omkit.install
+  topics:
+  - interfaces
+  - colour
+  last_reviewed: '2026-11-21'
+  camera_id: camera.om5-ii
+  firmware_id: firmware.om5-ii-1100
+  project_id: project.omkit
+  mod_build: loader fw1100 (OMKit 0.1.0)
+  feature_id: feature.looks
+  assertion: In OMKit 0.1.0 (FILMLOOK 1.12), a film look in one picture mode slot applies .ISP presets read from the
+    card to live view and stills.
+  availability: published-release
+  implementation: reported
+  evidence_refs:
+  - evidence.om5-ii-omkit-loader
+  contradicting_refs: []
+  limitations:
+  - The linked camera report is about the loader; its only film-look item is that the look and preset return after light sleep.
+  - .ISP presets are this body's colour tables; they are not interchangeable with other projects' look files.

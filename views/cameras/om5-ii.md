@@ -145,6 +145,66 @@ The release notes describe automatic switching to the electronic shutter when ov
 
 </div>
 
+<div class="feature-card" markdown="1">
+
+**Card-loaded core and modules** <span class="pill pill-released">Available</span>
+{ .feature-head }
+
+A one-time loader patch starts OMKIT\CORE.BIN from the card on every power-on. Updates are file copies; no card, or OK held at power-on, gives a stock camera.
+
+[OMKit](../projects/omkit.md) · since v0.1.0
+{ .card-meta }
+
+</div>
+
+<div class="feature-card" markdown="1">
+
+**Creative profiles (CREATPRF)** <span class="pill pill-released">Available</span>
+{ .feature-head }
+
+Three colour and three monochrome profiles in the picture mode strip, edited in the camera's own column (12-sector saturation, tone curve, filter, toning, grain); applied to stills, live view and video.
+
+[OMKit](../projects/omkit.md) · since v0.1.0
+{ .card-meta }
+
+</div>
+
+<div class="feature-card" markdown="1">
+
+**Film look (FILMLOOK)** <span class="pill pill-released">Available</span>
+{ .feature-head }
+
+One picture mode, i-Enhance by default, becomes a film look; the dials step through .ISP presets on the card, 32 bundled, with a tone curve per preset and grain on stills.
+
+[OMKit](../projects/omkit.md) · since v0.1.0
+{ .card-meta }
+
+</div>
+
+<div class="feature-card" markdown="1">
+
+**Module SDK** <span class="pill pill-released">Available</span>
+{ .feature-head }
+
+A public API table, headers and an example module HELLO for writing modules that load from the card.
+
+[OMKit](../projects/omkit.md) · since v0.1.0
+{ .card-meta }
+
+</div>
+
+<div class="feature-card" markdown="1">
+
+**Preset programs** <span class="pill pill-released">Available</span>
+{ .feature-head }
+
+ISP player, ISP fitter (.cube look to preset) and ISP neurofit (preset from RAW files and film scans, driven by an AI agent), run on a computer.
+
+[OMKit](../projects/omkit.md) · since v0.1.0
+{ .card-meta }
+
+</div>
+
 </div>
 
 ## Projects for this camera
@@ -207,6 +267,20 @@ Tool
 
 </div>
 
+<div class="project-card" markdown="1">
+
+[OMKit](../projects/omkit.md){ .card-title }
+
+A loader flashed once, then core, modules and settings from the SD card. OM-5 Mark II.
+
+Latest: v0.1.0, 20 Nov 2026
+{ .card-meta }
+
+[Project home](https://github.com/necrostaz/omkit) · [Ask or report issues](https://github.com/necrostaz/omkit/issues)
+{ .card-links }
+
+</div>
+
 </div>
 
 Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
@@ -218,6 +292,8 @@ Installing modified firmware is at your own risk. Follow the project's own guide
 | [Mark II alpha12 HSL](../capabilities/om5-ii-alpha12-hsl.md) | [Caduceus for OM-5](../projects/caduceus-om5.md) / v0.1.0-alpha12 | published release | Upstream description; no separate test observation catalogued |
 | [Mark II alpha12 ND32/ND64](../capabilities/om5-ii-alpha12-nd.md) | [Caduceus for OM-5](../projects/caduceus-om5.md) / v0.1.0-alpha12 | published release | Upstream description; no separate test observation catalogued |
 | [Mark II alpha12 overall report](../capabilities/om5-ii-alpha12-overall.md) | [Caduceus for OM-5](../projects/caduceus-om5.md) / v0.1.0-alpha12 | published release | physical camera; reported pass; partial report; release label only |
+| [OM-5 Mark II FILMLOOK presets from the card, OMKit 0.1.0](../capabilities/om5-ii-omkit-filmlook.md) | [OMKit](../projects/omkit.md) / loader fw1100 (OMKit 0.1.0) | published release | physical camera; reported pass; partial report; reported hash |
+| [OM-5 Mark II code loaded from the card, OMKit loader](../capabilities/om5-ii-omkit-loader.md) | [OMKit](../projects/omkit.md) / loader fw1100 (OMKit 0.1.0) | published release | physical camera; reported pass; partial report; reported hash |
 | [Mark II v0.2.0-alpha1 overall report](../capabilities/om5-ii-v020-alpha1-overall.md) | [Caduceus for OM-5](../projects/caduceus-om5.md) / v0.2.0-alpha1 | published release | physical camera; reported pass; partial report; release label only |
 | [Mark II v0.2.0-alpha1 Black/White and split toning](../capabilities/om5-ii-v020-alpha1-tone.md) | [Caduceus for OM-5](../projects/caduceus-om5.md) / v0.2.0-alpha1 | published release | physical camera; reported pass; partial report; release label only |
 

@@ -10,7 +10,7 @@ Exact-build facts only: never apply an address to another build or body. Status:
 |---|---|---|
 | Take section bounds from the loader, not from 0xFF runs | camera-confirmed | [d1] |
 | Point OSD picture descriptors into the heap | camera-confirmed | [d2] |
-| Gate on section initialisation, not on the load request | corroborated | [d3] |
+| Gate on section initialisation, not on the load request | disputed | [d3] |
 | Only call code in a section that has already loaded | camera-confirmed | [d4] |
 | Keep work done with interrupts masked short | corroborated | [d5] |
 

@@ -1,0 +1,120 @@
+schema_version: 1
+records:
+- type: project
+  id: project.omkit
+  title: OMKit
+  summary: Loader flashed once; core and modules then run from the SD card.
+  source_refs:
+  - source.omkit.readme
+  - source.omkit.changelog
+  - source.omkit.architecture
+  - source.omkit.patch
+  - source.omkit.install
+  - source.omkit.firmware
+  - source.omkit.identity
+  - source.omkit.system
+  - source.omkit.filmlook
+  - source.omkit.creatprf
+  - source.omkit.isp-format
+  - source.omkit.apps
+  - source.omkit.releases
+  topics:
+  - patching
+  - platform
+  - colour
+  - interfaces
+  - tooling
+  last_reviewed: '2026-11-21'
+  url: https://github.com/necrostaz/omkit
+  kind: mod
+  camera_ids:
+  - camera.om5-ii
+  contribution_home: https://github.com/necrostaz/omkit/issues
+  status_summary: Release v0.1.0 (2026-11-20) for the OM-5 Mark II on firmware 1.1. The developers report the loader
+    patch running on their camera since 2026-10-30 and starting core on every full power-on. Wi-Fi and USB start paths
+    are not verified, and the project calls itself young software.
+  related_projects:
+  - project.caduceus-om5
+  tagline: A loader flashed once, then core, modules and settings from the SD card. OM-5 Mark II.
+  description:
+  - OMKit is a modular custom firmware for the OM SYSTEM OM-5 Mark II on firmware 1.1. It takes a different route
+    from the other mods in the Atlas. The camera is flashed once with a small loader patch, and from then on the
+    OMKit core, its modules, their updates and all their settings live in an OMKIT folder on the SD card. Adding,
+    updating or removing a module means copying files, not reflashing.
+  - The patch is one 5-byte hook late in startup, after the live picture is shown. It only starts a low-priority task.
+    That task waits for the firmware's sections, skips everything if OK is held, reads OMKIT\CORE.BIN, checks its
+    header and checksum, and jumps into it. Core then checks the firmware's fingerprint and loads the modules listed
+    in OMKIT.INI. With no card or no file, the camera runs as stock.
+  - The first release has two modules. CREATPRF shows the three Color and three Monochrome Profiles the firmware
+    hides and applies them from memory. FILMLOOK replaces one picture mode with a film look whose presets are .ISP
+    files on the card, with 32 bundled. A module SDK and three PC programs for making presets come with it. The
+    documentation labels each finding as code, emulator, camera, inference or assumption.
+  goals:
+  - Support more cameras and firmware versions with a new driver and loader per build; core, the SDK and modules
+    stay the same.
+  - Modules from other authors, written against the published SDK.
+  maintainers:
+  - label: necrostaz
+    url: https://github.com/necrostaz
+  links:
+  - label: Install guide
+    url: https://github.com/necrostaz/omkit/blob/a29db07f4cab2f9f9688462975ffa510b4d6fd97/docs/platform/om5m2/fw1100/install.md
+  - label: The loader patch
+    url: https://github.com/necrostaz/omkit/blob/a29db07f4cab2f9f9688462975ffa510b4d6fd97/docs/platform/om5m2/fw1100/patch.md
+  - label: Architecture
+    url: https://github.com/necrostaz/omkit/blob/a29db07f4cab2f9f9688462975ffa510b4d6fd97/docs/architecture.md
+  - label: Module SDK
+    url: https://github.com/necrostaz/omkit/blob/a29db07f4cab2f9f9688462975ffa510b4d6fd97/docs/sdk.md
+  - label: OM-5 Mark II platform notes
+    url: https://github.com/necrostaz/omkit/blob/a29db07f4cab2f9f9688462975ffa510b4d6fd97/docs/platform/om5m2/README.md
+  features:
+  - name: Card-loaded core and modules
+    summary: A one-time loader patch starts OMKIT\CORE.BIN from the card on every power-on. Updates are file copies;
+      no card, or OK held at power-on, gives a stock camera.
+    camera_ids: &id001
+    - camera.om5-ii
+    status: released
+    since: v0.1.0
+    source_ref: source.omkit.patch
+    capability_id: capability.om5-ii-omkit-loader
+  - name: Creative profiles (CREATPRF)
+    summary: Three colour and three monochrome profiles in the picture mode strip, edited in the camera's own column
+      (12-sector saturation, tone curve, filter, toning, grain); applied to stills, live view and video.
+    camera_ids: *id001
+    status: released
+    since: v0.1.0
+    source_ref: source.omkit.creatprf
+  - name: Film look (FILMLOOK)
+    summary: One picture mode, i-Enhance by default, becomes a film look; the dials step through .ISP presets on the
+      card, 32 bundled, with a tone curve per preset and grain on stills.
+    camera_ids: *id001
+    status: released
+    since: v0.1.0
+    source_ref: source.omkit.filmlook
+    capability_id: capability.om5-ii-omkit-filmlook
+  - name: Module SDK
+    summary: A public API table, headers and an example module HELLO for writing modules that load from the card.
+    camera_ids: *id001
+    status: released
+    since: v0.1.0
+    source_ref: source.omkit.architecture
+  - name: Preset programs
+    summary: ISP player, ISP fitter (.cube look to preset) and ISP neurofit (preset from RAW files and film scans,
+      driven by an AI agent), run on a computer.
+    camera_ids: *id001
+    status: released
+    since: v0.1.0
+    source_ref: source.omkit.apps
+  releases:
+  - tag: v0.1.0
+    title: OMKit 0.1.0
+    date: '2026-11-20'
+    url: https://github.com/necrostaz/omkit/releases/tag/v0.1.0
+    prerelease: false
+    camera_ids: *id001
+    highlights:
+    - First public release, for the OM-5 Mark II on firmware 1.1; core 1.32, CREATPRF 1.5, FILMLOOK 1.12.
+    - Firmware tool for Windows, macOS and Linux that makes the patched and original update files locally.
+    warning: Unofficial; only for the OM-5 Mark II on firmware 1.1. Never interrupt the firmware update; a power loss
+      while writing leaves no known recovery path.
+    source_ref: source.omkit.releases

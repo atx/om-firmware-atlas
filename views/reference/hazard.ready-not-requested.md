@@ -4,7 +4,7 @@
 
 A section's copy or load-request bit can be set before its constructors run.
 
-**Category:** hazard · <span class="pill pill-beta">Corroborated</span>
+**Category:** hazard · <span class="pill pill-alpha">Disputed</span>
 { .facts }
 
 **Build:** [om5-ii firmware 1.1, build 1100](../firmware/om5-ii-1100.md), [om3 firmware 1.1, build 1100](../firmware/om3-1100.md) · **Cameras:** [OM SYSTEM OM-5 Mark II](../cameras/om5-ii.md), [OM SYSTEM OM-3](../cameras/om3.md)
@@ -18,11 +18,16 @@ Test the word the firmware's own wait uses: OM-5 Mark II 0xa26e2694, not 0xa26e2
 - **Static analysis** ([Caduceus for OM-5](../projects/caduceus-om5.md)): E148 guards tested decoder submission; corrected to completed initialisation. Source: [OM-5 Mark II startup readiness correction](../sources/om5.startup-fix.md).
 - **Static analysis** ([OM-Emu](../projects/om-emu.md)): OM-3 sets 0xa32de590 regardless of the copy result; 0xa32de58c is set after constructors. Source: [OM-Emu study of Caduceus OM-3](../sources/emu.caduceus-om3.md).
 
+## Conflicting reports
+
+- OMKit describes 0xa26e2698 as set once each section is in place and gates its card loader on 0x3ff there; that loader reads files about 1.2 s into startup and has started on the developers' camera since 2026-10-30. Source: [OM-5 Mark II firmware, startup, updates and recovery](../sources/omkit.firmware.md).
+
 **[Full detail upstream](https://github.com/xulfr/caduceus-om5/blob/a72851a4ada5eab8eed02f7a06afd7f9297bbe81/research/OM5II-STARTUP-FIX-2026-11-06.md)**
 
 ## Sources and record
 
 - [OM-5 Mark II startup readiness correction](../sources/om5.startup-fix.md)
 - [OM-Emu study of Caduceus OM-3](../sources/emu.caduceus-om3.md)
+- [OM-5 Mark II firmware, startup, updates and recovery](../sources/omkit.firmware.md)
 
 [Canonical record](../../records/reference/hazards-sections.yaml) · Substantively reviewed: 2026-11-18.

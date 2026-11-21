@@ -8,8 +8,8 @@ Exact ID: `camera.om5-ii`. Codes: E148. [Human status view](../../../views/camer
 
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
-| [om5-ii.yaml](../../../records/cameras/om5-ii.yaml) | Identity and aliases | 536 | ~134 |
-| [om5-ii-1100.yaml](../../../records/firmware/om5-ii/om5-ii-1100.yaml) | om5-ii firmware 1.1, build 1100 | 489 | ~123 |
+| [om5-ii.yaml](../../../records/cameras/om5-ii.yaml) | Identity and aliases | 554 | ~139 |
+| [om5-ii-1100.yaml](../../../records/firmware/om5-ii/om5-ii-1100.yaml) | om5-ii firmware 1.1, build 1100 | 758 | ~190 |
 
 ## Existing project homes
 
@@ -17,12 +17,14 @@ Exact ID: `camera.om5-ii`. Codes: E148. [Human status view](../../../views/camer
 - [db firmware / om-c-firmware](../projects/db-firmware.md): Release-centred controls, localisation and other modifications.
 - [OM-Emu](../projects/om-emu.md): Firmware lab, model ports, traces and patch overlays.
 - [Ghidra MN103 processor module](../projects/ghidra-mn103.md): Ghidra disassembly and decompiler support for MN10300, AM33 and AM33-2.
+- [OMKit](../projects/omkit.md): Loader flashed once; core and modules then run from the SD card.
 
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
 | [om5-ii-alpha12-hsl.yaml](../../../records/capabilities/om5-ii/om5-ii-alpha12-hsl.yaml) | Build-scoped capability assertions; follow evidence IDs only as needed | 696 | ~174 |
 | [om5-ii-alpha12-nd.yaml](../../../records/capabilities/om5-ii/om5-ii-alpha12-nd.yaml) | Build-scoped capability assertions; follow evidence IDs only as needed | 655 | ~164 |
 | [om5-ii-alpha12-overall.yaml](../../../records/capabilities/om5-ii/om5-ii-alpha12-overall.yaml) | Build-scoped capability assertions; follow evidence IDs only as needed | 747 | ~187 |
+| [om5-ii-omkit-loader.yaml](../../../records/capabilities/om5-ii/om5-ii-omkit-loader.yaml) | Build-scoped capability assertions; follow evidence IDs only as needed | 2,350 | ~588 |
 | [om5-ii-v020-alpha1-overall.yaml](../../../records/capabilities/om5-ii/om5-ii-v020-alpha1-overall.yaml) | Build-scoped capability assertions; follow evidence IDs only as needed | 1,009 | ~253 |
 | [om5-ii-v020-alpha1-tone.yaml](../../../records/capabilities/om5-ii/om5-ii-v020-alpha1-tone.yaml) | Build-scoped capability assertions; follow evidence IDs only as needed | 1,145 | ~287 |
 

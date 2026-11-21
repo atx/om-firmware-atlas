@@ -22,4 +22,5 @@ records:
   - project.db-firmware
   - project.om-emu
   - project.ghidra-mn103
+  - project.omkit
   coverage: initial-review
