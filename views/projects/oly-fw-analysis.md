@@ -17,8 +17,81 @@ The research base: PEN-F HSL, firmware formats and tools for many bodies.
 
 </div>
 
-**Type:** research · **For:** [PEN-F](../cameras/pen-f.md) · **Latest release:** [alpha-20261017](https://github.com/fishcu/oly_fw_analysis/releases/tag/alpha-20261017), 18 Oct 2026 · **Maintained by** [fishcu](https://github.com/fishcu)
+**Type:** research · **Camera details:** [PEN-F](#for-pen-f), [OM-5](#for-om5), [PEN E-P7](#for-ep7), [OM-3](#for-om3) · **Latest release:** [alpha-20261017 (pre-release)](https://github.com/fishcu/oly_fw_analysis/releases/tag/alpha-20261017), 18 Oct 2026 · **Maintained by** [fishcu](https://github.com/fishcu)
 { .facts }
+
+## Cameras
+
+<div class="model-panel" markdown="1">
+
+### PEN-F { #for-pen-f }
+
+[Before you install: risks and recovery](../../docs/before-you-install.md)
+
+**For this camera:** Publishes the PEN-F HSL patch as alpha releases: hue and lightness added to the 12-colour saturation editor in COLOR1–3. The project asks for a firsthand hardware report before publishing a flashable patch.
+{ .card-for }
+
+**Get it:** [alpha-20261017 (pre-release)](https://github.com/fishcu/oly_fw_analysis/releases/tag/alpha-20261017), 18 Oct 2026. Check the release notes for files and instructions for this model.
+{ .card-get }
+
+[Camera overview and test results](../cameras/pen-f.md)
+
+</div>
+
+<div class="model-panel" markdown="1">
+
+### Original OM-5 { #for-om5 }
+
+**For this camera:** Research notes only: the findings compare this camera's firmware with the PEN-F. No patch for this camera.
+{ .card-for }
+
+**Get it:** [Project home](https://github.com/fishcu/oly_fw_analysis)
+{ .card-get }
+
+[Camera overview and test results](../cameras/om5.md)
+
+</div>
+
+<div class="model-panel" markdown="1">
+
+### PEN E-P7 { #for-ep7 }
+
+**For this camera:** Research notes only: the findings compare this camera's firmware with the PEN-F. No patch for this camera.
+{ .card-for }
+
+**Get it:** [Project home](https://github.com/fishcu/oly_fw_analysis)
+{ .card-get }
+
+[Camera overview and test results](../cameras/ep7.md)
+
+</div>
+
+<div class="model-panel" markdown="1">
+
+### OM-3 { #for-om3 }
+
+**For this camera:** Research notes only: the findings compare this camera's firmware with the PEN-F, and some OM-3 technical-reference entries cite them. No patch for this camera.
+{ .card-for }
+
+**Get it:** [Project home](https://github.com/fishcu/oly_fw_analysis)
+{ .card-get }
+
+[Camera overview and test results](../cameras/om3.md)
+
+</div>
+
+<div class="model-panel" markdown="1">
+
+### OM-D E-M5 Mark III { #for-em5-iii }
+
+The camera page links this project as a research reference.
+
+Recorded findings: [Card-file debug Wi-Fi shell on stock E-M5 III 1.7](../capabilities/em5-iii-wifi-debug-shell.md).
+
+[Camera overview and test results](../cameras/em5-iii.md)
+
+</div>
+
 
 ## About
 
@@ -94,10 +167,6 @@ An early alpha for voluntary testing, with owner-reported checks only.
 
 </div>
 
-
-## Cameras
-
-[Olympus PEN-F](../cameras/pen-f.md), [OM SYSTEM OM-5](../cameras/om5.md), [Olympus PEN E-P7](../cameras/ep7.md), [OM SYSTEM OM-3](../cameras/om3.md).
 
 [Report a camera result](../../docs/report.md) with the exact model, starting firmware, build, file hash if known, steps and outcome.
 

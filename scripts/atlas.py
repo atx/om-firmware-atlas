@@ -18,7 +18,7 @@ import yaml
 
 from atlas_core import Catalogue, LINK_RE, REPO, cost, markdown_links, read_yaml, routing_checks
 from atlas_generate import (CAMERA_LINES, PROJECT_GROUPS, camera_line, generated_diff, render, short_name,
-                            camera_finder, people_markdown, showcase_markdown, view_path, write_generated)
+                            camera_finder, home_updates, people_markdown, showcase_markdown, view_path, write_generated)
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -117,6 +117,8 @@ def stage_site(catalogue, revision=None, timestamp=None):
             text += review_notice(catalogue, record, publication_day)
         if "<!-- atlas:camera-finder -->" in text:
             text = text.replace("<!-- atlas:camera-finder -->", camera_finder(catalogue, source.relative_to(root).as_posix()))
+        if "<!-- atlas:updates -->" in text:
+            text = text.replace("<!-- atlas:updates -->", home_updates(catalogue, source.relative_to(root).as_posix()))
         if "<!-- atlas:showcase -->" in text:
             # Build-time showcase from project records; not committed, like review notices.
             text = text.replace("<!-- atlas:showcase -->", showcase_markdown(catalogue, source.relative_to(root).as_posix()))

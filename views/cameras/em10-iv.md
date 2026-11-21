@@ -11,7 +11,7 @@ E140: port/signature research and emulator coverage; no physical feature report 
 
 **Releases for this camera:** none recorded yet.
 
-**No release for this camera yet:** [Caduceus for E-P7](../projects/caduceus-ep7.md).
+**No release for this camera yet:** [Caduceus for E-P7](../projects/caduceus-ep7.md#for-em10-iv).
 
 **Jump to:** [Projects](#projects) · [Test evidence](#evidence) · [Where to talk](#talk)
 
@@ -32,7 +32,7 @@ These change the camera's firmware.
 
 <div class="project-card" markdown="1">
 
-[Caduceus for E-P7](../projects/caduceus-ep7.md){ .card-title }
+[Caduceus for E-P7](../projects/caduceus-ep7.md#for-em10-iv){ .card-title }
 
 The original Caduceus: HSLFX colour editing and 29 film looks for the PEN E-P7.
 
@@ -61,7 +61,7 @@ These do not change the camera. They help people study firmware, build or check 
 
 <div class="project-card" markdown="1">
 
-[OM-Emu](../projects/om-emu.md){ .card-title }
+[OM-Emu](../projects/om-emu.md#for-em10-iv){ .card-title }
 
 Run OM SYSTEM and Olympus camera firmware in your browser.
 

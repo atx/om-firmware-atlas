@@ -10,17 +10,36 @@ Film simulations, interval shooting, focus peaking and a level gauge for the PEN
 
 <div class="cta-row" markdown="1">
 
-[Project home](https://github.com/cfu288/EPM2Mod){ .btn .btn-primary }
+[Read the install guide](https://github.com/cfu288/EPM2Mod/blob/f8f173d8b53d4370f85505cdec7be2b52d1ec830/docs/user/install.md){ .btn .btn-primary }
+[Project home](https://github.com/cfu288/EPM2Mod){ .btn .btn-ghost }
 [Ask or report issues](https://github.com/cfu288/EPM2Mod/issues){ .btn .btn-ghost }
 [Film simulation comparison](https://cfu288.github.io/EPM2Mod/films){ .btn .btn-ghost }
-[Install guide](https://github.com/cfu288/EPM2Mod/blob/f8f173d8b53d4370f85505cdec7be2b52d1ec830/docs/user/install.md){ .btn .btn-ghost }
 [Feasibility and limits](https://github.com/cfu288/EPM2Mod/blob/f8f173d8b53d4370f85505cdec7be2b52d1ec830/docs/dev/feasibility.md){ .btn .btn-ghost }
 [Landscape of Olympus mods](https://github.com/cfu288/EPM2Mod/blob/f8f173d8b53d4370f85505cdec7be2b52d1ec830/docs/reference/landscape.md){ .btn .btn-ghost }
 
 </div>
 
-**Type:** mod · **For:** [PEN E-PM2](../cameras/epm2.md) · **Latest release:** [v2026.11.20-rc.1](https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.20-rc.1), 20 Nov 2026 · **Maintained by** [cfu288](https://github.com/cfu288)
+**Type:** mod · **Camera details:** [PEN E-PM2](#for-epm2) · **Latest release:** [v2026.11.20-rc.1 (pre-release)](https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.20-rc.1), 20 Nov 2026 · **Maintained by** [cfu288](https://github.com/cfu288)
 { .facts }
+
+## Cameras
+
+<div class="model-panel" markdown="1">
+
+### PEN E-PM2 { #for-epm2 }
+
+[Before you install: risks and recovery](../../docs/before-you-install.md)
+
+**For this camera:** 6 features, including Film simulations, Interval shooting and Level gauge.
+{ .card-for }
+
+**Get it:** [v2026.11.20-rc.1 (pre-release)](https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.20-rc.1), 20 Nov 2026 · [Install guide](https://github.com/cfu288/EPM2Mod/blob/f8f173d8b53d4370f85505cdec7be2b52d1ec830/docs/user/install.md)
+{ .card-get }
+
+[Camera overview and test results](../cameras/epm2.md)
+
+</div>
+
 
 ## About
 
@@ -143,10 +162,6 @@ Unofficial and for the E-PM2 only; installing is at your own risk.
 
 </div>
 
-
-## Cameras
-
-[Olympus PEN E-PM2](../cameras/epm2.md).
 
 [Report a camera result](../../docs/report.md) with the exact model, starting firmware, build, file hash if known, steps and outcome.
 

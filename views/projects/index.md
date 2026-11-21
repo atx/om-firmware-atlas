@@ -23,7 +23,7 @@ Color Profiles 1–3 and Monochrome Profiles 1–3 · Custom looks · Colour edi
 For: OM-5 Mark II
 { .card-cameras }
 
-Latest: v0.2.0-alpha1, 20 Nov 2026
+Latest: v0.2.0-alpha1 (pre-release), 20 Nov 2026
 { .card-meta }
 
 </div>
@@ -43,7 +43,7 @@ Your films in Picture Mode · 20 film simulations · Colour editor on the camera
 For: OM-3
 { .card-cameras }
 
-Latest: v0.40.2, 20 Nov 2026
+Latest: v0.40.3-beta2 (pre-release), 20 Nov 2026
 { .card-meta }
 
 </div>
@@ -100,6 +100,11 @@ For: OM-5, OM-5 Mark II, OM-3, PEN E-P7, PEN-F
 Latest: dbv0.4.3, 21 Nov 2026
 { .card-meta }
 
+
+
+**OM-5:** The project reports that this build does not work on this camera. **OM-5 Mark II:** The project reports that this build does not work on this camera. [Read release notes](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3).
+{ .release-warning }
+
 </div>
 
 <div class="project-card" markdown="1">
@@ -148,7 +153,7 @@ Film simulations · Interval shooting · Level gauge
 For: PEN E-PM2
 { .card-cameras }
 
-Latest: v2026.11.20-rc.1, 20 Nov 2026
+Latest: v2026.11.20-rc.1 (pre-release), 20 Nov 2026
 { .card-meta }
 
 </div>
@@ -202,7 +207,7 @@ PEN-F HSL · Firmware toolkit · Findings by topic
 For: PEN-F
 { .card-cameras }
 
-Latest: alpha-20261017, 18 Oct 2026
+Latest: alpha-20261017 (pre-release), 18 Oct 2026
 { .card-meta }
 
 </div>

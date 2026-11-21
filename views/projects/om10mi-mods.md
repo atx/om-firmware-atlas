@@ -10,18 +10,37 @@ Film looks, a colour wheel, colour editors and a longer video limit for the orig
 
 <div class="cta-row" markdown="1">
 
-[Project home](https://github.com/Meghnus/om10mi-mods){ .btn .btn-primary }
+[Read the install guide](https://github.com/Meghnus/om10mi-mods/blob/46874155947715e0d54baabe2df5006376c8bbab/INSTALL.md){ .btn .btn-primary }
+[Project home](https://github.com/Meghnus/om10mi-mods){ .btn .btn-ghost }
 [Ask or report issues](https://github.com/Meghnus/om10mi-mods/issues){ .btn .btn-ghost }
 [Colour wheel guide](https://github.com/Meghnus/om10mi-mods/blob/46874155947715e0d54baabe2df5006376c8bbab/docs/GUIDE-COLOR-WHEEL.md){ .btn .btn-ghost }
 [Development and testing method](https://github.com/Meghnus/om10mi-mods/blob/46874155947715e0d54baabe2df5006376c8bbab/docs/DEVELOPMENT.md){ .btn .btn-ghost }
-[Install guide](https://github.com/Meghnus/om10mi-mods/blob/46874155947715e0d54baabe2df5006376c8bbab/INSTALL.md){ .btn .btn-ghost }
 [Looks and colour editors guide and test list](https://github.com/Meghnus/om10mi-mods/blob/46874155947715e0d54baabe2df5006376c8bbab/docs/GUIDE-56.md){ .btn .btn-ghost }
 [Look file spec (draft)](https://github.com/Meghnus/om10mi-mods/blob/46874155947715e0d54baabe2df5006376c8bbab/docs/lookfile/LOOKFILE_SPEC.md){ .btn .btn-ghost }
 
 </div>
 
-**Type:** mod · **For:** [OM-D E-M10 (Mark I)](../cameras/em10.md) · **Latest release:** [v87](https://github.com/Meghnus/om10mi-mods/releases/tag/v87), 21 Nov 2026 · **Maintained by** [Meghnus](https://github.com/Meghnus)
+**Type:** mod · **Camera details:** [OM-D E-M10 (Mark I)](#for-em10) · **Latest release:** [v87](https://github.com/Meghnus/om10mi-mods/releases/tag/v87), 21 Nov 2026 · **Maintained by** [Meghnus](https://github.com/Meghnus)
 { .facts }
+
+## Cameras
+
+<div class="model-panel" markdown="1">
+
+### OM-D E-M10 (Mark I) { #for-em10 }
+
+[Before you install: risks and recovery](../../docs/before-you-install.md)
+
+**For this camera:** 6 features, including Film looks, Per-sector colour editor and Per-look colour editor.
+{ .card-for }
+
+**Get it:** [v87](https://github.com/Meghnus/om10mi-mods/releases/tag/v87), 21 Nov 2026 · [Install guide](https://github.com/Meghnus/om10mi-mods/blob/46874155947715e0d54baabe2df5006376c8bbab/INSTALL.md)
+{ .card-get }
+
+[Camera overview and test results](../cameras/em10.md)
+
+</div>
+
 
 ## About
 
@@ -148,10 +167,6 @@ Unofficial, for the E-M10 Mark I on firmware 1.4 only; tested on one body. Do no
 
 </div>
 
-
-## Cameras
-
-[Olympus OM-D E-M10 (Mark I)](../cameras/em10.md).
 
 [Report a camera result](../../docs/report.md) with the exact model, starting firmware, build, file hash if known, steps and outcome.
 

@@ -4,6 +4,14 @@ The scripts maintain documentation only. Python 3.10+ and `requirements.txt` are
 
 Contributors use their own GitHub accounts and commit identities through GitHub's normal repository permissions. The Atlas has no custom author allowlist or authentication hooks. Choose your preferred public name and email in your own Git configuration.
 
+## Making the next change easier
+
+Before changing a shared rule, trace one real example from its canonical record through validation, generation and the pages that consume it. Read the decision that established the boundary. Ask what the next camera, release or conflicting report would require someone to edit.
+
+Prefer an improvement that removes a real source of error in the current task. If two pages disagree about a release, make them use the same model-specific selection rule. If a record correction solves the problem for every page, the correction is enough. Introduce a new abstraction when actual callers share the same rule and its exceptions can be tested.
+
+In the PR, explain which future change is easier or which mistake is now caught. Show the example and the check that demonstrates it. Record a lasting architectural trade-off in a decision when it changes a repository boundary. If a wider improvement needs a separate decision, describe it briefly with evidence and keep the current change focused.
+
 ## Commands
 
 ```sh
@@ -30,3 +38,6 @@ The initial setup was explicitly authorised to push to main. Normal agent contri
 Routing cases verify deterministic selection, order, excluded bulk reads and estimated cost. They do not prove that every external coding agent obeys the instructions. Perform representative client smoke checks when changing the entry contract. Site builds validate links/structure, not the truth of free prose. Inspect rendered pages when changing content/layout and attach preview evidence to a PR.
 
 Freshness reports distinguish unchanged, changed, unavailable and unsupported comparison. They do not mutate review dates. Keep reports in CI artifacts or `.build/`, not as edited historical logs. Substantive changes still need an agent/human review and a PR.
+
+
+On pull requests, Atlas validation also opens the built site in Chromium at desktop and phone widths. To run the same journeys locally, build the site, install the optional test dependency with `python -m pip install playwright==1.62.0`, run `python -m playwright install chromium`, then `python tests/browser_smoke.py`. The install-guide click is intercepted locally.

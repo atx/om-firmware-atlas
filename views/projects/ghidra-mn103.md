@@ -12,8 +12,81 @@ Read MN103 camera firmware in Ghidra, with the decompiler.
 
 </div>
 
-**Type:** tool · **For:** [OM-D E-M5 Mark III](../cameras/em5-iii.md), [OM-5](../cameras/om5.md), [OM-5 Mark II](../cameras/om5-ii.md), [PEN-F](../cameras/pen-f.md), [PEN E-P7](../cameras/ep7.md) · **Maintained by** [nsud-dev](https://github.com/nsud-dev)
+**Type:** tool · **Camera details:** [OM-D E-M5 Mark III](#for-em5-iii), [OM-5](#for-om5), [OM-5 Mark II](#for-om5-ii), [PEN-F](#for-pen-f), [PEN E-P7](#for-ep7) · **Maintained by** [nsud-dev](https://github.com/nsud-dev)
 { .facts }
+
+## Cameras
+
+<div class="model-panel" markdown="1">
+
+### OM-D E-M5 Mark III { #for-em5-iii }
+
+**For this camera:** A tool; it does not change the camera. Covers this camera for: MN103 disassembly and decompiler (released), Pointer-register calling convention (released).
+{ .card-for }
+
+**Get it:** [Install and use](https://github.com/nsud-dev/ghidra-mn103/blob/main/README.md)
+{ .card-get }
+
+[Camera overview and test results](../cameras/em5-iii.md)
+
+</div>
+
+<div class="model-panel" markdown="1">
+
+### Original OM-5 { #for-om5 }
+
+**For this camera:** A tool; it does not change the camera. Covers this camera for: MN103 disassembly and decompiler (released), Pointer-register calling convention (released).
+{ .card-for }
+
+**Get it:** [Install and use](https://github.com/nsud-dev/ghidra-mn103/blob/main/README.md)
+{ .card-get }
+
+[Camera overview and test results](../cameras/om5.md)
+
+</div>
+
+<div class="model-panel" markdown="1">
+
+### OM-5 Mark II { #for-om5-ii }
+
+**For this camera:** A tool; it does not change the camera. Covers this camera for: MN103 disassembly and decompiler (released), Pointer-register calling convention (released).
+{ .card-for }
+
+**Get it:** [Install and use](https://github.com/nsud-dev/ghidra-mn103/blob/main/README.md)
+{ .card-get }
+
+[Camera overview and test results](../cameras/om5-ii.md)
+
+</div>
+
+<div class="model-panel" markdown="1">
+
+### PEN-F { #for-pen-f }
+
+**For this camera:** A tool; it does not change the camera. Covers this camera for: MN103 disassembly and decompiler (released), Pointer-register calling convention (released).
+{ .card-for }
+
+**Get it:** [Install and use](https://github.com/nsud-dev/ghidra-mn103/blob/main/README.md)
+{ .card-get }
+
+[Camera overview and test results](../cameras/pen-f.md)
+
+</div>
+
+<div class="model-panel" markdown="1">
+
+### PEN E-P7 { #for-ep7 }
+
+**For this camera:** A tool; it does not change the camera. Covers this camera for: MN103 disassembly and decompiler (released), Pointer-register calling convention (released).
+{ .card-for }
+
+**Get it:** [Install and use](https://github.com/nsud-dev/ghidra-mn103/blob/main/README.md)
+{ .card-get }
+
+[Camera overview and test results](../cameras/ep7.md)
+
+</div>
+
 
 ## About
 
@@ -52,10 +125,6 @@ The optional ptrregs compiler spec places typed pointer arguments in the MN103 a
 </div>
 
 </div>
-
-## Cameras
-
-[Olympus OM-D E-M5 Mark III](../cameras/em5-iii.md), [OM SYSTEM OM-5](../cameras/om5.md), [OM SYSTEM OM-5 Mark II](../cameras/om5-ii.md), [Olympus PEN-F](../cameras/pen-f.md), [Olympus PEN E-P7](../cameras/ep7.md).
 
 ## Related work
 

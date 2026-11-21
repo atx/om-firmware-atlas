@@ -10,9 +10,9 @@ A loader flashed once, then core, modules and settings from the SD card. OM-5 Ma
 
 <div class="cta-row" markdown="1">
 
-[Project home](https://github.com/necrostaz/omkit){ .btn .btn-primary }
+[Read the install guide](https://github.com/necrostaz/omkit/blob/a29db07f4cab2f9f9688462975ffa510b4d6fd97/docs/platform/om5m2/fw1100/install.md){ .btn .btn-primary }
+[Project home](https://github.com/necrostaz/omkit){ .btn .btn-ghost }
 [Ask or report issues](https://github.com/necrostaz/omkit/issues){ .btn .btn-ghost }
-[Install guide](https://github.com/necrostaz/omkit/blob/a29db07f4cab2f9f9688462975ffa510b4d6fd97/docs/platform/om5m2/fw1100/install.md){ .btn .btn-ghost }
 [The loader patch](https://github.com/necrostaz/omkit/blob/a29db07f4cab2f9f9688462975ffa510b4d6fd97/docs/platform/om5m2/fw1100/patch.md){ .btn .btn-ghost }
 [Architecture](https://github.com/necrostaz/omkit/blob/a29db07f4cab2f9f9688462975ffa510b4d6fd97/docs/architecture.md){ .btn .btn-ghost }
 [Module SDK](https://github.com/necrostaz/omkit/blob/a29db07f4cab2f9f9688462975ffa510b4d6fd97/docs/sdk.md){ .btn .btn-ghost }
@@ -20,8 +20,27 @@ A loader flashed once, then core, modules and settings from the SD card. OM-5 Ma
 
 </div>
 
-**Type:** mod · **For:** [OM-5 Mark II](../cameras/om5-ii.md) · **Latest release:** [v0.1.0](https://github.com/necrostaz/omkit/releases/tag/v0.1.0), 20 Nov 2026 · **Maintained by** [necrostaz](https://github.com/necrostaz)
+**Type:** mod · **Camera details:** [OM-5 Mark II](#for-om5-ii) · **Latest release:** [v0.1.0](https://github.com/necrostaz/omkit/releases/tag/v0.1.0), 20 Nov 2026 · **Maintained by** [necrostaz](https://github.com/necrostaz)
 { .facts }
+
+## Cameras
+
+<div class="model-panel" markdown="1">
+
+### OM-5 Mark II { #for-om5-ii }
+
+[Before you install: risks and recovery](../../docs/before-you-install.md)
+
+**For this camera:** 5 features, including Card-loaded core and modules, Creative profiles (CREATPRF) and Film look (FILMLOOK).
+{ .card-for }
+
+**Get it:** [v0.1.0](https://github.com/necrostaz/omkit/releases/tag/v0.1.0), 20 Nov 2026 · [Install guide](https://github.com/necrostaz/omkit/blob/a29db07f4cab2f9f9688462975ffa510b4d6fd97/docs/platform/om5m2/fw1100/install.md)
+{ .card-get }
+
+[Camera overview and test results](../cameras/om5-ii.md)
+
+</div>
+
 
 ## About
 
@@ -119,10 +138,6 @@ Unofficial; only for the OM-5 Mark II on firmware 1.1. Never interrupt the firmw
 
 </div>
 
-
-## Cameras
-
-[OM SYSTEM OM-5 Mark II](../cameras/om5-ii.md).
 
 [Report a camera result](../../docs/report.md) with the exact model, starting firmware, build, file hash if known, steps and outcome.
 

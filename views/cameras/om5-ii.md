@@ -9,7 +9,7 @@ E148: v0.2.0-alpha1 has an overall positive owner report; original OM-5 work is 
 
 <div class="glance" markdown="1">
 
-**Releases for this camera:** [Caduceus for OM-5](../projects/caduceus-om5.md) (v0.2.0-alpha1, pre-release), [OMKit](../projects/omkit.md) (v0.1.0), [db firmware / om-c-firmware](../projects/db-firmware.md) (dbv0.4.3; see its card below).
+**Releases for this camera:** [Caduceus for OM-5](../projects/caduceus-om5.md#for-om5-ii) (v0.2.0-alpha1 (pre-release)), [OMKit](../projects/omkit.md#for-om5-ii) (v0.1.0), [db firmware / om-c-firmware](../projects/db-firmware.md#for-om5-ii) (dbv0.4.3) — **The project reports that this build does not work on this camera.** [Read release notes](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3).
 
 **Jump to:** [What you can do](#features) · [Projects](#projects) · [Test evidence](#evidence) · [Where to talk](#talk) · [Platform](#platform)
 
@@ -31,7 +31,7 @@ Features as each project describes them, with their status. Follow a project's o
 
 Six hidden Picture Mode slots restored after Color Creator.
 
-[Caduceus for OM-5](../projects/caduceus-om5.md)
+[Caduceus for OM-5](../projects/caduceus-om5.md#for-om5-ii)
 { .card-meta }
 
 </div>
@@ -43,7 +43,7 @@ Six hidden Picture Mode slots restored after Color Creator.
 
 Up to ten looks from LookLab in one LOOKS.BIN; the trash button steps through them and the look's name is shown.
 
-[Caduceus for OM-5](../projects/caduceus-om5.md)
+[Caduceus for OM-5](../projects/caduceus-om5.md#for-om5-ii)
 { .card-meta }
 
 </div>
@@ -55,7 +55,7 @@ Up to ten looks from LookLab in one LOOKS.BIN; the trash button steps through th
 
 Hue, saturation and lightness for 12 colours, with a tone curve, Sharpness, Contrast and Shading.
 
-[Caduceus for OM-5](../projects/caduceus-om5.md)
+[Caduceus for OM-5](../projects/caduceus-om5.md#for-om5-ii)
 { .card-meta }
 
 </div>
@@ -67,7 +67,7 @@ Hue, saturation and lightness for 12 colours, with a tone curve, Sharpness, Cont
 
 The mode, Kelvin and shift are kept for each Color Profile. Not yet checked on a camera.
 
-[Caduceus for OM-5](../projects/caduceus-om5.md)
+[Caduceus for OM-5](../projects/caduceus-om5.md#for-om5-ii)
 { .card-meta }
 
 </div>
@@ -79,7 +79,7 @@ The mode, Kelvin and shift are kept for each Color Profile. Not yet checked on a
 
 Colour filter, toning, grain and tone, with the filter graphic restored in alpha12.
 
-[Caduceus for OM-5](../projects/caduceus-om5.md)
+[Caduceus for OM-5](../projects/caduceus-om5.md#for-om5-ii)
 { .card-meta }
 
 </div>
@@ -91,7 +91,7 @@ Colour filter, toning, grain and tone, with the filter graphic restored in alpha
 
 Two stronger Live ND settings after ND16.
 
-[Caduceus for OM-5](../projects/caduceus-om5.md)
+[Caduceus for OM-5](../projects/caduceus-om5.md#for-om5-ii)
 { .card-meta }
 
 </div>
@@ -103,7 +103,7 @@ Two stronger Live ND settings after ND16.
 
 Per-profile Black and White (−7..+7) on the tone-curve page of Color Profiles 1–3; INFO steps Hi/Sh, Black/White and Mid. Live view updates without a half-press. Covered by the overall owner report.
 
-[Caduceus for OM-5](../projects/caduceus-om5.md) · since v0.2.0-alpha1
+[Caduceus for OM-5](../projects/caduceus-om5.md#for-om5-ii) · since v0.2.0-alpha1
 { .card-meta }
 
 </div>
@@ -115,7 +115,7 @@ Per-profile Black and White (−7..+7) on the tone-curve page of Color Profiles 
 
 Shadow, Midtone and Highlight Tint for Color Profiles 1–3, each one of 12 colours; INFO switches the wheel between HSL and Tint. Covered by the overall owner report.
 
-[Caduceus for OM-5](../projects/caduceus-om5.md) · since v0.2.0-alpha1
+[Caduceus for OM-5](../projects/caduceus-om5.md#for-om5-ii) · since v0.2.0-alpha1
 { .card-meta }
 
 </div>
@@ -127,7 +127,7 @@ Shadow, Midtone and Highlight Tint for Color Profiles 1–3, each one of 12 colo
 
 Removed before v0.2.0-alpha1. A development build showed no grain on the camera at any level; the stock grain pass is monochrome-only, so colour grain needs image-pipeline work on an experiment branch.
 
-[Caduceus for OM-5](../projects/caduceus-om5.md) · since v0.2.0-dev
+[Caduceus for OM-5](../projects/caduceus-om5.md#for-om5-ii) · since v0.2.0-dev
 { .card-meta }
 
 </div>
@@ -139,7 +139,10 @@ Removed before v0.2.0-alpha1. A development build showed no grain on the camera 
 
 Korean language support on several bodies.
 
-[db firmware / om-c-firmware](../projects/db-firmware.md)
+**dbv0.4.3 · The project reports that this build does not work on this camera.** [Read release notes](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3).
+{ .release-warning }
+
+[db firmware / om-c-firmware](../projects/db-firmware.md#for-om5-ii)
 { .card-meta }
 
 </div>
@@ -151,7 +154,10 @@ Korean language support on several bodies.
 
 Switches to the electronic shutter on overexposure in P or A mode and, since v0.4.3, below the slowest mechanical speed in S or M mode. v0.4.3 lists nine bodies, including the OM-3, OM-5, OM-5 Mark II and E-P7; its OM-5 and OM-5 Mark II builds are listed as not working.
 
-[db firmware / om-c-firmware](../projects/db-firmware.md) · since dbv0.4.2
+**dbv0.4.3 · The project reports that this build does not work on this camera.** [Read release notes](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3).
+{ .release-warning }
+
+[db firmware / om-c-firmware](../projects/db-firmware.md#for-om5-ii) · since dbv0.4.2
 { .card-meta }
 
 </div>
@@ -163,7 +169,7 @@ Switches to the electronic shutter on overexposure in P or A mode and, since v0.
 
 A one-time loader patch starts OMKIT\CORE.BIN from the card on every power-on. Updates are file copies; no card, or OK held at power-on, gives a stock camera.
 
-[OMKit](../projects/omkit.md) · since v0.1.0
+[OMKit](../projects/omkit.md#for-om5-ii) · since v0.1.0
 { .card-meta }
 
 </div>
@@ -175,7 +181,7 @@ A one-time loader patch starts OMKIT\CORE.BIN from the card on every power-on. U
 
 Three colour and three monochrome profiles in the picture mode strip, edited in the camera's own column (12-sector saturation, tone curve, filter, toning, grain); applied to stills, live view and video.
 
-[OMKit](../projects/omkit.md) · since v0.1.0
+[OMKit](../projects/omkit.md#for-om5-ii) · since v0.1.0
 { .card-meta }
 
 </div>
@@ -187,7 +193,7 @@ Three colour and three monochrome profiles in the picture mode strip, edited in 
 
 One picture mode, i-Enhance by default, becomes a film look; the dials step through .ISP presets on the card, 32 bundled, with a tone curve per preset and grain on stills.
 
-[OMKit](../projects/omkit.md) · since v0.1.0
+[OMKit](../projects/omkit.md#for-om5-ii) · since v0.1.0
 { .card-meta }
 
 </div>
@@ -199,7 +205,7 @@ One picture mode, i-Enhance by default, becomes a film look; the dials step thro
 
 A public API table, headers and an example module HELLO for writing modules that load from the card.
 
-[OMKit](../projects/omkit.md) · since v0.1.0
+[OMKit](../projects/omkit.md#for-om5-ii) · since v0.1.0
 { .card-meta }
 
 </div>
@@ -211,7 +217,7 @@ A public API table, headers and an example module HELLO for writing modules that
 
 ISP player, ISP fitter (.cube look to preset) and ISP neurofit (preset from RAW files and film scans, driven by an AI agent), run on a computer.
 
-[OMKit](../projects/omkit.md) · since v0.1.0
+[OMKit](../projects/omkit.md#for-om5-ii) · since v0.1.0
 { .card-meta }
 
 </div>
@@ -230,11 +236,11 @@ These change the camera's firmware.
 
 <div class="project-card" markdown="1">
 
-[Caduceus for OM-5](../projects/caduceus-om5.md){ .card-title }
+[Caduceus for OM-5](../projects/caduceus-om5.md#for-om5-ii){ .card-title }
 
 Looks and a full colour editor for the OM-5 Mark II. Experimental.
 
-**For this camera:** 9 features, including Color Profiles 1–3 and Monochrome Profiles 1–3, Custom looks and Colour editor; all are listed above.
+**For this camera:** 9 features, including Color Profiles 1–3 and Monochrome Profiles 1–3, Custom looks and Colour editor.
 { .card-for }
 
 **Get it:** [v0.2.0-alpha1 (pre-release)](https://github.com/xulfr/caduceus-om5/releases/tag/v0.2.0-alpha1), 20 Nov 2026 · [Install guide](https://github.com/xulfr/caduceus-om5/blob/main/docs/INSTALL.md)
@@ -250,11 +256,11 @@ Mod
 
 <div class="project-card" markdown="1">
 
-[OMKit](../projects/omkit.md){ .card-title }
+[OMKit](../projects/omkit.md#for-om5-ii){ .card-title }
 
 A loader flashed once, then core, modules and settings from the SD card. OM-5 Mark II.
 
-**For this camera:** 5 features, including Card-loaded core and modules, Creative profiles (CREATPRF) and Film look (FILMLOOK); all are listed above.
+**For this camera:** 5 features, including Card-loaded core and modules, Creative profiles (CREATPRF) and Film look (FILMLOOK).
 { .card-for }
 
 **Get it:** [v0.1.0](https://github.com/necrostaz/omkit/releases/tag/v0.1.0), 20 Nov 2026 · [Install guide](https://github.com/necrostaz/omkit/blob/a29db07f4cab2f9f9688462975ffa510b4d6fd97/docs/platform/om5m2/fw1100/install.md)
@@ -270,15 +276,15 @@ Mod
 
 <div class="project-card" markdown="1">
 
-[db firmware / om-c-firmware](../projects/db-firmware.md){ .card-title }
+[db firmware / om-c-firmware](../projects/db-firmware.md#for-om5-ii){ .card-title }
 
 Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to new burst rates.
 
-**For this camera:** Korean menus and Hybrid Shutter, both beta. The v0.4.3 notes list the OM-5 Mark II build as not working, so read each release's notes for this camera before installing.
+**For this camera:** Korean menus and Hybrid Shutter, both beta.
 { .card-for }
 
-**Get it:** [dbv0.4.3](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3), 21 Nov 2026. Check the release notes for files and instructions for this model.
-{ .card-get }
+**dbv0.4.3 · The project reports that this build does not work on this camera.** [Read release notes](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3).
+{ .release-warning }
 
 Mod
 { .card-meta }
@@ -299,7 +305,7 @@ These do not change the camera. They help people study firmware, build or check 
 
 <div class="project-card" markdown="1">
 
-[OM-Emu](../projects/om-emu.md){ .card-title }
+[OM-Emu](../projects/om-emu.md#for-om5-ii){ .card-title }
 
 Run OM SYSTEM and Olympus camera firmware in your browser.
 
@@ -319,7 +325,7 @@ Emulator
 
 <div class="project-card" markdown="1">
 
-[Ghidra MN103 processor module](../projects/ghidra-mn103.md){ .card-title }
+[Ghidra MN103 processor module](../projects/ghidra-mn103.md#for-om5-ii){ .card-title }
 
 Read MN103 camera firmware in Ghidra, with the decompiler.
 
@@ -345,85 +351,100 @@ Tool
 
 <div class="evidence-entry" markdown="1">
 
-**[Mark II alpha12 HSL](../capabilities/om5-ii-alpha12-hsl.md)**
+**No camera test recorded**
 
-Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md) / v0.1.0-alpha12
+Claim · [Mark II alpha12 HSL](../capabilities/om5-ii-alpha12-hsl.md)
+
+Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md#for-om5-ii) / v0.1.0-alpha12
 
 Availability · published release
-
-Evidence · Upstream description; no separate test observation catalogued
 
 </div>
 
 <div class="evidence-entry" markdown="1">
 
-**[Mark II alpha12 ND32/ND64](../capabilities/om5-ii-alpha12-nd.md)**
+**No camera test recorded**
 
-Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md) / v0.1.0-alpha12
+Claim · [Mark II alpha12 ND32/ND64](../capabilities/om5-ii-alpha12-nd.md)
+
+Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md#for-om5-ii) / v0.1.0-alpha12
 
 Availability · published release
-
-Evidence · Upstream description; no separate test observation catalogued
 
 </div>
 
 <div class="evidence-entry" markdown="1">
 
-**[Mark II alpha12 overall report](../capabilities/om5-ii-alpha12-overall.md)**
+**Camera test · reported working** · [Mark II alpha12: overall owner report](../evidence/om5-ii-alpha12-owner.md)
 
-Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md) / v0.1.0-alpha12
+partial report · release label only
+{ .observation-meta }
+
+Claim · [Mark II alpha12 overall report](../capabilities/om5-ii-alpha12-overall.md)
+
+Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md#for-om5-ii) / v0.1.0-alpha12
 
 Availability · published release
-
-Evidence · physical camera; reported pass; partial report; release label only
 
 </div>
 
 <div class="evidence-entry" markdown="1">
 
-**[OM-5 Mark II FILMLOOK presets from the card, OMKit 0.1.0](../capabilities/om5-ii-omkit-filmlook.md)**
+**Camera test · reported working** · [OM-5 Mark II OMKit loader patch: developers' camera](../evidence/om5-ii-omkit-loader.md)
 
-Project and build · [OMKit](../projects/omkit.md) / loader fw1100 (OMKit 0.1.0)
+partial report · reported hash
+{ .observation-meta }
+
+Claim · [OM-5 Mark II FILMLOOK presets from the card, OMKit 0.1.0](../capabilities/om5-ii-omkit-filmlook.md)
+
+Project and build · [OMKit](../projects/omkit.md#for-om5-ii) / loader fw1100 (OMKit 0.1.0)
 
 Availability · published release
-
-Evidence · physical camera; reported pass; partial report; reported hash
 
 </div>
 
 <div class="evidence-entry" markdown="1">
 
-**[OM-5 Mark II code loaded from the card, OMKit loader](../capabilities/om5-ii-omkit-loader.md)**
+**Camera test · reported working** · [OM-5 Mark II OMKit loader patch: developers' camera](../evidence/om5-ii-omkit-loader.md)
 
-Project and build · [OMKit](../projects/omkit.md) / loader fw1100 (OMKit 0.1.0)
+partial report · reported hash
+{ .observation-meta }
+
+Claim · [OM-5 Mark II code loaded from the card, OMKit loader](../capabilities/om5-ii-omkit-loader.md)
+
+Project and build · [OMKit](../projects/omkit.md#for-om5-ii) / loader fw1100 (OMKit 0.1.0)
 
 Availability · published release
-
-Evidence · physical camera; reported pass; partial report; reported hash
 
 </div>
 
 <div class="evidence-entry" markdown="1">
 
-**[Mark II v0.2.0-alpha1 overall report](../capabilities/om5-ii-v020-alpha1-overall.md)**
+**Camera test · reported working** · [Mark II v0.2.0-alpha1: overall owner report](../evidence/om5-ii-v020-alpha1-owner.md)
 
-Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md) / v0.2.0-alpha1
+partial report · release label only
+{ .observation-meta }
+
+Claim · [Mark II v0.2.0-alpha1 overall report](../capabilities/om5-ii-v020-alpha1-overall.md)
+
+Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md#for-om5-ii) / v0.2.0-alpha1
 
 Availability · published release
-
-Evidence · physical camera; reported pass; partial report; release label only
 
 </div>
 
 <div class="evidence-entry" markdown="1">
 
-**[Mark II v0.2.0-alpha1 Black/White and split toning](../capabilities/om5-ii-v020-alpha1-tone.md)**
+**Camera test · reported working** · [Mark II v0.2.0-alpha1: overall owner report](../evidence/om5-ii-v020-alpha1-owner.md)
 
-Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md) / v0.2.0-alpha1
+partial report · release label only
+{ .observation-meta }
+
+Claim · [Mark II v0.2.0-alpha1 Black/White and split toning](../capabilities/om5-ii-v020-alpha1-tone.md)
+
+Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md#for-om5-ii) / v0.2.0-alpha1
 
 Availability · published release
-
-Evidence · physical camera; reported pass; partial report; release label only
 
 </div>
 

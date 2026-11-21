@@ -133,7 +133,17 @@
         {%- if ns.item %}<a href="{{ first_url(ns.item)|trim|url }}">{{ ns.section }}</a>{% else %}{{ ns.section }}{% endif %}
         {%- if ns.parent_title %}<span aria-hidden="true">/</span><a href="{{ ns.parent|url }}">{{ ns.parent_title }}</a>{% endif %}</p>
       {%- endif %}
-      {%- if ns.item %}
+      {%- if page and page.url.startswith('views/cameras/') and page.url != 'views/cameras/' %}
+      <nav class="camera-mobile-nav" aria-label="Camera navigation">
+        <details class="side-mobile">
+          <summary>On this camera page</summary>
+          <ul>{% for heading in page.toc %}{% for section in heading.children %}
+            <li><a href="{{ section.url }}">{{ section.title }}</a></li>
+          {% endfor %}{% endfor %}</ul>
+        </details>
+        <a href="{{ 'views/cameras/'|url }}">Change camera</a>
+      </nav>
+      {%- elif ns.item %}
       <details class="side-mobile">
         <summary>In {{ ns.item.title }}</summary>
         {{ side_list(ns.item.children, ns.parent) }}
@@ -212,7 +222,7 @@
     <form method="dialog" class="search-box" role="search">
       <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m13 13 4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
       <input type="search" id="mkdocs-search-query" placeholder="Search cameras, projects, firmware, evidence…" autocomplete="off" aria-label="Search terms">
-      <button type="submit" class="search-close" aria-label="Close search"><kbd>Esc</kbd></button>
+      <button type="button" class="search-close" aria-label="Close search">Close</button>
     </form>
     <div id="mkdocs-search-results" class="search-results" data-no-results-text="No matching pages yet. Try a camera model code such as E148."></div>
   </dialog>

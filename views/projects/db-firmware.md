@@ -16,8 +16,90 @@ Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to
 
 </div>
 
-**Type:** mod · **For:** [OM-5](../cameras/om5.md), [OM-5 Mark II](../cameras/om5-ii.md), [OM-3](../cameras/om3.md), [PEN E-P7](../cameras/ep7.md), [PEN-F](../cameras/pen-f.md) · **Latest release:** [dbv0.4.3](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3), 21 Nov 2026 · **Maintained by** [azqeurio](https://github.com/azqeurio)
+**Type:** mod · **Camera details:** [OM-5](#for-om5), [OM-5 Mark II](#for-om5-ii), [OM-3](#for-om3), [PEN E-P7](#for-ep7), [PEN-F](#for-pen-f) · **Latest release:** [dbv0.4.3](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3), 21 Nov 2026 · **Maintained by** [azqeurio](https://github.com/azqeurio)
 { .facts }
+
+
+**OM-5:** The project reports that this build does not work on this camera. **OM-5 Mark II:** The project reports that this build does not work on this camera. [Read release notes](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3).
+{ .release-warning }
+
+
+## Cameras
+
+<div class="model-panel" markdown="1">
+
+### Original OM-5 { #for-om5 }
+
+**For this camera:** Panasonic aperture rings, Korean menus and Hybrid Shutter, all beta.
+{ .card-for }
+
+**dbv0.4.3 · The project reports that this build does not work on this camera.** [Read release notes](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3).
+{ .release-warning }
+
+[Camera overview and test results](../cameras/om5.md)
+
+</div>
+
+<div class="model-panel" markdown="1">
+
+### OM-5 Mark II { #for-om5-ii }
+
+**For this camera:** Korean menus and Hybrid Shutter, both beta.
+{ .card-for }
+
+**dbv0.4.3 · The project reports that this build does not work on this camera.** [Read release notes](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3).
+{ .release-warning }
+
+[Camera overview and test results](../cameras/om5-ii.md)
+
+</div>
+
+<div class="model-panel" markdown="1">
+
+### OM-3 { #for-om3 }
+
+[Before you install: risks and recovery](../../docs/before-you-install.md)
+
+**For this camera:** Listed for this camera: Korean menus (beta), Hybrid Shutter (beta).
+{ .card-for }
+
+**Get it:** [dbv0.4.3](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3), 21 Nov 2026. Check the release notes for files and instructions for this model.
+{ .card-get }
+
+[Camera overview and test results](../cameras/om3.md)
+
+</div>
+
+<div class="model-panel" markdown="1">
+
+### PEN E-P7 { #for-ep7 }
+
+[Before you install: risks and recovery](../../docs/before-you-install.md)
+
+**For this camera:** Listed for this camera: Hybrid Shutter (beta).
+{ .card-for }
+
+**Get it:** [dbv0.4.3](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3), 21 Nov 2026. Check the release notes for files and instructions for this model.
+{ .card-get }
+
+[Camera overview and test results](../cameras/ep7.md)
+
+</div>
+
+<div class="model-panel" markdown="1">
+
+### PEN-F { #for-pen-f }
+
+**For this camera:** No PEN-F feature is catalogued.
+{ .card-for }
+
+**dbv0.3.2 · The release names this camera without saying which features it adds.** [Read release notes](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.3.2).
+{ .release-warning }
+
+[Camera overview and test results](../cameras/pen-f.md)
+
+</div>
+
 
 ## About
 
@@ -119,7 +201,12 @@ Switches to the electronic shutter on overexposure in P or A mode and, since v0.
 - Hybrid Shutter in S and M mode switches to the electronic shutter below the slowest mechanical speed; P and A switch on overexposure.
 - The maintainer reports better Quasi-LUT conversion from LUT and XMP, fixed grain and OM-3 indicator, and a faster macOS Quasi-LUT editor.
 
-The maintainer calls this a beta. Known issue in the notes: the OM-5 and OM-5 Mark II firmware is not working. No test procedure, results or hashes are given.
+
+
+**OM-5:** The project reports that this build does not work on this camera. **OM-5 Mark II:** The project reports that this build does not work on this camera. [Read release notes](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3).
+{ .release-warning }
+
+The maintainer calls this a beta. No test procedure, results or hashes are given.
 { .release-warning }
 
 </div>
@@ -172,6 +259,11 @@ Two added features reset the camera's settings; save your menus first.
 - Adds the OM-5 Mark II, with Korean menus.
 - Electronic shutter sound through the speaker.
 
+
+
+**PEN-F:** The release names this camera without saying which features it adds. [Read release notes](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.3.2).
+{ .release-warning }
+
 </div>
 
 <div class="release-item" markdown="1">
@@ -201,10 +293,6 @@ Two added features reset the camera's settings; save your menus first.
 
 </div>
 
-
-## Cameras
-
-[OM SYSTEM OM-5](../cameras/om5.md), [OM SYSTEM OM-5 Mark II](../cameras/om5-ii.md), [OM SYSTEM OM-3](../cameras/om3.md), [Olympus PEN E-P7](../cameras/ep7.md), [Olympus PEN-F](../cameras/pen-f.md).
 
 [Report a camera result](../../docs/report.md) with the exact model, starting firmware, build, file hash if known, steps and outcome.
 

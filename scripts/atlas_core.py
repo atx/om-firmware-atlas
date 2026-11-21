@@ -193,6 +193,9 @@ class Catalogue:
             if row["type"] == "reference":
                 errors.extend(self.reference_errors(node_id, row, check_ref))
             if row["type"] == "project":
+                for item in row.get("work_items", []):
+                    if "tester_camera_id" in item and item["tester_camera_id"] not in row["camera_ids"]:
+                        errors.append(f"{node_id}: testing request names a camera outside the project.")
                 noted = [note["camera_id"] for note in row.get("camera_notes", [])]
                 for camera in noted:
                     if camera not in row["camera_ids"]:
@@ -223,6 +226,9 @@ class Catalogue:
                         if release["url"] != expected_url:
                             errors.append(f"{node_id}: release {release['tag']} must link to {expected_url}.")
                     check_ref(node_id, f"release {release['tag']} source_ref", release["source_ref"], "source")
+                    for camera in release.get("camera_limits", {}):
+                        if camera not in release["camera_ids"]:
+                            errors.append(f"{node_id}: release {release['tag']} has a limitation outside its camera_ids: {camera}.")
                     for camera in release["camera_ids"]:
                         if camera not in row["camera_ids"]:
                             errors.append(f"{node_id}: release {release['tag']} names {camera}, which is not in the project's camera_ids.")

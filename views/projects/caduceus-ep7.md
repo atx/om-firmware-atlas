@@ -10,17 +10,52 @@ The original Caduceus: HSLFX colour editing and 29 film looks for the PEN E-P7.
 
 <div class="cta-row" markdown="1">
 
-[Project home](https://github.com/cakelesscoder/caduceus-ep7){ .btn .btn-primary }
+[Read the PEN E-P7 install guide](https://github.com/cakelesscoder/caduceus-ep7/blob/main/docs/INSTALL.md){ .btn .btn-primary }
+[Project home](https://github.com/cakelesscoder/caduceus-ep7){ .btn .btn-ghost }
 [Ask or report issues](https://github.com/cakelesscoder/caduceus-ep7/issues){ .btn .btn-ghost }
-[Install guide](https://github.com/cakelesscoder/caduceus-ep7/blob/main/docs/INSTALL.md){ .btn .btn-ghost }
 [Control Panel](https://cakelesscoder.github.io/caduceus-ep7/){ .btn .btn-ghost }
 [Changelog](https://github.com/cakelesscoder/caduceus-ep7/blob/main/CHANGELOG.md){ .btn .btn-ghost }
 [Ports to other bodies](https://github.com/cakelesscoder/caduceus-ep7/blob/main/docs/BODIES.md){ .btn .btn-ghost }
 
 </div>
 
-**Type:** mod · **For:** [PEN E-P7](../cameras/ep7.md) · **Latest release:** [v0.34a](https://github.com/cakelesscoder/caduceus-ep7/releases/tag/v0.34a), 15 Nov 2026 · **Maintained by** [cakelesscoder](https://github.com/cakelesscoder)
+**Type:** mod · **Camera details:** [PEN E-P7](#for-ep7), [OM-D E-M10 Mark IV](#for-em10-iv) · **Latest release:** [v0.34a](https://github.com/cakelesscoder/caduceus-ep7/releases/tag/v0.34a), 15 Nov 2026 · **Maintained by** [cakelesscoder](https://github.com/cakelesscoder)
 { .facts }
+
+## Cameras
+
+<div class="model-panel" markdown="1">
+
+### PEN E-P7 { #for-ep7 }
+
+[Before you install: risks and recovery](../../docs/before-you-install.md)
+
+**For this camera:** 17 features, including On-camera look editor (HSLFX), 29 film simulations and Colour mix and base curve.
+{ .card-for }
+
+**Get it:** [v0.34a](https://github.com/cakelesscoder/caduceus-ep7/releases/tag/v0.34a), 15 Nov 2026 · [Install guide](https://github.com/cakelesscoder/caduceus-ep7/blob/main/docs/INSTALL.md)
+{ .card-get }
+
+[Camera overview and test results](../cameras/ep7.md)
+
+</div>
+
+<div class="model-panel" markdown="1">
+
+### OM-D E-M10 Mark IV { #for-em10-iv }
+
+**For this camera:** No build for this camera. Caduceus's body survey includes the E-M10 IV in its firmware-signature comparisons for possible ports; nothing has been ported.
+{ .card-for }
+
+**Get it:** No release for this camera yet.
+{ .card-get }
+
+[View the testing request](https://github.com/cakelesscoder/caduceus-ep7/issues/21){ .btn .btn-primary }
+
+[Camera overview and test results](../cameras/em10-iv.md)
+
+</div>
+
 
 ![Eight film looks shown on four sample scenes](../../docs/assets/projects/caduceus-ep7/film-looks.jpg)
 { .hero-image }
@@ -381,10 +416,6 @@ Beta. The author warns that flashing modified firmware can crash or brick the ca
 
 </div>
 
-
-## Cameras
-
-[Olympus PEN E-P7](../cameras/ep7.md), [Olympus OM-D E-M10 Mark IV](../cameras/em10-iv.md).
 
 ## Where to talk
 

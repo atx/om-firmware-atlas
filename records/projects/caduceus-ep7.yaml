@@ -28,6 +28,7 @@ records:
   - project.oly-fw-analysis
   work_items:
   - summary: E-M10 IV target needs physical-camera evidence
+    tester_camera_id: camera.em10-iv
     state: needs-evidence
     url: https://github.com/cakelesscoder/caduceus-ep7/issues/21
     owner: null

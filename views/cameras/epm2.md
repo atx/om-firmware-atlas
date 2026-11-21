@@ -9,7 +9,7 @@ E101, TruePic VI (2012): one camera-tested mod; its addresses and edits do not c
 
 <div class="glance" markdown="1">
 
-**Releases for this camera:** [EPM2Mod](../projects/epm2mod.md) (v2026.11.20-rc.1, pre-release).
+**Releases for this camera:** [EPM2Mod](../projects/epm2mod.md#for-epm2) (v2026.11.20-rc.1 (pre-release)).
 
 **Jump to:** [What you can do](#features) · [Projects](#projects) · [Test evidence](#evidence) · [Platform](#platform)
 
@@ -31,7 +31,7 @@ Features as each project describes them, with their status. Follow a project's o
 
 Up to 12 of 32 film simulations in the ART entries, loaded from a card file with Load Looks; kept after power-off. For photos and live view; the photo records the film's name.
 
-[EPM2Mod](../projects/epm2mod.md) · since v2026.11.20-rc.1
+[EPM2Mod](../projects/epm2mod.md#for-epm2) · since v2026.11.20-rc.1
 { .card-meta }
 
 </div>
@@ -43,7 +43,7 @@ Up to 12 of 32 film simulations in the ART entries, loaded from a card file with
 
 Time Lapse Settings with up to 240 frames.
 
-[EPM2Mod](../projects/epm2mod.md)
+[EPM2Mod](../projects/epm2mod.md#for-epm2)
 { .card-meta }
 
 </div>
@@ -55,7 +55,7 @@ Time Lapse Settings with up to 240 frames.
 
 The firmware's own gauge as an LV-Info view, with calibration and the histogram screen's shooting information. Three data edits, no new code.
 
-[EPM2Mod](../projects/epm2mod.md)
+[EPM2Mod](../projects/epm2mod.md#for-epm2)
 { .card-meta }
 
 </div>
@@ -67,7 +67,7 @@ The firmware's own gauge as an LV-Info view, with calibration and the histogram 
 
 Turning the focus ring with MF Assist zooms in and outlines sharp edges in white, red, yellow or blue; ported from the E-P5.
 
-[EPM2Mod](../projects/epm2mod.md)
+[EPM2Mod](../projects/epm2mod.md#for-epm2)
 { .card-meta }
 
 </div>
@@ -79,7 +79,7 @@ Turning the focus ring with MF Assist zooms in and outlines sharp edges in white
 
 In P and A, the shutter speed at which ISO Auto starts to rise; a copy of the PEN-F 3.1's logic.
 
-[EPM2Mod](../projects/epm2mod.md)
+[EPM2Mod](../projects/epm2mod.md#for-epm2)
 { .card-meta }
 
 </div>
@@ -91,7 +91,7 @@ In P and A, the shutter speed at which ISO Auto starts to rise; a copy of the PE
 
 A Custom Menu J row, Off by default, that writes EPM2LOG.BIN to the card for developers.
 
-[EPM2Mod](../projects/epm2mod.md)
+[EPM2Mod](../projects/epm2mod.md#for-epm2)
 { .card-meta }
 
 </div>
@@ -110,11 +110,11 @@ These change the camera's firmware.
 
 <div class="project-card" markdown="1">
 
-[EPM2Mod](../projects/epm2mod.md){ .card-title }
+[EPM2Mod](../projects/epm2mod.md#for-epm2){ .card-title }
 
 Film simulations, interval shooting, focus peaking and a level gauge for the PEN E-PM2.
 
-**For this camera:** 6 features, including Film simulations, Interval shooting and Level gauge; all are listed above.
+**For this camera:** 6 features, including Film simulations, Interval shooting and Level gauge.
 { .card-for }
 
 **Get it:** [v2026.11.20-rc.1 (pre-release)](https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.20-rc.1), 20 Nov 2026 · [Install guide](https://github.com/cfu288/EPM2Mod/blob/f8f173d8b53d4370f85505cdec7be2b52d1ec830/docs/user/install.md)
@@ -137,13 +137,16 @@ Mod
 
 <div class="evidence-entry" markdown="1">
 
-**[E-PM2 card-loaded film simulations, films-look-exif](../capabilities/epm2-films-look-exif.md)**
+**Camera test · reported working** · [E-PM2 films-look-exif: owner camera test](../evidence/epm2-films-look-exif.md)
 
-Project and build · [EPM2Mod](../projects/epm2mod.md) / films-look-exif
+complete report · reported hash
+{ .observation-meta }
+
+Claim · [E-PM2 card-loaded film simulations, films-look-exif](../capabilities/epm2-films-look-exif.md)
+
+Project and build · [EPM2Mod](../projects/epm2mod.md#for-epm2) / films-look-exif
 
 Availability · candidate
-
-Evidence · physical camera; reported pass; complete report; reported hash
 
 </div>
 
