@@ -2,13 +2,13 @@
 
 # E-M1 Mark III Mod Builder
 
-Inactive mod builder for E-M1 III firmware 1.6; the author reports it functional and invites others to continue it.
+Mod builder for E-M1 III firmware 1.6; after a short pause the author reports the project continuing, with Fill and Manual flash in handheld High Res in 1.18.
 
-[Contribution home](https://github.com/dfeldt91-blip/E-M1-Miii). No longer active. The author reports the firmware functional, with one known issue (no Multiple Exposure preview between frames 2–3 and 3–4), and the repository is available for anyone to continue the work.
+[Contribution home](https://github.com/dfeldt91-blip/E-M1-Miii). Active again. On 2026-11-20 the author had declared the project ended; on 2026-11-21 the README says it continues and release mod-builder-1.18 adds Fill In next to Manual flash in handheld High Res (test 1.745). A fix for the missing Multiple Exposure overlay after shots 2 and 3 is in test 1.746, awaiting a camera result.
 
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
-| [em1-iii-mod-builder.yaml](../../../records/projects/em1-iii-mod-builder.yaml) | Project scope, related work and contribution destination | 9,162 | ~2,291 |
-| [em1-iii-mod-builder.yaml](../../../records/sources/em1-iii-mod-builder.yaml) | Find the relevant source/observation ID; use bounded reads | 4,174 | ~1,044 |
+| [em1-iii-mod-builder.yaml](../../../records/projects/em1-iii-mod-builder.yaml) | Project scope, related work and contribution destination | 9,948 | ~2,487 |
+| [em1-iii-mod-builder.yaml](../../../records/sources/em1-iii-mod-builder.yaml) | Find the relevant source/observation ID; use bounded reads | 4,509 | ~1,128 |
 
 Follow only relevant camera/topic routes. Upstream policies apply to work there; Atlas does not assign ownership across projects.

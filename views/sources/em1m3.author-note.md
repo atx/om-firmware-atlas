@@ -2,7 +2,7 @@
 
 # Author's note on project status
 
-The author asks that the Atlas record the project as inactive but open to continue, functional, with one known preview issue.
+The author asked on 2026-11-20 that the Atlas record the project as inactive but open to continue, functional, with one known preview issue. Historical: the README of 2026-11-21 says the project continues.
 
 **[Open original source](https://github.com/dfeldt91-blip/E-M1-Miii)**
 

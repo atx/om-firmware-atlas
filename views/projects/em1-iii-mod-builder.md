@@ -2,23 +2,23 @@
 
 # E-M1 Mark III Mod Builder
 
-Pick firmware mods for the E-M1 Mark III and build your own update file. No longer active.
+Pick firmware mods for the E-M1 Mark III and build your own update file.
 
 <div class="cta-row" markdown="1">
 
 [Project home](https://github.com/dfeldt91-blip/E-M1-Miii){ .btn .btn-primary }
 [Ask or report issues](https://github.com/dfeldt91-blip/E-M1-Miii){ .btn .btn-ghost }
-[Builder guide](https://github.com/dfeldt91-blip/E-M1-Miii/blob/4e36a6ed170c5b25d7205137f20b5e0d9f4b4c76/builder/README.md){ .btn .btn-ghost }
-[Latest release](https://github.com/dfeldt91-blip/E-M1-Miii/releases/tag/mod-builder-1.17){ .btn .btn-ghost }
+[Builder guide](https://github.com/dfeldt91-blip/E-M1-Miii/blob/ae16f3d2836e7273164c7cd3497237117c8b9ff9/builder/README.md){ .btn .btn-ghost }
+[Latest release](https://github.com/dfeldt91-blip/E-M1-Miii/releases/tag/mod-builder-1.18){ .btn .btn-ghost }
 
 </div>
 
-**Type:** mod · **Latest release:** [mod-builder-1.17](https://github.com/dfeldt91-blip/E-M1-Miii/releases/tag/mod-builder-1.17), 18 Nov 2026 · **Maintained by** [dfeldt91-blip](https://github.com/dfeldt91-blip)
+**Type:** mod · **Latest release:** [mod-builder-1.18](https://github.com/dfeldt91-blip/E-M1-Miii/releases/tag/mod-builder-1.18), 21 Nov 2026 · **Maintained by** [dfeldt91-blip](https://github.com/dfeldt91-blip)
 { .facts }
 
 ## About
 
-**This project is no longer active.** The author reports the current firmware functional, without functionality issues, and the repository is available for anyone who wants to continue the work. The one known issue: Multiple Exposure does not show a preview between frames 2–3 and 3–4, but it still creates a 3- or 4-frame multiple exposure correctly.
+The author paused the project on 2026-11-20 and resumed it the next day, now working locally. They report the firmware functional; the one known issue, no Multiple Exposure preview between frames 2–3 and 3–4, has a fix in test. The 3- or 4-frame result itself is correct.
 
 The E-M1 III Mod Builder is a small Mac and Windows app. It downloads the official E-M1 Mark III firmware 1.6 from OM Digital Solutions' update server, checks its SHA-256, lets you tick the mods you want and writes an E1399999.BIN for the camera's card updater. The mods are stored as edit lists, so no OM firmware is kept in the app.
 
@@ -26,7 +26,8 @@ The 19 mods cover a 65:24 Panorama aspect, 3- and 4-frame Multiple Exposure, foc
 
 ### What it's working towards
 
-- None while inactive. The author's list of unfinished ideas (100 % JPEG quality, 240 fps slow motion, loading looks from the card) is in the repository for anyone who continues it.
+- A live Multiple Exposure overlay after every shot but the last (test 1.746).
+- The author's list of unfinished ideas (100 % JPEG quality, 240 fps slow motion, loading looks from the card) is in the repository.
 
 > **Before you install:** Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
 
@@ -53,7 +54,7 @@ Replaces the 7:6 aspect with 65:24 in the menu, live-view frame, AF areas and ra
 **Multiple Exposure with 3 and 4 frames** <span class="pill pill-released">Available</span>
 { .feature-head }
 
-Creates 3- and 4-frame multiple exposures correctly; the live preview is missing between frames 2–3 and 3–4. Worked on the camera (1.5 build).
+Creates 3- and 4-frame multiple exposures correctly; the live preview is missing between frames 2–3 and 3–4 (fix in test 1.746, awaiting a camera result). Worked on the camera (1.5 build).
 
 [OM-D E-M1 Mark III](../cameras/em1-iii.md)
 { .card-meta }
@@ -101,7 +102,7 @@ The arrow keys can take 25 functions for stills and 15 for movies. Not tested on
 **Flash in handheld High Res** <span class="pill pill-released">Available</span>
 { .feature-head }
 
-Flash in handheld High Res Shot, with the tripod mode's flash modes. Worked on the camera (1.5 build); the Manual flash option was still in test.
+Flash in handheld High Res Shot, with Fill In and Manual flash for every flash type (tripod and handheld). Flash worked on the camera (1.5 build); Fill In plus Manual for all flash types is test 1.745. The 1.18 notes say fully manual flash does not work in handheld High Res.
 
 [OM-D E-M1 Mark III](../cameras/em1-iii.md)
 { .card-meta }
@@ -270,6 +271,19 @@ The Shooting Menu 1 title shows your own text, up to 36 characters. Worked on th
 
 <div class="release-item" markdown="1">
 
+**[E-M1 III Mod Builder mod-builder-1.18](https://github.com/dfeldt91-blip/E-M1-Miii/releases/tag/mod-builder-1.18)** · 21 Nov 2026
+{ .release-head }
+
+- Adds Fill Flash to handheld High Res, so Fill In and Manual flash are both offered (test 1.745).
+- The notes say a fully manual flash does not work in handheld High Res with this.
+
+Unofficial; flashing modified firmware is at your own risk. The apps are unsigned.
+{ .release-warning }
+
+</div>
+
+<div class="release-item" markdown="1">
+
 **[E-M1 III Mod Builder mod-builder-1.17](https://github.com/dfeldt91-blip/E-M1-Miii/releases/tag/mod-builder-1.17)** · 18 Nov 2026
 { .release-head }
 
@@ -292,10 +306,9 @@ Unofficial; flashing modified firmware is at your own risk. The apps are unsigne
 
 ## Research notes
 
-No longer active. The author reports the firmware functional, with one known issue (no Multiple Exposure preview between frames 2–3 and 3–4), and the repository is available for anyone to continue the work.
+Active again. On 2026-11-20 the author had declared the project ended; on 2026-11-21 the README says it continues and release mod-builder-1.18 adds Fill In next to Manual flash in handheld High Res (test 1.745). A fix for the missing Multiple Exposure overlay after shots 2 and 3 is in test 1.746, awaiting a camera result.
 
-- [Project inactive; the repository is open for anyone to continue it.](https://github.com/dfeldt91-blip/E-M1-Miii) — open; owner: not assigned here.
-- [Multiple Exposure shows no preview between frames 2–3 and 3–4; the 3- and 4-frame result itself is correct.](https://github.com/dfeldt91-blip/E-M1-Miii/blob/4e36a6ed170c5b25d7205137f20b5e0d9f4b4c76/docs/FINDINGS.md) — open; owner: not assigned here.
+- [Multiple Exposure shows no preview between frames 2–3 and 3–4; the 3- and 4-frame result itself is correct. Test 1.746 changes the overlay refresh to every shot but the last; awaiting a camera result.](https://github.com/dfeldt91-blip/E-M1-Miii/blob/ae16f3d2836e7273164c7cd3497237117c8b9ff9/docs/FINDINGS.md) — needs evidence; owner: not assigned here.
 
 ## Sources and record
 
@@ -306,4 +319,4 @@ No longer active. The author reports the firmware functional, with one known iss
 - [E-M1 III firmware findings](../sources/em1m3.findings.md)
 - [E-M1 III Mod Builder releases](../sources/em1m3.releases.md)
 
-[Canonical record](../../records/projects/em1-iii-mod-builder.yaml) · Substantively reviewed: 2026-11-20.
+[Canonical record](../../records/projects/em1-iii-mod-builder.yaml) · Substantively reviewed: 2026-11-21.

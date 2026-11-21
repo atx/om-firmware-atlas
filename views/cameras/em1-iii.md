@@ -2,7 +2,7 @@
 
 # Olympus OM-D E-M1 Mark III
 
-E139: one inactive mod builder for firmware 1.6; owner camera reports per mod, no Atlas evidence imported.
+E139: one mod builder for firmware 1.6; owner camera reports per mod, no Atlas evidence imported.
 
 **Model code:** E139 · **Also known as:** E-M1 III, E-M1 Mark III, EM1III · **Catalogue depth:** discovery only
 { .facts }
@@ -30,7 +30,7 @@ Replaces the 7:6 aspect with 65:24 in the menu, live-view frame, AF areas and ra
 **Multiple Exposure with 3 and 4 frames** <span class="pill pill-released">Available</span>
 { .feature-head }
 
-Creates 3- and 4-frame multiple exposures correctly; the live preview is missing between frames 2–3 and 3–4. Worked on the camera (1.5 build).
+Creates 3- and 4-frame multiple exposures correctly; the live preview is missing between frames 2–3 and 3–4 (fix in test 1.746, awaiting a camera result). Worked on the camera (1.5 build).
 
 [E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md)
 { .card-meta }
@@ -78,7 +78,7 @@ The arrow keys can take 25 functions for stills and 15 for movies. Not tested on
 **Flash in handheld High Res** <span class="pill pill-released">Available</span>
 { .feature-head }
 
-Flash in handheld High Res Shot, with the tripod mode's flash modes. Worked on the camera (1.5 build); the Manual flash option was still in test.
+Flash in handheld High Res Shot, with Fill In and Manual flash for every flash type (tripod and handheld). Flash worked on the camera (1.5 build); Fill In plus Manual for all flash types is test 1.745. The 1.18 notes say fully manual flash does not work in handheld High Res.
 
 [E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md)
 { .card-meta }
@@ -251,9 +251,9 @@ The Shooting Menu 1 title shows your own text, up to 36 characters. Worked on th
 
 [E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md){ .card-title }
 
-Pick firmware mods for the E-M1 Mark III and build your own update file. No longer active.
+Pick firmware mods for the E-M1 Mark III and build your own update file.
 
-Latest: mod-builder-1.17, 18 Nov 2026
+Latest: mod-builder-1.18, 21 Nov 2026
 { .card-meta }
 
 [Project home](https://github.com/dfeldt91-blip/E-M1-Miii) · [Ask or report issues](https://github.com/dfeldt91-blip/E-M1-Miii)
@@ -277,4 +277,4 @@ No feature-level assertion is catalogued yet. This is a coverage gap, not a find
 
 - [E-M1 III mod builder guide](../sources/em1m3.builder.md)
 
-[Canonical record](../../records/cameras/em1-iii.yaml) · Substantively reviewed: 2026-11-20.
+[Canonical record](../../records/cameras/em1-iii.yaml) · Substantively reviewed: 2026-11-21.
