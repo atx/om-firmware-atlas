@@ -488,17 +488,27 @@ def render(catalogue):
             if row.get("maintainers"):
                 facts.append("**Maintained by** " + ", ".join(f"[{cell(m['label'])}]({m['url']})" for m in row["maintainers"]))
             text += "\n" + " · ".join(facts) + "\n{ .facts }\n"
-            if row["camera_ids"]:
+            cameras = list(row["camera_ids"])
+            cameras.extend(c["id"] for c in catalogue.of_type("camera")
+                           if row["id"] in c["project_ids"] and c["id"] not in cameras)
+            if cameras:
                 text += "\n## Cameras\n\n"
                 requests = testing_requests(row)
-                for camera_id in row["camera_ids"]:
+                for camera_id in cameras:
                     camera = records[camera_id]
                     title = next((a for a in camera["aliases"] if a.startswith("Original ")), short_name(camera["title"]))
                     text += '<div class="model-panel" markdown="1">\n\n'
                     text += f"### {cell(title)} {{ #for-{slug(camera_id)} }}\n\n"
                     if camera_release(row, camera_id) and installs(records, row, camera_id):
                         text += f"[Before you install: risks and recovery]({link(path, 'docs/before-you-install.md')})\n\n"
-                    text += for_camera(path, row, camera)
+                    if camera_id in row["camera_ids"]:
+                        text += for_camera(path, row, camera)
+                    else:
+                        text += "The camera page links this project as a research reference.\n\n"
+                        claims = [cap["id"] for cap in catalogue.of_type("capability")
+                                  if cap["camera_id"] == camera_id and cap["project_id"] == row["id"]]
+                        if claims:
+                            text += "Recorded findings: " + refs(path, claims) + ".\n\n"
                     for item in requests:
                         if item["tester_camera_id"] == camera_id:
                             text += f"[View the testing request]({item['url']}){{ .btn .btn-primary }}\n\n"

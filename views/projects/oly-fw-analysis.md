@@ -80,6 +80,18 @@ The research base: PEN-F HSL, firmware formats and tools for many bodies.
 
 </div>
 
+<div class="model-panel" markdown="1">
+
+### OM-D E-M5 Mark III { #for-em5-iii }
+
+The camera page links this project as a research reference.
+
+Recorded findings: [Card-file debug Wi-Fi shell on stock E-M5 III 1.7](../capabilities/em5-iii-wifi-debug-shell.md).
+
+[Camera overview and test results](../cameras/em5-iii.md)
+
+</div>
+
 
 ## About
 
