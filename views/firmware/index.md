@@ -13,5 +13,5 @@ Stock firmware versions that catalogued work starts from. A version number alone
 | [E-PM2 firmware 1.6, build 1600](epm2-1600.md) | Stock update file OLY_E_101_1600_0000_0000.BIN, 43,319,360 bytes; the input EPM2Mod patches. |
 | [om3 firmware 1.1, build 1100](om3-1100.md) | Several official filenames appear upstream; advertised version alone is not byte identity. |
 | [om5 firmware 1.2, build 1200](om5-1200.md) | Version/build scope only; exact stock-container digest is not imported. |
-| [om5-ii firmware 1.1, build 1100](om5-ii-1100.md) | Add a full digest from a pinned manifest before byte-exact input work. |
+| [om5-ii firmware 1.1, build 1100](om5-ii-1100.md) | Stock update file OLY_E_148_1100_0000_0000.BIN, 90,832,896 bytes, with its SHA-256 from OMKit's pinned manifest. |
 | [pen-f firmware 3.1, build 3101](pen-f-3101.md) | The guide specifically targets build 3101, not every file labelled 3.1. |

@@ -16,8 +16,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "knowledge/methods/patching.md": {
-      "approx_tokens": 518,
-      "bytes": 2070,
+      "approx_tokens": 852,
+      "bytes": 3406,
       "method": "ceil(utf8-bytes/4)"
     },
     "knowledge/platform/identity.md": {
@@ -71,8 +71,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/cameras/om5-ii.yaml": {
-      "approx_tokens": 134,
-      "bytes": 536,
+      "approx_tokens": 139,
+      "bytes": 554,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/cameras/om5.yaml": {
@@ -133,6 +133,11 @@
     "records/capabilities/om5-ii/om5-ii-alpha12-overall.yaml": {
       "approx_tokens": 187,
       "bytes": 747,
+      "method": "ceil(utf8-bytes/4)"
+    },
+    "records/capabilities/om5-ii/om5-ii-omkit-loader.yaml": {
+      "approx_tokens": 588,
+      "bytes": 2350,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/capabilities/om5-ii/om5-ii-v020-alpha1-overall.yaml": {
@@ -210,6 +215,11 @@
       "bytes": 3992,
       "method": "ceil(utf8-bytes/4)"
     },
+    "records/evidence/omkit.yaml": {
+      "approx_tokens": 569,
+      "bytes": 2273,
+      "method": "ceil(utf8-bytes/4)"
+    },
     "records/firmware/em1-iii/em1-iii-1600.yaml": {
       "approx_tokens": 160,
       "bytes": 640,
@@ -241,8 +251,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/firmware/om5-ii/om5-ii-1100.yaml": {
-      "approx_tokens": 123,
-      "bytes": 489,
+      "approx_tokens": 190,
+      "bytes": 758,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/firmware/om5/om5-1200.yaml": {
@@ -325,6 +335,11 @@
       "bytes": 6036,
       "method": "ceil(utf8-bytes/4)"
     },
+    "records/projects/omkit.yaml": {
+      "approx_tokens": 1442,
+      "bytes": 5768,
+      "method": "ceil(utf8-bytes/4)"
+    },
     "records/sources/db.yaml": {
       "approx_tokens": 547,
       "bytes": 2185,
@@ -383,6 +398,11 @@
     "records/sources/om5.yaml": {
       "approx_tokens": 2351,
       "bytes": 9404,
+      "method": "ceil(utf8-bytes/4)"
+    },
+    "records/sources/omkit.yaml": {
+      "approx_tokens": 2257,
+      "bytes": 9028,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/tadejs-om5.yaml": {

@@ -85,6 +85,7 @@ records:
   summary: Set when a section load request returns; for sections 6 and 7 only once the decoder has the job.
   source_refs:
   - source.om5.startup-fix
+  - source.omkit.firmware
   topics:
   - patching
   last_reviewed: '2026-11-18'
@@ -102,7 +103,10 @@ records:
     source_ref: source.om5.startup-fix
     project_id: project.caduceus-om5
     summary: Written at 0x600464bf..0x600464c7 after the request returns.
-  conflicts: []
+  conflicts:
+  - source_ref: source.omkit.firmware
+    summary: OMKit reads this word as "sections loaded", bit n-1 set when section n is in place, 0x3ff for all ten
+      (code, camera), and its card loader waits for 0x3ff here before reading files.
   upstream_detail: https://github.com/xulfr/caduceus-om5/blob/a72851a4ada5eab8eed02f7a06afd7f9297bbe81/research/OM5II-STARTUP-FIX-2026-11-06.md
 - type: reference
   id: reference.om5-ii-1100.ready-bits

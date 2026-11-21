@@ -9,7 +9,7 @@ Exact-build facts only: never apply an address to another build or body. Status:
 | Rule | Status | Detail |
 |---|---|---|
 | Take section bounds from the loader, not from 0xFF runs | camera-confirmed | [d1] |
-| Gate on section initialisation, not on the load request | corroborated | [d2] |
+| Gate on section initialisation, not on the load request | disputed | [d2] |
 | Keep patch state out of the loaded firmware image | camera-confirmed | [d3] |
 | Leave the compressed section holding the card updater stock | single-source | [d4] |
 
@@ -37,13 +37,17 @@ Exact-build facts only: never apply an address to another build or body. Status:
 | Name | Space | Address | Kind | Status | Detail |
 |---|---|---|---|---|---|
 | Section descriptor table | runtime-cached | `0x600284fc` | table | single-source | [d2] |
-| White balance commit | runtime-cached | `0x602d19b6` | hook-site | single-source | [d9] |
+| FastEndCb hook site | runtime-cached | `0x601b1362` | hook-site | camera-confirmed | [d9] |
+| White balance commit | runtime-cached | `0x602d19b6` | hook-site | single-source | [d10] |
+| Section 2 tail filler | runtime-cached | `0x605af4c0..0x605af800` | free-space | camera-confirmed | [d9] |
 | Section 5 loaded range | runtime-cached | `0x60843000..0x60846000` | layout | single-source | [d2] |
-| Picture editor setting read | runtime-cached | `0x6091c66d` | hook-site | single-source | [d9] |
+| Picture editor setting read | runtime-cached | `0x6091c66d` | hook-site | single-source | [d10] |
 | Section 7 loaded range | runtime-cached | `0x60cbe800..0x61343800` | layout | single-source | [d4] |
-| Update component kind dispatch | runtime-cached | `0x60ce6aa5` | function | single-source | [d10] |
+| Update component kind dispatch | runtime-cached | `0x60ce6aa5` | function | single-source | [d11] |
+| Section 9 flag word | runtime-cached | `0x615ee7c0` | data | camera-confirmed | [d9] |
 | Section ready bits | runtime-uncached | `0xa26e2694` | data | single-source | [d2] |
-| Section requested bits | runtime-uncached | `0xa26e2698` | data | single-source | [d2] |
+| Section requested bits | runtime-uncached | `0xa26e2698` | data | disputed | [d2] |
+| Free DRAM gap | runtime-uncached | `0xa3456d74..0xa3791000` | free-space | camera-confirmed | [d12] |
 
 [d1]: https://github.com/fishcu/oly_fw_analysis/blob/d565cb664d3bc37f883f844a3a0c9620efe018e4/docs/safety/CODE_SPACE.md#om-3-v22-precedent
 [d2]: https://github.com/xulfr/caduceus-om5/blob/a72851a4ada5eab8eed02f7a06afd7f9297bbe81/research/OM5II-STARTUP-FIX-2026-11-06.md
@@ -53,7 +57,9 @@ Exact-build facts only: never apply an address to another build or body. Status:
 [d6]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/features/live-nd.md#how-olympus-does-it-om-5-12-our-donor
 [d7]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/features/live-gnd.md#who-has-it
 [d8]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/features/af-detect.md
-[d9]: https://github.com/xulfr/caduceus-om5/blob/a72851a4ada5eab8eed02f7a06afd7f9297bbe81/research/OM5II-BRICK-RISK.md#hook-and-edit-map
-[d10]: https://github.com/xulfr/caduceus-om5/blob/a72851a4ada5eab8eed02f7a06afd7f9297bbe81/research/OM5II-BRICK-RISK.md#risk-register
+[d9]: https://github.com/necrostaz/omkit/blob/a29db07f4cab2f9f9688462975ffa510b4d6fd97/docs/platform/om5m2/fw1100/patch.md#2-where-it-hooks
+[d10]: https://github.com/xulfr/caduceus-om5/blob/a72851a4ada5eab8eed02f7a06afd7f9297bbe81/research/OM5II-BRICK-RISK.md#hook-and-edit-map
+[d11]: https://github.com/xulfr/caduceus-om5/blob/a72851a4ada5eab8eed02f7a06afd7f9297bbe81/research/OM5II-BRICK-RISK.md#risk-register
+[d12]: https://github.com/necrostaz/omkit/blob/a29db07f4cab2f9f9688462975ffa510b4d6fd97/docs/platform/om5m2/fw1100/system.md#13-the-omkit-area
 
-Records: [hazards-sections.yaml](../../../records/reference/hazards-sections.yaml), [hazards.yaml](../../../records/reference/hazards.yaml), [om5-ii-1100-platform.yaml](../../../records/reference/om5-ii-1100-platform.yaml), [om5-ii-1100.yaml](../../../records/reference/om5-ii-1100.yaml).
+Records: [hazards-sections.yaml](../../../records/reference/hazards-sections.yaml), [hazards.yaml](../../../records/reference/hazards.yaml), [om5-ii-1100-loader.yaml](../../../records/reference/om5-ii-1100-loader.yaml), [om5-ii-1100-platform.yaml](../../../records/reference/om5-ii-1100-platform.yaml), [om5-ii-1100.yaml](../../../records/reference/om5-ii-1100.yaml).

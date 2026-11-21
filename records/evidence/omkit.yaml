@@ -1,0 +1,41 @@
+schema_version: 1
+records:
+- type: evidence
+  id: evidence.om5-ii-omkit-loader
+  title: 'OM-5 Mark II OMKit loader patch: developers'' camera'
+  summary: The developers report the loader patch installed since 2026-10-30, with core starting on every full power-on and a stock camera without the card.
+  source_refs:
+  - source.omkit.patch
+  - source.omkit.install
+  - source.omkit.firmware
+  topics:
+  - patching
+  last_reviewed: '2026-11-21'
+  camera_id: camera.om5-ii
+  firmware_id: firmware.om5-ii-1100
+  project_id: project.omkit
+  mod_build: loader fw1100 (OMKit 0.1.0)
+  method: physical-camera
+  provenance: maintainer-summary
+  identity_level: reported-hash
+  package_sha256: 548098cd3d62a534360bb9a5385e20e0c79f6d2f477f97ad20c92a3f5c8f990c
+  expected_package_sha256: 548098cd3d62a534360bb9a5385e20e0c79f6d2f477f97ad20c92a3f5c8f990c
+  outcome: reported-pass
+  quality: partial
+  reported_on: '2026-11-20'
+  tested_on: '2026-10-30'
+  procedure: Patched update file installed from the card with OK held, then used over repeated power-ons, sleeps and
+    a reinstall; emulator runs covered good and bad files, OK held, and late sections or card.
+  coverage:
+  - Core starts by itself on every full power-on, about 1.4 to 1.7 s after it; without OMKIT the camera works as stock.
+  - Holding OK at power-on skips core.
+  - Reinstalling a firmware from the card with OK held works from the patched firmware.
+  - A quick lever off-on is not a new start; light sleep keeps core running and the film look comes back; deep sleep boots anew and loads core.
+  - A fault in core gives one restart into a camera without OMKit until the next load; on every start that is a reboot loop, ended by holding OK or removing the card.
+  limitations:
+  - One developers' camera; counts of starts and the date of each check are not published; not reproduced by the Atlas.
+  - Wi-Fi and USB start paths are not verified.
+  - Whether the hook also runs when the camera starts its updater is not known; the documented rule is to keep OMKIT off update cards.
+  - The emulator does not run the real hook site; there the same loader body is hooked elsewhere.
+  assumptions:
+  - tested_on is the first day of the reported use; the package hash is the result the docs name as installed since then.

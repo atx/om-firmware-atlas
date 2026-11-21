@@ -7,6 +7,7 @@ records:
   source_refs:
   - source.om5.startup-fix
   - source.emu.caduceus-om3
+  - source.omkit.firmware
   topics:
   - patching
   last_reviewed: '2026-11-18'
@@ -29,7 +30,10 @@ records:
     source_ref: source.emu.caduceus-om3
     project_id: project.om-emu
     summary: OM-3 sets 0xa32de590 regardless of the copy result; 0xa32de58c is set after constructors.
-  conflicts: []
+  conflicts:
+  - source_ref: source.omkit.firmware
+    summary: OMKit describes 0xa26e2698 as set once each section is in place and gates its card loader on 0x3ff there;
+      that loader reads files about 1.2 s into startup and has started on the developers' camera since 2026-10-30.
   upstream_detail: https://github.com/xulfr/caduceus-om5/blob/a72851a4ada5eab8eed02f7a06afd7f9297bbe81/research/OM5II-STARTUP-FIX-2026-11-06.md
 - type: reference
   id: reference.hazard.ff-is-not-free

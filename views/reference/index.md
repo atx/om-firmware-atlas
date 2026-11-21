@@ -16,7 +16,7 @@ Compact, sourced facts that projects and agents reuse: named addresses for one e
 | [Never write to the logical flash range](hazard.logical-flash-writes.md) | PEN E-P7, OM-D E-M5 Mark III | Corroborated |
 | [Point OSD picture descriptors into the heap](hazard.osd-pictures-in-heap.md) | OM-3 | Camera-confirmed |
 | [Never CPU-read an image buffer through its raw descriptor address](hazard.raw-image-buffer-read.md) | PEN E-P7 | Camera-confirmed |
-| [Gate on section initialisation, not on the load request](hazard.ready-not-requested.md) | OM-5 Mark II, OM-3 | Corroborated |
+| [Gate on section initialisation, not on the load request](hazard.ready-not-requested.md) | OM-5 Mark II, OM-3 | Disputed |
 | [Only call code in a section that has already loaded](hazard.section-load-order.md) | PEN E-P7, OM-3, OM-D E-M5 Mark III | Camera-confirmed |
 | [Keep work done with interrupts masked short](hazard.short-masked-windows.md) | OM-3 | Corroborated |
 | [Keep patch state out of the loaded firmware image](hazard.state-in-loaded-image.md) | PEN E-P7, OM-5 Mark II | Camera-confirmed |
@@ -159,13 +159,17 @@ Hardware and layout facts per stock firmware build.
 | Name | Address | Category | Status |
 |---|---|---|---|
 | [Section descriptor table](om5-ii-1100.section-table.md) | `0x600284fc` | table | Single source |
+| [FastEndCb hook site](om5-ii-1100.fastendcb-hook.md) | `0x601b1362` | hook site | Camera-confirmed |
 | [White balance commit](om5-ii-1100.wb-commit.md) | `0x602d19b6` | hook site | Single source |
+| [Section 2 tail filler](om5-ii-1100.section-2-tail.md) | `0x605af4c0` | free space | Camera-confirmed |
 | [Section 5 loaded range](om5-ii-1100.section-5.md) | `0x60843000` | layout | Single source |
 | [Picture editor setting read](om5-ii-1100.editor-read.md) | `0x6091c66d` | hook site | Single source |
 | [Section 7 loaded range](om5-ii-1100.section-7.md) | `0x60cbe800` | layout | Single source |
 | [Update component kind dispatch](om5-ii-1100.update-dispatch.md) | `0x60ce6aa5` | function | Single source |
+| [Section 9 flag word](om5-ii-1100.section-9-flag.md) | `0x615ee7c0` | data | Camera-confirmed |
 | [Section ready bits](om5-ii-1100.ready-bits.md) | `0xa26e2694` | data | Single source |
-| [Section requested bits](om5-ii-1100.requested-bits.md) | `0xa26e2698` | data | Single source |
+| [Section requested bits](om5-ii-1100.requested-bits.md) | `0xa26e2698` | data | Disputed |
+| [Free DRAM gap](om5-ii-1100.dram-free-gap.md) | `0xa3456d74` | free space | Camera-confirmed |
 
 ## Olympus PEN-F, pen-f firmware 3.1, build 3101
 

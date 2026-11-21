@@ -3,13 +3,13 @@ schema_version: 1
 id: guide.methods.patching
 title: Patching and scoped validation
 summary: Reuse existing builders and keep container correctness distinct from runtime evidence.
-load_when: [choosing a patch workflow, interpreting a validation result]
+load_when: [choosing a patch workflow, interpreting a validation result, deciding where mod code lives]
 topics: [patching]
 camera_ids: []
-project_ids: [project.caduceus-om5, project.oly-fw-analysis, project.em5-iii-notes]
+project_ids: [project.caduceus-om5, project.oly-fw-analysis, project.em5-iii-notes, project.omkit]
 depends_on: [guide.platform.identity]
-source_refs: [source.om5.builder, source.fishcu.validation, source.ep7.guide, source.em5n.patching]
-last_reviewed: '2026-11-17'
+source_refs: [source.om5.builder, source.fishcu.validation, source.ep7.guide, source.em5n.patching, source.omkit.patch, source.omkit.architecture]
+last_reviewed: '2026-11-21'
 ---
 # Reuse the builder that owns the target
 
@@ -22,3 +22,11 @@ Keep a reported recovery scoped to its failed state and target. Record negative 
 # Start from a technique that was shown on a camera
 
 The [E-M5 III modification techniques](../../views/sources/em5n.patching.md) list each method with its pitfalls and a table of the cameras and firmware it has been shown on, crediting other projects' results. A row for one body is a lead for another, not a result: addresses, tables and load order differ per build, so each body needs its own evidence.
+
+# Flash the feature, or flash a loader
+
+Most projects here put their code into the firmware image, so each code change is a new patched update file and another flash. Some read look data from the card, but the code that uses it is flashed.
+
+[OMKit](../../views/projects/omkit.md) flashes only a [loader](../../views/sources/omkit.patch.md) on the OM-5 Mark II 1.1. One hook late in startup creates a low-priority task. The task reads `OMKIT\CORE.BIN` from the card, checks it and jumps into it; core then checks the firmware and loads the modules named in `OMKIT.INI`. Updating means copying files. Without the card or file, or with OK held, the camera runs as stock. The developers report this on their camera since 2026-10-30 ([evidence](../../views/evidence/om5-ii-omkit-loader.md)).
+
+The trade-offs are different, not smaller. A fault in core or a module loops on every start until the card is removed or OK is held. Modules are not isolated from the firmware. An official update removes the loader, and each firmware build needs its own loader and driver. OMKit's loader waits on a section word that a Caduceus finding says marks only the load request; the [reference shard](../../agents/routes/reference/om5-ii.md) keeps both readings.

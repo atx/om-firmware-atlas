@@ -1,0 +1,131 @@
+schema_version: 1
+records:
+- type: reference
+  id: reference.om5-ii-1100.fastendcb-hook
+  title: FastEndCb hook site
+  summary: Fast-startup callback that runs once per power-on about 1.2 s in, after the live picture; OMKit's one 5-byte hook.
+  source_refs:
+  - source.omkit.patch
+  - source.omkit.firmware
+  topics:
+  - patching
+  last_reviewed: '2026-11-21'
+  category: hook-site
+  camera_ids:
+  - camera.om5-ii
+  firmware_ids:
+  - firmware.om5-ii-1100
+  address:
+    space: runtime-cached
+    value: '0x601b1362'
+  note: In section 1, outside the startup call graph and the updater. The two displaced instructions are
+    position-independent and in one 16-byte line. Whether it also runs when the updater starts is not known.
+  observations:
+  - method: static-analysis
+    source_ref: source.omkit.patch
+    project_id: project.omkit
+    summary: Registered from section 5 code and runs after sections 1, 8, 2, 3, 4 and 5 are loaded.
+  - method: physical-camera
+    source_ref: source.omkit.patch
+    project_id: project.omkit
+    summary: The firmware's startup timeline records it at about 1.2 s; core started 0.15 to 0.35 s after it in every logged start.
+  conflicts: []
+  upstream_detail: https://github.com/necrostaz/omkit/blob/a29db07f4cab2f9f9688462975ffa510b4d6fd97/docs/platform/om5m2/fw1100/patch.md#2-where-it-hooks
+- type: reference
+  id: reference.om5-ii-1100.section-2-tail
+  title: Section 2 tail filler
+  summary: 832 bytes of 0xff filler inside the section 2 load; OMKit puts its trampoline and loader body here.
+  source_refs:
+  - source.omkit.patch
+  - source.omkit.system
+  topics:
+  - patching
+  last_reviewed: '2026-11-21'
+  category: free-space
+  camera_ids:
+  - camera.om5-ii
+  firmware_ids:
+  - firmware.om5-ii-1100
+  address:
+    space: runtime-cached
+    value: '0x605af4c0'
+    end: '0x605af800'
+  note: Section 2 loads up to 0x605af800, so the filler is loaded. No literal, branch or constructor table points into
+    it. It is inside the DbgSup protected range, so execute and read only; leave the word at 0x605af4b0 alone.
+  observations:
+  - method: static-analysis
+    source_ref: source.omkit.patch
+    project_id: project.omkit
+    summary: Bounds from the section table; checked for references into the range.
+  - method: physical-camera
+    source_ref: source.omkit.patch
+    project_id: project.omkit
+    summary: Loader code placed here has run on the developers' camera since 2026-10-30.
+  conflicts: []
+  upstream_detail: https://github.com/necrostaz/omkit/blob/a29db07f4cab2f9f9688462975ffa510b4d6fd97/docs/platform/om5m2/fw1100/patch.md#2-where-it-hooks
+- type: reference
+  id: reference.om5-ii-1100.section-9-flag
+  title: Section 9 flag word
+  summary: Word outside the DbgSup range that section 9 reloads from flash at every power-on; OMKit's once-per-boot flag.
+  source_refs:
+  - source.omkit.patch
+  topics:
+  - patching
+  last_reviewed: '2026-11-21'
+  category: data
+  camera_ids:
+  - camera.om5-ii
+  firmware_ids:
+  - firmware.om5-ii-1100
+  address:
+    space: runtime-cached
+    value: '0x615ee7c0'
+  note: Reloaded at every real start, so a value written here survives a cancelled power-off but not a new boot. That
+    lets a loader tell the two apart. Writing here is an exception to keeping state out of the loaded image.
+  observations:
+  - method: static-analysis
+    source_ref: source.omkit.patch
+    project_id: project.omkit
+    summary: Filler word in the section 9 tail, outside the protected range.
+  - method: physical-camera
+    source_ref: source.omkit.patch
+    project_id: project.omkit
+    summary: Written on the camera; a quick lever off-on did not start core twice.
+  conflicts: []
+  upstream_detail: https://github.com/necrostaz/omkit/blob/a29db07f4cab2f9f9688462975ffa510b4d6fd97/docs/platform/om5m2/fw1100/patch.md#2-where-it-hooks
+- type: reference
+  id: reference.om5-ii-1100.dram-free-gap
+  title: Free DRAM gap
+  summary: 3,383,948 bytes reserved behind the first resource record and unused by the firmware; OMKit loads CORE.BIN and modules here.
+  source_refs:
+  - source.omkit.system
+  topics:
+  - patching
+  - platform
+  last_reviewed: '2026-11-21'
+  category: free-space
+  camera_ids:
+  - camera.om5-ii
+  firmware_ids:
+  - firmware.om5-ii-1100
+  address:
+    space: runtime-uncached
+    value: '0xa3456d74'
+    end: '0xa3791000'
+  note: Its size depends on this version's resources. OMKit reads CORE.BIN to 0xa345a000 (at most 3 MiB) and runs it
+    through the cached view at 0x6345a010. Only 0xa3470000..0xa3780000 was pattern-tested on the camera.
+  observations:
+  - method: static-analysis
+    source_ref: source.omkit.system
+    project_id: project.omkit
+    summary: Reserved for resource record 0 (length 0x3c5d74); the next record starts at 0xa3791000.
+  - method: emulator
+    source_ref: source.omkit.system
+    project_id: project.omkit
+    summary: No firmware access to the gap in the emulator.
+  - method: physical-camera
+    source_ref: source.omkit.system
+    project_id: project.omkit
+    summary: 0xa3470000..0xa3780000 pattern-tested word by word on the camera.
+  conflicts: []
+  upstream_detail: https://github.com/necrostaz/omkit/blob/a29db07f4cab2f9f9688462975ffa510b4d6fd97/docs/platform/om5m2/fw1100/system.md#13-the-omkit-area

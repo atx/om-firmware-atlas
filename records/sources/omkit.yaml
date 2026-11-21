@@ -1,0 +1,211 @@
+schema_version: 1
+records:
+- type: source
+  id: source.omkit.readme
+  title: 'OMKit overview'
+  summary: 'Supported camera, the two bundled modules, install in short, the preset programs and licences.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-21'
+  url: https://github.com/necrostaz/omkit/blob/a29db07f4cab2f9f9688462975ffa510b4d6fd97/README.md
+  source_kind: github-file
+  upstream_repo: necrostaz/omkit
+  revision: a29db07f4cab2f9f9688462975ffa510b4d6fd97
+  locator: README.md
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.omkit.changelog
+  title: 'OMKit changelog'
+  summary: 'Contents of release 0.1.0 (2026-11-20), the first public release.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-21'
+  url: https://github.com/necrostaz/omkit/blob/a29db07f4cab2f9f9688462975ffa510b4d6fd97/CHANGELOG.md
+  source_kind: github-file
+  upstream_repo: necrostaz/omkit
+  revision: a29db07f4cab2f9f9688462975ffa510b4d6fd97
+  locator: CHANGELOG.md
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.omkit.architecture
+  title: 'OMKit architecture'
+  summary: 'How the loader, core, driver and modules fit together: card files, boot sequence, hooks, services and failure handling.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-21'
+  url: https://github.com/necrostaz/omkit/blob/a29db07f4cab2f9f9688462975ffa510b4d6fd97/docs/architecture.md
+  source_kind: github-file
+  upstream_repo: necrostaz/omkit
+  revision: a29db07f4cab2f9f9688462975ffa510b4d6fd97
+  locator: docs/architecture.md
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.omkit.patch
+  title: 'OMKit loader patch for OM-5 Mark II 1.1'
+  summary: 'The one hook, two code caves and flag word the patch changes, what the loader task does at boot, failure paths and camera status.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-21'
+  url: https://github.com/necrostaz/omkit/blob/a29db07f4cab2f9f9688462975ffa510b4d6fd97/docs/platform/om5m2/fw1100/patch.md
+  source_kind: github-file
+  upstream_repo: necrostaz/omkit
+  revision: a29db07f4cab2f9f9688462975ffa510b4d6fd97
+  locator: docs/platform/om5m2/fw1100/patch.md
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.omkit.install
+  title: 'Installing OMKit on the OM-5 Mark II 1.1'
+  summary: 'Firmware tool, one-time loader flash, the OMKIT card folder, updating by copying files, what to expect, going back and troubleshooting.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-21'
+  url: https://github.com/necrostaz/omkit/blob/a29db07f4cab2f9f9688462975ffa510b4d6fd97/docs/platform/om5m2/fw1100/install.md
+  source_kind: github-file
+  upstream_repo: necrostaz/omkit
+  revision: a29db07f4cab2f9f9688462975ffa510b4d6fd97
+  locator: docs/platform/om5m2/fw1100/install.md
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.omkit.firmware
+  title: 'OM-5 Mark II firmware, startup, updates and recovery'
+  summary: 'Update file structure, section load order and the sections-loaded word, the card updater and recovery paths, with basis labels.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-21'
+  url: https://github.com/necrostaz/omkit/blob/a29db07f4cab2f9f9688462975ffa510b4d6fd97/docs/platform/om5m2/firmware.md
+  source_kind: github-file
+  upstream_repo: necrostaz/omkit
+  revision: a29db07f4cab2f9f9688462975ffa510b4d6fd97
+  locator: docs/platform/om5m2/firmware.md
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.omkit.identity
+  title: 'OM-5 Mark II firmware 1.1 identity'
+  summary: 'Official file name, size and SHA-256, and the fingerprint and per-hook checks core makes before running.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-21'
+  url: https://github.com/necrostaz/omkit/blob/a29db07f4cab2f9f9688462975ffa510b4d6fd97/docs/platform/om5m2/fw1100/README.md
+  source_kind: github-file
+  upstream_repo: necrostaz/omkit
+  revision: a29db07f4cab2f9f9688462975ffa510b4d6fd97
+  locator: docs/platform/om5m2/fw1100/README.md
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.omkit.system
+  title: 'OM-5 Mark II 1.1 system catalogue'
+  summary: 'Memory layout, sections, heaps, the free DRAM gap OMKit uses, protection and RTOS entries, with basis labels.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-21'
+  url: https://github.com/necrostaz/omkit/blob/a29db07f4cab2f9f9688462975ffa510b4d6fd97/docs/platform/om5m2/fw1100/system.md
+  source_kind: github-file
+  upstream_repo: necrostaz/omkit
+  revision: a29db07f4cab2f9f9688462975ffa510b4d6fd97
+  locator: docs/platform/om5m2/fw1100/system.md
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.omkit.filmlook
+  title: 'FILMLOOK module'
+  summary: 'Film look in one picture mode slot, .ISP presets on the card, tone curve, grain, settings, store and limits.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-21'
+  url: https://github.com/necrostaz/omkit/blob/a29db07f4cab2f9f9688462975ffa510b4d6fd97/docs/modules/filmlook/README.md
+  source_kind: github-file
+  upstream_repo: necrostaz/omkit
+  revision: a29db07f4cab2f9f9688462975ffa510b4d6fd97
+  locator: docs/modules/filmlook/README.md
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.omkit.creatprf
+  title: 'CREATPRF module'
+  summary: 'Three colour and three monochrome profiles shown and applied from memory, their editors and OM Workspace import.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-21'
+  url: https://github.com/necrostaz/omkit/blob/a29db07f4cab2f9f9688462975ffa510b4d6fd97/docs/modules/creatprf/README.md
+  source_kind: github-file
+  upstream_repo: necrostaz/omkit
+  revision: a29db07f4cab2f9f9688462975ffa510b4d6fd97
+  locator: docs/modules/creatprf/README.md
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.omkit.isp-format
+  title: 'The .isp picture profile file'
+  summary: 'Card format of FILMLOOK presets: a set of the camera''s own colour tables with a name and cassette picture.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-21'
+  url: https://github.com/necrostaz/omkit/blob/a29db07f4cab2f9f9688462975ffa510b4d6fd97/docs/formats/isp.md
+  source_kind: github-file
+  upstream_repo: necrostaz/omkit
+  revision: a29db07f4cab2f9f9688462975ffa510b4d6fd97
+  locator: docs/formats/isp.md
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.omkit.apps
+  title: 'OMKit preset programs'
+  summary: 'ISP player, ISP fitter (.cube to preset) and ISP neurofit (RAW plus film scans, driven by an AI agent).'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-21'
+  url: https://github.com/necrostaz/omkit/blob/a29db07f4cab2f9f9688462975ffa510b4d6fd97/docs/apps/README.md
+  source_kind: github-file
+  upstream_repo: necrostaz/omkit
+  revision: a29db07f4cab2f9f9688462975ffa510b4d6fd97
+  locator: docs/apps/README.md
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.omkit.releases
+  title: OMKit releases
+  summary: One release, v0.1.0 (core 1.32, CREATPRF 1.5, FILMLOOK 1.12), published 2026-11-20 and marked Latest, with the ZIP's SHA-256.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-21'
+  url: https://github.com/necrostaz/omkit/releases
+  source_kind: github-release
+  upstream_repo: necrostaz/omkit
+  revision: v0.1.0
+  locator: Releases page; release v0.1.0 at commit 22b3f102d35dad68cde98fe5843155a5848bf016
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
+  published_on: '2026-11-20'
+  publication: public
+  reuse_note: Attributed summary of mutable release notes; no code, firmware or executables imported.
