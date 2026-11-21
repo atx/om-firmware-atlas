@@ -9,13 +9,16 @@ E140: port/signature research and emulator coverage; no physical feature report 
 
 <div class="glance" markdown="1">
 
-**Releases for this camera:** none yet.
+**Releases for this camera:** none recorded yet.
 
 **No release for this camera yet:** [Caduceus for E-P7](../projects/caduceus-ep7.md).
 
 **Jump to:** [Projects](#projects) · [Test evidence](#evidence) · [Where to talk](#talk)
 
 </div>
+
+**[Before you install](../../docs/before-you-install.md)** · Unofficial firmware can leave your camera stuck restarting or unable to start. Recovery from a memory card is not guaranteed.
+{ .install-note }
 
 ## Projects for this camera { #projects }
 
@@ -49,7 +52,6 @@ Mod
 
 </div>
 
-Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
 
 ### Research, tools and references
 

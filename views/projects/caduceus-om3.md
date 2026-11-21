@@ -4,6 +4,10 @@
 
 Film looks and a full colour editor, built into the OM SYSTEM OM-3.
 
+
+**[Before you install](../../docs/before-you-install.md)** · Unofficial firmware can leave your camera stuck restarting or unable to start. Recovery from a memory card is not guaranteed.
+{ .install-note }
+
 <div class="cta-row" markdown="1">
 
 [Project home](https://github.com/androidfanman/caduceus-om3){ .btn .btn-primary }
@@ -38,8 +42,6 @@ It is open source, for the OM-3 on firmware 1.1 only, and grew out of Caduceus f
 - Make Color Profile mode the best JPEG maker of any camera. With v0.28 the owner considers the colour profiles complete for now.
 - Video comes next in the owner's order of work.
 - Panasonic aperture-ring support remains planned.
-
-> **Before you install:** Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
 
 ## Features
 
@@ -534,6 +536,8 @@ After updating, assign your custom modes once.
 ## Where to talk
 
 [Caduceus Discord](../community/caduceus-discord.md), [r/M43](../community/m43.md). For a reproducible bug, use the project's issue tracker.
+
+[Report a camera result](../../docs/report.md) with the exact model, starting firmware, build, file hash if known, steps and outcome.
 
 ## Related work
 

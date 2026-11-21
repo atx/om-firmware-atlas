@@ -1,6 +1,14 @@
 # Community
 
-The Atlas is built by and for the people modifying and researching these cameras. Most of the work here started as a conversation on Discord or Reddit, a test on someone's own camera, or a pull request from a stranger. You don't need to write code to take part.
+[Join the Caduceus Discord](https://discord.gg/fKpcKGsNPY){ .btn .btn-primary }
+
+Ask about a build, discuss an idea or find the people working on your camera. For a reproducible problem, use **Ask or report issues** on the [project's page](../views/projects/index.md). Include the exact model, starting firmware, build, file hash if known, steps and outcome. [Camera report checklist](report.md).
+
+## Help test a project
+
+The [Caduceus for E-P7 project](../views/projects/caduceus-ep7.md) says its **E-M10 Mark IV port** needs a volunteer tester. Check the project's [port notes](https://github.com/cakelesscoder/caduceus-ep7/blob/main/docs/BODIES.md) for current needs and [read the risks](before-you-install.md) before volunteering.
+
+## Contribute to the Atlas
 
 <div class="explore-grid" markdown="1">
 

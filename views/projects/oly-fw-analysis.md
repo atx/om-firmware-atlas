@@ -4,6 +4,10 @@
 
 The research base: PEN-F HSL, firmware formats and tools for many bodies.
 
+
+**[Before you install](../../docs/before-you-install.md)** · Unofficial firmware can leave your camera stuck restarting or unable to start. Recovery from a memory card is not guaranteed.
+{ .install-note }
+
 <div class="cta-row" markdown="1">
 
 [Project home](https://github.com/fishcu/oly_fw_analysis){ .btn .btn-primary }
@@ -94,6 +98,8 @@ An early alpha for voluntary testing, with owner-reported checks only.
 ## Cameras
 
 [Olympus PEN-F](../cameras/pen-f.md), [OM SYSTEM OM-5](../cameras/om5.md), [Olympus PEN E-P7](../cameras/ep7.md), [OM SYSTEM OM-3](../cameras/om3.md).
+
+[Report a camera result](../../docs/report.md) with the exact model, starting firmware, build, file hash if known, steps and outcome.
 
 ## Related work
 

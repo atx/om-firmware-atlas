@@ -17,6 +17,9 @@ E147: advanced Caduceus work, other modifications and an established research no
 
 </div>
 
+**[Before you install](../../docs/before-you-install.md)** · Unofficial firmware can leave your camera stuck restarting or unable to start. Recovery from a memory card is not guaranteed.
+{ .install-note }
+
 ## What you can do with this camera { #features }
 
 Features as each project describes them, with their status. Follow a project's own guide before installing anything.
@@ -304,7 +307,7 @@ Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to
 **For this camera:** Listed for this camera: Korean menus (beta), Hybrid Shutter (beta).
 { .card-for }
 
-**Get it:** [dbv0.4.3](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3), 21 Nov 2026
+**Get it:** [dbv0.4.3](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3), 21 Nov 2026. Check the release notes for files and instructions for this model.
 { .card-get }
 
 Mod
@@ -337,7 +340,6 @@ Experimental fork
 
 </div>
 
-Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
 
 ### Research, tools and references
 
@@ -409,9 +411,21 @@ Reference
 
 ## Claims and test evidence { #evidence }
 
-| Scoped assertion | Project / build | Availability | Evidence |
-|---|---|---|---|
-| [OM-3 HSL editor](../capabilities/om3-hsl.md) | [Caduceus for OM-3](../projects/caduceus-om3.md) / v0.30.3 | published release | Upstream description; no separate test observation catalogued |
+<div class="evidence-list" markdown="1">
+
+<div class="evidence-entry" markdown="1">
+
+**[OM-3 HSL editor](../capabilities/om3-hsl.md)**
+
+Project and build · [Caduceus for OM-3](../projects/caduceus-om3.md) / v0.30.3
+
+Availability · published release
+
+Evidence · Upstream description; no separate test observation catalogued
+
+</div>
+
+</div>
 
 Results belong to the named project and package. Emulator output does not establish physical-camera behaviour.
 

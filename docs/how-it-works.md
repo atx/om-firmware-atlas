@@ -2,7 +2,7 @@
 
 The Atlas is a set of files in a GitHub repository, plus a few Python scripts that check those files and turn them into this website. Anyone can propose a change. People and AI agents follow the same route: change the source files, let the checks run, open a pull request and wait for a human to merge it.
 
-This page explains that route for contributors. If you only want to add something, [Community](community.md) is shorter.
+This page explains that route for contributors. To send a link or correction, [choose an issue form, copy an agent prompt or prepare a PR](add.md).
 
 **A few terms used below**
 

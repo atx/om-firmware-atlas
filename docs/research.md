@@ -1,16 +1,38 @@
-# Research
+# Firmware research
 
-For people building new work: guides to the firmware, the evidence catalogue, and how to choose where a change belongs. Looking for what you can install today? See [Cameras](../views/cameras/index.md) and [Projects](../views/projects/index.md).
+Choose the [exact camera and generation](../views/cameras/index.md) and identify its starting firmware. If you are deciding whether to install a mod, start with [the owner's guide to risk and recovery](before-you-install.md).
 
-## Check what exists first
+## From update file to working camera
 
-Choose the [exact camera and generation](../views/cameras/index.md). Check the firmware identity, related projects and known gaps. Shared code or a similar model name is a research lead; it does not make an existing patch portable.
+1. **Identify the file.** The Olympus update files studied here package several components. Record the model, version and file fingerprint before comparing them. A position in the file can refer to a different place once the camera loads it. [Firmware identity and address spaces](../knowledge/platform/identity.md).
+2. **Follow the card update.** On the documented bodies, the camera's updater reads a prepared card and writes the firmware. Recovery uses the same route with official firmware, provided the updater can still run. [Card recovery and owner reports](before-you-install.md#if-the-camera-will-not-start).
+3. **Trace start-up for this build.** The camera loads and prepares parts of the program in stages. The E-M5 III notes show which parts are ready early. The E-P7 guide covers its own layout and loader. [E-M5 III start-up](../views/sources/em5n.boot.md) · [E-P7 firmware guide](../views/sources/ep7.guide.md).
 
-## Technical reference
+## Risk by type of change
 
-The [technical reference](../views/reference/index.md) holds compact, sourced facts that projects keep needing: named addresses for one exact firmware build, free code space, and known trouble spots such as "keep patch state out of the loaded image", and per build the platform (image processor, cores, update-file layout) and which features the stock firmware already contains. Each entry shows how it was established and whether independent projects agree, and links the upstream section with the full explanation.
+| What changes | What could go wrong | What the Atlas records |
+|---|---|---|
+| Bootloader (the first program to run) or card updater | Damage here could prevent the camera from reaching a recovery update. | On OM-5 Mark II 1.1 the project located the card updater in section 7. It recommends preserving that section. This is an inferred risk. The record attributes no failure to it. [Updater finding](../views/reference/hazard.updater-section-stock.md). |
+| Code that runs on every start | A fault can repeat each time the camera starts. The route back depends on how the project loads its changes. | OMKit on OM-5 Mark II 1.1 adds a loader late in start-up. Its developers report that holding OK or removing the card bypasses their card-loaded code. Caduceus separately records an intermittent restart loop on this model. [OMKit report](../views/evidence/om5-ii-omkit-loader.md) · [Caduceus report](../views/evidence/om5-ii-dev0565-boot.md). |
+| Code reached through a menu or shooting feature | A fault may only appear when that feature runs. Installing a changed firmware image still carries the risks above. | The original E-M10 project om10mi-mods records a freeze reported with filters enabled. The report lacks the body and build details needed to reproduce it. [Project and open reports](../views/projects/om10mi-mods.md). |
 
-The detailed research stays with the projects. [Olympus firmware research](../views/projects/oly-fw-analysis.md) is the deepest home for most topics. [The reference policy](https://github.com/xulfr/om-firmware-atlas/blob/main/maintenance/reference-policy.md) sets out what belongs in the Atlas and what stays upstream.
+A feature name alone cannot establish that a release touches only later code, or that it changes the bootloader. Where the project gives no boundary, treat it as unknown. [Compare a flashed feature with a card-loaded module](../knowledge/methods/patching.md).
+
+## Common pitfalls
+
+- **Requested and ready are different states.** Calling a section too early can reach code before it is initialised. The reference preserves differing interpretations of the readiness signal. [Start-up observations](../views/reference/hazard.ready-not-requested.md).
+- **Apparently empty space may be used later.** Firmware can overwrite a patch's working data as sections load. Check the build-specific observations and project development notes. [Loaded-image hazard](../views/reference/hazard.state-in-loaded-image.md) · [Shared trouble spots](../views/reference/index.md#trouble-spots).
+- **A passing check has a scope.** On the original OM-5, one tester reported an unusable start followed by restoration of official 1.2 from the card. Retain both outcomes when investigating later builds. [Failed start](../views/evidence/om5-prealpha1-boot.md) · [Recovery report](../views/evidence/om5-prealpha1-restore.md) · [Validation methods](../knowledge/methods/patching.md).
+
+## Architecture by hardware family
+
+The [platform comparison by firmware build](../views/reference/index.md#platform-by-build) lines up the image processor, main CPU, co-processor, memory and update-file layout. Each populated cell links to its source. A blank means the Atlas lacks that fact.
+
+- **TruePic VI.** The E-PM2 1.6 record describes two MN103 cores and no ARM co-processor. [E-PM2 platform](../views/cameras/epm2.md#platform).
+- **TruePic VIII.** E-M5 Mark III 1.7 combines MN103 cores with a Cortex-A9 co-processor. [E-M5 Mark III platform](../views/cameras/em5-iii.md#platform).
+- **TruePic IX.** OM-5 1.2 and OM-5 Mark II 1.1 share an image processor generation, main CPU family and image memory layout. Their co-processors run different Linux versions and their update files have different identifiers. [OM-5 platform](../views/cameras/om5.md#platform) · [Mark II platform](../views/cameras/om5-ii.md#platform).
+
+An overlap suggests a comparison to try. **Addresses and results never transfer automatically** between bodies or builds. [Cross-model reasoning](../knowledge/comparisons/models.md).
 
 ## Choose a task
 

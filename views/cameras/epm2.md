@@ -15,6 +15,9 @@ E101, TruePic VI (2012): one camera-tested mod; its addresses and edits do not c
 
 </div>
 
+**[Before you install](../../docs/before-you-install.md)** · Unofficial firmware can leave your camera stuck restarting or unable to start. Recovery from a memory card is not guaranteed.
+{ .install-note }
+
 ## What you can do with this camera { #features }
 
 Features as each project describes them, with their status. Follow a project's own guide before installing anything.
@@ -127,13 +130,24 @@ Mod
 
 </div>
 
-Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
 
 ## Claims and test evidence { #evidence }
 
-| Scoped assertion | Project / build | Availability | Evidence |
-|---|---|---|---|
-| [E-PM2 card-loaded film simulations, films-look-exif](../capabilities/epm2-films-look-exif.md) | [EPM2Mod](../projects/epm2mod.md) / films-look-exif | candidate | physical camera; reported pass; complete report; reported hash |
+<div class="evidence-list" markdown="1">
+
+<div class="evidence-entry" markdown="1">
+
+**[E-PM2 card-loaded film simulations, films-look-exif](../capabilities/epm2-films-look-exif.md)**
+
+Project and build · [EPM2Mod](../projects/epm2mod.md) / films-look-exif
+
+Availability · candidate
+
+Evidence · physical camera; reported pass; complete report; reported hash
+
+</div>
+
+</div>
 
 Results belong to the named project and package. Emulator output does not establish physical-camera behaviour.
 

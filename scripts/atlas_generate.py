@@ -1,6 +1,7 @@
 """Deterministic Markdown views and bounded reading routes."""
 from __future__ import annotations
 
+from html import escape
 import json
 from pathlib import Path
 
@@ -65,8 +66,27 @@ PROJECT_GROUPS = (("Camera modifications", ("mod", "experimental-fork")),
                   ("Research and tools", ("research", "emulator", "tool", "reference")))
 STATUS_LABELS = {"released": "Available", "beta": "Beta", "alpha": "Alpha", "testing": "Testing",
                  "in-development": "In development", "planned": "Planned", "research": "Research"}
-RISK_NOTE = ("Installing modified firmware is at your own risk. Follow the project's own guide for your exact "
-             "camera and firmware, and read its safety notes first.")
+def camera_finder(catalogue, origin):
+    """Render scoped links from the same identities used by the camera pages."""
+    lines = ['<div class="camera-finder" markdown="1" hidden>',
+             '<label for="camera-query">Find your camera</label>',
+             '<input id="camera-query" type="search" placeholder="Model name or code, e.g. E148" autocomplete="off">',
+             '<p role="status"></p>', '<div class="finder-results" markdown="1">']
+    for camera in catalogue.of_type("camera"):
+        names = [camera["title"], *camera["aliases"], *camera["model_codes"]]
+        aliases = escape("|".join(names), quote=True)
+        title = cell(short_name(camera["title"]))
+        codes = ", ".join(camera["model_codes"])
+        lines.append(f'[{title} · {codes}]({link(origin, view_path(camera))}){{ data-names="{aliases}" }}')
+    lines.extend(["</div>", "</div>"])
+    return "\n\n".join(lines) + "\n\n"
+
+
+def risk_note(origin):
+    guide = link(origin, "docs/before-you-install.md")
+    return (f"\n**[Before you install]({guide})** · Unofficial firmware can leave your camera stuck "
+            "restarting or unable to start. Recovery from a memory card is not guaranteed."
+            "\n{ .install-note }\n")
 
 
 def project_group(row):
@@ -134,12 +154,12 @@ def glance(origin, camera, mods, records, page):
     if released:
         lines.append("**Releases for this camera:** " + ", ".join(released) + ".")
     else:
-        lines.append("**Releases for this camera:** none yet.")
+        lines.append("**Releases for this camera:** none recorded yet.")
     if waiting:
         lines.append("**No release for this camera yet:** " + ", ".join(waiting) + ".")
     jumps = [f"[{title}](#{anchor})" for anchor, title in GLANCE_SECTIONS if "{ #" + anchor + " }" in page]
     lines.append("**Jump to:** " + " · ".join(jumps))
-    return '\n<div class="glance" markdown="1">\n\n' + "\n\n".join(lines) + "\n\n</div>\n"
+    return '\n<div class="glance" markdown="1">\n\n' + "\n\n".join(lines) + "\n\n</div>\n" + risk_note(origin)
 
 
 def installs(records, project, camera_id):
@@ -167,11 +187,17 @@ def for_camera(origin, row, camera):
         kind = {"research": "a research project", "tool": "a tool", "emulator": "an emulator", "reference": "a reference guide"}.get(row["kind"], label(row["kind"]))
         text = f"{kind[0].upper()}{kind[1:]}; it does not change the camera." + (f" Covers this camera for: {listed}." if listed else " Its own page says what it holds for this model.")
     release = camera_release(row, camera_id)
-    guide = next((l for l in row.get("links", []) if any(w in l["label"].lower() for w in ("install", "guide", "try it", "use"))), None)
+    links = row.get("links", [])
+    guide = next((item for item in links if "install" in item["label"].lower()), None)
+    if not guide:
+        guide = next((item for item in links if any(word in item["label"].lower()
+                     for word in ("guide", "try it", "use"))), None)
     if release:
         tag = release["tag"] + (" (pre-release)" if release["prerelease"] else "")
         get = f"[{cell(tag)}]({release['url']}), {nice_date(release['date'])}"
-        if guide:
+        if not guide:
+            get += ". Check the release notes for files and instructions for this model."
+        else:
             get += f" · [{cell(guide['label'])}]({guide['url']})"
     elif row["kind"] in MOD_KINDS:
         get = "No release for this camera yet."
@@ -333,7 +359,7 @@ def render(catalogue):
                     text += "### Mods and ports\n\nThese change the camera's firmware.\n\n"
                     text += '<div class="project-grid" markdown="1">\n\n'
                     text += "".join(project_card(catalogue, path, project, links=True, camera=row) for project in mods)
-                    text += "</div>\n\n" + RISK_NOTE + "\n"
+                    text += "</div>\n\n"
                 if others:
                     text += "\n### Research, tools and references\n\nThese do not change the camera. They help people study firmware, build or check mods, or install official updates.\n\n"
                     text += '<div class="project-grid" markdown="1">\n\n'
@@ -344,12 +370,15 @@ def render(catalogue):
             caps = [r for r in catalogue.of_type("capability") if r["camera_id"] == row["id"]]
             text += "\n## Claims and test evidence { #evidence }\n\n"
             if caps:
-                text += "| Scoped assertion | Project / build | Availability | Evidence |\n|---|---|---|---|\n"
+                text += '<div class="evidence-list" markdown="1">\n\n'
                 for cap in caps:
                     evs = [records[e] for e in cap["evidence_refs"]]
                     state = "; ".join(evidence_label(e) for e in evs) or "Upstream description; no separate test observation catalogued"
-                    text += f"| {ref(path, cap['id'])} | {ref(path, cap['project_id'])} / {cell(cap['mod_build'] or 'unspecified')} | {label(cap['availability'])} | {cell(state)} |\n"
-                text += "\nResults belong to the named project and package. Emulator output does not establish physical-camera behaviour.\n"
+                    text += '<div class="evidence-entry" markdown="1">\n\n'
+                    text += f"**{ref(path, cap['id'])}**\n\n"
+                    text += f"Project and build · {ref(path, cap['project_id'])} / {cell(cap['mod_build'] or 'unspecified')}\n\n"
+                    text += f"Availability · {label(cap['availability'])}\n\nEvidence · {cell(state)}\n\n</div>\n\n"
+                text += "</div>\n\nResults belong to the named project and package. Emulator output does not establish physical-camera behaviour.\n"
             else:
                 text += "No feature-level assertion is catalogued yet. This is a coverage gap, not a finding that modifications are impossible.\n"
             venues = [r["id"] for r in catalogue.of_type("community") if set(r["project_ids"]) & set(row["project_ids"])]
@@ -382,6 +411,8 @@ def render(catalogue):
                 text += "\n## Technical reference\n\n" + "\n".join(f"- {ref(path, r['id'])}: {r['summary']}" for r in entries) + "\n"
         elif kind == "project":
             text = GENERATED + f"# {row['title']}\n\n{row.get('tagline', row['summary'])}\n\n"
+            if any(installs(records, row, camera_id) for camera_id in row["camera_ids"]):
+                text += risk_note(path) + "\n"
             buttons = [f"[Project home]({row['url']}){{ .btn .btn-primary }}", f"[Ask or report issues]({row['contribution_home']}){{ .btn .btn-ghost }}"]
             buttons += [f"[{cell(l['label'])}]({l['url']}){{ .btn .btn-ghost }}" for l in row.get("links", [])]
             text += '<div class="cta-row" markdown="1">\n\n' + "\n".join(buttons) + "\n\n</div>\n"
@@ -403,8 +434,6 @@ def render(catalogue):
             text += "\n## About\n\n" + "\n\n".join(row.get("description", [row["status_summary"]])) + "\n"
             if row.get("goals"):
                 text += "\n### What it's working towards\n\n" + "\n".join(f"- {g}" for g in row["goals"]) + "\n"
-            if row["kind"] in ("mod", "experimental-fork"):
-                text += "\n> **Before you install:** " + RISK_NOTE + "\n"
             if row.get("features"):
                 text += "\n## Features\n\nAs the project describes them. Status is the project's own; linked evidence is the Atlas's record of what was reported or observed.\n\n"
                 text += '<div class="feature-grid" markdown="1">\n\n'
@@ -440,6 +469,9 @@ def render(catalogue):
             communities = [r["id"] for r in catalogue.of_type("community") if row["id"] in r["project_ids"]]
             if communities:
                 text += "\n## Where to talk\n\n" + refs(path, communities) + ". For a reproducible bug, use the project's issue tracker.\n"
+            if any(installs(records, row, camera_id) for camera_id in row["camera_ids"]):
+                text += (f"\n[Report a camera result]({link(path, 'docs/report.md')}) with the exact model, "
+                         "starting firmware, build, file hash if known, steps and outcome.\n")
             text += "\n## Related work\n\n" + refs(path, row["related_projects"]) + ". These links do not assign ownership or imply identical implementations.\n"
             text += f"\n## Research notes\n\n{row['status_summary']}\n"
             if row.get("work_items"):
@@ -508,6 +540,7 @@ def render(catalogue):
         text = GENERATED + f"# {INDEX_TITLES[kind]}\n\n{INDEX_INTROS[kind]}\n\n"
         if kind == "camera":
             rows = catalogue.of_type("camera")
+            text += camera_finder(catalogue, path)
             for line in CAMERA_LINES:
                 members = sorted((r for r in rows if camera_line(r["title"]) == line), key=lambda r: r["title"])
                 if not members:

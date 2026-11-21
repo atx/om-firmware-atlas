@@ -21,6 +21,36 @@
     });
   }
 
+  /* Punctuation and generation spellings vary. Convert whole generations before
+     matching so a search for Mark II cannot return a Mark III through a prefix. */
+  function cameraKey(name) {
+    var numerals = { i: '1', ii: '2', iii: '3', iv: '4' };
+    return name.toLowerCase().replace(/mark|mk/g, '').replace(/[^a-z0-9]/g, '')
+      .replace(/(iv|iii|ii|i)$/, function (value) { return numerals[value]; });
+  }
+
+  document.querySelectorAll('.camera-finder').forEach(function (finder) {
+    var field = finder.querySelector('input');
+    var status = finder.querySelector('[role="status"]');
+    var links = Array.from(finder.querySelectorAll('[data-names]'));
+    function filter() {
+      var query = cameraKey(field.value);
+      var count = 0;
+      links.forEach(function (link) {
+        var matches = query && link.dataset.names.split('|').some(function (name) {
+          return cameraKey(name).includes(query);
+        });
+        link.parentElement.hidden = !matches;
+        if (matches) count++;
+      });
+      status.textContent = !query ? '' : count ? count + (count === 1 ? ' camera listed' : ' cameras listed')
+        : 'No matching camera in the Atlas. Check the name and generation, or browse the camera directory.';
+    }
+    field.addEventListener('input', filter);
+    filter();
+    finder.hidden = false;
+  });
+
   /* Wide tables scroll inside a rounded frame instead of stretching the page. */
   document.querySelectorAll('.prose table').forEach(function (table) {
     if (table.parentElement.classList.contains('table-wrap')) return;

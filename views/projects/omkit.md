@@ -4,6 +4,10 @@
 
 A loader flashed once, then core, modules and settings from the SD card. OM-5 Mark II.
 
+
+**[Before you install](../../docs/before-you-install.md)** · Unofficial firmware can leave your camera stuck restarting or unable to start. Recovery from a memory card is not guaranteed.
+{ .install-note }
+
 <div class="cta-row" markdown="1">
 
 [Project home](https://github.com/necrostaz/omkit){ .btn .btn-primary }
@@ -31,8 +35,6 @@ The first release has two modules. CREATPRF shows the three Color and three Mono
 
 - Support more cameras and firmware versions with a new driver and loader per build; core, the SDK and modules stay the same.
 - Modules from other authors, written against the published SDK.
-
-> **Before you install:** Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
 
 ## Features
 
@@ -121,6 +123,8 @@ Unofficial; only for the OM-5 Mark II on firmware 1.1. Never interrupt the firmw
 ## Cameras
 
 [OM SYSTEM OM-5 Mark II](../cameras/om5-ii.md).
+
+[Report a camera result](../../docs/report.md) with the exact model, starting firmware, build, file hash if known, steps and outcome.
 
 ## Related work
 

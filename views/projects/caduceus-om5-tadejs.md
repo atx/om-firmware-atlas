@@ -4,6 +4,10 @@
 
 Groundwork for bringing Caduceus to the original OM-5. Not released.
 
+
+**[Before you install](../../docs/before-you-install.md)** · Unofficial firmware can leave your camera stuck restarting or unable to start. Recovery from a memory card is not guaranteed.
+{ .install-note }
+
 <div class="cta-row" markdown="1">
 
 [Project home](https://github.com/tadejs/caduceus-om5){ .btn .btn-primary }
@@ -29,8 +33,6 @@ On the owner's camera, the official 1.2 file through the SD updater, the port's 
 - Picture Mode entries, labels and a profile selector so that COLOR 1–3 can be chosen on the camera.
 - Per-profile contrast, sharpness and the other profile values, beyond saturation.
 - One shared look format and Control Panel with the other Caduceus ports.
-
-> **Before you install:** Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
 
 ## Features
 
@@ -79,6 +81,8 @@ Panel table analysed; paused because the owner sees no pink cast on the OM-5 scr
 ## Cameras
 
 [OM SYSTEM OM-5](../cameras/om5.md).
+
+[Report a camera result](../../docs/report.md) with the exact model, starting firmware, build, file hash if known, steps and outcome.
 
 ## Related work
 

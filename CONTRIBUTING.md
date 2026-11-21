@@ -1,6 +1,6 @@
 # Contribute to the Atlas
 
-Bring a useful source, correction, project or test result. You can open an issue using the intake forms, or ask an agent to read [AGENTS.md](AGENTS.md), follow the ingestion workflow and raise a PR. [How the Atlas works](docs/how-it-works.md) explains the whole route, with a worked example and copyable agent prompts.
+Bring a useful source, correction, project or test result. You can open an issue using the [intake forms](docs/add.md), or ask an agent to read [AGENTS.md](AGENTS.md), follow the ingestion workflow and raise a PR. [How the Atlas works](docs/how-it-works.md) explains the whole route, with a worked example and copyable agent prompts.
 
 ## Steps
 

@@ -9,11 +9,14 @@ E137: firmware 1.7 studied in depth; focus stacking with any lens, a Live ND por
 
 <div class="glance" markdown="1">
 
-**Releases for this camera:** none yet.
+**Releases for this camera:** none recorded yet.
 
 **Jump to:** [Projects](#projects) · [Test evidence](#evidence) · [Platform](#platform)
 
 </div>
+
+**[Before you install](../../docs/before-you-install.md)** · Unofficial firmware can leave your camera stuck restarting or unable to start. Recovery from a memory card is not guaranteed.
+{ .install-note }
 
 ## Projects for this camera { #projects }
 
@@ -90,15 +93,93 @@ Research
 
 ## Claims and test evidence { #evidence }
 
-| Scoped assertion | Project / build | Availability | Evidence |
-|---|---|---|---|
-| [E-M5 III 1.7 focus stacking with any lens](../capabilities/em5-iii-focus-stacking-any-lens.md) | [Olympus firmware notes (E-M5 Mark III)](../projects/em5-iii-notes.md) / focus-stacking lens check patch | research | physical camera; reported pass; partial report; not applicable |
-| [E-M5 III 1.7 Live ND photo (OM-5 port)](../capabilities/em5-iii-live-nd.md) | [Olympus firmware notes (E-M5 Mark III)](../projects/em5-iii-notes.md) / unpublished test builds (to 2026-11-19) | experimental branch | physical camera; reported pass; partial report; not applicable |
-| [E-M5 III 1.7 Live ND live-view simulation (OM-5 port)](../capabilities/em5-iii-live-nd-preview.md) | [Olympus firmware notes (E-M5 Mark III)](../projects/em5-iii-notes.md) / unpublished test builds (to 2026-11-17) | experimental branch | physical camera; reported pass; partial report; not applicable |
-| [E-M5 III 1.7 Color / Monochrome Profile with an on-camera wheel editor](../capabilities/em5-iii-profile-editor.md) | [Olympus firmware notes (E-M5 Mark III)](../projects/em5-iii-notes.md) / unpublished test builds (2026-11-19 to 2026-11-20) | experimental branch | physical camera; reported pass; partial report; not applicable |
-| [E-M5 III 1.7 native menu rows with mod settings kept across power-off](../capabilities/em5-iii-saved-settings-menu-rows.md) | [Olympus firmware notes (E-M5 Mark III)](../projects/em5-iii-notes.md) / unpublished test build (2026-11-19) | experimental branch | physical camera; reported pass; partial report; not applicable |
-| [E-M5 III 1.7 USB webcam (partial port)](../capabilities/em5-iii-uvc-webcam.md) | [Olympus firmware notes (E-M5 Mark III)](../projects/em5-iii-notes.md) / unpublished webcam test builds | research | physical camera; reported pass; partial report; not applicable; physical camera; reported fail; partial report; not applicable |
-| [Card-file debug Wi-Fi shell on stock E-M5 III 1.7](../capabilities/em5-iii-wifi-debug-shell.md) | [Olympus firmware research](../projects/oly-fw-analysis.md) / stock 1.7 with a card settings file | research | physical camera; pass; partial report; not applicable |
+<div class="evidence-list" markdown="1">
+
+<div class="evidence-entry" markdown="1">
+
+**[E-M5 III 1.7 focus stacking with any lens](../capabilities/em5-iii-focus-stacking-any-lens.md)**
+
+Project and build · [Olympus firmware notes (E-M5 Mark III)](../projects/em5-iii-notes.md) / focus-stacking lens check patch
+
+Availability · research
+
+Evidence · physical camera; reported pass; partial report; not applicable
+
+</div>
+
+<div class="evidence-entry" markdown="1">
+
+**[E-M5 III 1.7 Live ND photo (OM-5 port)](../capabilities/em5-iii-live-nd.md)**
+
+Project and build · [Olympus firmware notes (E-M5 Mark III)](../projects/em5-iii-notes.md) / unpublished test builds (to 2026-11-19)
+
+Availability · experimental branch
+
+Evidence · physical camera; reported pass; partial report; not applicable
+
+</div>
+
+<div class="evidence-entry" markdown="1">
+
+**[E-M5 III 1.7 Live ND live-view simulation (OM-5 port)](../capabilities/em5-iii-live-nd-preview.md)**
+
+Project and build · [Olympus firmware notes (E-M5 Mark III)](../projects/em5-iii-notes.md) / unpublished test builds (to 2026-11-17)
+
+Availability · experimental branch
+
+Evidence · physical camera; reported pass; partial report; not applicable
+
+</div>
+
+<div class="evidence-entry" markdown="1">
+
+**[E-M5 III 1.7 Color / Monochrome Profile with an on-camera wheel editor](../capabilities/em5-iii-profile-editor.md)**
+
+Project and build · [Olympus firmware notes (E-M5 Mark III)](../projects/em5-iii-notes.md) / unpublished test builds (2026-11-19 to 2026-11-20)
+
+Availability · experimental branch
+
+Evidence · physical camera; reported pass; partial report; not applicable
+
+</div>
+
+<div class="evidence-entry" markdown="1">
+
+**[E-M5 III 1.7 native menu rows with mod settings kept across power-off](../capabilities/em5-iii-saved-settings-menu-rows.md)**
+
+Project and build · [Olympus firmware notes (E-M5 Mark III)](../projects/em5-iii-notes.md) / unpublished test build (2026-11-19)
+
+Availability · experimental branch
+
+Evidence · physical camera; reported pass; partial report; not applicable
+
+</div>
+
+<div class="evidence-entry" markdown="1">
+
+**[E-M5 III 1.7 USB webcam (partial port)](../capabilities/em5-iii-uvc-webcam.md)**
+
+Project and build · [Olympus firmware notes (E-M5 Mark III)](../projects/em5-iii-notes.md) / unpublished webcam test builds
+
+Availability · research
+
+Evidence · physical camera; reported pass; partial report; not applicable; physical camera; reported fail; partial report; not applicable
+
+</div>
+
+<div class="evidence-entry" markdown="1">
+
+**[Card-file debug Wi-Fi shell on stock E-M5 III 1.7](../capabilities/em5-iii-wifi-debug-shell.md)**
+
+Project and build · [Olympus firmware research](../projects/oly-fw-analysis.md) / stock 1.7 with a card settings file
+
+Availability · research
+
+Evidence · physical camera; pass; partial report; not applicable
+
+</div>
+
+</div>
 
 Results belong to the named project and package. Emulator output does not establish physical-camera behaviour.
 

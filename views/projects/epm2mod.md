@@ -4,6 +4,10 @@
 
 Film simulations, interval shooting, focus peaking and a level gauge for the PEN E-PM2.
 
+
+**[Before you install](../../docs/before-you-install.md)** · Unofficial firmware can leave your camera stuck restarting or unable to start. Recovery from a memory card is not guaranteed.
+{ .install-note }
+
 <div class="cta-row" markdown="1">
 
 [Project home](https://github.com/cfu288/EPM2Mod){ .btn .btn-primary }
@@ -30,8 +34,6 @@ The research is unusually explicit about evidence. Every limit is labelled verif
 
 - Add Effects on film simulations, and a higher movie bit rate without the 29-minute limit.
 - The other E-PL6 additions, such as a small AF target and ISO LOW, and a simple on-camera editor.
-
-> **Before you install:** Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
 
 ## Features
 
@@ -145,6 +147,8 @@ Unofficial and for the E-PM2 only; installing is at your own risk.
 ## Cameras
 
 [Olympus PEN E-PM2](../cameras/epm2.md).
+
+[Report a camera result](../../docs/report.md) with the exact model, starting firmware, build, file hash if known, steps and outcome.
 
 ## Related work
 

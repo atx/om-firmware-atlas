@@ -15,6 +15,9 @@ E148: v0.2.0-alpha1 has an overall positive owner report; original OM-5 work is 
 
 </div>
 
+**[Before you install](../../docs/before-you-install.md)** · Unofficial firmware can leave your camera stuck restarting or unable to start. Recovery from a memory card is not guaranteed.
+{ .install-note }
+
 ## What you can do with this camera { #features }
 
 Features as each project describes them, with their status. Follow a project's own guide before installing anything.
@@ -274,7 +277,7 @@ Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to
 **For this camera:** Korean menus and Hybrid Shutter, both beta. The v0.4.3 notes list the OM-5 Mark II build as not working, so read each release's notes for this camera before installing.
 { .card-for }
 
-**Get it:** [dbv0.4.3](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3), 21 Nov 2026
+**Get it:** [dbv0.4.3](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3), 21 Nov 2026. Check the release notes for files and instructions for this model.
 { .card-get }
 
 Mod
@@ -287,7 +290,6 @@ Mod
 
 </div>
 
-Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
 
 ### Research, tools and references
 
@@ -339,15 +341,93 @@ Tool
 
 ## Claims and test evidence { #evidence }
 
-| Scoped assertion | Project / build | Availability | Evidence |
-|---|---|---|---|
-| [Mark II alpha12 HSL](../capabilities/om5-ii-alpha12-hsl.md) | [Caduceus for OM-5](../projects/caduceus-om5.md) / v0.1.0-alpha12 | published release | Upstream description; no separate test observation catalogued |
-| [Mark II alpha12 ND32/ND64](../capabilities/om5-ii-alpha12-nd.md) | [Caduceus for OM-5](../projects/caduceus-om5.md) / v0.1.0-alpha12 | published release | Upstream description; no separate test observation catalogued |
-| [Mark II alpha12 overall report](../capabilities/om5-ii-alpha12-overall.md) | [Caduceus for OM-5](../projects/caduceus-om5.md) / v0.1.0-alpha12 | published release | physical camera; reported pass; partial report; release label only |
-| [OM-5 Mark II FILMLOOK presets from the card, OMKit 0.1.0](../capabilities/om5-ii-omkit-filmlook.md) | [OMKit](../projects/omkit.md) / loader fw1100 (OMKit 0.1.0) | published release | physical camera; reported pass; partial report; reported hash |
-| [OM-5 Mark II code loaded from the card, OMKit loader](../capabilities/om5-ii-omkit-loader.md) | [OMKit](../projects/omkit.md) / loader fw1100 (OMKit 0.1.0) | published release | physical camera; reported pass; partial report; reported hash |
-| [Mark II v0.2.0-alpha1 overall report](../capabilities/om5-ii-v020-alpha1-overall.md) | [Caduceus for OM-5](../projects/caduceus-om5.md) / v0.2.0-alpha1 | published release | physical camera; reported pass; partial report; release label only |
-| [Mark II v0.2.0-alpha1 Black/White and split toning](../capabilities/om5-ii-v020-alpha1-tone.md) | [Caduceus for OM-5](../projects/caduceus-om5.md) / v0.2.0-alpha1 | published release | physical camera; reported pass; partial report; release label only |
+<div class="evidence-list" markdown="1">
+
+<div class="evidence-entry" markdown="1">
+
+**[Mark II alpha12 HSL](../capabilities/om5-ii-alpha12-hsl.md)**
+
+Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md) / v0.1.0-alpha12
+
+Availability · published release
+
+Evidence · Upstream description; no separate test observation catalogued
+
+</div>
+
+<div class="evidence-entry" markdown="1">
+
+**[Mark II alpha12 ND32/ND64](../capabilities/om5-ii-alpha12-nd.md)**
+
+Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md) / v0.1.0-alpha12
+
+Availability · published release
+
+Evidence · Upstream description; no separate test observation catalogued
+
+</div>
+
+<div class="evidence-entry" markdown="1">
+
+**[Mark II alpha12 overall report](../capabilities/om5-ii-alpha12-overall.md)**
+
+Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md) / v0.1.0-alpha12
+
+Availability · published release
+
+Evidence · physical camera; reported pass; partial report; release label only
+
+</div>
+
+<div class="evidence-entry" markdown="1">
+
+**[OM-5 Mark II FILMLOOK presets from the card, OMKit 0.1.0](../capabilities/om5-ii-omkit-filmlook.md)**
+
+Project and build · [OMKit](../projects/omkit.md) / loader fw1100 (OMKit 0.1.0)
+
+Availability · published release
+
+Evidence · physical camera; reported pass; partial report; reported hash
+
+</div>
+
+<div class="evidence-entry" markdown="1">
+
+**[OM-5 Mark II code loaded from the card, OMKit loader](../capabilities/om5-ii-omkit-loader.md)**
+
+Project and build · [OMKit](../projects/omkit.md) / loader fw1100 (OMKit 0.1.0)
+
+Availability · published release
+
+Evidence · physical camera; reported pass; partial report; reported hash
+
+</div>
+
+<div class="evidence-entry" markdown="1">
+
+**[Mark II v0.2.0-alpha1 overall report](../capabilities/om5-ii-v020-alpha1-overall.md)**
+
+Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md) / v0.2.0-alpha1
+
+Availability · published release
+
+Evidence · physical camera; reported pass; partial report; release label only
+
+</div>
+
+<div class="evidence-entry" markdown="1">
+
+**[Mark II v0.2.0-alpha1 Black/White and split toning](../capabilities/om5-ii-v020-alpha1-tone.md)**
+
+Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md) / v0.2.0-alpha1
+
+Availability · published release
+
+Evidence · physical camera; reported pass; partial report; release label only
+
+</div>
+
+</div>
 
 Results belong to the named project and package. Emulator output does not establish physical-camera behaviour.
 

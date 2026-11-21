@@ -4,6 +4,10 @@
 
 Looks and a full colour editor for the OM-5 Mark II. Experimental.
 
+
+**[Before you install](../../docs/before-you-install.md)** · Unofficial firmware can leave your camera stuck restarting or unable to start. Recovery from a memory card is not guaranteed.
+{ .install-note }
+
 <div class="cta-row" markdown="1">
 
 [Project home](https://github.com/xulfr/caduceus-om5){ .btn .btn-primary }
@@ -37,8 +41,6 @@ This is the most experimental project here. v0.2.0-alpha1 runs on the owner's ca
 - A documented camera check of every feature on the OM-5 Mark II, including per-profile white balance, persistence and recovery.
 - Clarity next; colour grain needs image-pipeline work on an experiment branch, before Glow and Halation.
 - A second stage for the original OM-5, which has no working build yet.
-
-> **Before you install:** Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
 
 ## Features
 
@@ -208,6 +210,8 @@ Experimental. The installer keeps its experimental-build acknowledgement; instal
 ## Where to talk
 
 [Caduceus Discord](../community/caduceus-discord.md), [r/M43](../community/m43.md). For a reproducible bug, use the project's issue tracker.
+
+[Report a camera result](../../docs/report.md) with the exact model, starting firmware, build, file hash if known, steps and outcome.
 
 ## Related work
 
