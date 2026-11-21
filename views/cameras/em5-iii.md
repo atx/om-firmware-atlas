@@ -15,6 +15,9 @@ E137: firmware 1.7 studied in depth; focus stacking with any lens, a Live ND por
 
 </div>
 
+**[Before you install](../../docs/before-you-install.md)** · Unofficial firmware can leave your camera stuck restarting or unable to start. Recovery from a memory card is not guaranteed.
+{ .install-note }
+
 ## Projects for this camera { #projects }
 
 Each card says what the project has for this camera and where to get it. A project can be listed here for a small part of its work; its own page covers the rest.

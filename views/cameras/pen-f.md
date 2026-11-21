@@ -15,6 +15,9 @@ E122: foundational HSL research; exact internal build identity matters.
 
 </div>
 
+**[Before you install](../../docs/before-you-install.md)** · Unofficial firmware can leave your camera stuck restarting or unable to start. Recovery from a memory card is not guaranteed.
+{ .install-note }
+
 ## What you can do with this camera { #features }
 
 Features as each project describes them, with their status. Follow a project's own guide before installing anything.
@@ -54,7 +57,7 @@ The research base: PEN-F HSL, firmware formats and tools for many bodies.
 **For this camera:** Publishes the PEN-F HSL patch as alpha releases: hue and lightness added to the 12-colour saturation editor in COLOR1–3. The project asks for a firsthand hardware report before publishing a flashable patch.
 { .card-for }
 
-**Get it:** [alpha-20261017 (pre-release)](https://github.com/fishcu/oly_fw_analysis/releases/tag/alpha-20261017), 18 Oct 2026
+**Get it:** [alpha-20261017 (pre-release)](https://github.com/fishcu/oly_fw_analysis/releases/tag/alpha-20261017), 18 Oct 2026 · [Read the project instructions](https://github.com/fishcu/oly_fw_analysis)
 { .card-get }
 
 Research
@@ -74,7 +77,7 @@ Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to
 **For this camera:** No PEN-F feature is catalogued. Release v0.3.2 lists the PEN-F, but its notes do not say what it adds for this camera.
 { .card-for }
 
-**Get it:** [dbv0.3.2](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.3.2), 31 Oct 2026
+**Get it:** [dbv0.3.2](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.3.2), 31 Oct 2026 · [Read the project instructions](https://github.com/azqeurio/om-c-firmware)
 { .card-get }
 
 Mod
@@ -87,7 +90,6 @@ Mod
 
 </div>
 
-Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
 
 ### Research, tools and references
 

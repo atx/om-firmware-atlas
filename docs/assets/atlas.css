@@ -567,3 +567,13 @@ kbd {
 /* Camera page summary */
 .glance { margin: 1rem 0 1.4rem; padding: 14px 18px; border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: var(--radius); background: var(--panel); }
 .prose .glance p { margin: .35rem 0; font-size: .93rem; line-height: 1.55; }
+
+.install-note {
+  padding: .85rem 1rem;
+  border-inline-start: 3px solid var(--accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  background: var(--accent-soft);
+  color: var(--ink-2);
+  font-size: .94rem;
+}
+.install-note a { color: var(--ink); text-decoration: underline; }

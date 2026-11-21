@@ -4,6 +4,10 @@
 
 Film looks, a colour wheel, colour editors and a longer video limit for the original OM-D E-M10.
 
+
+**[Before you install](../../docs/before-you-install.md)** · Unofficial firmware can leave your camera stuck restarting or unable to start. Recovery from a memory card is not guaranteed.
+{ .install-note }
+
 <div class="cta-row" markdown="1">
 
 [Project home](https://github.com/Meghnus/om10mi-mods){ .btn .btn-primary }
@@ -33,8 +37,6 @@ DEVELOPMENT.md describes how changes are checked before a camera trial: a byte c
 
 - Importing a LUT, .cube or .xmp file into a chosen look slot as an approximate look (colour matrix, tone curve and per-sector colour), previewed on the PC first.
 - Publishing the generic firmware tools (splitter, decoder, MN10300 emulator, census, byte oracle), with the GPL disassembler kept separate.
-
-> **Before you install:** Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
 
 ## Features
 

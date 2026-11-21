@@ -15,6 +15,9 @@ E142: original Caduceus project and a documented Ghidra/REA setup.
 
 </div>
 
+**[Before you install](../../docs/before-you-install.md)** · Unofficial firmware can leave your camera stuck restarting or unable to start. Recovery from a memory card is not guaranteed.
+{ .install-note }
+
 ## What you can do with this camera { #features }
 
 Features as each project describes them, with their status. Follow a project's own guide before installing anything.
@@ -278,7 +281,7 @@ Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to
 **For this camera:** Listed for this camera: Hybrid Shutter (beta).
 { .card-for }
 
-**Get it:** [dbv0.4.3](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3), 21 Nov 2026
+**Get it:** [dbv0.4.3](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3), 21 Nov 2026 · [Read the project instructions](https://github.com/azqeurio/om-c-firmware)
 { .card-get }
 
 Mod
@@ -291,7 +294,6 @@ Mod
 
 </div>
 
-Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
 
 ### Research, tools and references
 

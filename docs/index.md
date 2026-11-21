@@ -15,7 +15,8 @@
 
 </div>
 
-<p class="hero-note">Independent and community-built. Not affiliated with Olympus or OM Digital Solutions. Modified firmware is installed at your own risk.</p>
+**[Before you install](before-you-install.md)** · Unofficial firmware can leave your camera stuck restarting or unable to start. Recovery from a memory card is not guaranteed.
+{ .install-note }
 
 </div>
 

@@ -4,6 +4,10 @@
 
 The research base: PEN-F HSL, firmware formats and tools for many bodies.
 
+
+**[Before you install](../../docs/before-you-install.md)** · Unofficial firmware can leave your camera stuck restarting or unable to start. Recovery from a memory card is not guaranteed.
+{ .install-note }
+
 <div class="cta-row" markdown="1">
 
 [Project home](https://github.com/fishcu/oly_fw_analysis){ .btn .btn-primary }

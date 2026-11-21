@@ -4,6 +4,10 @@
 
 Pick firmware mods for the E-M1 Mark III and build your own update file.
 
+
+**[Before you install](../../docs/before-you-install.md)** · Unofficial firmware can leave your camera stuck restarting or unable to start. Recovery from a memory card is not guaranteed.
+{ .install-note }
+
 <div class="cta-row" markdown="1">
 
 [Project home](https://github.com/dfeldt91-blip/E-M1-Miii){ .btn .btn-primary }
@@ -28,8 +32,6 @@ The 19 mods cover a 65:24 Panorama aspect, 3- and 4-frame Multiple Exposure, foc
 
 - A live Multiple Exposure overlay after every shot but the last (test 1.746).
 - The author's list of unfinished ideas (100 % JPEG quality, 240 fps slow motion, loading looks from the card) is in the repository.
-
-> **Before you install:** Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
 
 ## Features
 

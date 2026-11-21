@@ -4,6 +4,10 @@
 
 A downstream OM-3 fork for trying fixes before sending them upstream.
 
+
+**[Before you install](../../docs/before-you-install.md)** · Unofficial firmware can leave your camera stuck restarting or unable to start. Recovery from a memory card is not guaranteed.
+{ .install-note }
+
 <div class="cta-row" markdown="1">
 
 [Project home](https://github.com/fernandezk26/camera-stuff){ .btn .btn-primary }
@@ -19,8 +23,6 @@ A downstream OM-3 fork for trying fixes before sending them upstream.
 fernandezk26's fork of Caduceus for OM-3 is where changes are tried on an OM-3 before being offered back as pull requests. Its v0.25.1 branch added a white-balance grid restart fix and automatic SD loading.
 
 Caduceus for OM-3 credits this fork for its fix for bad bytes in EDITS.BIN, and for loading the films at power-on in v0.26.2 to v0.27. The fork publishes no releases of its own.
-
-> **Before you install:** Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
 
 ## Cameras
 

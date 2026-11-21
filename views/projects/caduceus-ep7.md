@@ -4,6 +4,10 @@
 
 The original Caduceus: HSLFX colour editing and 29 film looks for the PEN E-P7.
 
+
+**[Before you install](../../docs/before-you-install.md)** · Unofficial firmware can leave your camera stuck restarting or unable to start. Recovery from a memory card is not guaranteed.
+{ .install-note }
+
 <div class="cta-row" markdown="1">
 
 [Project home](https://github.com/cakelesscoder/caduceus-ep7){ .btn .btn-primary }
@@ -37,8 +41,6 @@ The author calls it beta and experimental: flashing modified firmware can crash 
 - More film looks, and an Art Effect preview in live view.
 - One-press Live ND, faster grain saves, clean HDMI output and ISO Auto in movie M.
 - Ports to other bodies: an E-M10 Mark IV port needs a volunteer tester, and an E-M5 Mark III port needs a camera owner.
-
-> **Before you install:** Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
 
 ## Features
 

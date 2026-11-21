@@ -4,6 +4,10 @@
 
 Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to new burst rates.
 
+
+**[Before you install](../../docs/before-you-install.md)** · Unofficial firmware can leave your camera stuck restarting or unable to start. Recovery from a memory card is not guaranteed.
+{ .install-note }
+
 <div class="cta-row" markdown="1">
 
 [Project home](https://github.com/azqeurio/om-c-firmware){ .btn .btn-primary }
@@ -24,8 +28,6 @@ Recent releases list aperture-ring support for Panasonic lenses, extra burst rat
 The author owns only some of the supported bodies and says the patch can't be guaranteed to work on every model. v0.4.1 lists known issues for the OM-5 build.
 
 The v0.4.2 beta notes list Hybrid Shutter for the OM-3 and OM-5 Mark II, and changes to the separate OM-5 build based on Mark II firmware. v0.4.3 extends Hybrid Shutter to S and M mode and lists it for nine bodies, fixes Quasi-LUT conversion, grain and the OM-3 indicator, and lists the OM-5 and OM-5 Mark II builds as not working.
-
-> **Before you install:** Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
 
 ## Features
 

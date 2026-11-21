@@ -10,6 +10,8 @@ Original Atlas contributions use the repository's [Apache-2.0 licence](../LICENS
 
 ## Disclaimer
 
+Read [Before you install](before-you-install.md) for the risks, recovery limits and reports from owners. Neither the Atlas nor the linked projects accept responsibility for damage to your camera.
+
 The Atlas exists to point to other people's work. It links to independent repositories, releases, tools and discussions so that they are easier to find, but it does not host them, and it holds no responsibility for their contents. That includes any firmware, builders, executables or other downloads they offer, and their accuracy, licensing, safety and availability.
 
 An entry summarises what its source says, with the date it was checked. A listing is not an endorsement, a review of the project's code or files, or a promise that anything is correct, current or safe to use. Sources can change after they are checked.

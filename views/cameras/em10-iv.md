@@ -17,6 +17,9 @@ E140: port/signature research and emulator coverage; no physical feature report 
 
 </div>
 
+**[Before you install](../../docs/before-you-install.md)** · Unofficial firmware can leave your camera stuck restarting or unable to start. Recovery from a memory card is not guaranteed.
+{ .install-note }
+
 ## Projects for this camera { #projects }
 
 Each card says what the project has for this camera and where to get it. A project can be listed here for a small part of its work; its own page covers the rest.
@@ -49,7 +52,6 @@ Mod
 
 </div>
 
-Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
 
 ### Research, tools and references
 

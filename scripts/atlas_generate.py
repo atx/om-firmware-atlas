@@ -65,8 +65,11 @@ PROJECT_GROUPS = (("Camera modifications", ("mod", "experimental-fork")),
                   ("Research and tools", ("research", "emulator", "tool", "reference")))
 STATUS_LABELS = {"released": "Available", "beta": "Beta", "alpha": "Alpha", "testing": "Testing",
                  "in-development": "In development", "planned": "Planned", "research": "Research"}
-RISK_NOTE = ("Installing modified firmware is at your own risk. Follow the project's own guide for your exact "
-             "camera and firmware, and read its safety notes first.")
+def risk_note(origin):
+    guide = link(origin, "docs/before-you-install.md")
+    return (f"\n**[Before you install]({guide})** · Unofficial firmware can leave your camera stuck "
+            "restarting or unable to start. Recovery from a memory card is not guaranteed."
+            "\n{ .install-note }\n")
 
 
 def project_group(row):
@@ -139,7 +142,7 @@ def glance(origin, camera, mods, records, page):
         lines.append("**No release for this camera yet:** " + ", ".join(waiting) + ".")
     jumps = [f"[{title}](#{anchor})" for anchor, title in GLANCE_SECTIONS if "{ #" + anchor + " }" in page]
     lines.append("**Jump to:** " + " · ".join(jumps))
-    return '\n<div class="glance" markdown="1">\n\n' + "\n\n".join(lines) + "\n\n</div>\n"
+    return '\n<div class="glance" markdown="1">\n\n' + "\n\n".join(lines) + "\n\n</div>\n" + risk_note(origin)
 
 
 def installs(records, project, camera_id):
@@ -171,7 +174,9 @@ def for_camera(origin, row, camera):
     if release:
         tag = release["tag"] + (" (pre-release)" if release["prerelease"] else "")
         get = f"[{cell(tag)}]({release['url']}), {nice_date(release['date'])}"
-        if guide:
+        if not guide:
+            get += f" · [Read the project instructions]({row['url']})"
+        else:
             get += f" · [{cell(guide['label'])}]({guide['url']})"
     elif row["kind"] in MOD_KINDS:
         get = "No release for this camera yet."
@@ -333,7 +338,7 @@ def render(catalogue):
                     text += "### Mods and ports\n\nThese change the camera's firmware.\n\n"
                     text += '<div class="project-grid" markdown="1">\n\n'
                     text += "".join(project_card(catalogue, path, project, links=True, camera=row) for project in mods)
-                    text += "</div>\n\n" + RISK_NOTE + "\n"
+                    text += "</div>\n\n"
                 if others:
                     text += "\n### Research, tools and references\n\nThese do not change the camera. They help people study firmware, build or check mods, or install official updates.\n\n"
                     text += '<div class="project-grid" markdown="1">\n\n'
@@ -382,6 +387,8 @@ def render(catalogue):
                 text += "\n## Technical reference\n\n" + "\n".join(f"- {ref(path, r['id'])}: {r['summary']}" for r in entries) + "\n"
         elif kind == "project":
             text = GENERATED + f"# {row['title']}\n\n{row.get('tagline', row['summary'])}\n\n"
+            if any(installs(records, row, camera_id) for camera_id in row["camera_ids"]):
+                text += risk_note(path) + "\n"
             buttons = [f"[Project home]({row['url']}){{ .btn .btn-primary }}", f"[Ask or report issues]({row['contribution_home']}){{ .btn .btn-ghost }}"]
             buttons += [f"[{cell(l['label'])}]({l['url']}){{ .btn .btn-ghost }}" for l in row.get("links", [])]
             text += '<div class="cta-row" markdown="1">\n\n' + "\n".join(buttons) + "\n\n</div>\n"
@@ -403,8 +410,6 @@ def render(catalogue):
             text += "\n## About\n\n" + "\n\n".join(row.get("description", [row["status_summary"]])) + "\n"
             if row.get("goals"):
                 text += "\n### What it's working towards\n\n" + "\n".join(f"- {g}" for g in row["goals"]) + "\n"
-            if row["kind"] in ("mod", "experimental-fork"):
-                text += "\n> **Before you install:** " + RISK_NOTE + "\n"
             if row.get("features"):
                 text += "\n## Features\n\nAs the project describes them. Status is the project's own; linked evidence is the Atlas's record of what was reported or observed.\n\n"
                 text += '<div class="feature-grid" markdown="1">\n\n'
