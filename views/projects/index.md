@@ -20,6 +20,9 @@ Looks and a full colour editor for the OM-5 Mark II. Experimental.
 Color Profiles 1–3 and Monochrome Profiles 1–3 · Custom looks · Colour editor
 { .card-features }
 
+For: OM-5 Mark II
+{ .card-cameras }
+
 Latest: v0.2.0-alpha1, 20 Nov 2026
 { .card-meta }
 
@@ -36,6 +39,9 @@ Film looks and a full colour editor, built into the OM SYSTEM OM-3.
 
 Your films in Picture Mode · 20 film simulations · Colour editor on the camera
 { .card-features }
+
+For: OM-3
+{ .card-cameras }
 
 Latest: v0.40.2, 20 Nov 2026
 { .card-meta }
@@ -54,6 +60,9 @@ The original Caduceus: HSLFX colour editing and 29 film looks for the PEN E-P7.
 On-camera look editor (HSLFX) · 29 film simulations · Colour mix and base curve
 { .card-features }
 
+For: PEN E-P7
+{ .card-cameras }
+
 Latest: v0.34a, 15 Nov 2026
 { .card-meta }
 
@@ -67,6 +76,9 @@ Film looks, a colour wheel, colour editors and a longer video limit for the orig
 
 Film looks · Per-sector colour editor · Per-look colour editor
 { .card-features }
+
+For: OM-D E-M10 (Mark I)
+{ .card-cameras }
 
 Latest: v87, 21 Nov 2026
 { .card-meta }
@@ -82,6 +94,9 @@ Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to
 Panasonic aperture rings · Korean menus · Quasi-LUT and DBLink
 { .card-features }
 
+For: OM-5, OM-5 Mark II, OM-3, PEN E-P7, PEN-F
+{ .card-cameras }
+
 Latest: dbv0.4.3, 21 Nov 2026
 { .card-meta }
 
@@ -95,6 +110,9 @@ Pick firmware mods for the E-M1 Mark III and build your own update file.
 
 Panorama 65:24 · Multiple Exposure with 3 and 4 frames · Focus stacking with any lens
 { .card-features }
+
+For: OM-D E-M1 Mark III
+{ .card-cameras }
 
 Latest: mod-builder-1.18, 21 Nov 2026
 { .card-meta }
@@ -110,6 +128,9 @@ A loader flashed once, then core, modules and settings from the SD card. OM-5 Ma
 Card-loaded core and modules · Creative profiles (CREATPRF) · Film look (FILMLOOK)
 { .card-features }
 
+For: OM-5 Mark II
+{ .card-cameras }
+
 Latest: v0.1.0, 20 Nov 2026
 { .card-meta }
 
@@ -124,6 +145,9 @@ Film simulations, interval shooting, focus peaking and a level gauge for the PEN
 Film simulations · Interval shooting · Level gauge
 { .card-features }
 
+For: PEN E-PM2
+{ .card-cameras }
+
 Latest: v2026.11.20-rc.1, 20 Nov 2026
 { .card-meta }
 
@@ -134,6 +158,9 @@ Latest: v2026.11.20-rc.1, 20 Nov 2026
 [OM-3 downstream experiments](camera-stuff.md){ .card-title }
 
 A downstream OM-3 fork for trying fixes before sending them upstream.
+
+For: OM-3
+{ .card-cameras }
 
 Experimental fork
 { .card-meta }
@@ -148,6 +175,9 @@ Groundwork for bringing Caduceus to the original OM-5. Not released.
 
 Camera test ladder C1–C5 · COLOR 1–3 back end · LCD tint fix
 { .card-features }
+
+For: OM-5
+{ .card-cameras }
 
 Experimental fork
 { .card-meta }
@@ -169,6 +199,9 @@ The research base: PEN-F HSL, firmware formats and tools for many bodies.
 PEN-F HSL · Firmware toolkit · Findings by topic
 { .card-features }
 
+For: PEN-F
+{ .card-cameras }
+
 Latest: alpha-20261017, 18 Oct 2026
 { .card-meta }
 
@@ -182,6 +215,9 @@ How the E-M5 Mark III firmware works, and bringing OM-5 features to it.
 
 Focus stacking with any lens · Live ND (port from the OM-5) · Live ND live-view simulation (port from the OM-5)
 { .card-features }
+
+For: OM-D E-M5 Mark III
+{ .card-cameras }
 
 Research
 { .card-meta }
@@ -197,6 +233,9 @@ Run OM SYSTEM and Olympus camera firmware in your browser.
 Browser player · Patch overlays · Caduceus release checks
 { .card-features }
 
+For: OM-5, OM-5 Mark II, OM-3, PEN E-P7, PEN-F, OM-D E-M10 Mark IV
+{ .card-cameras }
+
 Emulator
 { .card-meta }
 
@@ -211,6 +250,9 @@ How to install official OM SYSTEM firmware from an SD card.
 SD card firmware update
 { .card-features }
 
+For: OM-5, OM-3
+{ .card-cameras }
+
 Reference
 { .card-meta }
 
@@ -224,6 +266,9 @@ Read MN103 camera firmware in Ghidra, with the decompiler.
 
 MN103 disassembly and decompiler · Pointer-register calling convention
 { .card-features }
+
+For: OM-D E-M5 Mark III, OM-5, OM-5 Mark II, PEN-F, PEN E-P7
+{ .card-cameras }
 
 Tool
 { .card-meta }

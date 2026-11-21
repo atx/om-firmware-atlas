@@ -89,18 +89,30 @@ Switches to the electronic shutter on overexposure in P or A mode and, since v0.
 
 ## Projects for this camera
 
+Each card says what the project has for this camera and where to get it. A project can be listed here for a small part of its work; its own page covers the rest.
+
+### Mods and ports
+
+These change the camera's firmware.
+
 <div class="project-grid" markdown="1">
 
 <div class="project-card" markdown="1">
 
-[Caduceus for OM-5](../projects/caduceus-om5.md){ .card-title }
+[db firmware / om-c-firmware](../projects/db-firmware.md){ .card-title }
 
-Looks and a full colour editor for the OM-5 Mark II. Experimental.
+Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to new burst rates.
 
-Latest: v0.2.0-alpha1, 20 Nov 2026
+**For this camera:** Panasonic aperture rings, Korean menus and Hybrid Shutter, all beta. The v0.4.3 notes list the OM-5 build as not working, so read each release's notes for this camera before installing.
+{ .card-for }
+
+**Get it:** [dbv0.4.3](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3), 21 Nov 2026
+{ .card-get }
+
+Mod
 { .card-meta }
 
-[Project home](https://github.com/xulfr/caduceus-om5) · [Ask or report issues](https://github.com/xulfr/caduceus-om5/issues)
+[Project home](https://github.com/azqeurio/om-c-firmware) · [Ask or report issues](https://github.com/azqeurio/om-c-firmware/issues)
 { .card-links }
 
 </div>
@@ -110,6 +122,12 @@ Latest: v0.2.0-alpha1, 20 Nov 2026
 [Caduceus port for the original OM-5 (tadejs)](../projects/caduceus-om5-tadejs.md){ .card-title }
 
 Groundwork for bringing Caduceus to the original OM-5. Not released.
+
+**For this camera:** Not released: an experimental branch offered to Caduceus for OM-5 as a pull request. Its test steps C1 to C5 passed on the owner's OM-5; the COLOR 1–3 back end runs in an emulator only, with no Picture Mode entry yet.
+{ .card-for }
+
+**Get it:** No release for this camera yet.
+{ .card-get }
 
 Experimental fork
 { .card-meta }
@@ -121,17 +139,33 @@ Experimental fork
 
 <div class="project-card" markdown="1">
 
-[db firmware / om-c-firmware](../projects/db-firmware.md){ .card-title }
+[Caduceus for OM-5](../projects/caduceus-om5.md){ .card-title }
 
-Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to new burst rates.
+Looks and a full colour editor for the OM-5 Mark II. Experimental.
 
-Latest: dbv0.4.3, 21 Nov 2026
+**For this camera:** No working build for this camera. One test build (pre-alpha 1) failed to start on an owner's original OM-5, and OM's firmware was put back from the card. The releases are for the OM-5 Mark II only, and Mark II results do not apply here. Current original OM-5 work is the tadejs port.
+{ .card-for }
+
+**Get it:** No release for this camera yet.
+{ .card-get }
+
+Mod
 { .card-meta }
 
-[Project home](https://github.com/azqeurio/om-c-firmware) · [Ask or report issues](https://github.com/azqeurio/om-c-firmware/issues)
+[Project home](https://github.com/xulfr/caduceus-om5) · [Ask or report issues](https://github.com/xulfr/caduceus-om5/issues)
 { .card-links }
 
 </div>
+
+</div>
+
+Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
+
+### Research, tools and references
+
+These do not change the camera. They help people study firmware, build or check mods, or install official updates.
+
+<div class="project-grid" markdown="1">
 
 <div class="project-card" markdown="1">
 
@@ -139,7 +173,13 @@ Latest: dbv0.4.3, 21 Nov 2026
 
 The research base: PEN-F HSL, firmware formats and tools for many bodies.
 
-Latest: alpha-20261017, 18 Oct 2026
+**For this camera:** Research notes only: the findings compare this camera's firmware with the PEN-F. No patch for this camera.
+{ .card-for }
+
+**Get it:** [Project home](https://github.com/fishcu/oly_fw_analysis)
+{ .card-get }
+
+Research
 { .card-meta }
 
 [Project home](https://github.com/fishcu/oly_fw_analysis) · [Ask or report issues](https://github.com/fishcu/oly_fw_analysis/issues)
@@ -152,6 +192,12 @@ Latest: alpha-20261017, 18 Oct 2026
 [OM-Emu](../projects/om-emu.md){ .card-title }
 
 Run OM SYSTEM and Olympus camera firmware in your browser.
+
+**For this camera:** An emulator; it does not change the camera. Covers this camera for: Browser player (released), Native card file system (released).
+{ .card-for }
+
+**Get it:** [Try it in your browser](https://flatpanda.github.io/om-emu/)
+{ .card-get }
 
 Emulator
 { .card-meta }
@@ -167,6 +213,12 @@ Emulator
 
 How to install official OM SYSTEM firmware from an SD card.
 
+**For this camera:** A reference guide; it does not change the camera. Covers this camera for: SD card firmware update (released).
+{ .card-for }
+
+**Get it:** [Project home](https://github.com/iKenndac/om-1-manual-firmware-install)
+{ .card-get }
+
 Reference
 { .card-meta }
 
@@ -181,6 +233,12 @@ Reference
 
 Read MN103 camera firmware in Ghidra, with the decompiler.
 
+**For this camera:** A tool; it does not change the camera. Covers this camera for: MN103 disassembly and decompiler (released), Pointer-register calling convention (released).
+{ .card-for }
+
+**Get it:** [Install and use](https://github.com/nsud-dev/ghidra-mn103/blob/main/README.md)
+{ .card-get }
+
 Tool
 { .card-meta }
 
@@ -190,8 +248,6 @@ Tool
 </div>
 
 </div>
-
-Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
 
 ## Claims and test evidence
 

@@ -136,7 +136,7 @@ Each project page is built from its project record. Besides the research fields,
 - **releases**, newest first, with highlights and any warning from the release notes;
 - **images**, with a caption and credit. Only use images the project's maintainers have agreed to share.
 
-Every feature and release cites a source record. Features are described as the project describes them; the Atlas's own evidence stays separate. The checks reject a feature or release that names a camera the project doesn't cover, releases out of date order, and missing images. Camera pages gather the features of every modification that covers that camera.
+Every feature and release cites a source record. Features are described as the project describes them; the Atlas's own evidence stays separate. The checks reject a feature or release that names a camera the project doesn't cover, releases out of date order, and missing images. Camera pages gather the features of every modification that covers that camera, then list its projects in two groups, mods and ports, and research, tools and references. Each card says what the project has for that camera and where to get it: the newest release naming the camera, or the project's guide. Where that isn't clear from the features and releases, for example a project listed for one failed test build, an optional **camera note** in the project record says it in a sentence or two.
 
 ## The weekly freshness check
 

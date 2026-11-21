@@ -8,7 +8,7 @@ Original OM-5 1.2 port work on a Caduceus E-P7 fork; camera safety ladder passed
 
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
-| [caduceus-om5-tadejs.yaml](../../../records/projects/caduceus-om5-tadejs.yaml) | Project scope, related work and contribution destination | 3,637 | ~910 |
+| [caduceus-om5-tadejs.yaml](../../../records/projects/caduceus-om5-tadejs.yaml) | Project scope, related work and contribution destination | 3,911 | ~978 |
 | [tadejs-om5.yaml](../../../records/sources/tadejs-om5.yaml) | Find the relevant source/observation ID; use bounded reads | 2,090 | ~523 |
 | [caduceus-om5-tadejs.yaml](../../../records/evidence/caduceus-om5-tadejs.yaml) | Find the relevant source/observation ID; use bounded reads | 8,182 | ~2,046 |
 

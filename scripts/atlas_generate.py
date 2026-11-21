@@ -57,8 +57,8 @@ def short_name(title):
     return title
 
 
-def plural(count, word):
-    return f"{count} {word}{'' if count == 1 else 's'}"
+def plural(count, word, many=None):
+    return f"{count} {word if count == 1 else (many or word + 's')}"
 
 
 PROJECT_GROUPS = (("Camera modifications", ("mod", "experimental-fork")),
@@ -104,8 +104,60 @@ def release_line(origin, release, project=None):
     return f"{who}[{cell(release['tag'])}]({release['url']}) · {nice_date(release['date'])}{badge}"
 
 
-def project_card(catalogue, origin, row, image=False, features=0, links=False):
-    """A showcase card for a project: tagline, latest release and optional headline features."""
+MOD_KINDS = ("mod", "experimental-fork")
+
+
+def camera_release(row, camera_id):
+    """The newest release that names this camera, preferring stable releases."""
+    releases = [r for r in row.get("releases", []) if camera_id in r["camera_ids"]]
+    stable = [r for r in releases if not r["prerelease"]]
+    return (stable or releases or [None])[0]
+
+
+def installs(records, project, camera_id):
+    """Whether a project offers something to put on this camera: a mod, or a published patch with a capability."""
+    return project["kind"] in MOD_KINDS or any(
+        records[f["capability_id"]]["availability"] == "published-release"
+        for f in project.get("features", []) if camera_id in f["camera_ids"] and f.get("capability_id"))
+
+
+def for_camera(origin, row, camera):
+    """What a project has for one camera, and where to get it, for that camera's page."""
+    camera_id = camera["id"]
+    note = next((n["note"] for n in row.get("camera_notes", []) if n["camera_id"] == camera_id), None)
+    features = [f for f in row.get("features", []) if camera_id in f["camera_ids"]]
+    if len(features) > 3:
+        names = [f["name"] for f in features[:3]]
+        listed = f"{len(features)} features, including {names[0]}, {names[1]} and {names[2]}; all are listed above"
+    else:
+        listed = ", ".join(f"{f['name']} ({label(f['status'])})" for f in features)
+    if note:
+        text = note
+    elif row["kind"] in MOD_KINDS:
+        text = (f"{listed[0].upper()}{listed[1:]}." if len(features) > 3 else f"Listed for this camera: {listed}.") if listed else "No features are listed for this camera."
+    else:
+        kind = {"research": "a research project", "tool": "a tool", "emulator": "an emulator", "reference": "a reference guide"}.get(row["kind"], label(row["kind"]))
+        text = f"{kind[0].upper()}{kind[1:]}; it does not change the camera." + (f" Covers this camera for: {listed}." if listed else " Its own page says what it holds for this model.")
+    release = camera_release(row, camera_id)
+    guide = next((l for l in row.get("links", []) if any(w in l["label"].lower() for w in ("install", "guide", "try it", "use"))), None)
+    if release:
+        tag = release["tag"] + (" (pre-release)" if release["prerelease"] else "")
+        get = f"[{cell(tag)}]({release['url']}), {nice_date(release['date'])}"
+        if guide:
+            get += f" · [{cell(guide['label'])}]({guide['url']})"
+    elif row["kind"] in MOD_KINDS:
+        get = "No release for this camera yet."
+    elif guide:
+        get = f"[{cell(guide['label'])}]({guide['url']})"
+    else:
+        get = f"[Project home]({row['url']})"
+    return f"**For this camera:** {text}\n{{ .card-for }}\n\n**Get it:** {get}\n{{ .card-get }}\n\n"
+
+
+def project_card(catalogue, origin, row, image=False, features=0, links=False, camera=None):
+    """A showcase card for a project: tagline, latest release and optional headline features.
+
+    With a camera, the card says what the project has for that camera and where to get it."""
     text = '<div class="project-card" markdown="1">\n\n'
     if image and row.get("images"):
         picture = row["images"][0]
@@ -115,9 +167,19 @@ def project_card(catalogue, origin, row, image=False, features=0, links=False):
     if features and row.get("features"):
         names = [f["name"] for f in row["features"] if f["status"] != "planned"][:features]
         text += " · ".join(names) + "\n{ .card-features }\n\n"
-    release = latest_release(row)
-    meta = f"Latest: {release['tag']}, {nice_date(release['date'])}" if release else label(row["kind"]).capitalize()
-    text += meta + "\n{ .card-meta }\n\n"
+    if not camera and catalogue is not None:
+        offered = [c for c in row["camera_ids"] if camera_release(row, c)
+                   or any(c in f["camera_ids"] for f in row.get("features", []))]
+        names = [short_name(catalogue.records[c]["title"]) for c in offered or row["camera_ids"]]
+        if names:
+            text += "For: " + ", ".join(names) + "\n{ .card-cameras }\n\n"
+    if camera:
+        text += for_camera(origin, row, camera)
+        text += label(row["kind"]).capitalize() + "\n{ .card-meta }\n\n"
+    else:
+        release = latest_release(row)
+        meta = f"Latest: {release['tag']}, {nice_date(release['date'])}" if release else label(row["kind"]).capitalize()
+        text += meta + "\n{ .card-meta }\n\n"
     if links:
         text += f"[Project home]({row['url']}) · [Ask or report issues]({row['contribution_home']})\n{{ .card-links }}\n\n"
     return text + "</div>\n\n"
@@ -215,8 +277,13 @@ def render(catalogue):
             facts.append(f"**Catalogue depth:** {label(row['coverage'])}")
             text += "\n" + " · ".join(facts) + "\n{ .facts }\n"
             projects = [records[p] for p in row["project_ids"]]
-            mods = [p for p in projects if p["kind"] in ("mod", "experimental-fork")]
-            offered = [(f, p) for p in mods for f in p.get("features", []) if row["id"] in f["camera_ids"]]
+            def readiness(project):
+                features = [f for f in project.get("features", []) if row["id"] in f["camera_ids"]]
+                return (camera_release(project, row["id"]) is None, -len(features))
+            mods = sorted((p for p in projects if installs(records, p, row["id"])), key=readiness)
+            others = [p for p in projects if not installs(records, p, row["id"])]
+            offered = [(f, p) for p in projects for f in p.get("features", []) if row["id"] in f["camera_ids"]
+                       and (p["kind"] in MOD_KINDS or (f.get("capability_id") and records[f["capability_id"]]["availability"] == "published-release"))]
             if offered:
                 text += "\n## What you can do with this camera\n\n"
                 text += "Features as each project describes them, with their status. Follow a project's own guide before installing anything.\n\n"
@@ -228,9 +295,17 @@ def render(catalogue):
                 text += "</div>\n"
             text += "\n## Projects for this camera\n\n"
             if projects:
-                text += '<div class="project-grid" markdown="1">\n\n'
-                text += "".join(project_card(catalogue, path, project, links=True) for project in projects)
-                text += "</div>\n\n" + RISK_NOTE + "\n"
+                text += "Each card says what the project has for this camera and where to get it. A project can be listed here for a small part of its work; its own page covers the rest.\n\n"
+                if mods:
+                    text += "### Mods and ports\n\nThese change the camera's firmware.\n\n"
+                    text += '<div class="project-grid" markdown="1">\n\n'
+                    text += "".join(project_card(catalogue, path, project, links=True, camera=row) for project in mods)
+                    text += "</div>\n\n" + RISK_NOTE + "\n"
+                if others:
+                    text += "\n### Research, tools and references\n\nThese do not change the camera. They help people study firmware, build or check mods, or install official updates.\n\n"
+                    text += '<div class="project-grid" markdown="1">\n\n'
+                    text += "".join(project_card(catalogue, path, project, links=True, camera=row) for project in others)
+                    text += "</div>\n"
             else:
                 text += "No project is catalogued for this camera yet. This is a coverage gap, not a finding that nobody is working on it.\n"
             caps = [r for r in catalogue.of_type("capability") if r["camera_id"] == row["id"]]
@@ -401,8 +476,13 @@ def render(catalogue):
                     continue
                 text += f"## {line}\n\n" + '<div class="camera-grid" markdown="1">\n\n'
                 for row in members:
-                    features = sum(1 for r in catalogue.of_type("capability") if r["camera_id"] == row["id"])
-                    meta = [plural(len(row["project_ids"]), "project"), plural(features, "feature") + " catalogued"]
+                    projects = [records[p] for p in row["project_ids"]]
+                    mods = [p for p in projects if installs(records, p, row["id"]) and (camera_release(p, row["id"])
+                            or any(row["id"] in f["camera_ids"] for f in p.get("features", [])))]
+                    released = sum(1 for p in mods if camera_release(p, row["id"]))
+                    meta = [plural(len(mods), "mod or port", "mods or ports") + (f", {released} with a release" if released else ", none released yet") if mods else "No mods yet"]
+                    if len(projects) > len(mods):
+                        meta.append(plural(len(projects) - len(mods), "other project"))
                     if row["coverage"] == "discovery-only":
                         meta.append("discovery only")
                     text += '<div class="camera-card" markdown="1">\n\n'

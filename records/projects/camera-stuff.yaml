@@ -20,6 +20,9 @@ records:
   related_projects:
   - project.caduceus-om3
   tagline: A downstream OM-3 fork for trying fixes before sending them upstream.
+  camera_notes:
+  - camera_id: camera.om3
+    note: "Nothing to install from here. It is a fork where fixes are tried on an OM-3 before being offered to Caduceus for OM-3; use that project's releases."
   description:
   - fernandezk26's fork of Caduceus for OM-3 is where changes are tried on an OM-3 before being offered
     back as pull requests. Its v0.25.1 branch added a white-balance grid restart fix and automatic SD

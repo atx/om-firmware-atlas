@@ -260,6 +260,9 @@ kbd {
 .camera-card p:first-child, .project-card p:first-child { margin-bottom: .3rem; }
 .model-code { font: 500 12px/1 var(--mono) !important; letter-spacing: .1em; color: var(--accent); margin-bottom: .8rem !important; }
 .card-meta { margin: auto 0 0 !important; padding-top: .7rem; border-top: 1px solid var(--line); font: 500 11.5px/1.4 var(--mono) !important; letter-spacing: .04em; color: var(--muted); }
+.card-cameras { font-size: .85rem !important; color: var(--muted); }
+.card-for, .card-get { font-size: .9rem !important; }
+.prose .card-for strong, .prose .card-get strong { color: var(--text, inherit); }
 .card-links { margin: .2rem 0 0 !important; padding-top: .7rem; border-top: 1px solid var(--line); font-size: .88rem !important; color: var(--muted); }
 .prose .card-links a { color: var(--accent); text-decoration: none; font-weight: 500; }
 .prose .card-links a:hover { text-decoration: underline; }

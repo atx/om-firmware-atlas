@@ -29,6 +29,13 @@ records:
   related_projects: []
   tagline: Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to new burst
     rates.
+  camera_notes:
+  - camera_id: camera.om5
+    note: "Panasonic aperture rings, Korean menus and Hybrid Shutter, all beta. The v0.4.3 notes list the OM-5 build as not working, so read each release's notes for this camera before installing."
+  - camera_id: camera.om5-ii
+    note: "Korean menus and Hybrid Shutter, both beta. The v0.4.3 notes list the OM-5 Mark II build as not working, so read each release's notes for this camera before installing."
+  - camera_id: camera.pen-f
+    note: "No PEN-F feature is catalogued. Release v0.3.2 lists the PEN-F, but its notes do not say what it adds for this camera."
   description:
   - db firmware (om-c-firmware) by azqeurio publishes beta firmware patches for a wide range of bodies,
     including the OM-1, OM-1 Mark II, OM-3, OM-5, OM-5 Mark II, E-M1 Mark III, E-M5 Mark III and PEN-F.

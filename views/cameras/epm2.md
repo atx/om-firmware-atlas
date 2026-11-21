@@ -89,6 +89,12 @@ A Custom Menu J row, Off by default, that writes EPM2LOG.BIN to the card for dev
 
 ## Projects for this camera
 
+Each card says what the project has for this camera and where to get it. A project can be listed here for a small part of its work; its own page covers the rest.
+
+### Mods and ports
+
+These change the camera's firmware.
+
 <div class="project-grid" markdown="1">
 
 <div class="project-card" markdown="1">
@@ -97,7 +103,13 @@ A Custom Menu J row, Off by default, that writes EPM2LOG.BIN to the card for dev
 
 Film simulations, interval shooting, focus peaking and a level gauge for the PEN E-PM2.
 
-Latest: v2026.11.20-rc.1, 20 Nov 2026
+**For this camera:** 6 features, including Film simulations, Interval shooting and Level gauge; all are listed above.
+{ .card-for }
+
+**Get it:** [v2026.11.20-rc.1 (pre-release)](https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.20-rc.1), 20 Nov 2026 · [Install guide](https://github.com/cfu288/EPM2Mod/blob/f8f173d8b53d4370f85505cdec7be2b52d1ec830/docs/user/install.md)
+{ .card-get }
+
+Mod
 { .card-meta }
 
 [Project home](https://github.com/cfu288/EPM2Mod) · [Ask or report issues](https://github.com/cfu288/EPM2Mod/issues)

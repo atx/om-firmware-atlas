@@ -17,7 +17,7 @@ E147
 
 E147: advanced Caduceus work, other modifications and an established research notebook.
 
-6 projects · 1 feature catalogued
+2 mods or ports, 2 with a release · 4 other projects
 { .card-meta }
 
 </div>
@@ -31,7 +31,7 @@ E144
 
 Original E144: several projects have distinct experiments. Mark II results do not apply.
 
-7 projects · 4 features catalogued
+2 mods or ports, 1 with a release · 5 other projects
 { .card-meta }
 
 </div>
@@ -45,7 +45,7 @@ E148
 
 E148: v0.2.0-alpha1 has an overall positive owner report; original OM-5 work is separate.
 
-5 projects · 7 features catalogued
+3 mods or ports, 3 with a release · 2 other projects
 { .card-meta }
 
 </div>
@@ -65,7 +65,7 @@ E139
 
 E139: one mod builder for firmware 1.6; owner camera reports per mod, no Atlas evidence imported.
 
-1 project · 0 features catalogued · discovery only
+1 mod or port, 1 with a release · discovery only
 { .card-meta }
 
 </div>
@@ -79,7 +79,7 @@ E113
 
 E113 (2014): one mod built for firmware 1.4 and field-tested on one owner body; distinct from the E-M10 Mark II and Mark IV.
 
-1 project · 2 features catalogued
+1 mod or port, 1 with a release
 { .card-meta }
 
 </div>
@@ -93,7 +93,7 @@ E140
 
 E140: port/signature research and emulator coverage; no physical feature report imported.
 
-2 projects · 0 features catalogued · discovery only
+No mods yet · 2 other projects · discovery only
 { .card-meta }
 
 </div>
@@ -107,7 +107,7 @@ E137
 
 E137: firmware 1.7 studied in depth; focus stacking with any lens, a Live ND port and the card-file debug shell tested on one camera.
 
-3 projects · 7 features catalogued
+No mods yet · 3 other projects
 { .card-meta }
 
 </div>
@@ -127,7 +127,7 @@ E142
 
 E142: original Caduceus project and a documented Ghidra/REA setup.
 
-5 projects · 1 feature catalogued
+2 mods or ports, 2 with a release · 3 other projects
 { .card-meta }
 
 </div>
@@ -141,7 +141,7 @@ E101
 
 E101, TruePic VI (2012): one camera-tested mod; its addresses and edits do not carry over to newer bodies.
 
-1 project · 1 feature catalogued
+1 mod or port, 1 with a release
 { .card-meta }
 
 </div>
@@ -155,7 +155,7 @@ E122
 
 E122: foundational HSL research; exact internal build identity matters.
 
-4 projects · 1 feature catalogued
+2 mods or ports, 2 with a release · 2 other projects
 { .card-meta }
 
 </div>

@@ -32,6 +32,9 @@ records:
   - project.oly-fw-analysis
   - project.om-emu
   tagline: Looks and a full colour editor for the OM-5 Mark II. Experimental.
+  camera_notes:
+  - camera_id: camera.om5
+    note: "No working build for this camera. One test build (pre-alpha 1) failed to start on an owner's original OM-5, and OM's firmware was put back from the card. The releases are for the OM-5 Mark II only, and Mark II results do not apply here. Current original OM-5 work is the tadejs port."
   description:
   - Caduceus for OM-5 brings back the three Color Profile and three Monochrome Profile slots that the
     OM-5 Mark II's firmware hides, and gives them custom looks and a colour editor in the style of the

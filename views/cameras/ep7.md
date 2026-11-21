@@ -233,6 +233,12 @@ Switches to the electronic shutter on overexposure in P or A mode and, since v0.
 
 ## Projects for this camera
 
+Each card says what the project has for this camera and where to get it. A project can be listed here for a small part of its work; its own page covers the rest.
+
+### Mods and ports
+
+These change the camera's firmware.
+
 <div class="project-grid" markdown="1">
 
 <div class="project-card" markdown="1">
@@ -241,7 +247,13 @@ Switches to the electronic shutter on overexposure in P or A mode and, since v0.
 
 The original Caduceus: HSLFX colour editing and 29 film looks for the PEN E-P7.
 
-Latest: v0.34a, 15 Nov 2026
+**For this camera:** 17 features, including On-camera look editor (HSLFX), 29 film simulations and Colour mix and base curve; all are listed above.
+{ .card-for }
+
+**Get it:** [v0.34a](https://github.com/cakelesscoder/caduceus-ep7/releases/tag/v0.34a), 15 Nov 2026 · [Install guide](https://github.com/cakelesscoder/caduceus-ep7/blob/main/docs/INSTALL.md)
+{ .card-get }
+
+Mod
 { .card-meta }
 
 [Project home](https://github.com/cakelesscoder/caduceus-ep7) · [Ask or report issues](https://github.com/cakelesscoder/caduceus-ep7/issues)
@@ -255,7 +267,13 @@ Latest: v0.34a, 15 Nov 2026
 
 Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to new burst rates.
 
-Latest: dbv0.4.3, 21 Nov 2026
+**For this camera:** Listed for this camera: Hybrid Shutter (beta).
+{ .card-for }
+
+**Get it:** [dbv0.4.3](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3), 21 Nov 2026
+{ .card-get }
+
+Mod
 { .card-meta }
 
 [Project home](https://github.com/azqeurio/om-c-firmware) · [Ask or report issues](https://github.com/azqeurio/om-c-firmware/issues)
@@ -263,13 +281,29 @@ Latest: dbv0.4.3, 21 Nov 2026
 
 </div>
 
+</div>
+
+Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
+
+### Research, tools and references
+
+These do not change the camera. They help people study firmware, build or check mods, or install official updates.
+
+<div class="project-grid" markdown="1">
+
 <div class="project-card" markdown="1">
 
 [Olympus firmware research](../projects/oly-fw-analysis.md){ .card-title }
 
 The research base: PEN-F HSL, firmware formats and tools for many bodies.
 
-Latest: alpha-20261017, 18 Oct 2026
+**For this camera:** Research notes only: the findings compare this camera's firmware with the PEN-F. No patch for this camera.
+{ .card-for }
+
+**Get it:** [Project home](https://github.com/fishcu/oly_fw_analysis)
+{ .card-get }
+
+Research
 { .card-meta }
 
 [Project home](https://github.com/fishcu/oly_fw_analysis) · [Ask or report issues](https://github.com/fishcu/oly_fw_analysis/issues)
@@ -282,6 +316,12 @@ Latest: alpha-20261017, 18 Oct 2026
 [OM-Emu](../projects/om-emu.md){ .card-title }
 
 Run OM SYSTEM and Olympus camera firmware in your browser.
+
+**For this camera:** An emulator; it does not change the camera. Covers this camera for: Browser player (released), Native card file system (released).
+{ .card-for }
+
+**Get it:** [Try it in your browser](https://flatpanda.github.io/om-emu/)
+{ .card-get }
 
 Emulator
 { .card-meta }
@@ -297,6 +337,12 @@ Emulator
 
 Read MN103 camera firmware in Ghidra, with the decompiler.
 
+**For this camera:** A tool; it does not change the camera. Covers this camera for: MN103 disassembly and decompiler (released), Pointer-register calling convention (released).
+{ .card-for }
+
+**Get it:** [Install and use](https://github.com/nsud-dev/ghidra-mn103/blob/main/README.md)
+{ .card-get }
+
 Tool
 { .card-meta }
 
@@ -306,8 +352,6 @@ Tool
 </div>
 
 </div>
-
-Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
 
 ## Claims and test evidence
 

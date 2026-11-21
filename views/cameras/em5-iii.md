@@ -9,6 +9,13 @@ E137: firmware 1.7 studied in depth; focus stacking with any lens, a Live ND por
 
 ## Projects for this camera
 
+Each card says what the project has for this camera and where to get it. A project can be listed here for a small part of its work; its own page covers the rest.
+
+
+### Research, tools and references
+
+These do not change the camera. They help people study firmware, build or check mods, or install official updates.
+
 <div class="project-grid" markdown="1">
 
 <div class="project-card" markdown="1">
@@ -16,6 +23,12 @@ E137: firmware 1.7 studied in depth; focus stacking with any lens, a Live ND por
 [Olympus firmware notes (E-M5 Mark III)](../projects/em5-iii-notes.md){ .card-title }
 
 How the E-M5 Mark III firmware works, and bringing OM-5 features to it.
+
+**For this camera:** Notes and tools only; no builds are published. The author's own test builds on one E-M5 III cover focus stacking with any lens, Live ND and its live-view preview ported from the OM-5, a Color / Monochrome Profile editor, and a parked USB webcam.
+{ .card-for }
+
+**Get it:** [Firmware guides](https://github.com/nsud-dev/olympus-firmware-notes/blob/b6823403a48709da06a6a7d5ef7510be3d8143f8/docs/guides/README.md)
+{ .card-get }
 
 Research
 { .card-meta }
@@ -31,6 +44,12 @@ Research
 
 Read MN103 camera firmware in Ghidra, with the decompiler.
 
+**For this camera:** A tool; it does not change the camera. Covers this camera for: MN103 disassembly and decompiler (released), Pointer-register calling convention (released).
+{ .card-for }
+
+**Get it:** [Install and use](https://github.com/nsud-dev/ghidra-mn103/blob/main/README.md)
+{ .card-get }
+
 Tool
 { .card-meta }
 
@@ -45,7 +64,13 @@ Tool
 
 The research base: PEN-F HSL, firmware formats and tools for many bodies.
 
-Latest: alpha-20261017, 18 Oct 2026
+**For this camera:** A research project; it does not change the camera. Its own page says what it holds for this model.
+{ .card-for }
+
+**Get it:** [Project home](https://github.com/fishcu/oly_fw_analysis)
+{ .card-get }
+
+Research
 { .card-meta }
 
 [Project home](https://github.com/fishcu/oly_fw_analysis) · [Ask or report issues](https://github.com/fishcu/oly_fw_analysis/issues)
@@ -54,8 +79,6 @@ Latest: alpha-20261017, 18 Oct 2026
 </div>
 
 </div>
-
-Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
 
 ## Claims and test evidence
 
