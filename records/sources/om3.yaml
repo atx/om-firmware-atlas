@@ -275,3 +275,35 @@ records:
   published_on: '2026-11-19'
   publication: public
   reuse_note: Attributed user report. The issue gives a version label and no package hash.
+- type: source
+  id: source.om3.v0403-beta2
+  title: 'Caduceus for OM-3 v0.40.3-beta2 notes'
+  summary: 'Test version on top of v0.40.3-beta fixing #91, #97 and #99; camera-tested on an OM-3 on 2026-11-20 as build fixes2; v0.40.2 stays current.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-21'
+  url: https://github.com/androidfanman/caduceus-om3/blob/42ec22c6ca5fa9e5b1b5ec7460e4a4ae6309c1f5/releases/v0.40.3-beta2/NOTES.md
+  source_kind: github-file
+  upstream_repo: androidfanman/caduceus-om3
+  revision: 42ec22c6ca5fa9e5b1b5ec7460e4a4ae6309c1f5
+  locator: releases/v0.40.3-beta2/NOTES.md (tag v0.40.3-beta2)
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.om3.v0403-beta
+  title: 'Caduceus for OM-3 v0.40.3-beta notes'
+  summary: 'Test version adding Halation Radius, faster Halation, a burst pause cap and the playback film-name fix (#93); camera-tested as build r5; #91 listed as a known issue.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-21'
+  url: https://github.com/androidfanman/caduceus-om3/blob/ceb6d17ea83a465c49704eb82a1ae83cbbe91b46/releases/v0.40.3-beta/NOTES.md
+  source_kind: github-file
+  upstream_repo: androidfanman/caduceus-om3
+  revision: ceb6d17ea83a465c49704eb82a1ae83cbbe91b46
+  locator: releases/v0.40.3-beta/NOTES.md (tag v0.40.3-beta)
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
