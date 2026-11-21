@@ -8,7 +8,7 @@ Choose the [exact camera and generation](../views/cameras/index.md). Check the f
 
 ## Technical reference
 
-The [technical reference](../views/reference/index.md) holds compact, sourced facts that projects keep needing: named addresses for one exact firmware build, free code space, and known trouble spots such as "keep patch state out of the loaded image". Each entry shows how it was established and whether independent projects agree, and links the upstream section with the full explanation.
+The [technical reference](../views/reference/index.md) holds compact, sourced facts that projects keep needing: named addresses for one exact firmware build, free code space, and known trouble spots such as "keep patch state out of the loaded image", and per build the platform (image processor, cores, update-file layout) and which features the stock firmware already contains. Each entry shows how it was established and whether independent projects agree, and links the upstream section with the full explanation.
 
 The detailed research stays with the projects. [Olympus firmware research](../views/projects/oly-fw-analysis.md) is the deepest home for most topics. [The reference policy](https://github.com/xulfr/om-firmware-atlas/blob/main/maintenance/reference-policy.md) sets out what belongs in the Atlas and what stays upstream.
 

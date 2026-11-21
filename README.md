@@ -9,11 +9,11 @@ Find existing work for your exact camera, understand what has actually been test
 ## Start here
 
 - **Camera owners:** choose your [camera](views/cameras/index.md), then follow a project's own documentation. Listing a model does not mean a working modification exists.
-- **Researchers:** read [the research starting guide](docs/research.md) and the relevant [topic](knowledge/README.md). Keep model, firmware and package identity explicit.
+- **Researchers:** read [the research starting guide](docs/research.md), the relevant [topic](knowledge/README.md) and the [technical reference](views/reference/index.md) of addresses, hazards, platform facts and built-in features per firmware build. Keep model, firmware and package identity explicit.
 - **AI agents:** read [AGENTS.md](AGENTS.md), then [agents/start.md](agents/start.md). Routes show what to read and its estimated cost.
 - **Community:** find [r/M43 and Caduceus Discord](views/community/index.md). Discussion links are discovery routes, not test evidence.
 
-The initial catalogue is deliberately bounded. It records reviewed sources and visible gaps; it is not an exhaustive list of every Olympus project. A successful emulator run, published release and physical-camera report are different facts. Read [how to interpret evidence](docs/evidence.md).
+The catalogue grows through reviewed source PRs and is not an exhaustive list of every Olympus project. It records reviewed sources and visible gaps. Project pages describe features and releases in each project's own terms; evidence pages record what was actually reported or observed. A successful emulator run, published release and physical-camera report are different facts. Read [how to interpret evidence](docs/evidence.md).
 
 ## Maintain the library
 

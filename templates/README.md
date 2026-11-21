@@ -8,6 +8,10 @@ Use [the record guide](../maintenance/record-format.md) and [schemas](../schemas
 | New source | [Pinned repository sources](../records/sources/om3.yaml), [mutable release source](../records/sources/db.yaml) |
 | Test or result | [Partial physical and emulator reports](../records/evidence/caduceus-om5.yaml) |
 | Scoped feature | [An assertion with incomplete evidence](../records/capabilities/om5-ii/om5-ii-alpha12-overall.yaml) |
+| Project showcase and releases | [Features, releases and goals](../records/projects/om10mi-mods.yaml) |
+| Camera result with a reported hash | [Owner test of a pinned build](../records/evidence/epm2mod.yaml) |
+| Address, hazard or free space | [Technical reference entries](../records/reference/om5-ii-1100.yaml), with the [reference policy](../maintenance/reference-policy.md) |
+| Platform fact or built-in feature | [Per-build platform entries](../records/reference/om5-ii-1100-platform.yaml) |
 | Community venue | [Venue records](../records/community/venues.yaml) |
 | Subject explanation | [Topic metadata template](topic.md) |
 
