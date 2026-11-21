@@ -35,3 +35,42 @@ records:
   - Filter Type and Add Effects are not tested with the film simulations.
   - A recovery from a boot loop has not been recorded on this body.
   assumptions: []
+- type: evidence
+  id: evidence.epm2-films-twelve-off
+  title: 'E-PM2 films-twelve-off: owner camera test'
+  summary: The owner reports the new pinned build booting, loading the default film file and recording the new Portra 400 fit; the RAW Data Edit check was not done.
+  source_refs:
+  - source.epm2.camera-log-twelve-off
+  - source.epm2.install
+  - source.epm2.feasibility
+  topics:
+  - colour
+  last_reviewed: '2026-11-21'
+  camera_id: camera.epm2
+  firmware_id: firmware.epm2-1600
+  project_id: project.epm2mod
+  mod_build: films-twelve-off
+  method: physical-camera
+  provenance: maintainer-summary
+  identity_level: reported-hash
+  package_sha256: 600041b3d24c67116004f7869d001a9b342599f0c081cf444afc572fcfac09ec
+  expected_package_sha256: 600041b3d24c67116004f7869d001a9b342599f0c081cf444afc572fcfac09ec
+  outcome: reported-pass
+  quality: partial
+  reported_on: '2026-11-21'
+  tested_on: '2026-11-21'
+  procedure: Flashed the logged build; loaded the default film file with Load Looks; took a photo in ART 1 and read
+    its ImageDescription and ColorMatrix. Emulator free-space, op-check, boot, update-path, S6 and save-guard checks
+    passed before the flash.
+  coverage:
+  - The camera boots; Load Looks loads the default film file and ART 1 reads Portra 400.
+  - A photo in ART 1 records ImageDescription "Portra 400" and the ColorMatrix of the new Portra 400 fit.
+  - In this build film simulations get a 12-region table with every record off; Olympus's art filters keep theirs.
+  - 'Before the flash, a build with the same film specs plus an art-bracketing row (films-twelve-off-artbkt) ran two
+    rounds, 78 JPEGs, with no fault.'
+  limitations:
+  - The RAW Data Edit colour check was not done on this build; the colour results (all 31 colour films closer to
+    target, median natural-colour error 1.19 to 1.04) were measured on films-twelve-off-artbkt, not on this build.
+  - One owner and one camera; not reproduced by the Atlas.
+  - Not in a release when read; the newest release, v2026.11.20-rc.1, carries films-look-exif.
+  assumptions: []

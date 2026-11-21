@@ -8,7 +8,7 @@ Seven installer pre-releases from 18 to 20 November 2026; v2026.11.20-rc.1 is th
 
 **Kind:** github release. **Locator:** Releases page; release v2026.11.20-rc.1.
 
-**Revision / release:** `v2026.11.20-rc.1`. **Retrieved:** 2026-11-20. **Last source check:** 2026-11-20.
+**Revision / release:** `v2026.11.20-rc.1`. **Retrieved:** 2026-11-20. **Last source check:** 2026-11-21.
 
 **Publication:** public. Attributed summary of mutable release notes; no code, firmware or executables imported.
 

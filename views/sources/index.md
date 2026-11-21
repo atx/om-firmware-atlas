@@ -60,9 +60,10 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | [Caduceus E-P7 overview](ep7.readme.md) | Advertised modifications and feature-specific limitations. |
 | [Caduceus E-P7 releases](ep7.releases.md) | Beta release notes from v0.31b to v0.34a. |
 | [films-look-exif camera log](epm2.camera-log.md) | Owner camera result for the pinned build on 2026-11-20, with the emulator checks run before the flash. |
+| [films-twelve-off camera log](epm2.camera-log-twelve-off.md) | Owner camera result for the films-twelve-off build on 2026-11-21, the checks not done and the emulator checks run before the flash. |
 | [E-PM2 feasibility and real limits](epm2.feasibility.md) | Measured limits, resources, recovery record and what is feasible, each labelled verified, inferred or unknown. |
 | [E-PM2 firmware format](epm2.format.md) | OE container fields, scrambling, checksum and the v1.6 blocks with their runtime base. |
-| [EPM2Mod pinned build](epm2.install.md) | The pinned build films-look-exif, its feature set, and the stock and build SHA-256s. |
+| [EPM2Mod pinned build](epm2.install.md) | The pinned build films-twelve-off, its feature set, the camera-test date and the stock and build SHA-256s. |
 | [Olympus custom firmware landscape](epm2.landscape.md) | Known projects by camera, and why EPM2Mod is not a fork of the newer-body mods. |
 | [Olympus generations for modding](epm2.model-matrix.md) | Generations, firmware codes, layouts and processors across 32 surveyed update files, with labelled certainty. |
 | [EPM2Mod overview](epm2.readme.md) | Features, install routes, the landscape of other projects and the AI-assistance note. |

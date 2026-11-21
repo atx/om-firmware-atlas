@@ -211,8 +211,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/evidence/epm2mod.yaml": {
-      "approx_tokens": 406,
-      "bytes": 1624,
+      "approx_tokens": 923,
+      "bytes": 3689,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/evidence/om10mi-mods.yaml": {
@@ -311,8 +311,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/epm2mod.yaml": {
-      "approx_tokens": 1424,
-      "bytes": 5694,
+      "approx_tokens": 1470,
+      "bytes": 5878,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/ghidra-mn103.yaml": {
@@ -371,8 +371,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/epm2mod.yaml": {
-      "approx_tokens": 1344,
-      "bytes": 5374,
+      "approx_tokens": 1540,
+      "bytes": 6159,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/fishcu.yaml": {

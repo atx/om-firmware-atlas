@@ -4,12 +4,12 @@
 
 Firmware mod for the 2012 PEN E-PM2 with film simulations, interval shooting, level gauge and focus peaking.
 
-[Contribution home](https://github.com/cfu288/EPM2Mod/issues). The owner reports the pinned build films-look-exif tested on a real E-PM2 on 2026-11-20. Every release so far is a pre-release, and the project calls the firmware unofficial and at the user's own risk.
+[Contribution home](https://github.com/cfu288/EPM2Mod/issues). The owner pinned a new build, films-twelve-off, and reports it tested on a real E-PM2 on 2026-11-21; it gives film simulations no 12-region table and carries refitted films, but is not in a release yet. The newest pre-release, v2026.11.20-rc.1, carries films-look-exif. The project calls the firmware unofficial and at the user's own risk.
 
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
-| [epm2mod.yaml](../../../records/projects/epm2mod.yaml) | Project scope, related work and contribution destination | 5,694 | ~1,424 |
-| [epm2mod.yaml](../../../records/sources/epm2mod.yaml) | Find the relevant source/observation ID; use bounded reads | 5,374 | ~1,344 |
-| [epm2mod.yaml](../../../records/evidence/epm2mod.yaml) | Find the relevant source/observation ID; use bounded reads | 1,624 | ~406 |
+| [epm2mod.yaml](../../../records/projects/epm2mod.yaml) | Project scope, related work and contribution destination | 5,878 | ~1,470 |
+| [epm2mod.yaml](../../../records/sources/epm2mod.yaml) | Find the relevant source/observation ID; use bounded reads | 6,159 | ~1,540 |
+| [epm2mod.yaml](../../../records/evidence/epm2mod.yaml) | Find the relevant source/observation ID; use bounded reads | 3,689 | ~923 |
 
 Follow only relevant camera/topic routes. Upstream policies apply to work there; Atlas does not assign ownership across projects.

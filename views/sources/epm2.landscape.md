@@ -4,14 +4,14 @@
 
 Known projects by camera, and why EPM2Mod is not a fork of the newer-body mods.
 
-**[Open original source](https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/reference/landscape.md)**
+**[Open original source](https://github.com/cfu288/EPM2Mod/blob/f8f173d8b53d4370f85505cdec7be2b52d1ec830/docs/reference/landscape.md)**
 
 **Kind:** github file. **Locator:** docs/reference/landscape.md.
 
-**Revision / release:** `09b982771e2809e2ee73076b25c41d9c5c5ad905`. **Retrieved:** 2026-11-20. **Last source check:** 2026-11-20.
+**Revision / release:** `f8f173d8b53d4370f85505cdec7be2b52d1ec830`. **Retrieved:** 2026-11-21. **Last source check:** 2026-11-21.
 
 **Publication:** public. Linked and synthesised; upstream material retains its own terms.
 
 ## Sources and record
 
-[Canonical record](../../records/sources/epm2mod.yaml) · Substantively reviewed: 2026-11-20.
+[Canonical record](../../records/sources/epm2mod.yaml) · Substantively reviewed: 2026-11-21.
