@@ -61,6 +61,20 @@ Latest: v0.34a, 15 Nov 2026
 
 <div class="project-card" markdown="1">
 
+[om10mi-mods](om10mi-mods.md){ .card-title }
+
+Film looks, a colour wheel, colour editors and a longer video limit for the original OM-D E-M10.
+
+Film looks · Per-sector colour editor · Per-look colour editor
+{ .card-features }
+
+Latest: v87, 21 Nov 2026
+{ .card-meta }
+
+</div>
+
+<div class="project-card" markdown="1">
+
 [db firmware / om-c-firmware](db-firmware.md){ .card-title }
 
 Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to new burst rates.
@@ -111,20 +125,6 @@ Panorama 65:24 · Multiple Exposure with 3 and 4 frames · Focus stacking with a
 { .card-features }
 
 Latest: mod-builder-1.17, 18 Nov 2026
-{ .card-meta }
-
-</div>
-
-<div class="project-card" markdown="1">
-
-[om10mi-mods](om10mi-mods.md){ .card-title }
-
-Film looks, colour editors and a longer video limit for the original OM-D E-M10.
-
-Film looks · Per-sector colour editor · Per-look colour editor
-{ .card-features }
-
-Latest: v56, 10 Nov 2026
 { .card-meta }
 
 </div>

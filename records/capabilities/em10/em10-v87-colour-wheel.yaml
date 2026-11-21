@@ -1,0 +1,32 @@
+schema_version: 1
+records:
+- type: capability
+  id: capability.em10-v87-colour-wheel
+  title: E-M10 colour wheel in Color Creator, version 87
+  summary: The owner reports a 12-sector Hue/Saturation/Lightness wheel in Color Creator at the ART dial working on their E-M10 Mark I.
+  source_refs:
+  - source.om10mi.readme
+  - source.om10mi.color-wheel
+  topics:
+  - colour
+  last_reviewed: '2026-11-21'
+  camera_id: camera.em10
+  firmware_id: firmware.em10-1400
+  project_id: project.om10mi-mods
+  mod_build: '87'
+  feature_id: feature.colour.hsl
+  assertion: In version 87 on firmware 1.4, Color Creator at the ART dial position shows a wheel of 12 sectors, each
+    with Hue, Saturation and Lightness from -7 to +7; the recipe applies to JPEG and live view, survives power-off
+    and does not apply in P, A, S or M.
+  availability: published-release
+  implementation: reported
+  evidence_refs:
+  - evidence.em10-v87-owner
+  contradicting_refs: []
+  limitations:
+  - One owner camera; no per-feature results or test date.
+  - The ART dial no longer reaches the stock art filters; they are chosen through Picture Mode in P, A, S or M.
+  - After a RAW Data Edit, a wheel key press or re-entering ART is needed before the recipe applies, although the
+    guide can already read RECIPE ON.
+  - Very dark and very pale pixels in an edited sector can spread a little into neighbouring colours; the ART mode
+    guide still shows the P icon.

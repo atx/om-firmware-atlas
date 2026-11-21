@@ -19,15 +19,19 @@ A user reports three random freezes and reboots in about 40 to 50 shots with fil
 Shooting with filters enabled; no filter, look or Picture Mode named.
 
 - Three freezes followed by a reboot in about 40 to 50 photos; intermittent.
+- Maintainer reply (2026-11-21): no fault in thousands of simulated version 56 shots; suspects the Contrast/Gradation code on a look; asks which look and settings, whether User Hue Reset was run, the drive and file mode, and how the camera recovered.
+- Version 87 changelog lists re-entrancy hardening of that code, related to this issue; the reporter has not tried 87 or answered when read.
 
 ## Limits and assumptions
 
-- No body, firmware or build stated, and no maintainer reply when read.
+- No body, firmware or build stated; the reporter had not answered the maintainer's questions when read.
+- The suspected cause is the maintainer's hypothesis, not a confirmed diagnosis; the 87 change is not shown to fix this report.
 - Not established whether "filters" means the mod's film looks or the stock Art Filters.
 - Camera recorded as the E-M10 Mark I because the project targets only that body; the report does not say so.
 
 ## Sources and record
 
 - [Freezes and reboots with filters (issue 4)](../sources/om10mi.issue-4.md)
+- [om10mi-mods changes](../sources/om10mi.changelog.md)
 
 [Canonical record](../../records/evidence/om10mi-mods.yaml) · Substantively reviewed: 2026-11-21.

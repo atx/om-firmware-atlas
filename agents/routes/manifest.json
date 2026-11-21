@@ -90,6 +90,11 @@
       "bytes": 1038,
       "method": "ceil(utf8-bytes/4)"
     },
+    "records/capabilities/em10/em10-v87-colour-wheel.yaml": {
+      "approx_tokens": 359,
+      "bytes": 1433,
+      "method": "ceil(utf8-bytes/4)"
+    },
     "records/capabilities/em5-iii/em5-iii-features.yaml": {
       "approx_tokens": 1281,
       "bytes": 5124,
@@ -211,8 +216,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/evidence/om10mi-mods.yaml": {
-      "approx_tokens": 998,
-      "bytes": 3992,
+      "approx_tokens": 1902,
+      "bytes": 7605,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/evidence/omkit.yaml": {
@@ -331,8 +336,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/om10mi-mods.yaml": {
-      "approx_tokens": 1509,
-      "bytes": 6036,
+      "approx_tokens": 2104,
+      "bytes": 8415,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/omkit.yaml": {
@@ -386,8 +391,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/om10mi-mods.yaml": {
-      "approx_tokens": 1891,
-      "bytes": 7562,
+      "approx_tokens": 2365,
+      "bytes": 9459,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/om3.yaml": {

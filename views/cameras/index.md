@@ -79,7 +79,7 @@ E113
 
 E113 (2014): one mod built for firmware 1.4 and field-tested on one owner body; distinct from the E-M10 Mark II and Mark IV.
 
-1 project · 1 feature catalogued
+1 project · 2 features catalogued
 { .card-meta }
 
 </div>

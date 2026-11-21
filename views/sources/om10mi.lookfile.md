@@ -4,11 +4,11 @@
 
 Draft JSON look format for external editors: 18 look slots, name limits and parameters; builder side not finished.
 
-**[Open original source](https://github.com/Meghnus/om10mi-mods/blob/f36772dc709ee630333ff576acc0ede02f87da19/docs/lookfile/LOOKFILE_SPEC.md)**
+**[Open original source](https://github.com/Meghnus/om10mi-mods/blob/46874155947715e0d54baabe2df5006376c8bbab/docs/lookfile/LOOKFILE_SPEC.md)**
 
 **Kind:** github file. **Locator:** docs/lookfile/LOOKFILE_SPEC.md.
 
-**Revision / release:** `f36772dc709ee630333ff576acc0ede02f87da19`. **Retrieved:** 2026-11-21. **Last source check:** 2026-11-21.
+**Revision / release:** `46874155947715e0d54baabe2df5006376c8bbab`. **Retrieved:** 2026-11-21. **Last source check:** 2026-11-21.
 
 **Publication:** public. Linked and synthesised; upstream material retains its own terms.
 

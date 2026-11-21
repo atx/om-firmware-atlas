@@ -2,11 +2,11 @@
 
 # Freezes and reboots with filters (issue 4)
 
-A user reports three freezes and reboots in about 40 to 50 shots with filters enabled; no body, build or reply given.
+A user reports three freezes and reboots in about 40 to 50 shots with filters enabled; the maintainer asks four questions and suspects the Contrast/Gradation code on looks.
 
 **[Open original source](https://github.com/Meghnus/om10mi-mods/issues/4)**
 
-**Kind:** github comment. **Locator:** Issue 4 by kzjken, opened 2026-11-21; no maintainer reply when read.
+**Kind:** github comment. **Locator:** Issue 4 by kzjken, opened 2026-11-21; maintainer reply by Meghnus on 2026-11-21; open, no reporter follow-up when read.
 
 **Revision / release:** `Mutable page; no pinned revision`. **Retrieved:** 2026-11-21. **Last source check:** 2026-11-21.
 

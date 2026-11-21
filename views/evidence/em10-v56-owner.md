@@ -32,7 +32,7 @@ No step-by-step procedure was supplied.
 ## Sources and record
 
 - [om10mi-mods overview](../sources/om10mi.readme.md)
-- [Version 56 guide and test list](../sources/om10mi.guide.md)
+- [Looks and colour editors guide and test list (since 56)](../sources/om10mi.guide.md)
 - [om10mi-mods changes](../sources/om10mi.changelog.md)
 
 [Canonical record](../../records/evidence/om10mi-mods.yaml) · Substantively reviewed: 2026-11-21.

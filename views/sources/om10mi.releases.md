@@ -2,13 +2,13 @@
 
 # om10mi-mods releases
 
-One release, v56, published 2026-11-10 and marked Latest; Windows exe and Python zip, with the stock and result SHA-1s.
+Two releases, v87 (2026-11-21, Latest) and v56 (2026-11-10); each has a Windows exe and a Python zip with SHA-256s, and the stock and result SHA-1s.
 
 **[Open original source](https://github.com/Meghnus/om10mi-mods/releases)**
 
-**Kind:** github release. **Locator:** Releases page; release v56 at commit 20ef8fe846ec432bbfa361b8be3f0edca91d51ee.
+**Kind:** github release. **Locator:** Releases page; release v87 at commit 46874155947715e0d54baabe2df5006376c8bbab; release v56 at commit 20ef8fe846ec432bbfa361b8be3f0edca91d51ee.
 
-**Revision / release:** `v56`. **Retrieved:** 2026-11-21. **Last source check:** 2026-11-21.
+**Revision / release:** `v87`. **Retrieved:** 2026-11-21. **Last source check:** 2026-11-21.
 
 **Publication:** public. Attributed summary of mutable release notes; no code, firmware or executables imported.
 

@@ -2,11 +2,11 @@
 
 # RAW white balance in Lightroom Classic (issue 3)
 
-A user reports RAWs opening about 300 K lower in Lightroom Classic than set in camera; no body, build or reply given.
+A user reports RAWs opening about 300 K lower in Lightroom Classic than set in camera; the maintainer replies that this is expected stock behaviour and asks for a stock comparison.
 
 **[Open original source](https://github.com/Meghnus/om10mi-mods/issues/3)**
 
-**Kind:** github comment. **Locator:** Issue 3 by rayv3r, opened 2026-11-20; no maintainer reply when read.
+**Kind:** github comment. **Locator:** Issue 3 by rayv3r, opened 2026-11-20; maintainer reply by Meghnus on 2026-11-21; open, no reporter follow-up when read.
 
 **Revision / release:** `Mutable page; no pinned revision`. **Retrieved:** 2026-11-21. **Last source check:** 2026-11-21.
 

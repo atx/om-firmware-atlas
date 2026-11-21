@@ -2,13 +2,13 @@
 
 # om10mi-mods install guide
 
-Builder steps, the stock and result SHA-1 checks, the SD-card update and the route back to stock.
+Builder steps for version 87, the stock and result SHA-1 checks, the SD-card update and the route back to stock.
 
-**[Open original source](https://github.com/Meghnus/om10mi-mods/blob/f36772dc709ee630333ff576acc0ede02f87da19/INSTALL.md)**
+**[Open original source](https://github.com/Meghnus/om10mi-mods/blob/46874155947715e0d54baabe2df5006376c8bbab/INSTALL.md)**
 
 **Kind:** github file. **Locator:** INSTALL.md.
 
-**Revision / release:** `f36772dc709ee630333ff576acc0ede02f87da19`. **Retrieved:** 2026-11-21. **Last source check:** 2026-11-21.
+**Revision / release:** `46874155947715e0d54baabe2df5006376c8bbab`. **Retrieved:** 2026-11-21. **Last source check:** 2026-11-21.
 
 **Publication:** public. Linked and synthesised; upstream material retains its own terms.
 
