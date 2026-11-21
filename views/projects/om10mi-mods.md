@@ -16,7 +16,7 @@ Film looks, a colour wheel, colour editors and a longer video limit for the orig
 
 </div>
 
-**Type:** mod · **Latest release:** [v87](https://github.com/Meghnus/om10mi-mods/releases/tag/v87), 21 Nov 2026 · **Maintained by** [Meghnus](https://github.com/Meghnus)
+**Type:** mod · **For:** [OM-D E-M10 (Mark I)](../cameras/em10.md) · **Latest release:** [v87](https://github.com/Meghnus/om10mi-mods/releases/tag/v87), 21 Nov 2026 · **Maintained by** [Meghnus](https://github.com/Meghnus)
 { .facts }
 
 ## About

@@ -15,7 +15,7 @@ Looks and a full colour editor for the OM-5 Mark II. Experimental.
 
 </div>
 
-**Type:** mod · **Latest release:** [v0.2.0-alpha1](https://github.com/xulfr/caduceus-om5/releases/tag/v0.2.0-alpha1), 20 Nov 2026 · **Maintained by** [xulfr](https://github.com/xulfr)
+**Type:** mod · **For:** [OM-5 Mark II](../cameras/om5-ii.md) · **Latest release:** [v0.2.0-alpha1](https://github.com/xulfr/caduceus-om5/releases/tag/v0.2.0-alpha1), 20 Nov 2026 · **Maintained by** [xulfr](https://github.com/xulfr)
 { .facts }
 
 ![The OM-5 Mark II Picture Mode screen showing Color Profile 2 with the look Portra 160](../../docs/assets/projects/caduceus-om5/picture-mode-look.png)

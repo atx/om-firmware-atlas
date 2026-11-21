@@ -13,7 +13,7 @@ The research base: PEN-F HSL, firmware formats and tools for many bodies.
 
 </div>
 
-**Type:** research · **Latest release:** [alpha-20261017](https://github.com/fishcu/oly_fw_analysis/releases/tag/alpha-20261017), 18 Oct 2026 · **Maintained by** [fishcu](https://github.com/fishcu)
+**Type:** research · **For:** [PEN-F](../cameras/pen-f.md) · **Latest release:** [alpha-20261017](https://github.com/fishcu/oly_fw_analysis/releases/tag/alpha-20261017), 18 Oct 2026 · **Maintained by** [fishcu](https://github.com/fishcu)
 { .facts }
 
 ## About

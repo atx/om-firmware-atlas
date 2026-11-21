@@ -7,7 +7,17 @@ E147: advanced Caduceus work, other modifications and an established research no
 **Model code:** E147 · **Also known as:** OM-3, OM3 · **Catalogue depth:** initial review
 { .facts }
 
-## What you can do with this camera
+<div class="glance" markdown="1">
+
+**Releases for this camera:** [Caduceus for OM-3](../projects/caduceus-om3.md) (v0.40.2), [db firmware / om-c-firmware](../projects/db-firmware.md) (dbv0.4.3).
+
+**No release for this camera yet:** [OM-3 downstream experiments](../projects/camera-stuff.md).
+
+**Jump to:** [What you can do](#features) · [Projects](#projects) · [Test evidence](#evidence) · [Where to talk](#talk)
+
+</div>
+
+## What you can do with this camera { #features }
 
 Features as each project describes them, with their status. Follow a project's own guide before installing anything.
 
@@ -255,7 +265,7 @@ Switches to the electronic shutter on overexposure in P or A mode and, since v0.
 
 </div>
 
-## Projects for this camera
+## Projects for this camera { #projects }
 
 Each card says what the project has for this camera and where to get it. A project can be listed here for a small part of its work; its own page covers the rest.
 
@@ -397,7 +407,7 @@ Reference
 
 </div>
 
-## Claims and test evidence
+## Claims and test evidence { #evidence }
 
 | Scoped assertion | Project / build | Availability | Evidence |
 |---|---|---|---|
@@ -405,7 +415,7 @@ Reference
 
 Results belong to the named project and package. Emulator output does not establish physical-camera behaviour.
 
-## Where to talk
+## Where to talk { #talk }
 
 [Caduceus Discord](../community/caduceus-discord.md), [r/M43](../community/m43.md). For a reproducible bug, use the project's own issue tracker.
 

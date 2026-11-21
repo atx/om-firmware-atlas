@@ -7,7 +7,15 @@ E139: one mod builder for firmware 1.6; owner camera reports per mod, no Atlas e
 **Model code:** E139 · **Also known as:** E-M1 III, E-M1 Mark III, EM1III · **Catalogue depth:** discovery only
 { .facts }
 
-## What you can do with this camera
+<div class="glance" markdown="1">
+
+**Releases for this camera:** [E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md) (mod-builder-1.18).
+
+**Jump to:** [What you can do](#features) · [Projects](#projects) · [Test evidence](#evidence)
+
+</div>
+
+## What you can do with this camera { #features }
 
 Features as each project describes them, with their status. Follow a project's own guide before installing anything.
 
@@ -243,7 +251,7 @@ The Shooting Menu 1 title shows your own text, up to 36 characters. Worked on th
 
 </div>
 
-## Projects for this camera
+## Projects for this camera { #projects }
 
 Each card says what the project has for this camera and where to get it. A project can be listed here for a small part of its work; its own page covers the rest.
 
@@ -277,7 +285,7 @@ Mod
 
 Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
 
-## Claims and test evidence
+## Claims and test evidence { #evidence }
 
 No feature-level assertion is catalogued yet. This is a coverage gap, not a finding that modifications are impossible.
 

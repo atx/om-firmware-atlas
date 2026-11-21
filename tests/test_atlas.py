@@ -196,6 +196,11 @@ class AtlasTests(unittest.TestCase):
         self.assertIn(f"**For this camera:** {note}", output)
         self.assertGreater(output.index("[Ghidra MN103"), others)
         self.assertNotIn("Latest: v0.2.0-alpha1", output)
+        glance = output[output.index('class="glance"'):output.index("## What you can do")]
+        self.assertIn("**Releases for this camera:** [db firmware", glance)
+        self.assertIn("**No release for this camera yet:**", glance)
+        self.assertIn("[Projects](#projects)", glance)
+        self.assertIn("## Projects for this camera { #projects }", output)
 
     def test_camera_note_must_name_a_catalogued_camera(self):
         self.catalogue.records["project.caduceus-om3"]["camera_notes"] = [{"camera_id": "camera.pen-f", "note": "x"}]

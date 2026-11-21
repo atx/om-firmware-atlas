@@ -12,7 +12,7 @@ Run OM SYSTEM and Olympus camera firmware in your browser.
 
 </div>
 
-**Type:** emulator · **Maintained by** [flatpanda](https://github.com/flatpanda)
+**Type:** emulator · **For:** [OM-5](../cameras/om5.md), [OM-5 Mark II](../cameras/om5-ii.md), [OM-3](../cameras/om3.md), [PEN E-P7](../cameras/ep7.md), [PEN-F](../cameras/pen-f.md), [OM-D E-M10 Mark IV](../cameras/em10-iv.md) · **Maintained by** [flatpanda](https://github.com/flatpanda)
 { .facts }
 
 ## About

@@ -7,7 +7,15 @@ E148: v0.2.0-alpha1 has an overall positive owner report; original OM-5 work is 
 **Model code:** E148 · **Also known as:** OM-5 II, OM5, OM5II · **Catalogue depth:** initial review
 { .facts }
 
-## What you can do with this camera
+<div class="glance" markdown="1">
+
+**Releases for this camera:** [Caduceus for OM-5](../projects/caduceus-om5.md) (v0.2.0-alpha1, pre-release), [OMKit](../projects/omkit.md) (v0.1.0), [db firmware / om-c-firmware](../projects/db-firmware.md) (dbv0.4.3; see its card below).
+
+**Jump to:** [What you can do](#features) · [Projects](#projects) · [Test evidence](#evidence) · [Where to talk](#talk) · [Platform](#platform)
+
+</div>
+
+## What you can do with this camera { #features }
 
 Features as each project describes them, with their status. Follow a project's own guide before installing anything.
 
@@ -207,7 +215,7 @@ ISP player, ISP fitter (.cube look to preset) and ISP neurofit (preset from RAW 
 
 </div>
 
-## Projects for this camera
+## Projects for this camera { #projects }
 
 Each card says what the project has for this camera and where to get it. A project can be listed here for a small part of its work; its own page covers the rest.
 
@@ -329,7 +337,7 @@ Tool
 
 </div>
 
-## Claims and test evidence
+## Claims and test evidence { #evidence }
 
 | Scoped assertion | Project / build | Availability | Evidence |
 |---|---|---|---|
@@ -343,11 +351,11 @@ Tool
 
 Results belong to the named project and package. Emulator output does not establish physical-camera behaviour.
 
-## Where to talk
+## Where to talk { #talk }
 
 [Caduceus Discord](../community/caduceus-discord.md), [r/M43](../community/m43.md). For a reproducible bug, use the project's own issue tracker.
 
-## Platform and built-in features (om5-ii firmware 1.1, build 1100)
+## Platform and built-in features (om5-ii firmware 1.1, build 1100) { #platform }
 
 What the stock firmware itself contains, separate from what projects add. Follow an entry for its sources.
 

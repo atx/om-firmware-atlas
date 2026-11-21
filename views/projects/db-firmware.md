@@ -12,7 +12,7 @@ Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to
 
 </div>
 
-**Type:** mod · **Latest release:** [dbv0.4.3](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3), 21 Nov 2026 · **Maintained by** [azqeurio](https://github.com/azqeurio)
+**Type:** mod · **For:** [OM-5](../cameras/om5.md), [OM-5 Mark II](../cameras/om5-ii.md), [OM-3](../cameras/om3.md), [PEN E-P7](../cameras/ep7.md), [PEN-F](../cameras/pen-f.md) · **Latest release:** [dbv0.4.3](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3), 21 Nov 2026 · **Maintained by** [azqeurio](https://github.com/azqeurio)
 { .facts }
 
 ## About

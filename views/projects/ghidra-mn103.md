@@ -12,7 +12,7 @@ Read MN103 camera firmware in Ghidra, with the decompiler.
 
 </div>
 
-**Type:** tool · **Maintained by** [nsud-dev](https://github.com/nsud-dev)
+**Type:** tool · **For:** [OM-D E-M5 Mark III](../cameras/em5-iii.md), [OM-5](../cameras/om5.md), [OM-5 Mark II](../cameras/om5-ii.md), [PEN-F](../cameras/pen-f.md), [PEN E-P7](../cameras/ep7.md) · **Maintained by** [nsud-dev](https://github.com/nsud-dev)
 { .facts }
 
 ## About
