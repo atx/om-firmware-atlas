@@ -51,7 +51,7 @@ E147
 
 E147: advanced Caduceus work, other modifications and an established research notebook.
 
-2 mods or ports, 2 with a release · 4 other projects
+3 mods or ports, 2 with a release · 3 other projects
 { .card-meta }
 
 </div>
@@ -65,7 +65,7 @@ E144
 
 Original E144: several projects have distinct experiments. Mark II results do not apply.
 
-2 mods or ports, 1 with a release · 5 other projects
+3 mods or ports, 1 with a release · dbv0.4.3: The project reports that this build does not work on this camera. · 4 other projects
 { .card-meta }
 
 </div>
@@ -79,7 +79,7 @@ E148
 
 E148: v0.2.0-alpha1 has an overall positive owner report; original OM-5 work is separate.
 
-3 mods or ports, 3 with a release · 2 other projects
+3 mods or ports, 3 with a release · dbv0.4.3: The project reports that this build does not work on this camera. · 2 other projects
 { .card-meta }
 
 </div>
@@ -127,7 +127,7 @@ E140
 
 E140: port/signature research and emulator coverage; no physical feature report imported.
 
-No mods yet · 2 other projects · discovery only
+1 mod or port, none released yet · 1 other project · discovery only
 { .card-meta }
 
 </div>
@@ -189,7 +189,7 @@ E122
 
 E122: foundational HSL research; exact internal build identity matters.
 
-2 mods or ports, 2 with a release · 2 other projects
+2 mods or ports, 2 with a release · dbv0.3.2: The release names this camera without saying which features it adds. · 2 other projects
 { .card-meta }
 
 </div>

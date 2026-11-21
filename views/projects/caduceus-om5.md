@@ -19,7 +19,7 @@ Looks and a full colour editor for the OM-5 Mark II. Experimental.
 
 </div>
 
-**Type:** mod · **Camera details:** [OM-5](#for-om5), [OM-5 Mark II](#for-om5-ii) · **Latest release:** [v0.2.0-alpha1](https://github.com/xulfr/caduceus-om5/releases/tag/v0.2.0-alpha1), 20 Nov 2026 · **Maintained by** [xulfr](https://github.com/xulfr)
+**Type:** mod · **Camera details:** [OM-5](#for-om5), [OM-5 Mark II](#for-om5-ii) · **Latest release:** [v0.2.0-alpha1 (pre-release)](https://github.com/xulfr/caduceus-om5/releases/tag/v0.2.0-alpha1), 20 Nov 2026 · **Maintained by** [xulfr](https://github.com/xulfr)
 { .facts }
 
 ## Cameras

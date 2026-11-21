@@ -19,7 +19,7 @@ Film simulations, interval shooting, focus peaking and a level gauge for the PEN
 
 </div>
 
-**Type:** mod · **Camera details:** [PEN E-PM2](#for-epm2) · **Latest release:** [v2026.11.20-rc.1](https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.20-rc.1), 20 Nov 2026 · **Maintained by** [cfu288](https://github.com/cfu288)
+**Type:** mod · **Camera details:** [PEN E-PM2](#for-epm2) · **Latest release:** [v2026.11.20-rc.1 (pre-release)](https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.20-rc.1), 20 Nov 2026 · **Maintained by** [cfu288](https://github.com/cfu288)
 { .facts }
 
 ## Cameras

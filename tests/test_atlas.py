@@ -11,7 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from atlas_core import Catalogue
-from atlas_generate import generated_diff, home_updates, render
+from atlas_generate import generated_diff, home_updates, latest_release, release_limit, render
 from atlas import expand_nav, freshness, inspect_remote, review_notice, update_queue
 from atlas_core import read_yaml, reference_status
 
@@ -201,6 +201,36 @@ class AtlasTests(unittest.TestCase):
         self.assertIn("**No release for this camera yet:**", glance)
         self.assertIn("[Projects](#projects)", glance)
         self.assertIn("## Projects for this camera { #projects }", output)
+
+    def test_latest_release_is_chronological_and_camera_specific(self):
+        project = copy.deepcopy(self.catalogue.records["project.db-firmware"])
+        release = latest_release(project)
+        for camera in ("camera.om5", "camera.om5-ii"):
+            self.assertIn("does not work", release_limit(release, camera))
+        self.assertIsNone(release_limit(release, "camera.om3"))
+        self.assertEqual(latest_release(project, "camera.pen-f")["tag"], "dbv0.3.2")
+        self.assertIn("without saying which features", release_limit(latest_release(project, "camera.pen-f"), "camera.pen-f"))
+        newer = dict(release, tag="next-beta", prerelease=True)
+        del newer["camera_limits"]
+        project["releases"].insert(0, newer)
+        self.assertIs(latest_release(project, "camera.om5"), newer)
+        self.assertIsNone(release_limit(newer, "camera.om5"))
+        self.assertIsNone(latest_release(self.catalogue.records["project.caduceus-ep7"], "camera.em10-iv"))
+        self.assertTrue(latest_release(self.catalogue.records["project.oly-fw-analysis"], "camera.pen-f")["prerelease"])
+
+    def test_failed_build_warning_reaches_install_decisions(self):
+        pages = render(self.catalogue)
+        warning = "The project reports that this build does not work on this camera."
+        for camera in ("om5", "om5-ii"):
+            page = pages[f"views/cameras/{camera}.md"]
+            self.assertIn(warning, page.split("## What you can do")[0])
+            project = pages["views/projects/db-firmware.md"].split("{ #for-" + camera + " }")[1].split("</div>")[0]
+            self.assertIn(warning, project)
+            self.assertIn("Read release notes", project)
+            self.assertNotIn("**Get it:**", project)
+        self.assertIn(warning, home_updates(self.catalogue, "docs/index.md"))
+        latest_release(self.catalogue.records["project.db-firmware"])["camera_limits"]["camera.pen-f"] = "features-unspecified"
+        self.assertTrue(any("limitation outside" in error for error in self.catalogue.validate()))
 
     def test_original_camera_links_to_its_own_project_details(self):
         pages = render(self.catalogue)

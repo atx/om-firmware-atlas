@@ -103,15 +103,32 @@ def pill(status):
     return f'<span class="pill pill-{status}">{STATUS_LABELS[status]}</span>'
 
 
-def latest_release(row):
-    releases = row.get("releases", [])
-    stable = [r for r in releases if not r["prerelease"]]
-    return (stable or releases or [None])[0]
+def latest_release(project, camera_id=None):
+    """Release records are validated newest first, including same-day editorial order."""
+    return next((release for release in project.get("releases", [])
+                 if camera_id is None or camera_id in release["camera_ids"]), None)
 
 
-def all_releases(catalogue):
-    rows = [(release, project) for project in catalogue.of_type("project") for release in project.get("releases", [])]
-    return sorted(rows, key=lambda pair: (pair[0]["date"], pair[1]["title"], pair[0]["tag"]), reverse=True)
+RELEASE_LIMITS = {
+    "reported-not-working": "The project reports that this build does not work on this camera.",
+    "features-unspecified": "The release names this camera without saying which features it adds.",
+}
+
+
+def release_limit(release, camera_id):
+    return RELEASE_LIMITS.get((release or {}).get("camera_limits", {}).get(camera_id))
+
+
+def release_notices(release, records):
+    lines = [f"**{cell(short_name(records[c]['title']))}:** {release_limit(release, c)}"
+             for c in release.get("camera_limits", {})]
+    if not lines:
+        return ""
+    return "\n\n" + " ".join(lines) + f" [Read release notes]({release['url']}).\n{{ .release-warning }}\n\n"
+
+
+def release_name(release):
+    return cell(release["tag"]) + (" (pre-release)" if release["prerelease"] else "")
 
 
 def asset_link(origin, path):
@@ -125,13 +142,6 @@ def release_line(origin, release, project=None):
 
 
 MOD_KINDS = ("mod", "experimental-fork")
-
-
-def camera_release(row, camera_id):
-    """The newest release that names this camera, preferring stable releases."""
-    releases = [r for r in row.get("releases", []) if camera_id in r["camera_ids"]]
-    stable = [r for r in releases if not r["prerelease"]]
-    return (stable or releases or [None])[0]
 
 
 def project_target(origin, project, camera_id=None):
@@ -152,7 +162,7 @@ def project_actions(project, records):
     guide = install_guide(project)
     links = [{"label": "Project home", "url": project["url"]},
              {"label": "Ask or report issues", "url": project["contribution_home"]}, *project.get("links", [])]
-    released = [c for c in project["camera_ids"] if camera_release(project, c)]
+    released = [c for c in project["camera_ids"] if (release := latest_release(project, c)) and not release_limit(release, c)]
     requests = testing_requests(project)
     if guide and released:
         label = "Read the install guide"
@@ -177,12 +187,16 @@ def glance(origin, camera, mods, records, page):
     """A short summary at the top of a camera page: releases, work in progress and jump links."""
     released, waiting = [], []
     for project in mods:
-        release = camera_release(project, camera["id"])
+        release = latest_release(project, camera["id"])
         name = f"[{cell(project['title'])}]({project_target(origin, project, camera['id'])})"
         noted = any(n["camera_id"] == camera["id"] for n in project.get("camera_notes", []))
         if release:
-            tag = release["tag"] + (", pre-release" if release["prerelease"] else "")
-            released.append(f"{name} ({cell(tag)}" + ("; see its card below)" if noted else ")"))
+            limit = release_limit(release, camera["id"])
+            if limit:
+                released.append(f"{name} ({release_name(release)}) — **{limit}** [Read release notes]({release['url']})")
+                continue
+            tag = release_name(release)
+            released.append(f"{name} ({tag}" + ("; see its card below)" if noted else ")"))
         else:
             waiting.append(name)
     lines = []
@@ -221,15 +235,18 @@ def for_camera(origin, row, camera):
     else:
         kind = {"research": "a research project", "tool": "a tool", "emulator": "an emulator", "reference": "a reference guide"}.get(row["kind"], label(row["kind"]))
         text = f"{kind[0].upper()}{kind[1:]}; it does not change the camera." + (f" Covers this camera for: {listed}." if listed else " Its own page says what it holds for this model.")
-    release = camera_release(row, camera_id)
+    release = latest_release(row, camera_id)
     links = row.get("links", [])
     guide = install_guide(row)
     if not guide:
         guide = next((item for item in links if any(word in item["label"].lower()
                      for word in ("guide", "try it", "use"))), None)
+    limit = release_limit(release, camera_id)
+    if limit:
+        return (f"**For this camera:** {text}\n{{ .card-for }}\n\n"
+                f"**{release_name(release)} · {limit}** [Read release notes]({release['url']}).\n{{ .release-warning }}\n\n")
     if release:
-        tag = release["tag"] + (" (pre-release)" if release["prerelease"] else "")
-        get = f"[{cell(tag)}]({release['url']}), {nice_date(release['date'])}"
+        get = f"[{release_name(release)}]({release['url']}), {nice_date(release['date'])}"
         if not guide:
             get += ". Check the release notes for files and instructions for this model."
         else:
@@ -258,7 +275,7 @@ def project_card(catalogue, origin, row, image=False, features=0, links=False, c
         names = [f["name"] for f in row["features"] if f["status"] != "planned"][:features]
         text += " · ".join(names) + "\n{ .card-features }\n\n"
     if not camera and catalogue is not None:
-        offered = [c for c in row["camera_ids"] if camera_release(row, c)
+        offered = [c for c in row["camera_ids"] if latest_release(row, c)
                    or any(c in f["camera_ids"] for f in row.get("features", []))]
         names = [short_name(catalogue.records[c]["title"]) for c in offered or row["camera_ids"]]
         if names:
@@ -268,8 +285,10 @@ def project_card(catalogue, origin, row, image=False, features=0, links=False, c
         text += label(row["kind"]).capitalize() + "\n{ .card-meta }\n\n"
     else:
         release = latest_release(row)
-        meta = f"Latest: {release['tag']}, {nice_date(release['date'])}" if release else label(row["kind"]).capitalize()
+        meta = f"Latest: {release_name(release)}, {nice_date(release['date'])}" if release else label(row["kind"]).capitalize()
         text += meta + "\n{ .card-meta }\n\n"
+        if release:
+            text += release_notices(release, catalogue.records)
     if links:
         text += f"[Project home]({row['url']}) · [Ask or report issues]({row['contribution_home']})\n{{ .card-links }}\n\n"
     return text + "</div>\n\n"
@@ -298,16 +317,16 @@ def home_updates(catalogue, origin):
             text += f"**[{cell(short_name(camera['title']))} · {cell(project['title'])}]({target})**\n\n"
             text += f"{item['summary']}. [View the testing request]({item['url']})\n\n"
         text += "</div>\n\n"
-    releases = {}
-    for release, project in all_releases(catalogue):
-        releases.setdefault(project["id"], (release, project))
+    releases = [(release, project) for project in catalogue.of_type("project") if (release := latest_release(project))]
+    releases.sort(key=lambda pair: (pair[0]["date"], pair[1]["title"]), reverse=True)
     if releases:
         text += '## Recent releases\n\n<div class="release-list" markdown="1">\n\n'
-        for release, project in list(releases.values())[:6]:
+        for release, project in releases[:6]:
             cameras = ", ".join(short_name(catalogue.records[c]["title"]) for c in release["camera_ids"])
             text += '<div class="release-item" markdown="1">\n\n'
             text += f"**{cell(cameras or 'Camera scope unspecified')}**\n{{ .release-model }}\n\n"
             text += release_line(origin, release, project) + "\n{ .release-head }\n\n"
+            text += release_notices(release, catalogue.records)
             text += release["highlights"][0] + "\n\n</div>\n\n"
         text += "</div>\n\n"
     text += "</section>\n"
@@ -394,7 +413,7 @@ def render(catalogue):
             projects = [records[p] for p in row["project_ids"]]
             def readiness(project):
                 features = [f for f in project.get("features", []) if row["id"] in f["camera_ids"]]
-                return (camera_release(project, row["id"]) is None, -len(features))
+                return (latest_release(project, row["id"]) is None, -len(features))
             mods = sorted((p for p in projects if installs(records, p, row["id"])), key=readiness)
             others = [p for p in projects if not installs(records, p, row["id"])]
             offered = [(f, p) for p in projects for f in p.get("features", []) if row["id"] in f["camera_ids"]
@@ -406,6 +425,10 @@ def render(catalogue):
                 for feature, project in offered:
                     text += '<div class="feature-card" markdown="1">\n\n'
                     text += f"**{cell(feature['name'])}** {pill(feature['status'])}\n{{ .feature-head }}\n\n{feature['summary']}\n\n"
+                    current = latest_release(project, row["id"])
+                    limit = release_limit(current, row["id"])
+                    if limit:
+                        text += f"**{release_name(current)} · {limit}** [Read release notes]({current['url']}).\n{{ .release-warning }}\n\n"
                     text += f"[{cell(project['title'])}]({project_target(path, project, row['id'])})" + (f" · since {feature['since']}" if feature.get("since") else "") + "\n{ .card-meta }\n\n</div>\n\n"
                 text += "</div>\n"
             text += "\n## Projects for this camera { #projects }\n\n"
@@ -484,10 +507,12 @@ def render(catalogue):
                     f"[{cell(short_name(records[c]['title']))}](#for-{slug(c)})" for c in row["camera_ids"]))
             release = latest_release(row)
             if release:
-                facts.append(f"**Latest release:** [{cell(release['tag'])}]({release['url']}), {nice_date(release['date'])}")
+                facts.append(f"**Latest release:** [{release_name(release)}]({release['url']}), {nice_date(release['date'])}")
             if row.get("maintainers"):
                 facts.append("**Maintained by** " + ", ".join(f"[{cell(m['label'])}]({m['url']})" for m in row["maintainers"]))
             text += "\n" + " · ".join(facts) + "\n{ .facts }\n"
+            if release:
+                text += release_notices(release, records)
             cameras = list(row["camera_ids"])
             cameras.extend(c["id"] for c in catalogue.of_type("camera")
                            if row["id"] in c["project_ids"] and c["id"] not in cameras)
@@ -499,7 +524,8 @@ def render(catalogue):
                     title = next((a for a in camera["aliases"] if a.startswith("Original ")), short_name(camera["title"]))
                     text += '<div class="model-panel" markdown="1">\n\n'
                     text += f"### {cell(title)} {{ #for-{slug(camera_id)} }}\n\n"
-                    if camera_release(row, camera_id) and installs(records, row, camera_id):
+                    selected = latest_release(row, camera_id)
+                    if selected and not release_limit(selected, camera_id) and installs(records, row, camera_id):
                         text += f"[Before you install: risks and recovery]({link(path, 'docs/before-you-install.md')})\n\n"
                     if camera_id in row["camera_ids"]:
                         text += for_camera(path, row, camera)
@@ -548,6 +574,7 @@ def render(catalogue):
                     text += '<div class="release-item" markdown="1">\n\n'
                     text += f"**[{cell(release['title'])}]({release['url']})**" + (' <span class="pill pill-alpha">Pre-release</span>' if release["prerelease"] else "") + f" · {nice_date(release['date'])}\n{{ .release-head }}\n\n"
                     text += "\n".join(f"- {h}" for h in release["highlights"]) + "\n\n"
+                    text += release_notices(release, records)
                     if release.get("warning"):
                         text += f"{release['warning']}\n{{ .release-warning }}\n\n"
                     text += "</div>\n\n"
@@ -633,10 +660,14 @@ def render(catalogue):
                 text += f"## {line}\n\n" + '<div class="camera-grid" markdown="1">\n\n'
                 for row in members:
                     projects = [records[p] for p in row["project_ids"]]
-                    mods = [p for p in projects if installs(records, p, row["id"]) and (camera_release(p, row["id"])
-                            or any(row["id"] in f["camera_ids"] for f in p.get("features", [])))]
-                    released = sum(1 for p in mods if camera_release(p, row["id"]))
+                    mods = [p for p in projects if installs(records, p, row["id"])]
+                    releases = [r for p in mods if (r := latest_release(p, row["id"]))]
+                    released = len(releases)
                     meta = [plural(len(mods), "mod or port", "mods or ports") + (f", {released} with a release" if released else ", none released yet") if mods else "No mods yet"]
+                    for release in releases:
+                        limit = release_limit(release, row["id"])
+                        if limit:
+                            meta.append(f"{release_name(release)}: {limit}")
                     if len(projects) > len(mods):
                         meta.append(plural(len(projects) - len(mods), "other project"))
                     if row["coverage"] == "discovery-only":

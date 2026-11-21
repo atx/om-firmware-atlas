@@ -20,7 +20,7 @@ Film looks and a full colour editor, built into the OM SYSTEM OM-3.
 
 </div>
 
-**Type:** mod · **Camera details:** [OM-3](#for-om3) · **Latest release:** [v0.40.2](https://github.com/androidfanman/caduceus-om3/releases/tag/v0.40.2), 20 Nov 2026 · **Maintained by** [androidfanman](https://github.com/androidfanman)
+**Type:** mod · **Camera details:** [OM-3](#for-om3) · **Latest release:** [v0.40.3-beta2 (pre-release)](https://github.com/androidfanman/caduceus-om3/releases/tag/v0.40.3-beta2), 20 Nov 2026 · **Maintained by** [androidfanman](https://github.com/androidfanman)
 { .facts }
 
 ## Cameras
@@ -34,7 +34,7 @@ Film looks and a full colour editor, built into the OM SYSTEM OM-3.
 **For this camera:** 18 features, including Your films in Picture Mode, 20 film simulations and Colour editor on the camera.
 { .card-for }
 
-**Get it:** [v0.40.2](https://github.com/androidfanman/caduceus-om3/releases/tag/v0.40.2), 20 Nov 2026 · [Install guide](https://androidfanman.github.io/caduceus-om3/pages/install/)
+**Get it:** [v0.40.3-beta2 (pre-release)](https://github.com/androidfanman/caduceus-om3/releases/tag/v0.40.3-beta2), 20 Nov 2026 · [Install guide](https://androidfanman.github.io/caduceus-om3/pages/install/)
 { .card-get }
 
 [Camera overview and test results](../cameras/om3.md)

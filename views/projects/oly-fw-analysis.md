@@ -17,7 +17,7 @@ The research base: PEN-F HSL, firmware formats and tools for many bodies.
 
 </div>
 
-**Type:** research · **Camera details:** [PEN-F](#for-pen-f), [OM-5](#for-om5), [PEN E-P7](#for-ep7), [OM-3](#for-om3) · **Latest release:** [alpha-20261017](https://github.com/fishcu/oly_fw_analysis/releases/tag/alpha-20261017), 18 Oct 2026 · **Maintained by** [fishcu](https://github.com/fishcu)
+**Type:** research · **Camera details:** [PEN-F](#for-pen-f), [OM-5](#for-om5), [PEN E-P7](#for-ep7), [OM-3](#for-om3) · **Latest release:** [alpha-20261017 (pre-release)](https://github.com/fishcu/oly_fw_analysis/releases/tag/alpha-20261017), 18 Oct 2026 · **Maintained by** [fishcu](https://github.com/fishcu)
 { .facts }
 
 ## Cameras

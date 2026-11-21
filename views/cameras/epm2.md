@@ -9,7 +9,7 @@ E101, TruePic VI (2012): one camera-tested mod; its addresses and edits do not c
 
 <div class="glance" markdown="1">
 
-**Releases for this camera:** [EPM2Mod](../projects/epm2mod.md#for-epm2) (v2026.11.20-rc.1, pre-release).
+**Releases for this camera:** [EPM2Mod](../projects/epm2mod.md#for-epm2) (v2026.11.20-rc.1 (pre-release)).
 
 **Jump to:** [What you can do](#features) · [Projects](#projects) · [Test evidence](#evidence) · [Platform](#platform)
 

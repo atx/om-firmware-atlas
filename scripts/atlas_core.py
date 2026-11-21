@@ -226,6 +226,9 @@ class Catalogue:
                         if release["url"] != expected_url:
                             errors.append(f"{node_id}: release {release['tag']} must link to {expected_url}.")
                     check_ref(node_id, f"release {release['tag']} source_ref", release["source_ref"], "source")
+                    for camera in release.get("camera_limits", {}):
+                        if camera not in release["camera_ids"]:
+                            errors.append(f"{node_id}: release {release['tag']} has a limitation outside its camera_ids: {camera}.")
                     for camera in release["camera_ids"]:
                         if camera not in row["camera_ids"]:
                             errors.append(f"{node_id}: release {release['tag']} names {camera}, which is not in the project's camera_ids.")

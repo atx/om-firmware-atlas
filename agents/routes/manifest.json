@@ -296,8 +296,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/db-firmware.yaml": {
-      "approx_tokens": 2199,
-      "bytes": 8794,
+      "approx_tokens": 2136,
+      "bytes": 8542,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/em1-iii-mod-builder.yaml": {

@@ -9,7 +9,7 @@ E148: v0.2.0-alpha1 has an overall positive owner report; original OM-5 work is 
 
 <div class="glance" markdown="1">
 
-**Releases for this camera:** [Caduceus for OM-5](../projects/caduceus-om5.md#for-om5-ii) (v0.2.0-alpha1, pre-release), [OMKit](../projects/omkit.md#for-om5-ii) (v0.1.0), [db firmware / om-c-firmware](../projects/db-firmware.md#for-om5-ii) (dbv0.4.3; see its card below).
+**Releases for this camera:** [Caduceus for OM-5](../projects/caduceus-om5.md#for-om5-ii) (v0.2.0-alpha1 (pre-release)), [OMKit](../projects/omkit.md#for-om5-ii) (v0.1.0), [db firmware / om-c-firmware](../projects/db-firmware.md#for-om5-ii) (dbv0.4.3) — **The project reports that this build does not work on this camera.** [Read release notes](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3).
 
 **Jump to:** [What you can do](#features) · [Projects](#projects) · [Test evidence](#evidence) · [Where to talk](#talk) · [Platform](#platform)
 
@@ -139,6 +139,9 @@ Removed before v0.2.0-alpha1. A development build showed no grain on the camera 
 
 Korean language support on several bodies.
 
+**dbv0.4.3 · The project reports that this build does not work on this camera.** [Read release notes](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3).
+{ .release-warning }
+
 [db firmware / om-c-firmware](../projects/db-firmware.md#for-om5-ii)
 { .card-meta }
 
@@ -150,6 +153,9 @@ Korean language support on several bodies.
 { .feature-head }
 
 Switches to the electronic shutter on overexposure in P or A mode and, since v0.4.3, below the slowest mechanical speed in S or M mode. v0.4.3 lists nine bodies, including the OM-3, OM-5, OM-5 Mark II and E-P7; its OM-5 and OM-5 Mark II builds are listed as not working.
+
+**dbv0.4.3 · The project reports that this build does not work on this camera.** [Read release notes](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3).
+{ .release-warning }
 
 [db firmware / om-c-firmware](../projects/db-firmware.md#for-om5-ii) · since dbv0.4.2
 { .card-meta }
@@ -274,11 +280,11 @@ Mod
 
 Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to new burst rates.
 
-**For this camera:** Korean menus and Hybrid Shutter, both beta. The v0.4.3 notes list the OM-5 Mark II build as not working, so read each release's notes for this camera before installing.
+**For this camera:** Korean menus and Hybrid Shutter, both beta.
 { .card-for }
 
-**Get it:** [dbv0.4.3](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3), 21 Nov 2026. Check the release notes for files and instructions for this model.
-{ .card-get }
+**dbv0.4.3 · The project reports that this build does not work on this camera.** [Read release notes](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3).
+{ .release-warning }
 
 Mod
 { .card-meta }

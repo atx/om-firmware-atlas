@@ -9,7 +9,7 @@ E122: foundational HSL research; exact internal build identity matters.
 
 <div class="glance" markdown="1">
 
-**Releases for this camera:** [Olympus firmware research](../projects/oly-fw-analysis.md#for-pen-f) (alpha-20261017, pre-release; see its card below), [db firmware / om-c-firmware](../projects/db-firmware.md#for-pen-f) (dbv0.3.2; see its card below).
+**Releases for this camera:** [Olympus firmware research](../projects/oly-fw-analysis.md#for-pen-f) (alpha-20261017 (pre-release); see its card below), [db firmware / om-c-firmware](../projects/db-firmware.md#for-pen-f) (dbv0.3.2) — **The release names this camera without saying which features it adds.** [Read release notes](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.3.2).
 
 **Jump to:** [What you can do](#features) · [Projects](#projects) · [Test evidence](#evidence) · [Platform](#platform)
 
@@ -74,11 +74,11 @@ Research
 
 Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to new burst rates.
 
-**For this camera:** No PEN-F feature is catalogued. Release v0.3.2 lists the PEN-F, but its notes do not say what it adds for this camera.
+**For this camera:** No PEN-F feature is catalogued.
 { .card-for }
 
-**Get it:** [dbv0.3.2](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.3.2), 31 Oct 2026. Check the release notes for files and instructions for this model.
-{ .card-get }
+**dbv0.3.2 · The release names this camera without saying which features it adds.** [Read release notes](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.3.2).
+{ .release-warning }
 
 Mod
 { .card-meta }
