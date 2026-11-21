@@ -15,10 +15,27 @@
   var menuButton = document.querySelector('[data-menu-toggle]');
   var nav = document.getElementById('primary-nav');
   if (menuButton && nav) {
-    menuButton.addEventListener('click', function () {
-      var open = nav.classList.toggle('is-open');
+    function setMenu(open) {
+      nav.classList.toggle('is-open', open);
       menuButton.setAttribute('aria-expanded', String(open));
+      menuButton.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    }
+    menuButton.addEventListener('click', function (event) {
+      var opening = !nav.classList.contains('is-open');
+      setMenu(opening);
+      if (opening && event.detail === 0) nav.querySelector('a').focus();
     });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && nav.classList.contains('is-open')) {
+        setMenu(false);
+        menuButton.focus();
+      }
+    });
+    function dismissMenu(event) {
+      if (!nav.contains(event.target) && !menuButton.contains(event.target)) setMenu(false);
+    }
+    document.addEventListener('pointerdown', dismissMenu);
+    document.addEventListener('focusin', dismissMenu);
   }
 
   /* Punctuation and generation spellings vary. Convert whole generations before
@@ -47,6 +64,17 @@
         : 'No matching camera in the Atlas. Check the name and generation, or browse the camera directory.';
     }
     field.addEventListener('input', filter);
+    field.addEventListener('keydown', function (event) {
+      if (event.isComposing) return;
+      var matches = links.filter(function (link) { return !link.parentElement.hidden; });
+      if (event.key === 'Enter' && matches.length === 1) {
+        event.preventDefault();
+        matches[0].click();
+      } else if (event.key === 'ArrowDown' && matches.length) {
+        event.preventDefault();
+        matches[0].focus();
+      }
+    });
     filter();
     finder.hidden = false;
   });
@@ -95,12 +123,12 @@
   });
   if (dialog) {
     dialog.addEventListener('click', function (event) { if (event.target === dialog) dialog.close(); });
+    dialog.querySelector('.search-close').addEventListener('click', function () { dialog.close(); });
     /* Enter opens the first result rather than closing the dialog. */
     dialog.querySelector('form').addEventListener('submit', function (event) {
-      if (event.submitter && event.submitter.classList.contains('search-close')) return;
       event.preventDefault();
       var first = dialog.querySelector('.search-results a');
-      if (first) location.href = first.href;
+      if (input.value.trim() && first) location.href = first.href;
     });
     if (/[?&]q=/.test(location.search)) openSearch();
   }
