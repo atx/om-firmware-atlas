@@ -401,8 +401,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/om5.yaml": {
-      "approx_tokens": 2351,
-      "bytes": 9404,
+      "approx_tokens": 2402,
+      "bytes": 9606,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/omkit.yaml": {

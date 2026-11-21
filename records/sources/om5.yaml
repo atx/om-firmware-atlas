@@ -3,17 +3,17 @@ records:
 - type: source
   id: source.om5.readme
   title: Caduceus OM-5 overview
-  summary: Separate model status, features and project lineage; names v0.2.0-alpha1 the current experimental build.
+  summary: Separate model status, features and project lineage; names v0.2.0-alpha1 (20 November 2026) the current experimental build, with its new controls and the on-card SHA-256 to check before flashing.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-20'
-  url: https://github.com/xulfr/caduceus-om5/blob/7c3bf521f4a92580a7cafa3fab82ad2003f10657/README.md
+  last_reviewed: '2026-11-21'
+  url: https://github.com/xulfr/caduceus-om5/blob/1357ef68b73df6c3636795f5a21d353fb8774110/README.md
   source_kind: github-file
   upstream_repo: xulfr/caduceus-om5
-  revision: 7c3bf521f4a92580a7cafa3fab82ad2003f10657
+  revision: 1357ef68b73df6c3636795f5a21d353fb8774110
   locator: README.md
-  retrieved_on: '2026-11-20'
-  last_checked: '2026-11-20'
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -23,13 +23,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-17'
-  url: https://github.com/xulfr/caduceus-om5/blob/7c3bf521f4a92580a7cafa3fab82ad2003f10657/docs/FORMATS.md
+  url: https://github.com/xulfr/caduceus-om5/blob/1357ef68b73df6c3636795f5a21d353fb8774110/docs/FORMATS.md
   source_kind: github-file
   upstream_repo: xulfr/caduceus-om5
-  revision: 7c3bf521f4a92580a7cafa3fab82ad2003f10657
+  revision: 1357ef68b73df6c3636795f5a21d353fb8774110
   locator: docs/FORMATS.md
   retrieved_on: '2026-11-20'
-  last_checked: '2026-11-20'
+  last_checked: '2026-11-21'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -39,13 +39,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-17'
-  url: https://github.com/xulfr/caduceus-om5/blob/7c3bf521f4a92580a7cafa3fab82ad2003f10657/releases/v0.1.0-alpha12/README.md
+  url: https://github.com/xulfr/caduceus-om5/blob/1357ef68b73df6c3636795f5a21d353fb8774110/releases/v0.1.0-alpha12/README.md
   source_kind: github-file
   upstream_repo: xulfr/caduceus-om5
-  revision: 7c3bf521f4a92580a7cafa3fab82ad2003f10657
+  revision: 1357ef68b73df6c3636795f5a21d353fb8774110
   locator: releases/v0.1.0-alpha12/README.md
   retrieved_on: '2026-11-20'
-  last_checked: '2026-11-20'
+  last_checked: '2026-11-21'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -55,13 +55,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-17'
-  url: https://github.com/xulfr/caduceus-om5/blob/7c3bf521f4a92580a7cafa3fab82ad2003f10657/research/OM5II-IMAGE-STORE-FAULT-2026-11-11.md
+  url: https://github.com/xulfr/caduceus-om5/blob/1357ef68b73df6c3636795f5a21d353fb8774110/research/OM5II-IMAGE-STORE-FAULT-2026-11-11.md
   source_kind: github-file
   upstream_repo: xulfr/caduceus-om5
-  revision: 7c3bf521f4a92580a7cafa3fab82ad2003f10657
+  revision: 1357ef68b73df6c3636795f5a21d353fb8774110
   locator: research/OM5II-IMAGE-STORE-FAULT-2026-11-11.md
   retrieved_on: '2026-11-20'
-  last_checked: '2026-11-20'
+  last_checked: '2026-11-21'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -71,13 +71,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-17'
-  url: https://github.com/xulfr/caduceus-om5/blob/7c3bf521f4a92580a7cafa3fab82ad2003f10657/tools/oly_patch.py
+  url: https://github.com/xulfr/caduceus-om5/blob/1357ef68b73df6c3636795f5a21d353fb8774110/tools/oly_patch.py
   source_kind: github-file
   upstream_repo: xulfr/caduceus-om5
-  revision: 7c3bf521f4a92580a7cafa3fab82ad2003f10657
+  revision: 1357ef68b73df6c3636795f5a21d353fb8774110
   locator: tools/oly_patch.py
   retrieved_on: '2026-11-20'
-  last_checked: '2026-11-20'
+  last_checked: '2026-11-21'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -104,13 +104,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-20'
-  url: https://github.com/xulfr/caduceus-om5/blob/7c3bf521f4a92580a7cafa3fab82ad2003f10657/ROADMAP.md
+  url: https://github.com/xulfr/caduceus-om5/blob/1357ef68b73df6c3636795f5a21d353fb8774110/ROADMAP.md
   source_kind: github-file
   upstream_repo: xulfr/caduceus-om5
-  revision: 7c3bf521f4a92580a7cafa3fab82ad2003f10657
+  revision: 1357ef68b73df6c3636795f5a21d353fb8774110
   locator: 'ROADMAP.md: first priority and second stage'
   retrieved_on: '2026-11-20'
-  last_checked: '2026-11-20'
+  last_checked: '2026-11-21'
   published_on: null
   publication: public
   reuse_note: Attributed summary; statuses are the owner's own.
@@ -121,13 +121,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-18'
-  url: https://github.com/xulfr/caduceus-om5/blob/7c3bf521f4a92580a7cafa3fab82ad2003f10657/research/OM5II-STARTUP-FIX-2026-11-06.md
+  url: https://github.com/xulfr/caduceus-om5/blob/1357ef68b73df6c3636795f5a21d353fb8774110/research/OM5II-STARTUP-FIX-2026-11-06.md
   source_kind: github-file
   upstream_repo: xulfr/caduceus-om5
-  revision: 7c3bf521f4a92580a7cafa3fab82ad2003f10657
+  revision: 1357ef68b73df6c3636795f5a21d353fb8774110
   locator: research/OM5II-STARTUP-FIX-2026-11-06.md
   retrieved_on: '2026-11-20'
-  last_checked: '2026-11-20'
+  last_checked: '2026-11-21'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -137,13 +137,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-18'
-  url: https://github.com/xulfr/caduceus-om5/blob/7c3bf521f4a92580a7cafa3fab82ad2003f10657/research/OM5II-BRICK-RISK.md
+  url: https://github.com/xulfr/caduceus-om5/blob/1357ef68b73df6c3636795f5a21d353fb8774110/research/OM5II-BRICK-RISK.md
   source_kind: github-file
   upstream_repo: xulfr/caduceus-om5
-  revision: 7c3bf521f4a92580a7cafa3fab82ad2003f10657
+  revision: 1357ef68b73df6c3636795f5a21d353fb8774110
   locator: research/OM5II-BRICK-RISK.md
   retrieved_on: '2026-11-20'
-  last_checked: '2026-11-20'
+  last_checked: '2026-11-21'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -153,29 +153,29 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-18'
-  url: https://github.com/xulfr/caduceus-om5/blob/7c3bf521f4a92580a7cafa3fab82ad2003f10657/research/OM5II-STOCK-SECTION7.md
+  url: https://github.com/xulfr/caduceus-om5/blob/1357ef68b73df6c3636795f5a21d353fb8774110/research/OM5II-STOCK-SECTION7.md
   source_kind: github-file
   upstream_repo: xulfr/caduceus-om5
-  revision: 7c3bf521f4a92580a7cafa3fab82ad2003f10657
+  revision: 1357ef68b73df6c3636795f5a21d353fb8774110
   locator: research/OM5II-STOCK-SECTION7.md
   retrieved_on: '2026-11-20'
-  last_checked: '2026-11-20'
+  last_checked: '2026-11-21'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
   id: source.om5.v020-dev
   title: OM-5 Mark II v0.2.0 development handover
-  summary: Emulator regressions and pending camera checks for grain, Black/White and split tone.
+  summary: 'v0.2.0 development log: owner camera reports for the dev packages of 19 and 20 November (split tone, Black/White, an unchecked-copy boot loop, colour grain shelved) and the v0.2.0-alpha1 result.'
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-20'
-  url: https://github.com/xulfr/caduceus-om5/blob/be8f6ce3ecc3c7e6aa4d97cca36d1457a6418a0c/HANDOVER.md
+  last_reviewed: '2026-11-21'
+  url: https://github.com/xulfr/caduceus-om5/blob/1357ef68b73df6c3636795f5a21d353fb8774110/HANDOVER.md
   source_kind: github-file
   upstream_repo: xulfr/caduceus-om5
-  revision: be8f6ce3ecc3c7e6aa4d97cca36d1457a6418a0c
+  revision: 1357ef68b73df6c3636795f5a21d353fb8774110
   locator: HANDOVER.md
-  retrieved_on: '2026-11-20'
-  last_checked: '2026-11-20'
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
   published_on: null
   publication: public
   reuse_note: Attributed synthesis of upstream documentation.
@@ -186,13 +186,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-20'
-  url: https://github.com/xulfr/caduceus-om5/blob/7c3bf521f4a92580a7cafa3fab82ad2003f10657/releases/v0.2.0-alpha1/README.md
+  url: https://github.com/xulfr/caduceus-om5/blob/1357ef68b73df6c3636795f5a21d353fb8774110/releases/v0.2.0-alpha1/README.md
   source_kind: github-file
   upstream_repo: xulfr/caduceus-om5
-  revision: 7c3bf521f4a92580a7cafa3fab82ad2003f10657
+  revision: 1357ef68b73df6c3636795f5a21d353fb8774110
   locator: releases/v0.2.0-alpha1/README.md
   retrieved_on: '2026-11-20'
-  last_checked: '2026-11-20'
+  last_checked: '2026-11-21'
   published_on: '2026-11-20'
   publication: public
   reuse_note: Attributed synthesis of upstream documentation.
@@ -204,13 +204,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-20'
-  url: https://github.com/xulfr/caduceus-om5/blob/7c3bf521f4a92580a7cafa3fab82ad2003f10657/research/OM5II-DEV0565-CAMERA-2026-11-20.md
+  url: https://github.com/xulfr/caduceus-om5/blob/1357ef68b73df6c3636795f5a21d353fb8774110/research/OM5II-DEV0565-CAMERA-2026-11-20.md
   source_kind: github-file
   upstream_repo: xulfr/caduceus-om5
-  revision: 7c3bf521f4a92580a7cafa3fab82ad2003f10657
+  revision: 1357ef68b73df6c3636795f5a21d353fb8774110
   locator: research/OM5II-DEV0565-CAMERA-2026-11-20.md
   retrieved_on: '2026-11-20'
-  last_checked: '2026-11-20'
+  last_checked: '2026-11-21'
   published_on: null
   publication: public
   reuse_note: Attributed synthesis of upstream documentation.
@@ -221,13 +221,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-20'
-  url: https://github.com/xulfr/caduceus-om5/blob/7c3bf521f4a92580a7cafa3fab82ad2003f10657/research/OM5II-CP-GRAIN-2026-11-18.md
+  url: https://github.com/xulfr/caduceus-om5/blob/1357ef68b73df6c3636795f5a21d353fb8774110/research/OM5II-CP-GRAIN-2026-11-18.md
   source_kind: github-file
   upstream_repo: xulfr/caduceus-om5
-  revision: 7c3bf521f4a92580a7cafa3fab82ad2003f10657
+  revision: 1357ef68b73df6c3636795f5a21d353fb8774110
   locator: research/OM5II-CP-GRAIN-2026-11-18.md
   retrieved_on: '2026-11-20'
-  last_checked: '2026-11-20'
+  last_checked: '2026-11-21'
   published_on: null
   publication: public
   reuse_note: Attributed synthesis of upstream documentation.

@@ -122,13 +122,13 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | [OM-5 Mark II card format](om5.formats.md) | OM5F wrapper, names and supported record fields. |
 | [Image-store fault investigation](om5.image-store.md) | Offline observations, emulator revision and remaining physical uncertainty. |
 | [Original OM-5 tester comment](om5.prealpha1.md) | One named-package startup failure and restoration report. |
-| [Caduceus OM-5 overview](om5.readme.md) | Separate model status, features and project lineage; names v0.2.0-alpha1 the current experimental build. |
+| [Caduceus OM-5 overview](om5.readme.md) | Separate model status, features and project lineage; names v0.2.0-alpha1 (20 November 2026) the current experimental build, with its new controls and the on-card SHA-256 to check before flashing. |
 | [Caduceus OM-5 releases](om5.releases.md) | Published pre-releases for the OM-5 Mark II; v0.2.0-alpha1 is the newest. |
 | [Caduceus OM-5 roadmap](om5.roadmap.md) | Implemented, planned, deferred and open work for the OM-5 Mark II and original OM-5, with the v0.2.0 priorities. |
 | [OM-5 Mark II stock section 7](om5.section7.md) | E148 1.1 compressed sections 6 and 7 and where the card updater lives. |
 | [OM-5 Mark II startup readiness correction](om5.startup-fix.md) | E148 section-ready words, the section 5 loaded extent and an overlay defect. |
 | [Mark II v0.2.0-alpha1 release notes](om5.v020-alpha1.md) | Owner's overall result, new tone and tint controls, and the expected on-card checksum. |
-| [OM-5 Mark II v0.2.0 development handover](om5.v020-dev.md) | Emulator regressions and pending camera checks for grain, Black/White and split tone. |
+| [OM-5 Mark II v0.2.0 development handover](om5.v020-dev.md) | v0.2.0 development log: owner camera reports for the dev packages of 19 and 20 November (split tone, Black/White, an unchecked-copy boot loop, colour grain shelved) and the v0.2.0-alpha1 result. |
 | [OMKit preset programs](omkit.apps.md) | ISP player, ISP fitter (.cube to preset) and ISP neurofit (RAW plus film scans, driven by an AI agent). |
 | [OMKit architecture](omkit.architecture.md) | How the loader, core, driver and modules fit together: card files, boot sequence, hooks, services and failure handling. |
 | [OMKit changelog](omkit.changelog.md) | Contents of release 0.1.0 (2026-11-20), the first public release. |

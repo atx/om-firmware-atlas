@@ -2,16 +2,16 @@
 
 # OM-5 Mark II v0.2.0 development handover
 
-Emulator regressions and pending camera checks for grain, Black/White and split tone.
+v0.2.0 development log: owner camera reports for the dev packages of 19 and 20 November (split tone, Black/White, an unchecked-copy boot loop, colour grain shelved) and the v0.2.0-alpha1 result.
 
-**[Open original source](https://github.com/xulfr/caduceus-om5/blob/be8f6ce3ecc3c7e6aa4d97cca36d1457a6418a0c/HANDOVER.md)**
+**[Open original source](https://github.com/xulfr/caduceus-om5/blob/1357ef68b73df6c3636795f5a21d353fb8774110/HANDOVER.md)**
 
 **Kind:** github file. **Locator:** HANDOVER.md.
 
-**Revision / release:** `be8f6ce3ecc3c7e6aa4d97cca36d1457a6418a0c`. **Retrieved:** 2026-11-20. **Last source check:** 2026-11-20.
+**Revision / release:** `1357ef68b73df6c3636795f5a21d353fb8774110`. **Retrieved:** 2026-11-21. **Last source check:** 2026-11-21.
 
 **Publication:** public. Attributed synthesis of upstream documentation.
 
 ## Sources and record
 
-[Canonical record](../../records/sources/om5.yaml) · Substantively reviewed: 2026-11-20.
+[Canonical record](../../records/sources/om5.yaml) · Substantively reviewed: 2026-11-21.
