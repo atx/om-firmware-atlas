@@ -21,7 +21,11 @@ Pick firmware mods for the E-M1 Mark III and build your own update file.
 
 ## Cameras
 
+<div class="model-panel" markdown="1">
+
 ### OM-D E-M1 Mark III { #for-em1-iii }
+
+[Before you install: risks and recovery](../../docs/before-you-install.md)
 
 **For this camera:** 19 features, including Panorama 65:24, Multiple Exposure with 3 and 4 frames and Focus stacking with any lens.
 { .card-for }
@@ -30,6 +34,8 @@ Pick firmware mods for the E-M1 Mark III and build your own update file.
 { .card-get }
 
 [Camera overview and test results](../cameras/em1-iii.md)
+
+</div>
 
 
 ## About

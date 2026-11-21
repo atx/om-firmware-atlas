@@ -25,7 +25,11 @@ Film looks and a full colour editor, built into the OM SYSTEM OM-3.
 
 ## Cameras
 
+<div class="model-panel" markdown="1">
+
 ### OM-3 { #for-om3 }
+
+[Before you install: risks and recovery](../../docs/before-you-install.md)
 
 **For this camera:** 18 features, including Your films in Picture Mode, 20 film simulations and Colour editor on the camera.
 { .card-for }
@@ -34,6 +38,8 @@ Film looks and a full colour editor, built into the OM SYSTEM OM-3.
 { .card-get }
 
 [Camera overview and test results](../cameras/om3.md)
+
+</div>
 
 
 ![A Paris street scene at night with warm, soft colour](../../docs/assets/projects/caduceus-om3/film-portra-400.jpg)

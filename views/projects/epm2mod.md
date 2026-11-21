@@ -24,7 +24,11 @@ Film simulations, interval shooting, focus peaking and a level gauge for the PEN
 
 ## Cameras
 
+<div class="model-panel" markdown="1">
+
 ### PEN E-PM2 { #for-epm2 }
+
+[Before you install: risks and recovery](../../docs/before-you-install.md)
 
 **For this camera:** 6 features, including Film simulations, Interval shooting and Level gauge.
 { .card-for }
@@ -33,6 +37,8 @@ Film simulations, interval shooting, focus peaking and a level gauge for the PEN
 { .card-get }
 
 [Camera overview and test results](../cameras/epm2.md)
+
+</div>
 
 
 ## About

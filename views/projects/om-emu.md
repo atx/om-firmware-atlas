@@ -17,7 +17,9 @@ Run OM SYSTEM and Olympus camera firmware in your browser.
 
 ## Cameras
 
-### OM-5 { #for-om5 }
+<div class="model-panel" markdown="1">
+
+### Original OM-5 { #for-om5 }
 
 **For this camera:** An emulator; it does not change the camera. Covers this camera for: Browser player (released), Native card file system (released).
 { .card-for }
@@ -26,6 +28,10 @@ Run OM SYSTEM and Olympus camera firmware in your browser.
 { .card-get }
 
 [Camera overview and test results](../cameras/om5.md)
+
+</div>
+
+<div class="model-panel" markdown="1">
 
 ### OM-5 Mark II { #for-om5-ii }
 
@@ -37,6 +43,10 @@ Run OM SYSTEM and Olympus camera firmware in your browser.
 
 [Camera overview and test results](../cameras/om5-ii.md)
 
+</div>
+
+<div class="model-panel" markdown="1">
+
 ### OM-3 { #for-om3 }
 
 **For this camera:** An emulator; it does not change the camera. Covers this camera for: Browser player (released), Caduceus release checks (released), Native card file system (released).
@@ -46,6 +56,10 @@ Run OM SYSTEM and Olympus camera firmware in your browser.
 { .card-get }
 
 [Camera overview and test results](../cameras/om3.md)
+
+</div>
+
+<div class="model-panel" markdown="1">
 
 ### PEN E-P7 { #for-ep7 }
 
@@ -57,6 +71,10 @@ Run OM SYSTEM and Olympus camera firmware in your browser.
 
 [Camera overview and test results](../cameras/ep7.md)
 
+</div>
+
+<div class="model-panel" markdown="1">
+
 ### PEN-F { #for-pen-f }
 
 **For this camera:** An emulator; it does not change the camera. Covers this camera for: Browser player (released), Native card file system (released).
@@ -67,6 +85,10 @@ Run OM SYSTEM and Olympus camera firmware in your browser.
 
 [Camera overview and test results](../cameras/pen-f.md)
 
+</div>
+
+<div class="model-panel" markdown="1">
+
 ### OM-D E-M10 Mark IV { #for-em10-iv }
 
 **For this camera:** An emulator; it does not change the camera. Covers this camera for: Browser player (released), Native card file system (released).
@@ -76,6 +98,8 @@ Run OM SYSTEM and Olympus camera firmware in your browser.
 { .card-get }
 
 [Camera overview and test results](../cameras/em10-iv.md)
+
+</div>
 
 
 ## About

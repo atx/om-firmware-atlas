@@ -267,49 +267,58 @@ Tool
 
 <div class="evidence-entry" markdown="1">
 
-**[db firmware OM-5 aperture-ring claim](../capabilities/om5-db-aperture.md)**
+**No camera test recorded**
 
-Project and build · [db firmware / om-c-firmware](../projects/db-firmware.md) / dbv0.4.1
+Claim · [db firmware OM-5 aperture-ring claim](../capabilities/om5-db-aperture.md)
+
+Project and build · [db firmware / om-c-firmware](../projects/db-firmware.md#for-om5) / dbv0.4.1
 
 Availability · published release
 
-Evidence · Upstream description; no separate test observation catalogued
-
 </div>
 
 <div class="evidence-entry" markdown="1">
 
-**[Restoration after pre-alpha 1](../capabilities/om5-prealpha1-recovery.md)**
+**Camera test · reported working** · [Original OM-5: restoration after that failure](../evidence/om5-prealpha1-restore.md)
 
-Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md) / original-om5-prealpha1
+partial report · reported hash
+{ .observation-meta }
+
+Claim · [Restoration after pre-alpha 1](../capabilities/om5-prealpha1-recovery.md)
+
+Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md#for-om5) / original-om5-prealpha1
 
 Availability · candidate
 
-Evidence · physical camera; reported pass; partial report; reported hash
-
 </div>
 
 <div class="evidence-entry" markdown="1">
 
-**[Original OM-5 pre-alpha 1 startup](../capabilities/om5-prealpha1-start.md)**
+**Camera test · reported failure** · [Original OM-5 pre-alpha 1: startup failure](../evidence/om5-prealpha1-boot.md)
 
-Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md) / original-om5-prealpha1
+partial report · reported hash
+{ .observation-meta }
+
+Claim · [Original OM-5 pre-alpha 1 startup](../capabilities/om5-prealpha1-start.md)
+
+Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md#for-om5) / original-om5-prealpha1
 
 Availability · candidate
 
-Evidence · physical camera; reported fail; partial report; reported hash
-
 </div>
 
 <div class="evidence-entry" markdown="1">
 
-**[Original OM-5 patched startup, tadejs ladder C5](../capabilities/om5-tadejs-ladder-start.md)**
+**Camera test · reported working** · [Original OM-5 C5: card read from the half-press hook](../evidence/om5-tadejs-c5.md)
 
-Project and build · [Caduceus port for the original OM-5 (tadejs)](../projects/caduceus-om5-tadejs.md) / om5-ladder-c5
+partial report · release label only
+{ .observation-meta }
+
+Claim · [Original OM-5 patched startup, tadejs ladder C5](../capabilities/om5-tadejs-ladder-start.md)
+
+Project and build · [Caduceus port for the original OM-5 (tadejs)](../projects/caduceus-om5-tadejs.md#for-om5) / om5-ladder-c5
 
 Availability · experimental branch
-
-Evidence · physical camera; reported pass; partial report; release label only
 
 </div>
 

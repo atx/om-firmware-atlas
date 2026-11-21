@@ -20,6 +20,8 @@ A downstream OM-3 fork for trying fixes before sending them upstream.
 
 ## Cameras
 
+<div class="model-panel" markdown="1">
+
 ### OM-3 { #for-om3 }
 
 **For this camera:** Nothing to install from here. It is a fork where fixes are tried on an OM-3 before being offered to Caduceus for OM-3; use that project's releases.
@@ -29,6 +31,8 @@ A downstream OM-3 fork for trying fixes before sending them upstream.
 { .card-get }
 
 [Camera overview and test results](../cameras/om3.md)
+
+</div>
 
 
 ## About

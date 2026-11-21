@@ -24,7 +24,11 @@ The original Caduceus: HSLFX colour editing and 29 film looks for the PEN E-P7.
 
 ## Cameras
 
+<div class="model-panel" markdown="1">
+
 ### PEN E-P7 { #for-ep7 }
+
+[Before you install: risks and recovery](../../docs/before-you-install.md)
 
 **For this camera:** 17 features, including On-camera look editor (HSLFX), 29 film simulations and Colour mix and base curve.
 { .card-for }
@@ -34,6 +38,10 @@ The original Caduceus: HSLFX colour editing and 29 film looks for the PEN E-P7.
 
 [Camera overview and test results](../cameras/ep7.md)
 
+</div>
+
+<div class="model-panel" markdown="1">
+
 ### OM-D E-M10 Mark IV { #for-em10-iv }
 
 **For this camera:** No build for this camera. Caduceus's body survey includes the E-M10 IV in its firmware-signature comparisons for possible ports; nothing has been ported.
@@ -42,7 +50,11 @@ The original Caduceus: HSLFX colour editing and 29 film looks for the PEN E-P7.
 **Get it:** No release for this camera yet.
 { .card-get }
 
-[View the testing request](https://github.com/cakelesscoder/caduceus-ep7/issues/21) · [Camera overview and test results](../cameras/em10-iv.md)
+[View the testing request](https://github.com/cakelesscoder/caduceus-ep7/issues/21){ .btn .btn-primary }
+
+[Camera overview and test results](../cameras/em10-iv.md)
+
+</div>
 
 
 ![Eight film looks shown on four sample scenes](../../docs/assets/projects/caduceus-ep7/film-looks.jpg)

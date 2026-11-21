@@ -276,7 +276,7 @@ def project_card(catalogue, origin, row, image=False, features=0, links=False, c
 
 
 def showcase_markdown(catalogue, origin):
-    """Home-page showcase: featured projects and the latest releases, derived from project records."""
+    """Featured projects with images for the home page."""
     projects = [r for r in catalogue.of_type("project") if r.get("images")]
     projects.sort(key=lambda r: (latest_release(r) or {}).get("date", ""), reverse=True)
     text = '<section class="showcase" markdown="1">\n\n<p class="eyebrow">Featured projects</p>\n\n'
@@ -284,21 +284,33 @@ def showcase_markdown(catalogue, origin):
     text += '<div class="project-grid featured" markdown="1">\n\n'
     text += "".join(project_card(catalogue, origin, row, image=True, features=4) for row in projects)
     text += f"</div>\n\n[See every project]({link(origin, 'views/projects/index.md')}){{ .btn .btn-ghost }}\n\n</section>\n\n"
-    seen, releases = set(), []
+    return text
+
+
+def home_updates(catalogue, origin):
+    text = '<section class="home-updates" markdown="1">\n\n'
+    requests = [(project, item) for project in catalogue.of_type("project") for item in testing_requests(project)]
+    if requests:
+        text += '<div class="tester-panel" markdown="1">\n\n## Projects looking for testers\n\n'
+        for project, item in requests:
+            camera = catalogue.records[item["tester_camera_id"]]
+            target = project_target(origin, project, camera["id"])
+            text += f"**[{cell(short_name(camera['title']))} · {cell(project['title'])}]({target})**\n\n"
+            text += f"{item['summary']}. [View the testing request]({item['url']})\n\n"
+        text += "</div>\n\n"
+    releases = {}
     for release, project in all_releases(catalogue):
-        if project["id"] not in seen:
-            seen.add(project["id"])
-            releases.append((release, project))
-    releases = releases[:6]
+        releases.setdefault(project["id"], (release, project))
     if releases:
-        text += '<section class="releases-strip" markdown="1">\n\n<p class="eyebrow">Latest releases</p>\n\n'
-        text += "## Fresh from the projects.\n\n"
-        text += '<div class="release-list" markdown="1">\n\n'
-        for release, project in releases:
+        text += '## Recent releases\n\n<div class="release-list" markdown="1">\n\n'
+        for release, project in list(releases.values())[:6]:
+            cameras = ", ".join(short_name(catalogue.records[c]["title"]) for c in release["camera_ids"])
             text += '<div class="release-item" markdown="1">\n\n'
+            text += f"**{cell(cameras or 'Camera scope unspecified')}**\n{{ .release-model }}\n\n"
             text += release_line(origin, release, project) + "\n{ .release-head }\n\n"
             text += release["highlights"][0] + "\n\n</div>\n\n"
-        text += "</div>\n\n</section>\n"
+        text += "</div>\n\n"
+    text += "</section>\n"
     return text
 
 
@@ -318,6 +330,14 @@ def people_markdown(catalogue, origin):
 
 def evidence_label(row):
     return f"{label(row['method'])}; {label(row['outcome'])}; {row['quality']} report; {label(row['identity_level'])}"
+
+
+def observation_heading(row):
+    method = {"physical-camera": "Camera test", "emulator": "Emulator test",
+              "static": "Code inspection", "upstream-description": "Project description"}[row["method"]]
+    outcome = {"reported-pass": "reported working", "pass": "passed", "reported-fail": "reported failure",
+               "fail": "failed", "inconclusive": "inconclusive"}[row["outcome"]]
+    return f"{method} · {outcome}"
 
 
 def trait_title(catalogue, row):
@@ -408,12 +428,20 @@ def render(catalogue):
             if caps:
                 text += '<div class="evidence-list" markdown="1">\n\n'
                 for cap in caps:
-                    evs = [records[e] for e in cap["evidence_refs"]]
-                    state = "; ".join(evidence_label(e) for e in evs) or "Upstream description; no separate test observation catalogued"
                     text += '<div class="evidence-entry" markdown="1">\n\n'
-                    text += f"**{ref(path, cap['id'])}**\n\n"
-                    text += f"Project and build · {ref(path, cap['project_id'])} / {cell(cap['mod_build'] or 'unspecified')}\n\n"
-                    text += f"Availability · {label(cap['availability'])}\n\nEvidence · {cell(state)}\n\n</div>\n\n"
+                    observations = cap["evidence_refs"] + cap["contradicting_refs"]
+                    for observation in observations:
+                        ev = records[observation]
+                        prefix = "Contradicting observation · " if observation in cap["contradicting_refs"] else ""
+                        text += f"**{prefix}{observation_heading(ev)}** · {ref(path, observation)}\n\n"
+                        text += f"{ev['quality']} report · {label(ev['identity_level'])}\n{{ .observation-meta }}\n\n"
+                    if not observations:
+                        text += "**No camera test recorded**\n\n"
+                    project = records[cap["project_id"]]
+                    target = project_target(path, project, row["id"])
+                    text += f"Claim · {ref(path, cap['id'])}\n\n"
+                    text += f"Project and build · [{cell(project['title'])}]({target}) / {cell(cap['mod_build'] or 'unspecified')}\n\n"
+                    text += f"Availability · {label(cap['availability'])}\n\n</div>\n\n"
                 text += "</div>\n\nResults belong to the named project and package. Emulator output does not establish physical-camera behaviour.\n"
             else:
                 text += "No feature-level assertion is catalogued yet. This is a coverage gap, not a finding that modifications are impossible.\n"
@@ -465,13 +493,16 @@ def render(catalogue):
                 requests = testing_requests(row)
                 for camera_id in row["camera_ids"]:
                     camera = records[camera_id]
-                    title = short_name(camera["title"])
+                    title = next((a for a in camera["aliases"] if a.startswith("Original ")), short_name(camera["title"]))
+                    text += '<div class="model-panel" markdown="1">\n\n'
                     text += f"### {cell(title)} {{ #for-{slug(camera_id)} }}\n\n"
+                    if camera_release(row, camera_id) and installs(records, row, camera_id):
+                        text += f"[Before you install: risks and recovery]({link(path, 'docs/before-you-install.md')})\n\n"
                     text += for_camera(path, row, camera)
                     for item in requests:
                         if item["tester_camera_id"] == camera_id:
-                            text += f"[View the testing request]({item['url']}) · "
-                    text += f"[Camera overview and test results]({link(path, view_path(camera))})\n\n"
+                            text += f"[View the testing request]({item['url']}){{ .btn .btn-primary }}\n\n"
+                    text += f"[Camera overview and test results]({link(path, view_path(camera))})\n\n</div>\n\n"
             images = row.get("images", [])
             if images:
                 picture = images[0]

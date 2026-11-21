@@ -26,45 +26,9 @@
 
 </section>
 
-<section class="routes" markdown="1">
+<!-- atlas:updates -->
 
-<div class="route-card" markdown="1">
-<span class="route-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2.5" y="6.5" width="19" height="13" rx="3"/><path d="M8.5 6.5 10 4h4l1.5 2.5"/><circle cx="12" cy="13" r="3.6"/></svg></span>
-
-### [I own a camera](../views/cameras/index.md)
-
-See what you can do with your exact model today, and how to get started.
-
-</div>
-
-<div class="route-card" markdown="1">
-<span class="route-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="2"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="2"/></svg></span>
-
-### [Explore projects](../views/projects/index.md)
-
-Features, releases and screenshots from every catalogued project.
-
-</div>
-
-<div class="route-card" markdown="1">
-<span class="route-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5.5h11a2 2 0 0 1 2 2V13a2 2 0 0 1-2 2H9l-4 3.5V15H4a2 2 0 0 1-2-2V7.5a2 2 0 0 1 2-2Z"/><path d="M19.5 9h.5a2 2 0 0 1 2 2v5.5a2 2 0 0 1-2 2h-1V21l-3-2.5h-4"/></svg></span>
-
-### [Join the community](community.md)
-
-[Join Discord](https://discord.gg/fKpcKGsNPY), [report a camera result](report.md) or [contribute to the Atlas](add.md).
-
-</div>
-
-<div class="route-card" markdown="1">
-<span class="route-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5.5 5.5M8 10.5h5M10.5 8v5"/></svg></span>
-
-### [Research and contribute](research.md)
-
-Guides, firmware notes and the evidence catalogue for people building new work.
-
-</div>
-
-</section>
+[Join the community](community.md) · [Report a camera result](report.md) · [Contribute to the Atlas](add.md) · [Explore the research](research.md)
 
 <!-- atlas:showcase -->
 

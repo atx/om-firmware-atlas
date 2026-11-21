@@ -25,7 +25,11 @@ Film looks, a colour wheel, colour editors and a longer video limit for the orig
 
 ## Cameras
 
+<div class="model-panel" markdown="1">
+
 ### OM-D E-M10 (Mark I) { #for-em10 }
+
+[Before you install: risks and recovery](../../docs/before-you-install.md)
 
 **For this camera:** 6 features, including Film looks, Per-sector colour editor and Per-look colour editor.
 { .card-for }
@@ -34,6 +38,8 @@ Film looks, a colour wheel, colour editors and a longer video limit for the orig
 { .card-get }
 
 [Camera overview and test results](../cameras/em10.md)
+
+</div>
 
 
 ## About

@@ -11,7 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from atlas_core import Catalogue
-from atlas_generate import generated_diff, render
+from atlas_generate import generated_diff, home_updates, render
 from atlas import expand_nav, freshness, inspect_remote, review_notice, update_queue
 from atlas_core import read_yaml, reference_status
 
@@ -201,6 +201,23 @@ class AtlasTests(unittest.TestCase):
         self.assertIn("**No release for this camera yet:**", glance)
         self.assertIn("[Projects](#projects)", glance)
         self.assertIn("## Projects for this camera { #projects }", output)
+
+    def test_original_camera_links_to_its_own_project_details(self):
+        pages = render(self.catalogue)
+        self.assertIn("../projects/caduceus-om5.md#for-om5)", pages["views/cameras/om5.md"])
+        project = pages["views/projects/caduceus-om5.md"]
+        original = project.split("{ #for-om5 }")[1].split("{ #for-om5-ii }")[0]
+        self.assertIn("No release for this camera yet", original)
+        self.assertNotIn("INSTALL.md", original)
+        self.assertIn("Read the OM-5 Mark II install guide", project)
+
+    def test_only_explicit_current_tester_requests_appear_on_home_page(self):
+        item = self.catalogue.records["project.caduceus-ep7"]["work_items"][0]
+        self.assertIn(item["url"], home_updates(self.catalogue, "docs/index.md"))
+        item["state"] = "paused"
+        self.assertNotIn(item["url"], home_updates(self.catalogue, "docs/index.md"))
+        item["tester_camera_id"] = "camera.om5"
+        self.assertTrue(any("outside the project" in error for error in self.catalogue.validate()))
 
     def test_camera_note_must_name_a_catalogued_camera(self):
         self.catalogue.records["project.caduceus-om3"]["camera_notes"] = [{"camera_id": "camera.pen-f", "note": "x"}]

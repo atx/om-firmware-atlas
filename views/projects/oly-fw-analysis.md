@@ -22,7 +22,11 @@ The research base: PEN-F HSL, firmware formats and tools for many bodies.
 
 ## Cameras
 
+<div class="model-panel" markdown="1">
+
 ### PEN-F { #for-pen-f }
+
+[Before you install: risks and recovery](../../docs/before-you-install.md)
 
 **For this camera:** Publishes the PEN-F HSL patch as alpha releases: hue and lightness added to the 12-colour saturation editor in COLOR1–3. The project asks for a firsthand hardware report before publishing a flashable patch.
 { .card-for }
@@ -32,7 +36,11 @@ The research base: PEN-F HSL, firmware formats and tools for many bodies.
 
 [Camera overview and test results](../cameras/pen-f.md)
 
-### OM-5 { #for-om5 }
+</div>
+
+<div class="model-panel" markdown="1">
+
+### Original OM-5 { #for-om5 }
 
 **For this camera:** Research notes only: the findings compare this camera's firmware with the PEN-F. No patch for this camera.
 { .card-for }
@@ -41,6 +49,10 @@ The research base: PEN-F HSL, firmware formats and tools for many bodies.
 { .card-get }
 
 [Camera overview and test results](../cameras/om5.md)
+
+</div>
+
+<div class="model-panel" markdown="1">
 
 ### PEN E-P7 { #for-ep7 }
 
@@ -52,6 +64,10 @@ The research base: PEN-F HSL, firmware formats and tools for many bodies.
 
 [Camera overview and test results](../cameras/ep7.md)
 
+</div>
+
+<div class="model-panel" markdown="1">
+
 ### OM-3 { #for-om3 }
 
 **For this camera:** Research notes only: the findings compare this camera's firmware with the PEN-F, and some OM-3 technical-reference entries cite them. No patch for this camera.
@@ -61,6 +77,8 @@ The research base: PEN-F HSL, firmware formats and tools for many bodies.
 { .card-get }
 
 [Camera overview and test results](../cameras/om3.md)
+
+</div>
 
 
 ## About

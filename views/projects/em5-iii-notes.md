@@ -19,6 +19,8 @@ How the E-M5 Mark III firmware works, and bringing OM-5 features to it.
 
 ## Cameras
 
+<div class="model-panel" markdown="1">
+
 ### OM-D E-M5 Mark III { #for-em5-iii }
 
 **For this camera:** Notes and tools only; no builds are published. The author's own test builds on one E-M5 III cover focus stacking with any lens, Live ND and its live-view preview ported from the OM-5, a Color / Monochrome Profile editor, and a parked USB webcam.
@@ -28,6 +30,8 @@ How the E-M5 Mark III firmware works, and bringing OM-5 features to it.
 { .card-get }
 
 [Camera overview and test results](../cameras/em5-iii.md)
+
+</div>
 
 
 ## About

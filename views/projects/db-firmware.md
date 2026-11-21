@@ -21,7 +21,11 @@ Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to
 
 ## Cameras
 
-### OM-5 { #for-om5 }
+<div class="model-panel" markdown="1">
+
+### Original OM-5 { #for-om5 }
+
+[Before you install: risks and recovery](../../docs/before-you-install.md)
 
 **For this camera:** Panasonic aperture rings, Korean menus and Hybrid Shutter, all beta. The v0.4.3 notes list the OM-5 build as not working, so read each release's notes for this camera before installing.
 { .card-for }
@@ -31,7 +35,13 @@ Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to
 
 [Camera overview and test results](../cameras/om5.md)
 
+</div>
+
+<div class="model-panel" markdown="1">
+
 ### OM-5 Mark II { #for-om5-ii }
+
+[Before you install: risks and recovery](../../docs/before-you-install.md)
 
 **For this camera:** Korean menus and Hybrid Shutter, both beta. The v0.4.3 notes list the OM-5 Mark II build as not working, so read each release's notes for this camera before installing.
 { .card-for }
@@ -41,7 +51,13 @@ Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to
 
 [Camera overview and test results](../cameras/om5-ii.md)
 
+</div>
+
+<div class="model-panel" markdown="1">
+
 ### OM-3 { #for-om3 }
+
+[Before you install: risks and recovery](../../docs/before-you-install.md)
 
 **For this camera:** Listed for this camera: Korean menus (beta), Hybrid Shutter (beta).
 { .card-for }
@@ -51,7 +67,13 @@ Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to
 
 [Camera overview and test results](../cameras/om3.md)
 
+</div>
+
+<div class="model-panel" markdown="1">
+
 ### PEN E-P7 { #for-ep7 }
+
+[Before you install: risks and recovery](../../docs/before-you-install.md)
 
 **For this camera:** Listed for this camera: Hybrid Shutter (beta).
 { .card-for }
@@ -61,7 +83,13 @@ Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to
 
 [Camera overview and test results](../cameras/ep7.md)
 
+</div>
+
+<div class="model-panel" markdown="1">
+
 ### PEN-F { #for-pen-f }
+
+[Before you install: risks and recovery](../../docs/before-you-install.md)
 
 **For this camera:** No PEN-F feature is catalogued. Release v0.3.2 lists the PEN-F, but its notes do not say what it adds for this camera.
 { .card-for }
@@ -70,6 +98,8 @@ Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to
 { .card-get }
 
 [Camera overview and test results](../cameras/pen-f.md)
+
+</div>
 
 
 ## About

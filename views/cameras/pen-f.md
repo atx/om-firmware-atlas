@@ -145,13 +145,13 @@ Tool
 
 <div class="evidence-entry" markdown="1">
 
-**[PEN-F HSL release](../capabilities/pen-f-hsl.md)**
+**No camera test recorded**
 
-Project and build · [Olympus firmware research](../projects/oly-fw-analysis.md) / alpha-20261017
+Claim · [PEN-F HSL release](../capabilities/pen-f-hsl.md)
+
+Project and build · [Olympus firmware research](../projects/oly-fw-analysis.md#for-pen-f) / alpha-20261017
 
 Availability · published release
-
-Evidence · Upstream description; no separate test observation catalogued
 
 </div>
 

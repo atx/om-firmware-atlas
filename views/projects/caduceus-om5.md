@@ -24,7 +24,9 @@ Looks and a full colour editor for the OM-5 Mark II. Experimental.
 
 ## Cameras
 
-### OM-5 { #for-om5 }
+<div class="model-panel" markdown="1">
+
+### Original OM-5 { #for-om5 }
 
 **For this camera:** No working build for this camera. One test build (pre-alpha 1) failed to start on an owner's original OM-5, and OM's firmware was put back from the card. The releases are for the OM-5 Mark II only, and Mark II results do not apply here. Current original OM-5 work is the tadejs port.
 { .card-for }
@@ -34,7 +36,13 @@ Looks and a full colour editor for the OM-5 Mark II. Experimental.
 
 [Camera overview and test results](../cameras/om5.md)
 
+</div>
+
+<div class="model-panel" markdown="1">
+
 ### OM-5 Mark II { #for-om5-ii }
+
+[Before you install: risks and recovery](../../docs/before-you-install.md)
 
 **For this camera:** 9 features, including Color Profiles 1–3 and Monochrome Profiles 1–3, Custom looks and Colour editor.
 { .card-for }
@@ -43,6 +51,8 @@ Looks and a full colour editor for the OM-5 Mark II. Experimental.
 { .card-get }
 
 [Camera overview and test results](../cameras/om5-ii.md)
+
+</div>
 
 
 ![The OM-5 Mark II Picture Mode screen showing Color Profile 2 with the look Portra 160](../../docs/assets/projects/caduceus-om5/picture-mode-look.png)

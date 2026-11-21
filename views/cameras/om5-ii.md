@@ -345,85 +345,100 @@ Tool
 
 <div class="evidence-entry" markdown="1">
 
-**[Mark II alpha12 HSL](../capabilities/om5-ii-alpha12-hsl.md)**
+**No camera test recorded**
 
-Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md) / v0.1.0-alpha12
+Claim · [Mark II alpha12 HSL](../capabilities/om5-ii-alpha12-hsl.md)
+
+Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md#for-om5-ii) / v0.1.0-alpha12
 
 Availability · published release
-
-Evidence · Upstream description; no separate test observation catalogued
 
 </div>
 
 <div class="evidence-entry" markdown="1">
 
-**[Mark II alpha12 ND32/ND64](../capabilities/om5-ii-alpha12-nd.md)**
+**No camera test recorded**
 
-Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md) / v0.1.0-alpha12
+Claim · [Mark II alpha12 ND32/ND64](../capabilities/om5-ii-alpha12-nd.md)
+
+Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md#for-om5-ii) / v0.1.0-alpha12
 
 Availability · published release
-
-Evidence · Upstream description; no separate test observation catalogued
 
 </div>
 
 <div class="evidence-entry" markdown="1">
 
-**[Mark II alpha12 overall report](../capabilities/om5-ii-alpha12-overall.md)**
+**Camera test · reported working** · [Mark II alpha12: overall owner report](../evidence/om5-ii-alpha12-owner.md)
 
-Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md) / v0.1.0-alpha12
+partial report · release label only
+{ .observation-meta }
+
+Claim · [Mark II alpha12 overall report](../capabilities/om5-ii-alpha12-overall.md)
+
+Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md#for-om5-ii) / v0.1.0-alpha12
 
 Availability · published release
-
-Evidence · physical camera; reported pass; partial report; release label only
 
 </div>
 
 <div class="evidence-entry" markdown="1">
 
-**[OM-5 Mark II FILMLOOK presets from the card, OMKit 0.1.0](../capabilities/om5-ii-omkit-filmlook.md)**
+**Camera test · reported working** · [OM-5 Mark II OMKit loader patch: developers' camera](../evidence/om5-ii-omkit-loader.md)
 
-Project and build · [OMKit](../projects/omkit.md) / loader fw1100 (OMKit 0.1.0)
+partial report · reported hash
+{ .observation-meta }
+
+Claim · [OM-5 Mark II FILMLOOK presets from the card, OMKit 0.1.0](../capabilities/om5-ii-omkit-filmlook.md)
+
+Project and build · [OMKit](../projects/omkit.md#for-om5-ii) / loader fw1100 (OMKit 0.1.0)
 
 Availability · published release
-
-Evidence · physical camera; reported pass; partial report; reported hash
 
 </div>
 
 <div class="evidence-entry" markdown="1">
 
-**[OM-5 Mark II code loaded from the card, OMKit loader](../capabilities/om5-ii-omkit-loader.md)**
+**Camera test · reported working** · [OM-5 Mark II OMKit loader patch: developers' camera](../evidence/om5-ii-omkit-loader.md)
 
-Project and build · [OMKit](../projects/omkit.md) / loader fw1100 (OMKit 0.1.0)
+partial report · reported hash
+{ .observation-meta }
+
+Claim · [OM-5 Mark II code loaded from the card, OMKit loader](../capabilities/om5-ii-omkit-loader.md)
+
+Project and build · [OMKit](../projects/omkit.md#for-om5-ii) / loader fw1100 (OMKit 0.1.0)
 
 Availability · published release
-
-Evidence · physical camera; reported pass; partial report; reported hash
 
 </div>
 
 <div class="evidence-entry" markdown="1">
 
-**[Mark II v0.2.0-alpha1 overall report](../capabilities/om5-ii-v020-alpha1-overall.md)**
+**Camera test · reported working** · [Mark II v0.2.0-alpha1: overall owner report](../evidence/om5-ii-v020-alpha1-owner.md)
 
-Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md) / v0.2.0-alpha1
+partial report · release label only
+{ .observation-meta }
+
+Claim · [Mark II v0.2.0-alpha1 overall report](../capabilities/om5-ii-v020-alpha1-overall.md)
+
+Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md#for-om5-ii) / v0.2.0-alpha1
 
 Availability · published release
-
-Evidence · physical camera; reported pass; partial report; release label only
 
 </div>
 
 <div class="evidence-entry" markdown="1">
 
-**[Mark II v0.2.0-alpha1 Black/White and split toning](../capabilities/om5-ii-v020-alpha1-tone.md)**
+**Camera test · reported working** · [Mark II v0.2.0-alpha1: overall owner report](../evidence/om5-ii-v020-alpha1-owner.md)
 
-Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md) / v0.2.0-alpha1
+partial report · release label only
+{ .observation-meta }
+
+Claim · [Mark II v0.2.0-alpha1 Black/White and split toning](../capabilities/om5-ii-v020-alpha1-tone.md)
+
+Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md#for-om5-ii) / v0.2.0-alpha1
 
 Availability · published release
-
-Evidence · physical camera; reported pass; partial report; release label only
 
 </div>
 

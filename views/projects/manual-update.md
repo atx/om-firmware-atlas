@@ -16,7 +16,9 @@ How to install official OM SYSTEM firmware from an SD card.
 
 ## Cameras
 
-### OM-5 { #for-om5 }
+<div class="model-panel" markdown="1">
+
+### Original OM-5 { #for-om5 }
 
 **For this camera:** A reference guide; it does not change the camera. Covers this camera for: SD card firmware update (released).
 { .card-for }
@@ -25,6 +27,10 @@ How to install official OM SYSTEM firmware from an SD card.
 { .card-get }
 
 [Camera overview and test results](../cameras/om5.md)
+
+</div>
+
+<div class="model-panel" markdown="1">
 
 ### OM-3 { #for-om3 }
 
@@ -35,6 +41,8 @@ How to install official OM SYSTEM firmware from an SD card.
 { .card-get }
 
 [Camera overview and test results](../cameras/om3.md)
+
+</div>
 
 
 ## About

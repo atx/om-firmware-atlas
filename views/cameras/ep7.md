@@ -369,13 +369,13 @@ Tool
 
 <div class="evidence-entry" markdown="1">
 
-**[E-P7 HSLFX](../capabilities/ep7-hsl.md)**
+**No camera test recorded**
 
-Project and build · [Caduceus for E-P7](../projects/caduceus-ep7.md) / v0.34a
+Claim · [E-P7 HSLFX](../capabilities/ep7-hsl.md)
+
+Project and build · [Caduceus for E-P7](../projects/caduceus-ep7.md#for-ep7) / v0.34a
 
 Availability · published release
-
-Evidence · Upstream description; no separate test observation catalogued
 
 </div>
 

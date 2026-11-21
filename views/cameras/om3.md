@@ -415,13 +415,13 @@ Reference
 
 <div class="evidence-entry" markdown="1">
 
-**[OM-3 HSL editor](../capabilities/om3-hsl.md)**
+**No camera test recorded**
 
-Project and build · [Caduceus for OM-3](../projects/caduceus-om3.md) / v0.30.3
+Claim · [OM-3 HSL editor](../capabilities/om3-hsl.md)
+
+Project and build · [Caduceus for OM-3](../projects/caduceus-om3.md#for-om3) / v0.30.3
 
 Availability · published release
-
-Evidence · Upstream description; no separate test observation catalogued
 
 </div>
 

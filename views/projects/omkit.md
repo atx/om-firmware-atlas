@@ -25,7 +25,11 @@ A loader flashed once, then core, modules and settings from the SD card. OM-5 Ma
 
 ## Cameras
 
+<div class="model-panel" markdown="1">
+
 ### OM-5 Mark II { #for-om5-ii }
+
+[Before you install: risks and recovery](../../docs/before-you-install.md)
 
 **For this camera:** 5 features, including Card-loaded core and modules, Creative profiles (CREATPRF) and Film look (FILMLOOK).
 { .card-for }
@@ -34,6 +38,8 @@ A loader flashed once, then core, modules and settings from the SD card. OM-5 Ma
 { .card-get }
 
 [Camera overview and test results](../cameras/om5-ii.md)
+
+</div>
 
 
 ## About

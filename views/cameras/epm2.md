@@ -137,13 +137,16 @@ Mod
 
 <div class="evidence-entry" markdown="1">
 
-**[E-PM2 card-loaded film simulations, films-look-exif](../capabilities/epm2-films-look-exif.md)**
+**Camera test · reported working** · [E-PM2 films-look-exif: owner camera test](../evidence/epm2-films-look-exif.md)
 
-Project and build · [EPM2Mod](../projects/epm2mod.md) / films-look-exif
+complete report · reported hash
+{ .observation-meta }
+
+Claim · [E-PM2 card-loaded film simulations, films-look-exif](../capabilities/epm2-films-look-exif.md)
+
+Project and build · [EPM2Mod](../projects/epm2mod.md#for-epm2) / films-look-exif
 
 Availability · candidate
-
-Evidence · physical camera; reported pass; complete report; reported hash
 
 </div>
 
