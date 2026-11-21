@@ -4,11 +4,11 @@
 
 OM-3 looks, colour editing, persistence and research.
 
-[Contribution home](https://github.com/androidfanman/caduceus-om3/issues). The newest reviewed release is v0.40.2 for the OM-3 on stock firmware 1.1. The maintainer reports camera checks on the build later published as v0.40.2.
+[Contribution home](https://github.com/androidfanman/caduceus-om3/issues). The newest stable release is v0.40.2 for the OM-3 on stock firmware 1.1. Two test versions followed on 2026-11-20, v0.40.3-beta (Halation Radius, faster Halation) and v0.40.3-beta2 (fixes for a shut-down with Film Grain on Drive Priority, Magnify in the crop modes, and stock modes' WB compensation); the maintainer reports each camera-tested on an OM-3 as its test build.
 
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
-| [caduceus-om3.yaml](../../../records/projects/caduceus-om3.yaml) | Project scope, related work and contribution destination | 16,426 | ~4,107 |
-| [om3.yaml](../../../records/sources/om3.yaml) | Find the relevant source/observation ID; use bounded reads | 10,894 | ~2,724 |
+| [caduceus-om3.yaml](../../../records/projects/caduceus-om3.yaml) | Project scope, related work and contribution destination | 18,737 | ~4,685 |
+| [om3.yaml](../../../records/sources/om3.yaml) | Find the relevant source/observation ID; use bounded reads | 12,483 | ~3,121 |
 
 Follow only relevant camera/topic routes. Upstream policies apply to work there; Atlas does not assign ownership across projects.

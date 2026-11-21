@@ -2,16 +2,16 @@
 
 # E-M1 III firmware findings
 
-Research notes behind the mods, including Multiple Exposure frame counts tried on the camera.
+Research notes behind the mods, including Multiple Exposure frame counts tried on the camera and the overlay fix in test 1.746.
 
-**[Open original source](https://github.com/dfeldt91-blip/E-M1-Miii/blob/4e36a6ed170c5b25d7205137f20b5e0d9f4b4c76/docs/FINDINGS.md)**
+**[Open original source](https://github.com/dfeldt91-blip/E-M1-Miii/blob/ae16f3d2836e7273164c7cd3497237117c8b9ff9/docs/FINDINGS.md)**
 
 **Kind:** github file. **Locator:** docs/FINDINGS.md: Multiple Exposure frames.
 
-**Revision / release:** `4e36a6ed170c5b25d7205137f20b5e0d9f4b4c76`. **Retrieved:** 2026-11-20. **Last source check:** 2026-11-20.
+**Revision / release:** `ae16f3d2836e7273164c7cd3497237117c8b9ff9`. **Retrieved:** 2026-11-21. **Last source check:** 2026-11-21.
 
 **Publication:** public. Linked and synthesised; upstream material retains its own terms.
 
 ## Sources and record
 
-[Canonical record](../../records/sources/em1-iii-mod-builder.yaml) · Substantively reviewed: 2026-11-20.
+[Canonical record](../../records/sources/em1-iii-mod-builder.yaml) · Substantively reviewed: 2026-11-21.

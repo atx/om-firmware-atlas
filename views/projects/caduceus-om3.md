@@ -302,12 +302,44 @@ Halation at strength 5 on a sample photo. *Caduceus for OM-3 tour; photo by Bler
 
 <div class="release-item" markdown="1">
 
+**[Caduceus for OM-3 v0.40.3-beta2 (test version)](https://github.com/androidfanman/caduceus-om3/releases/tag/v0.40.3-beta2)** <span class="pill pill-alpha">Pre-release</span> · 20 Nov 2026
+{ .release-head }
+
+- No shut-down with Film Grain, Sequential drive and JPEG only when Low ISO Processing is Drive Priority (#91): grain photos now take the Detail processing.
+- Magnify and MF Assist work in 5:4, XPan and 21:9, and the Image Aspect screen shows the crops' names and sizes (#97).
+- The camera's own picture modes keep their own WB compensation again, per WB mode and custom mode (#99).
+- The maintainer reports the build camera-tested on an OM-3 on 2026-11-20 as fixes2.
+
+Test release; v0.40.2 stays the current version. The first time after updating, the camera's own modes may start with no WB compensation.
+{ .release-warning }
+
+</div>
+
+<div class="release-item" markdown="1">
+
+**[Caduceus for OM-3 v0.40.3-beta (test version)](https://github.com/androidfanman/caduceus-om3/releases/tag/v0.40.3-beta)** <span class="pill pill-alpha">Pre-release</span> · 20 Nov 2026
+{ .release-head }
+
+- Halation Radius row (Bloom, Tight, Medium, Wide), per film; LookLab cannot set it yet.
+- Halation about twice as fast with identical output; burst pauses capped at 0.3 s a photo.
+- Playback shows each photo's own film name (#93).
+
+Test release; v0.40.2 stays the current version. Known issue #91 (also in v0.40.1 and v0.40.2): with Film Grain, Sequential and JPEG only, Drive Priority low-ISO processing switches the camera off on the first photo at ISO 1600 and below; fixed in v0.40.3-beta2.
+{ .release-warning }
+
+</div>
+
+<div class="release-item" markdown="1">
+
 **[Caduceus for OM-3 v0.40.2](https://github.com/androidfanman/caduceus-om3/releases/tag/v0.40.2)** · 20 Nov 2026
 { .release-head }
 
 - Produces colour grain on every row to remove faint banding and reduces red–green speckling.
 - The maintainer reports a successful long burst on the test build later published as v0.40.2. An earlier test build rebooted during a burst.
 - LookLab previews the updated colour grain.
+
+Known issue #91, listed later in the v0.40.3-beta notes: with Film Grain, Sequential and JPEG only, Drive Priority low-ISO processing switches the camera off on the first photo at ISO 1600 and below; workaround Detail Priority, RAW+JPEG or Single.
+{ .release-warning }
 
 </div>
 
@@ -509,7 +541,7 @@ After updating, assign your custom modes once.
 
 ## Research notes
 
-The newest reviewed release is v0.40.2 for the OM-3 on stock firmware 1.1. The maintainer reports camera checks on the build later published as v0.40.2.
+The newest stable release is v0.40.2 for the OM-3 on stock firmware 1.1. Two test versions followed on 2026-11-20, v0.40.3-beta (Halation Radius, faster Halation) and v0.40.3-beta2 (fixes for a shut-down with Film Grain on Drive Priority, Magnify in the crop modes, and stock modes' WB compensation); the maintainer reports each camera-tested on an OM-3 as its test build.
 
 ## Sources and record
 
@@ -519,6 +551,8 @@ The newest reviewed release is v0.40.2 for the OM-3 on stock firmware 1.1. The m
 - [Caduceus OM-3 roadmap](../sources/om3.roadmap.md)
 - [Caduceus OM-3 releases](../sources/om3.releases.md)
 - [OM-3 v0.40-alpha release notes](../sources/om3.v040.md)
+- [Caduceus for OM-3 v0.40.3-beta2 notes](../sources/om3.v0403-beta2.md)
+- [Caduceus for OM-3 v0.40.3-beta notes](../sources/om3.v0403-beta.md)
 - [Caduceus for OM-3 v0.40.2](../sources/om3.v0402.md)
 - [Caduceus for OM-3 v0.40.1](../sources/om3.v0401.md)
 - [Caduceus for OM-3 v0.40](../sources/om3.v040-release.md)
@@ -527,4 +561,4 @@ The newest reviewed release is v0.40.2 for the OM-3 on stock firmware 1.1. The m
 - [Caduceus for OM-3 v0.40-beta (test version)](../sources/om3.v040-beta.md)
 - [OM-3 v0.40 grain crash report](../sources/om3.atlas-grain-report.md)
 
-[Canonical record](../../records/projects/caduceus-om3.yaml) · Substantively reviewed: 2026-11-20.
+[Canonical record](../../records/projects/caduceus-om3.yaml) · Substantively reviewed: 2026-11-21.

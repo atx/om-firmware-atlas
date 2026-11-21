@@ -9,9 +9,9 @@ Film simulations, interval shooting, focus peaking and a level gauge for the PEN
 [Project home](https://github.com/cfu288/EPM2Mod){ .btn .btn-primary }
 [Ask or report issues](https://github.com/cfu288/EPM2Mod/issues){ .btn .btn-ghost }
 [Film simulation comparison](https://cfu288.github.io/EPM2Mod/films){ .btn .btn-ghost }
-[Install guide](https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/user/install.md){ .btn .btn-ghost }
-[Feasibility and limits](https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/dev/feasibility.md){ .btn .btn-ghost }
-[Landscape of Olympus mods](https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/reference/landscape.md){ .btn .btn-ghost }
+[Install guide](https://github.com/cfu288/EPM2Mod/blob/f8f173d8b53d4370f85505cdec7be2b52d1ec830/docs/user/install.md){ .btn .btn-ghost }
+[Feasibility and limits](https://github.com/cfu288/EPM2Mod/blob/f8f173d8b53d4370f85505cdec7be2b52d1ec830/docs/dev/feasibility.md){ .btn .btn-ghost }
+[Landscape of Olympus mods](https://github.com/cfu288/EPM2Mod/blob/f8f173d8b53d4370f85505cdec7be2b52d1ec830/docs/reference/landscape.md){ .btn .btn-ghost }
 
 </div>
 
@@ -152,7 +152,7 @@ Unofficial and for the E-PM2 only; installing is at your own risk.
 
 ## Research notes
 
-The owner reports the pinned build films-look-exif tested on a real E-PM2 on 2026-11-20. Every release so far is a pre-release, and the project calls the firmware unofficial and at the user's own risk.
+The owner pinned a new build, films-twelve-off, and reports it tested on a real E-PM2 on 2026-11-21; it gives film simulations no 12-region table and carries refitted films, but is not in a release yet. The newest pre-release, v2026.11.20-rc.1, carries films-look-exif. The project calls the firmware unofficial and at the user's own risk.
 
 ## Sources and record
 
@@ -160,9 +160,10 @@ The owner reports the pinned build films-look-exif tested on a real E-PM2 on 202
 - [E-PM2 feasibility and real limits](../sources/epm2.feasibility.md)
 - [EPM2Mod pinned build](../sources/epm2.install.md)
 - [films-look-exif camera log](../sources/epm2.camera-log.md)
+- [films-twelve-off camera log](../sources/epm2.camera-log-twelve-off.md)
 - [E-PM2 firmware format](../sources/epm2.format.md)
 - [Olympus generations for modding](../sources/epm2.model-matrix.md)
 - [Olympus custom firmware landscape](../sources/epm2.landscape.md)
 - [EPM2Mod releases](../sources/epm2.releases.md)
 
-[Canonical record](../../records/projects/epm2mod.yaml) · Substantively reviewed: 2026-11-20.
+[Canonical record](../../records/projects/epm2mod.yaml) · Substantively reviewed: 2026-11-21.

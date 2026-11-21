@@ -19,15 +19,17 @@ A user reports RAWs opening about 300 K lower in Lightroom Classic than set in c
 Shot RAW at 5400 K and 5600 K in camera and opened the files in Lightroom Classic.
 
 - Lightroom Classic showed 5100 K and 5300 K.
+- Maintainer reply (2026-11-21): the mod does not touch the RAW white-balance data and its WB tags match stock; a similar offset is expected on official firmware; asks the reporter for a stock comparison. The version 87 README lists the offset as stock behaviour.
 
 ## Limits and assumptions
 
-- No body, firmware or build stated, no comparison with stock firmware, and no maintainer reply when read.
+- No body, firmware or build stated, and no comparison with stock firmware; the reporter had not answered when read.
 - A raw converter's temperature reading can differ from the camera's setting on stock firmware too; not established as a mod effect.
 - Camera recorded as the E-M10 Mark I because the project targets only that body; the report does not say so.
 
 ## Sources and record
 
 - [RAW white balance in Lightroom Classic (issue 3)](../sources/om10mi.issue-3.md)
+- [om10mi-mods overview](../sources/om10mi.readme.md)
 
 [Canonical record](../../records/evidence/om10mi-mods.yaml) · Substantively reviewed: 2026-11-21.

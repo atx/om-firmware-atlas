@@ -2,14 +2,14 @@
 
 # om10mi-mods
 
-Firmware mod for the original OM-D E-M10 with 18 film looks, per-colour and per-look colour editors and a 59:50 video limit.
+Firmware mod for the original OM-D E-M10 with 18 film looks, a colour wheel, per-colour and per-look colour editors and a 59:50 video limit.
 
-[Contribution home](https://github.com/Meghnus/om10mi-mods/issues). The owner reports version 56 field-tested on one E-M10 Mark I with firmware 1.4 and released it as v56. Recording past 30 minutes is not yet confirmed. Two open user reports (a freeze and reboot with filters, and a RAW white-balance shift in Lightroom) name no body or build and have no reply yet.
+[Contribution home](https://github.com/Meghnus/om10mi-mods/issues). The owner released version 87 on 2026-11-21, adding a colour wheel, and reports it tested in a PC emulator, independently reviewed and field-tested on one E-M10 Mark I with firmware 1.4. Recording past 30 minutes is not yet confirmed. Two open user reports name no body or build; the maintainer has replied to both, calling the Lightroom white-balance offset stock behaviour and hardening the code suspected in the freeze.
 
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
-| [om10mi-mods.yaml](../../../records/projects/om10mi-mods.yaml) | Project scope, related work and contribution destination | 6,036 | ~1,509 |
-| [om10mi-mods.yaml](../../../records/sources/om10mi-mods.yaml) | Find the relevant source/observation ID; use bounded reads | 7,562 | ~1,891 |
-| [om10mi-mods.yaml](../../../records/evidence/om10mi-mods.yaml) | Find the relevant source/observation ID; use bounded reads | 3,992 | ~998 |
+| [om10mi-mods.yaml](../../../records/projects/om10mi-mods.yaml) | Project scope, related work and contribution destination | 8,415 | ~2,104 |
+| [om10mi-mods.yaml](../../../records/sources/om10mi-mods.yaml) | Find the relevant source/observation ID; use bounded reads | 9,459 | ~2,365 |
+| [om10mi-mods.yaml](../../../records/evidence/om10mi-mods.yaml) | Find the relevant source/observation ID; use bounded reads | 7,605 | ~1,902 |
 
 Follow only relevant camera/topic routes. Upstream policies apply to work there; Atlas does not assign ownership across projects.

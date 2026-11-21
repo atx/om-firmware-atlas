@@ -73,6 +73,18 @@ Korean language support on several bodies.
 
 </div>
 
+<div class="feature-card" markdown="1">
+
+**Hybrid Shutter** <span class="pill pill-beta">Beta</span>
+{ .feature-head }
+
+Switches to the electronic shutter on overexposure in P or A mode and, since v0.4.3, below the slowest mechanical speed in S or M mode. v0.4.3 lists nine bodies, including the OM-3, OM-5, OM-5 Mark II and E-P7; its OM-5 and OM-5 Mark II builds are listed as not working.
+
+[db firmware / om-c-firmware](../projects/db-firmware.md) · since dbv0.4.2
+{ .card-meta }
+
+</div>
+
 </div>
 
 ## Projects for this camera
@@ -113,7 +125,7 @@ Experimental fork
 
 Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to new burst rates.
 
-Latest: dbv0.4.2, 20 Nov 2026
+Latest: dbv0.4.3, 21 Nov 2026
 { .card-meta }
 
 [Project home](https://github.com/azqeurio/om-c-firmware) · [Ask or report issues](https://github.com/azqeurio/om-c-firmware/issues)

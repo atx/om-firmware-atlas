@@ -7,13 +7,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-20'
-  url: https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/README.md
+  url: https://github.com/cfu288/EPM2Mod/blob/f8f173d8b53d4370f85505cdec7be2b52d1ec830/README.md
   source_kind: github-file
   upstream_repo: cfu288/EPM2Mod
-  revision: 09b982771e2809e2ee73076b25c41d9c5c5ad905
+  revision: f8f173d8b53d4370f85505cdec7be2b52d1ec830
   locator: README.md
-  retrieved_on: '2026-11-20'
-  last_checked: '2026-11-20'
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -22,30 +22,30 @@ records:
   summary: 'Measured limits, resources, recovery record and what is feasible, each labelled verified, inferred or unknown.'
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-20'
-  url: https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/dev/feasibility.md
+  last_reviewed: '2026-11-21'
+  url: https://github.com/cfu288/EPM2Mod/blob/f8f173d8b53d4370f85505cdec7be2b52d1ec830/docs/dev/feasibility.md
   source_kind: github-file
   upstream_repo: cfu288/EPM2Mod
-  revision: 09b982771e2809e2ee73076b25c41d9c5c5ad905
+  revision: f8f173d8b53d4370f85505cdec7be2b52d1ec830
   locator: docs/dev/feasibility.md
-  retrieved_on: '2026-11-20'
-  last_checked: '2026-11-20'
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
   id: source.epm2.install
   title: 'EPM2Mod pinned build'
-  summary: 'The pinned build films-look-exif, its feature set, and the stock and build SHA-256s.'
+  summary: 'The pinned build films-twelve-off, its feature set, the camera-test date and the stock and build SHA-256s.'
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-20'
-  url: https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/user/install.md
+  last_reviewed: '2026-11-21'
+  url: https://github.com/cfu288/EPM2Mod/blob/f8f173d8b53d4370f85505cdec7be2b52d1ec830/docs/user/install.md
   source_kind: github-file
   upstream_repo: cfu288/EPM2Mod
-  revision: 09b982771e2809e2ee73076b25c41d9c5c5ad905
+  revision: f8f173d8b53d4370f85505cdec7be2b52d1ec830
   locator: docs/user/install.md
-  retrieved_on: '2026-11-20'
-  last_checked: '2026-11-20'
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -61,7 +61,7 @@ records:
   revision: 09b982771e2809e2ee73076b25c41d9c5c5ad905
   locator: docs/camera-log/2026-11-20-films-look-exif.md
   retrieved_on: '2026-11-20'
-  last_checked: '2026-11-20'
+  last_checked: '2026-11-21'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -71,13 +71,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-20'
-  url: https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/reference/firmware-format.md
+  url: https://github.com/cfu288/EPM2Mod/blob/f8f173d8b53d4370f85505cdec7be2b52d1ec830/docs/reference/firmware-format.md
   source_kind: github-file
   upstream_repo: cfu288/EPM2Mod
-  revision: 09b982771e2809e2ee73076b25c41d9c5c5ad905
+  revision: f8f173d8b53d4370f85505cdec7be2b52d1ec830
   locator: docs/reference/firmware-format.md
-  retrieved_on: '2026-11-20'
-  last_checked: '2026-11-20'
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -87,13 +87,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-20'
-  url: https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/reference/model-matrix.md
+  url: https://github.com/cfu288/EPM2Mod/blob/f8f173d8b53d4370f85505cdec7be2b52d1ec830/docs/reference/model-matrix.md
   source_kind: github-file
   upstream_repo: cfu288/EPM2Mod
-  revision: 09b982771e2809e2ee73076b25c41d9c5c5ad905
+  revision: f8f173d8b53d4370f85505cdec7be2b52d1ec830
   locator: docs/reference/model-matrix.md
-  retrieved_on: '2026-11-20'
-  last_checked: '2026-11-20'
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -102,14 +102,14 @@ records:
   summary: 'Known projects by camera, and why EPM2Mod is not a fork of the newer-body mods.'
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-20'
-  url: https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/reference/landscape.md
+  last_reviewed: '2026-11-21'
+  url: https://github.com/cfu288/EPM2Mod/blob/f8f173d8b53d4370f85505cdec7be2b52d1ec830/docs/reference/landscape.md
   source_kind: github-file
   upstream_repo: cfu288/EPM2Mod
-  revision: 09b982771e2809e2ee73076b25c41d9c5c5ad905
+  revision: f8f173d8b53d4370f85505cdec7be2b52d1ec830
   locator: docs/reference/landscape.md
-  retrieved_on: '2026-11-20'
-  last_checked: '2026-11-20'
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -125,7 +125,23 @@ records:
   revision: v2026.11.20-rc.1
   locator: Releases page; release v2026.11.20-rc.1
   retrieved_on: '2026-11-20'
-  last_checked: '2026-11-20'
+  last_checked: '2026-11-21'
   published_on: '2026-11-20'
   publication: public
   reuse_note: Attributed summary of mutable release notes; no code, firmware or executables imported.
+- type: source
+  id: source.epm2.camera-log-twelve-off
+  title: 'films-twelve-off camera log'
+  summary: 'Owner camera result for the films-twelve-off build on 2026-11-21, the checks not done and the emulator checks run before the flash.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-21'
+  url: https://github.com/cfu288/EPM2Mod/blob/f8f173d8b53d4370f85505cdec7be2b52d1ec830/docs/camera-log/2026-11-21-films-twelve-off.md
+  source_kind: github-file
+  upstream_repo: cfu288/EPM2Mod
+  revision: f8f173d8b53d4370f85505cdec7be2b52d1ec830
+  locator: docs/camera-log/2026-11-21-films-twelve-off.md
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.

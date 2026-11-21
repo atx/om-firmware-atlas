@@ -4,11 +4,11 @@
 
 What the repository does and does not contain, licences and the references the look data is fitted to.
 
-**[Open original source](https://github.com/Meghnus/om10mi-mods/blob/f36772dc709ee630333ff576acc0ede02f87da19/NOTICE)**
+**[Open original source](https://github.com/Meghnus/om10mi-mods/blob/46874155947715e0d54baabe2df5006376c8bbab/NOTICE)**
 
 **Kind:** github file. **Locator:** NOTICE.
 
-**Revision / release:** `f36772dc709ee630333ff576acc0ede02f87da19`. **Retrieved:** 2026-11-21. **Last source check:** 2026-11-21.
+**Revision / release:** `46874155947715e0d54baabe2df5006376c8bbab`. **Retrieved:** 2026-11-21. **Last source check:** 2026-11-21.
 
 **Publication:** public. Linked and synthesised; upstream material retains its own terms.
 

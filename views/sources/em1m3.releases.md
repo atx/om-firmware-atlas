@@ -2,16 +2,16 @@
 
 # E-M1 III Mod Builder releases
 
-Mac and Windows builds of the mod builder, mod-builder-1.12 to 1.17; all share the same notes.
+Mac and Windows builds of the mod builder, mod-builder-1.12 to 1.18; 1.18 (2026-11-21, Latest) adds a note on Fill Flash in handheld High Res, the rest share the same notes.
 
 **[Open original source](https://github.com/dfeldt91-blip/E-M1-Miii/releases)**
 
-**Kind:** github release. **Locator:** Releases page; release mod-builder-1.17.
+**Kind:** github release. **Locator:** Releases page; release mod-builder-1.18 at commit dabf1d15f5627077316a3b62107219b1c1b553c2.
 
-**Revision / release:** `mod-builder-1.17`. **Retrieved:** 2026-11-20. **Last source check:** 2026-11-20.
+**Revision / release:** `mod-builder-1.18`. **Retrieved:** 2026-11-21. **Last source check:** 2026-11-21.
 
 **Publication:** public. Attributed summary of mutable release notes; no code, firmware or executables imported.
 
 ## Sources and record
 
-[Canonical record](../../records/sources/em1-iii-mod-builder.yaml) · Substantively reviewed: 2026-11-20.
+[Canonical record](../../records/sources/em1-iii-mod-builder.yaml) · Substantively reviewed: 2026-11-21.

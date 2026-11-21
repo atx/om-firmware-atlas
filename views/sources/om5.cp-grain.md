@@ -4,11 +4,11 @@
 
 Why Film Grain for Color Profiles was removed after showing no grain on the camera.
 
-**[Open original source](https://github.com/xulfr/caduceus-om5/blob/7c3bf521f4a92580a7cafa3fab82ad2003f10657/research/OM5II-CP-GRAIN-2026-11-18.md)**
+**[Open original source](https://github.com/xulfr/caduceus-om5/blob/1357ef68b73df6c3636795f5a21d353fb8774110/research/OM5II-CP-GRAIN-2026-11-18.md)**
 
 **Kind:** github file. **Locator:** research/OM5II-CP-GRAIN-2026-11-18.md.
 
-**Revision / release:** `7c3bf521f4a92580a7cafa3fab82ad2003f10657`. **Retrieved:** 2026-11-20. **Last source check:** 2026-11-20.
+**Revision / release:** `1357ef68b73df6c3636795f5a21d353fb8774110`. **Retrieved:** 2026-11-20. **Last source check:** 2026-11-21.
 
 **Publication:** public. Attributed synthesis of upstream documentation.
 

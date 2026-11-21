@@ -9,6 +9,7 @@ Individual observations from physical cameras, emulators and code inspection, wi
 | [E-M10 om10mi-mods: freeze and reboot with filters (user report)](em10-filters-reboot.md) | A user reports three random freezes and reboots in about 40 to 50 shots with filters enabled; body, build and filter not stated. |
 | [E-M10 om10mi-mods: RAW white balance in Lightroom Classic (user report)](em10-raw-wb-lightroom.md) | A user reports RAWs opening about 300 K lower in Lightroom Classic than set in camera; not linked to the mod. |
 | [E-M10 version 56: owner field test](em10-v56-owner.md) | The owner reports version 56 working well on their camera after two independent audits; no test date or steps beyond the published test list. |
+| [E-M10 version 87: owner field test](em10-v87-owner.md) | The owner reports version 87 field-tested on their E-M10 Mark I after PC emulation and independent review; no test date, steps or results per feature. |
 | [E-M5 III 1.7: focus stacking with a non-listed lens](em5-iii-focus-stacking-camera.md) | The notes' author flashed the lens-check patch and reports focus stacking working. |
 | [E-M5 III 1.7: Live ND photos from test builds](em5-iii-live-nd-photo.md) | Merged Live ND photos at ND2 to ND16, measured on the camera. |
 | [E-M5 III 1.7: Live ND live-view preview from test builds](em5-iii-live-nd-preview.md) | Live-view averaging with job 12 checked step by step on the camera. |
@@ -18,6 +19,7 @@ Individual observations from physical cameras, emulators and code inspection, wi
 | [E-M5 III 1.7: live view over UVC failed](em5-iii-uvc-live-view-fail.md) | Streaming the native movie output over UVC failed. |
 | [E-M5 III 1.7: card-file debug shell tested](em5-iii-wifi-shell-camera.md) | The E-M5 III firmware notes report the method working on a stock E-M5 III, with a live sequencer trace. |
 | [E-PM2 films-look-exif: owner camera test](epm2-films-look-exif.md) | The owner reports the pinned build working, with film output matching the fitted model and the film name in EXIF. |
+| [E-PM2 films-twelve-off: owner camera test](epm2-films-twelve-off.md) | The owner reports the new pinned build booting, loading the default film file and recording the new Portra 400 fit; the RAW Data Edit check was not done. |
 | [Mark II alpha12: overall owner report](om5-ii-alpha12-owner.md) | A positive overall report with explicitly missing details. |
 | [Mark II dev package 0565540a: flash failure, then intermittent boot loop](om5-ii-dev0565-boot.md) | A pre-release development package first failed to flash, then worked, then boot-looped intermittently. |
 | [Mark II image-store probe](om5-ii-image-store-probe.md) | Upstream GUI tracing reports no patch writes into the watched image after correction. |

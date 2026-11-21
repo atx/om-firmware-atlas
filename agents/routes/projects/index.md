@@ -12,12 +12,12 @@ Open only the matching route.
 | [Caduceus port for the original OM-5 (tadejs)](caduceus-om5-tadejs.md) | Original OM-5 1.2 port work on a Caduceus E-P7 fork; camera safety ladder passed, no features released. |
 | [OM-3 downstream experiments](camera-stuff.md) | Downstream experiments intended to send fixes upstream. |
 | [db firmware / om-c-firmware](db-firmware.md) | Release-centred controls, localisation and other modifications. |
-| [E-M1 Mark III Mod Builder](em1-iii-mod-builder.md) | Inactive mod builder for E-M1 III firmware 1.6; the author reports it functional and invites others to continue it. |
+| [E-M1 Mark III Mod Builder](em1-iii-mod-builder.md) | Mod builder for E-M1 III firmware 1.6; after a short pause the author reports the project continuing, with Fill and Manual flash in handheld High Res in 1.18. |
 | [Olympus firmware notes (E-M5 Mark III)](em5-iii-notes.md) | Tagged technical notes on E-M5 III 1.7 firmware and hardware, with OM-5 donor feature ports. |
 | [EPM2Mod](epm2mod.md) | Firmware mod for the 2012 PEN E-PM2 with film simulations, interval shooting, level gauge and focus peaking. |
 | [Ghidra MN103 processor module](ghidra-mn103.md) | Ghidra disassembly and decompiler support for MN10300, AM33 and AM33-2. |
 | [Historical manual update research](manual-update.md) | Historical SD update procedure and model naming. |
 | [Olympus firmware research](oly-fw-analysis.md) | Foundational firmware work with deep PEN-F coverage. |
 | [OM-Emu](om-emu.md) | Firmware lab, model ports, traces and patch overlays. |
-| [om10mi-mods](om10mi-mods.md) | Firmware mod for the original OM-D E-M10 with 18 film looks, per-colour and per-look colour editors and a 59:50 video limit. |
+| [om10mi-mods](om10mi-mods.md) | Firmware mod for the original OM-D E-M10 with 18 film looks, a colour wheel, per-colour and per-look colour editors and a 59:50 video limit. |
 | [OMKit](omkit.md) | Loader flashed once; core and modules then run from the SD card. |

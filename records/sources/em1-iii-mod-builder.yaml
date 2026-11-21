@@ -3,17 +3,17 @@ records:
 - type: source
   id: source.em1m3.readme
   title: E-M1 III repository status note
-  summary: The author states the project is no longer active, works as is without major bugs, and others may continue it.
+  summary: 'The author states the project continues, now worked on locally, and that the newest version adds Fill Flash to handheld High Res. Replaces the 2026-11-20 inactive note.'
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-20'
-  url: https://github.com/dfeldt91-blip/E-M1-Miii/blob/4e36a6ed170c5b25d7205137f20b5e0d9f4b4c76/README.md
+  last_reviewed: '2026-11-21'
+  url: https://github.com/dfeldt91-blip/E-M1-Miii/blob/ae16f3d2836e7273164c7cd3497237117c8b9ff9/README.md
   source_kind: github-file
   upstream_repo: dfeldt91-blip/E-M1-Miii
-  revision: 4e36a6ed170c5b25d7205137f20b5e0d9f4b4c76
+  revision: ae16f3d2836e7273164c7cd3497237117c8b9ff9
   locator: README.md
-  retrieved_on: '2026-11-20'
-  last_checked: '2026-11-20'
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
   publication: public
   reuse_note: Linked and summarised; upstream material retains its own terms.
 - type: source
@@ -22,69 +22,69 @@ records:
   summary: What the builder does, the mod list with the owner's camera status per mod, install steps and credits.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-20'
-  url: https://github.com/dfeldt91-blip/E-M1-Miii/blob/4e36a6ed170c5b25d7205137f20b5e0d9f4b4c76/builder/README.md
+  last_reviewed: '2026-11-21'
+  url: https://github.com/dfeldt91-blip/E-M1-Miii/blob/ae16f3d2836e7273164c7cd3497237117c8b9ff9/builder/README.md
   source_kind: github-file
   upstream_repo: dfeldt91-blip/E-M1-Miii
-  revision: 4e36a6ed170c5b25d7205137f20b5e0d9f4b4c76
+  revision: ae16f3d2836e7273164c7cd3497237117c8b9ff9
   locator: builder/README.md
-  retrieved_on: '2026-11-20'
-  last_checked: '2026-11-20'
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
   id: source.em1m3.mods
   title: E-M1 III mod pack
-  summary: The builder's 19 mods with descriptions and camera notes, and the SHA-256 it requires of stock 1.6.
+  summary: The builder's 19 mods with descriptions and camera notes, test builds 1.745 and 1.746, and the SHA-256 it requires of stock 1.6.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-20'
-  url: https://github.com/dfeldt91-blip/E-M1-Miii/blob/4e36a6ed170c5b25d7205137f20b5e0d9f4b4c76/builder/mods.json
+  last_reviewed: '2026-11-21'
+  url: https://github.com/dfeldt91-blip/E-M1-Miii/blob/ae16f3d2836e7273164c7cd3497237117c8b9ff9/builder/mods.json
   source_kind: github-file
   upstream_repo: dfeldt91-blip/E-M1-Miii
-  revision: 4e36a6ed170c5b25d7205137f20b5e0d9f4b4c76
+  revision: ae16f3d2836e7273164c7cd3497237117c8b9ff9
   locator: 'builder/mods.json: firmware and each mod''s title, description and camera fields'
-  retrieved_on: '2026-11-20'
-  last_checked: '2026-11-20'
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
   publication: public
   reuse_note: Summarised metadata only; no edit lists, code or firmware imported.
 - type: source
   id: source.em1m3.findings
   title: E-M1 III firmware findings
-  summary: Research notes behind the mods, including Multiple Exposure frame counts tried on the camera.
+  summary: Research notes behind the mods, including Multiple Exposure frame counts tried on the camera and the overlay fix in test 1.746.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-20'
-  url: https://github.com/dfeldt91-blip/E-M1-Miii/blob/4e36a6ed170c5b25d7205137f20b5e0d9f4b4c76/docs/FINDINGS.md
+  last_reviewed: '2026-11-21'
+  url: https://github.com/dfeldt91-blip/E-M1-Miii/blob/ae16f3d2836e7273164c7cd3497237117c8b9ff9/docs/FINDINGS.md
   source_kind: github-file
   upstream_repo: dfeldt91-blip/E-M1-Miii
-  revision: 4e36a6ed170c5b25d7205137f20b5e0d9f4b4c76
+  revision: ae16f3d2836e7273164c7cd3497237117c8b9ff9
   locator: 'docs/FINDINGS.md: Multiple Exposure frames'
-  retrieved_on: '2026-11-20'
-  last_checked: '2026-11-20'
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
   id: source.em1m3.releases
   title: E-M1 III Mod Builder releases
-  summary: Mac and Windows builds of the mod builder, mod-builder-1.12 to 1.17; all share the same notes.
+  summary: Mac and Windows builds of the mod builder, mod-builder-1.12 to 1.18; 1.18 (2026-11-21, Latest) adds a note on Fill Flash in handheld High Res, the rest share the same notes.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-20'
+  last_reviewed: '2026-11-21'
   url: https://github.com/dfeldt91-blip/E-M1-Miii/releases
   source_kind: github-release
   upstream_repo: dfeldt91-blip/E-M1-Miii
-  revision: mod-builder-1.17
-  locator: Releases page; release mod-builder-1.17
-  retrieved_on: '2026-11-20'
-  last_checked: '2026-11-20'
-  published_on: '2026-11-18'
+  revision: mod-builder-1.18
+  locator: Releases page; release mod-builder-1.18 at commit dabf1d15f5627077316a3b62107219b1c1b553c2
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
+  published_on: '2026-11-21'
   publication: public
   reuse_note: Attributed summary of mutable release notes; no code, firmware or executables imported.
 - type: source
   id: source.em1m3.author-note
   title: Author's note on project status
-  summary: The author asks that the Atlas record the project as inactive but open to continue, functional, with one known preview issue.
+  summary: 'The author asked on 2026-11-20 that the Atlas record the project as inactive but open to continue, functional, with one known preview issue. Historical: the README of 2026-11-21 says the project continues.'
   source_refs: []
   topics: []
   last_reviewed: '2026-11-20'

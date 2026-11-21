@@ -8,7 +8,7 @@ Owner camera result for the pinned build on 2026-11-20, with the emulator checks
 
 **Kind:** github file. **Locator:** docs/camera-log/2026-11-20-films-look-exif.md.
 
-**Revision / release:** `09b982771e2809e2ee73076b25c41d9c5c5ad905`. **Retrieved:** 2026-11-20. **Last source check:** 2026-11-20.
+**Revision / release:** `09b982771e2809e2ee73076b25c41d9c5c5ad905`. **Retrieved:** 2026-11-20. **Last source check:** 2026-11-21.
 
 **Publication:** public. Linked and synthesised; upstream material retains its own terms.
 

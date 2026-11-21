@@ -2,34 +2,37 @@
 
 # om10mi-mods
 
-Film looks, colour editors and a longer video limit for the original OM-D E-M10.
+Film looks, a colour wheel, colour editors and a longer video limit for the original OM-D E-M10.
 
 <div class="cta-row" markdown="1">
 
 [Project home](https://github.com/Meghnus/om10mi-mods){ .btn .btn-primary }
 [Ask or report issues](https://github.com/Meghnus/om10mi-mods/issues){ .btn .btn-ghost }
-[Install guide](https://github.com/Meghnus/om10mi-mods/blob/f36772dc709ee630333ff576acc0ede02f87da19/INSTALL.md){ .btn .btn-ghost }
-[Version 56 guide and test list](https://github.com/Meghnus/om10mi-mods/blob/f36772dc709ee630333ff576acc0ede02f87da19/docs/GUIDE-56.md){ .btn .btn-ghost }
-[Look file spec (draft)](https://github.com/Meghnus/om10mi-mods/blob/f36772dc709ee630333ff576acc0ede02f87da19/docs/lookfile/LOOKFILE_SPEC.md){ .btn .btn-ghost }
+[Colour wheel guide](https://github.com/Meghnus/om10mi-mods/blob/46874155947715e0d54baabe2df5006376c8bbab/docs/GUIDE-COLOR-WHEEL.md){ .btn .btn-ghost }
+[Development and testing method](https://github.com/Meghnus/om10mi-mods/blob/46874155947715e0d54baabe2df5006376c8bbab/docs/DEVELOPMENT.md){ .btn .btn-ghost }
+[Install guide](https://github.com/Meghnus/om10mi-mods/blob/46874155947715e0d54baabe2df5006376c8bbab/INSTALL.md){ .btn .btn-ghost }
+[Looks and colour editors guide and test list](https://github.com/Meghnus/om10mi-mods/blob/46874155947715e0d54baabe2df5006376c8bbab/docs/GUIDE-56.md){ .btn .btn-ghost }
+[Look file spec (draft)](https://github.com/Meghnus/om10mi-mods/blob/46874155947715e0d54baabe2df5006376c8bbab/docs/lookfile/LOOKFILE_SPEC.md){ .btn .btn-ghost }
 
 </div>
 
-**Type:** mod · **Latest release:** [v56](https://github.com/Meghnus/om10mi-mods/releases/tag/v56), 10 Nov 2026 · **Maintained by** [Meghnus](https://github.com/Meghnus)
+**Type:** mod · **Latest release:** [v87](https://github.com/Meghnus/om10mi-mods/releases/tag/v87), 21 Nov 2026 · **Maintained by** [Meghnus](https://github.com/Meghnus)
 { .facts }
 
 ## About
 
-om10mi-mods adds firmware features to the Olympus OM-D E-M10 Mark I (E113) on firmware 1.4. Version 56 has 18 film looks, each with its own colour matrix and tone curve, a per-sector Hue, Saturation and Lightness editor for 12 colours, a per-look colour editor, looks in RAW Data Edit Custom1 and Custom2, and a video recording limit raised from 29:59 to 59:50.
+om10mi-mods adds firmware features to the Olympus OM-D E-M10 Mark I (E113) on firmware 1.4. Version 87 has 18 film looks, each with its own colour matrix, tone curve and icon, a PEN-F-style colour wheel in Color Creator, a per-sector Hue, Saturation and Lightness editor for 12 colours, a per-look colour editor, looks in RAW Data Edit Custom1 and Custom2, and a video recording limit raised from 29:59 to 59:50.
 
 The repository holds no firmware. A builder downloads the official 1.4 file from OM Digital Solutions after the user accepts its licence, applies a list of edits, and refuses to write anything unless the result matches the published SHA-1. It also writes a copy of the stock file for going back through the card update.
 
-The look data is numbers fitted to Fujifilm film-simulation, spektrafilm, HaldCLUT and Spectral Film LUT references; no LUT files are shipped. Caduceus for the E-P7 is credited as the design reference for the look editor. Everything was made and tested on the author's one camera body.
+The look data is numbers fitted to Fujifilm film-simulation, spektrafilm, HaldCLUT and Spectral Film LUT references; no LUT files are shipped. Caduceus for the E-P7 is credited as the design reference for the look editor and the colour-wheel idea, and the oly_fw_analysis notes for the image-processing map. Everything was made and tested on the author's one camera body.
+
+DEVELOPMENT.md describes how changes are checked before a camera trial: a byte comparison against the last passing image, censuses of references and runtime-written memory, emulation of the camera's own key and paint routes with negative controls, deliberately broken images, and two independent audits. The emulator and harness are to be published later.
 
 ### What it's working towards
 
-- A colour wheel on the Color Creator screen, like the PEN-F's; working on the owner's camera in internal test builds 57 to 78, not released.
-- Importing a LUT or .cube file into a chosen look slot as an approximate look, after the colour wheel.
-- Own icons for the four newest looks, which borrow existing icons.
+- Importing a LUT, .cube or .xmp file into a chosen look slot as an approximate look (colour matrix, tone curve and per-sector colour), previewed on the PC first.
+- Publishing the generic firmware tools (splitter, decoder, MN10300 emulator, census, byte oracle), with the GPL disassembler kept separate.
 
 > **Before you install:** Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
 
@@ -44,7 +47,7 @@ As the project describes them. Status is the project's own; linked evidence is t
 **Film looks** <span class="pill pill-released">Available</span>
 { .feature-head }
 
-18 looks in Picture Mode, the SCP menu, Live View and RAW Data Edit, including Portra 400, Kodachrome 64, Ektar 100 and Gold 200; Contrast, Sharpness, Highlight, Shadow and Gradation act on them.
+18 looks in Picture Mode, the SCP menu, Live View and RAW Data Edit, including Portra 400, Kodachrome 64, Ektar 100 and Gold 200, each with its own icon since 87; Contrast, Sharpness, Highlight, Shadow and Gradation act on them.
 
 [OM-D E-M10 (Mark I)](../cameras/em10.md) · since v56
 { .card-meta }
@@ -89,12 +92,12 @@ Recording limit raised from 29:59 to 59:50; one file is still capped at 4 GB, so
 
 <div class="feature-card" markdown="1">
 
-**Colour wheel** <span class="pill pill-testing">Testing</span>
+**Colour wheel** <span class="pill pill-released">Available</span>
 { .feature-head }
 
-Pick one or more sectors with the dial on the Color Creator screen and adjust them with a live preview; saved per Custom bank.
+PEN-F-style wheel in Color Creator at the ART dial; mark one or more of 12 sectors and set Hue, Saturation and Lightness from -7 to +7 with a live preview that matches the JPEG; kept after power-off. The ART dial no longer reaches the stock art filters.
 
-[OM-D E-M10 (Mark I)](../cameras/em10.md)
+[OM-D E-M10 (Mark I)](../cameras/em10.md) · since v87 · [Evidence](../capabilities/em10-v87-colour-wheel.md)
 { .card-meta }
 
 </div>
@@ -104,7 +107,7 @@ Pick one or more sectors with the dial on the Color Creator screen and adjust th
 **LUT import** <span class="pill pill-planned">Planned</span>
 { .feature-head }
 
-A PC tool fits a .cube file to a look slot as an approximate colour matrix and tone curve.
+A PC tool fits a LUT, .cube or .xmp file to a look slot as an approximate colour matrix, tone curve and per-sector colour.
 
 [OM-D E-M10 (Mark I)](../cameras/em10.md)
 { .card-meta }
@@ -114,6 +117,21 @@ A PC tool fits a .cube file to a look slot as an approximate colour matrix and t
 </div>
 
 ## Releases
+
+<div class="release-item" markdown="1">
+
+**[Version 87: colour wheel + own look icons](https://github.com/Meghnus/om10mi-mods/releases/tag/v87)** · 21 Nov 2026
+{ .release-head }
+
+- Colour wheel in Color Creator at the ART dial, with an on-screen key hint and a COLOR WHEEL mode guide.
+- Own icons for Portra 400, Kodachrome 64, Ektar 100 and Gold 200.
+- Contrast/Gradation code on looks made safe when two images are processed at once (related to issue 4).
+- Pop-up message frames use the correct graphic again; the builder makes version 87 only.
+
+Unofficial, for the E-M10 Mark I on firmware 1.4 only; tested on one body. No warranty; installing custom firmware is risky. The ART dial no longer reaches the stock art filters.
+{ .release-warning }
+
+</div>
 
 <div class="release-item" markdown="1">
 
@@ -135,21 +153,21 @@ Unofficial, for the E-M10 Mark I on firmware 1.4 only; tested on one body. Do no
 
 ## Related work
 
-[Caduceus for E-P7](caduceus-ep7.md). These links do not assign ownership or imply identical implementations.
+[Caduceus for E-P7](caduceus-ep7.md), [Olympus firmware research](oly-fw-analysis.md). These links do not assign ownership or imply identical implementations.
 
 ## Research notes
 
-The owner reports version 56 field-tested on one E-M10 Mark I with firmware 1.4 and released it as v56. Recording past 30 minutes is not yet confirmed. Two open user reports (a freeze and reboot with filters, and a RAW white-balance shift in Lightroom) name no body or build and have no reply yet.
+The owner released version 87 on 2026-11-21, adding a colour wheel, and reports it tested in a PC emulator, independently reviewed and field-tested on one E-M10 Mark I with firmware 1.4. Recording past 30 minutes is not yet confirmed. Two open user reports name no body or build; the maintainer has replied to both, calling the Lightroom white-balance offset stock behaviour and hardening the code suspected in the freeze.
 
-- [Intermittent freeze and reboot with filters enabled; body, build and filter not stated](https://github.com/Meghnus/om10mi-mods/issues/4) — needs evidence; owner: not assigned here.
-- [RAWs open about 300 K lower in Lightroom Classic than set in camera; not yet linked to the mod](https://github.com/Meghnus/om10mi-mods/issues/3) — needs evidence; owner: not assigned here.
+- [Intermittent freeze and reboot with filters enabled; body, build and filter not stated. The maintainer asked four questions and hardened the suspected Contrast/Gradation code in 87; untested by the reporter](https://github.com/Meghnus/om10mi-mods/issues/4) — needs evidence; owner: not assigned here.
+- [RAWs open about 300 K lower in Lightroom Classic than set in camera; the maintainer says this is stock behaviour and asked for a comparison on official firmware](https://github.com/Meghnus/om10mi-mods/issues/3) — needs evidence; owner: not assigned here.
 - [E-M10 Mark I export from the Caduceus Control Panel, using the draft look file](https://github.com/Meghnus/om10mi-mods/issues/2) — proposed; owner: not assigned here.
 
 ## Sources and record
 
 - [om10mi-mods overview](../sources/om10mi.readme.md)
 - [om10mi-mods install guide](../sources/om10mi.install.md)
-- [Version 56 guide and test list](../sources/om10mi.guide.md)
+- [Looks and colour editors guide and test list (since 56)](../sources/om10mi.guide.md)
 - [om10mi-mods changes](../sources/om10mi.changelog.md)
 - [om10mi-mods notice](../sources/om10mi.notice.md)
 - [om10mi look file, version 1 (draft)](../sources/om10mi.lookfile.md)
@@ -158,5 +176,7 @@ The owner reports version 56 field-tested on one E-M10 Mark I with firmware 1.4 
 - [Caduceus Control Panel export offer (issue 2)](../sources/om10mi.issue-2.md)
 - [RAW white balance in Lightroom Classic (issue 3)](../sources/om10mi.issue-3.md)
 - [Freezes and reboots with filters (issue 4)](../sources/om10mi.issue-4.md)
+- [om10mi-mods colour wheel guide](../sources/om10mi.color-wheel.md)
+- [om10mi-mods development and testing method](../sources/om10mi.development.md)
 
 [Canonical record](../../records/projects/om10mi-mods.yaml) · Substantively reviewed: 2026-11-21.

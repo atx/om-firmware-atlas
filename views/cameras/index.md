@@ -63,7 +63,7 @@ E148: v0.2.0-alpha1 has an overall positive owner report; original OM-5 work is 
 E139
 { .model-code }
 
-E139: one inactive mod builder for firmware 1.6; owner camera reports per mod, no Atlas evidence imported.
+E139: one mod builder for firmware 1.6; owner camera reports per mod, no Atlas evidence imported.
 
 1 project · 0 features catalogued · discovery only
 { .card-meta }
@@ -79,7 +79,7 @@ E113
 
 E113 (2014): one mod built for firmware 1.4 and field-tested on one owner body; distinct from the E-M10 Mark II and Mark IV.
 
-1 project · 1 feature catalogued
+1 project · 2 features catalogued
 { .card-meta }
 
 </div>

@@ -4,11 +4,11 @@
 
 Declarative patch scope, bounds and recorded hashes.
 
-**[Open original source](https://github.com/xulfr/caduceus-om5/blob/7c3bf521f4a92580a7cafa3fab82ad2003f10657/tools/oly_patch.py)**
+**[Open original source](https://github.com/xulfr/caduceus-om5/blob/1357ef68b73df6c3636795f5a21d353fb8774110/tools/oly_patch.py)**
 
 **Kind:** github file. **Locator:** tools/oly_patch.py.
 
-**Revision / release:** `7c3bf521f4a92580a7cafa3fab82ad2003f10657`. **Retrieved:** 2026-11-20. **Last source check:** 2026-11-20.
+**Revision / release:** `1357ef68b73df6c3636795f5a21d353fb8774110`. **Retrieved:** 2026-11-20. **Last source check:** 2026-11-21.
 
 **Publication:** public. Linked and synthesised; upstream material retains its own terms.
 

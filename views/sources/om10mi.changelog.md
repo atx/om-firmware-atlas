@@ -2,13 +2,13 @@
 
 # om10mi-mods changes
 
-Version 56 contents against 51, earlier milestones and the expected result SHA-1.
+Version 87 contents against 56, earlier milestones and the expected result SHA-1s for 87 and 56.
 
-**[Open original source](https://github.com/Meghnus/om10mi-mods/blob/f36772dc709ee630333ff576acc0ede02f87da19/CHANGELOG.md)**
+**[Open original source](https://github.com/Meghnus/om10mi-mods/blob/46874155947715e0d54baabe2df5006376c8bbab/CHANGELOG.md)**
 
 **Kind:** github file. **Locator:** CHANGELOG.md.
 
-**Revision / release:** `f36772dc709ee630333ff576acc0ede02f87da19`. **Retrieved:** 2026-11-21. **Last source check:** 2026-11-21.
+**Revision / release:** `46874155947715e0d54baabe2df5006376c8bbab`. **Retrieved:** 2026-11-21. **Last source check:** 2026-11-21.
 
 **Publication:** public. Linked and synthesised; upstream material retains its own terms.
 

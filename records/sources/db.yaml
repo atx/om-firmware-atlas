@@ -54,3 +54,20 @@ records:
   publication: public
   reuse_note: Attributed summary of the maintainer’s release notes.
   content_sha256: 0cb9357aa3b51c278caffb1a13ed11c0f14f08f167614846c1f2ea17ade17816
+- type: source
+  id: source.db.release043
+  title: db firmware v0.4.3 beta
+  summary: Hybrid Shutter in S/M as well as P/A across nine bodies, Quasi-LUT fixes, and a known issue that the OM-5 and OM-5 Mark II firmware does not work.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-21'
+  url: https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3
+  source_kind: github-release
+  upstream_repo: azqeurio/om-c-firmware
+  revision: dbv0.4.3
+  locator: GitHub release dbv0.4.3, English section of the notes
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
+  published_on: '2026-11-21'
+  publication: public
+  reuse_note: Attributed summary of the maintainer’s release notes.
