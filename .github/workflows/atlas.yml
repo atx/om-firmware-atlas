@@ -29,6 +29,12 @@ jobs:
       - run: python scripts/atlas.py check
       - run: python -m unittest discover -s tests -v
       - run: python scripts/atlas.py build
+      - name: Check owner journeys in Chromium
+        if: github.event_name == 'pull_request'
+        run: |
+          python -m pip install playwright==1.62.0
+          python -m playwright install --with-deps chromium
+          python tests/browser_smoke.py
       - name: Save site preview
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:

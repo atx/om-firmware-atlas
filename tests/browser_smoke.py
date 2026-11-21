@@ -1,0 +1,82 @@
+"""Exercise owner journeys against a built Atlas served over HTTP."""
+import argparse
+from functools import partial
+from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
+from pathlib import Path
+from threading import Thread
+
+from playwright.sync_api import expect, sync_playwright
+
+
+class SiteHandler(SimpleHTTPRequestHandler):
+    def log_message(self, *_):
+        pass
+
+
+def owner_journey(page, base, phone):
+    page.goto(base)
+    finder = page.get_by_label("Find your camera")
+    finder.fill("E148")
+    finder.press("Enter")
+    expect(page).to_have_url(base + "views/cameras/om5-ii/")
+
+    target = page.locator('.glance a[href$="caduceus-om5/#for-om5-ii"]')
+    destination = target.evaluate("a => a.href")
+    target.click()
+    expect(page).to_have_url(destination)
+    expect(page.locator(".model-panel:has(:target)")).to_contain_text("OM-5 Mark II")
+    page.go_back()
+
+    # Click the actual link with pointer hit testing. Do not fetch upstream.
+    guide = page.locator(".project-card").filter(has=page.get_by_role("link", name="Caduceus for OM-5", exact=True)).get_by_role("link", name="Install guide")
+    destination = guide.evaluate("a => a.href")
+    page.route(destination, lambda route: route.fulfill(content_type="text/plain", body="Install guide"))
+    guide.click()
+    expect(page).to_have_url(destination)
+    page.go_back()
+
+    page.keyboard.press("/")
+    search = page.get_by_role("searchbox", name="Search terms")
+    expect(search).to_be_focused()
+    search.press_sequentially("Caduceus")
+    results = page.locator(".search-results a")
+    # The search index is loaded by a worker. Wait for the first real result.
+    page.wait_for_function("""() => {
+        if (document.querySelector('.search-results a')) return true;
+        document.querySelector('#mkdocs-search-query').dispatchEvent(new KeyboardEvent('keyup'));
+        return false;
+    }""", polling=200)
+    destination = results.first.evaluate("a => a.href")
+    search.press("Enter")
+    expect(page).to_have_url(destination)
+
+    if phone:
+        menu = page.locator("[data-menu-toggle]")
+        menu.focus()
+        page.keyboard.press("Enter")
+        expect(page.locator("#primary-nav a").first).to_be_focused()
+        page.keyboard.press("Escape")
+        expect(menu).to_be_focused()
+        expect(menu).to_have_attribute("aria-expanded", "false")
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--executable", help="Optional path to an existing Chromium binary")
+    parser.add_argument("--browser-arg", action="append", default=[])
+    args = parser.parse_args()
+    site = Path(__file__).resolve().parents[1] / "site"
+    if not (site / "index.html").exists():
+        parser.error("Build the Atlas before running the browser checks.")
+    with ThreadingHTTPServer(("127.0.0.1", 0), partial(SiteHandler, directory=site)) as server:
+        Thread(target=server.serve_forever, daemon=True).start()
+        try:
+            with sync_playwright() as playwright:
+                browser = playwright.chromium.launch(executable_path=args.executable, args=args.browser_arg)
+                for width, height in ((1440, 900), (390, 844)):
+                    page = browser.new_page(viewport={"width": width, "height": height})
+                    owner_journey(page, f"http://127.0.0.1:{server.server_port}/", width == 390)
+                    print(f"Owner journey passed at {width} x {height}")
+                browser.close()
+        finally:
+            server.shutdown()

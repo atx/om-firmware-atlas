@@ -30,3 +30,6 @@ The initial setup was explicitly authorised to push to main. Normal agent contri
 Routing cases verify deterministic selection, order, excluded bulk reads and estimated cost. They do not prove that every external coding agent obeys the instructions. Perform representative client smoke checks when changing the entry contract. Site builds validate links/structure, not the truth of free prose. Inspect rendered pages when changing content/layout and attach preview evidence to a PR.
 
 Freshness reports distinguish unchanged, changed, unavailable and unsupported comparison. They do not mutate review dates. Keep reports in CI artifacts or `.build/`, not as edited historical logs. Substantive changes still need an agent/human review and a PR.
+
+
+On pull requests, Atlas validation also opens the built site in Chromium at desktop and phone widths. To run the same journeys locally, build the site, install the optional test dependency with `python -m pip install playwright==1.62.0`, run `python -m playwright install chromium`, then `python tests/browser_smoke.py`. The install-guide click is intercepted locally.
