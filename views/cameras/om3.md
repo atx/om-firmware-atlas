@@ -257,6 +257,12 @@ Switches to the electronic shutter on overexposure in P or A mode and, since v0.
 
 ## Projects for this camera
 
+Each card says what the project has for this camera and where to get it. A project can be listed here for a small part of its work; its own page covers the rest.
+
+### Mods and ports
+
+These change the camera's firmware.
+
 <div class="project-grid" markdown="1">
 
 <div class="project-card" markdown="1">
@@ -265,7 +271,13 @@ Switches to the electronic shutter on overexposure in P or A mode and, since v0.
 
 Film looks and a full colour editor, built into the OM SYSTEM OM-3.
 
-Latest: v0.40.2, 20 Nov 2026
+**For this camera:** 18 features, including Your films in Picture Mode, 20 film simulations and Colour editor on the camera; all are listed above.
+{ .card-for }
+
+**Get it:** [v0.40.2](https://github.com/androidfanman/caduceus-om3/releases/tag/v0.40.2), 20 Nov 2026 · [Install guide](https://androidfanman.github.io/caduceus-om3/pages/install/)
+{ .card-get }
+
+Mod
 { .card-meta }
 
 [Project home](https://github.com/androidfanman/caduceus-om3) · [Ask or report issues](https://github.com/androidfanman/caduceus-om3/issues)
@@ -279,7 +291,13 @@ Latest: v0.40.2, 20 Nov 2026
 
 Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to new burst rates.
 
-Latest: dbv0.4.3, 21 Nov 2026
+**For this camera:** Listed for this camera: Korean menus (beta), Hybrid Shutter (beta).
+{ .card-for }
+
+**Get it:** [dbv0.4.3](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3), 21 Nov 2026
+{ .card-get }
+
+Mod
 { .card-meta }
 
 [Project home](https://github.com/azqeurio/om-c-firmware) · [Ask or report issues](https://github.com/azqeurio/om-c-firmware/issues)
@@ -289,11 +307,47 @@ Latest: dbv0.4.3, 21 Nov 2026
 
 <div class="project-card" markdown="1">
 
+[OM-3 downstream experiments](../projects/camera-stuff.md){ .card-title }
+
+A downstream OM-3 fork for trying fixes before sending them upstream.
+
+**For this camera:** Nothing to install from here. It is a fork where fixes are tried on an OM-3 before being offered to Caduceus for OM-3; use that project's releases.
+{ .card-for }
+
+**Get it:** No release for this camera yet.
+{ .card-get }
+
+Experimental fork
+{ .card-meta }
+
+[Project home](https://github.com/fernandezk26/camera-stuff) · [Ask or report issues](https://github.com/fernandezk26/camera-stuff/issues)
+{ .card-links }
+
+</div>
+
+</div>
+
+Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
+
+### Research, tools and references
+
+These do not change the camera. They help people study firmware, build or check mods, or install official updates.
+
+<div class="project-grid" markdown="1">
+
+<div class="project-card" markdown="1">
+
 [Olympus firmware research](../projects/oly-fw-analysis.md){ .card-title }
 
 The research base: PEN-F HSL, firmware formats and tools for many bodies.
 
-Latest: alpha-20261017, 18 Oct 2026
+**For this camera:** Research notes only: the findings compare this camera's firmware with the PEN-F, and some OM-3 technical-reference entries cite them. No patch for this camera.
+{ .card-for }
+
+**Get it:** [Project home](https://github.com/fishcu/oly_fw_analysis)
+{ .card-get }
+
+Research
 { .card-meta }
 
 [Project home](https://github.com/fishcu/oly_fw_analysis) · [Ask or report issues](https://github.com/fishcu/oly_fw_analysis/issues)
@@ -307,6 +361,12 @@ Latest: alpha-20261017, 18 Oct 2026
 
 Run OM SYSTEM and Olympus camera firmware in your browser.
 
+**For this camera:** An emulator; it does not change the camera. Covers this camera for: Browser player (released), Caduceus release checks (released), Native card file system (released).
+{ .card-for }
+
+**Get it:** [Try it in your browser](https://flatpanda.github.io/om-emu/)
+{ .card-get }
+
 Emulator
 { .card-meta }
 
@@ -317,23 +377,15 @@ Emulator
 
 <div class="project-card" markdown="1">
 
-[OM-3 downstream experiments](../projects/camera-stuff.md){ .card-title }
-
-A downstream OM-3 fork for trying fixes before sending them upstream.
-
-Experimental fork
-{ .card-meta }
-
-[Project home](https://github.com/fernandezk26/camera-stuff) · [Ask or report issues](https://github.com/fernandezk26/camera-stuff/issues)
-{ .card-links }
-
-</div>
-
-<div class="project-card" markdown="1">
-
 [Historical manual update research](../projects/manual-update.md){ .card-title }
 
 How to install official OM SYSTEM firmware from an SD card.
+
+**For this camera:** A reference guide; it does not change the camera. Covers this camera for: SD card firmware update (released).
+{ .card-for }
+
+**Get it:** [Project home](https://github.com/iKenndac/om-1-manual-firmware-install)
+{ .card-get }
 
 Reference
 { .card-meta }
@@ -344,8 +396,6 @@ Reference
 </div>
 
 </div>
-
-Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
 
 ## Claims and test evidence
 

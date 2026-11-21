@@ -30,6 +30,9 @@ records:
   - project.oly-fw-analysis
   - project.om-emu
   tagline: How the E-M5 Mark III firmware works, and bringing OM-5 features to it.
+  camera_notes:
+  - camera_id: camera.em5-iii
+    note: "Notes and tools only; no builds are published. The author's own test builds on one E-M5 III cover focus stacking with any lens, Live ND and its live-view preview ported from the OM-5, a Color / Monochrome Profile editor, and a parked USB webcam."
   description:
   - 'A study of the Olympus OM-D E-M5 Mark III firmware 1.7: container format, boot and section loading, recovery,
     the MN103 CPU, memory map, image engine, ARM co-processor, display, stabiliser, shooting sequencer, settings and

@@ -9,6 +9,12 @@ E140: port/signature research and emulator coverage; no physical feature report 
 
 ## Projects for this camera
 
+Each card says what the project has for this camera and where to get it. A project can be listed here for a small part of its work; its own page covers the rest.
+
+### Mods and ports
+
+These change the camera's firmware.
+
 <div class="project-grid" markdown="1">
 
 <div class="project-card" markdown="1">
@@ -17,7 +23,13 @@ E140: port/signature research and emulator coverage; no physical feature report 
 
 The original Caduceus: HSLFX colour editing and 29 film looks for the PEN E-P7.
 
-Latest: v0.34a, 15 Nov 2026
+**For this camera:** No build for this camera. Caduceus's body survey includes the E-M10 IV in its firmware-signature comparisons for possible ports; nothing has been ported.
+{ .card-for }
+
+**Get it:** No release for this camera yet.
+{ .card-get }
+
+Mod
 { .card-meta }
 
 [Project home](https://github.com/cakelesscoder/caduceus-ep7) · [Ask or report issues](https://github.com/cakelesscoder/caduceus-ep7/issues)
@@ -25,11 +37,27 @@ Latest: v0.34a, 15 Nov 2026
 
 </div>
 
+</div>
+
+Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
+
+### Research, tools and references
+
+These do not change the camera. They help people study firmware, build or check mods, or install official updates.
+
+<div class="project-grid" markdown="1">
+
 <div class="project-card" markdown="1">
 
 [OM-Emu](../projects/om-emu.md){ .card-title }
 
 Run OM SYSTEM and Olympus camera firmware in your browser.
+
+**For this camera:** An emulator; it does not change the camera. Covers this camera for: Browser player (released), Native card file system (released).
+{ .card-for }
+
+**Get it:** [Try it in your browser](https://flatpanda.github.io/om-emu/)
+{ .card-get }
 
 Emulator
 { .card-meta }
@@ -40,8 +68,6 @@ Emulator
 </div>
 
 </div>
-
-Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
 
 ## Claims and test evidence
 

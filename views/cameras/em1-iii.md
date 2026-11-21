@@ -245,6 +245,12 @@ The Shooting Menu 1 title shows your own text, up to 36 characters. Worked on th
 
 ## Projects for this camera
 
+Each card says what the project has for this camera and where to get it. A project can be listed here for a small part of its work; its own page covers the rest.
+
+### Mods and ports
+
+These change the camera's firmware.
+
 <div class="project-grid" markdown="1">
 
 <div class="project-card" markdown="1">
@@ -253,7 +259,13 @@ The Shooting Menu 1 title shows your own text, up to 36 characters. Worked on th
 
 Pick firmware mods for the E-M1 Mark III and build your own update file.
 
-Latest: mod-builder-1.18, 21 Nov 2026
+**For this camera:** 19 features, including Panorama 65:24, Multiple Exposure with 3 and 4 frames and Focus stacking with any lens; all are listed above.
+{ .card-for }
+
+**Get it:** [mod-builder-1.18](https://github.com/dfeldt91-blip/E-M1-Miii/releases/tag/mod-builder-1.18), 21 Nov 2026 · [Builder guide](https://github.com/dfeldt91-blip/E-M1-Miii/blob/ae16f3d2836e7273164c7cd3497237117c8b9ff9/builder/README.md)
+{ .card-get }
+
+Mod
 { .card-meta }
 
 [Project home](https://github.com/dfeldt91-blip/E-M1-Miii) · [Ask or report issues](https://github.com/dfeldt91-blip/E-M1-Miii)

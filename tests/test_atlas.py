@@ -188,6 +188,19 @@ class AtlasTests(unittest.TestCase):
         self.assertIn("v9.9", update_queue(report))
         self.assertEqual(before, self.catalogue.records)
 
+    def test_camera_page_says_what_each_project_has_for_it(self):
+        output = render(self.catalogue)["views/cameras/om5.md"]
+        mods, others = output.index("### Mods and ports"), output.index("### Research, tools and references")
+        self.assertLess(mods, others)
+        note = next(n["note"] for n in self.catalogue.records["project.caduceus-om5"]["camera_notes"] if n["camera_id"] == "camera.om5")
+        self.assertIn(f"**For this camera:** {note}", output)
+        self.assertGreater(output.index("[Ghidra MN103"), others)
+        self.assertNotIn("Latest: v0.2.0-alpha1", output)
+
+    def test_camera_note_must_name_a_catalogued_camera(self):
+        self.catalogue.records["project.caduceus-om3"]["camera_notes"] = [{"camera_id": "camera.pen-f", "note": "x"}]
+        self.assertTrue(any("camera note for camera.pen-f" in e for e in self.catalogue.validate()))
+
     def test_showcase_feature_cannot_claim_uncatalogued_camera(self):
         self.catalogue.records["project.caduceus-om3"]["features"][0]["camera_ids"] = ["camera.pen-f"]
         self.assertTrue(any("not in the project's camera_ids" in e for e in self.catalogue.validate()))

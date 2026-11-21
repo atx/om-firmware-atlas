@@ -32,6 +32,9 @@ records:
     url: https://github.com/cakelesscoder/caduceus-ep7/issues/21
     owner: null
   tagline: 'The original Caduceus: HSLFX colour editing and 29 film looks for the PEN E-P7.'
+  camera_notes:
+  - camera_id: camera.em10-iv
+    note: "No build for this camera. Caduceus's body survey includes the E-M10 IV in its firmware-signature comparisons for possible ports; nothing has been ported."
   description:
   - 'Caduceus is where the family started: open-source firmware patches for the Olympus PEN E-P7 on firmware
     1.1. Its heart is HSLFX, which gives every Colour Profile hue, saturation and lightness per colour,

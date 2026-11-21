@@ -7,7 +7,33 @@ E122: foundational HSL research; exact internal build identity matters.
 **Model code:** E122 · **Also known as:** PEN-F, PENF · **Catalogue depth:** initial review
 { .facts }
 
+## What you can do with this camera
+
+Features as each project describes them, with their status. Follow a project's own guide before installing anything.
+
+<div class="feature-grid" markdown="1">
+
+<div class="feature-card" markdown="1">
+
+**PEN-F HSL** <span class="pill pill-alpha">Alpha</span>
+{ .feature-head }
+
+Hue and lightness added to the 12-colour saturation editor in COLOR1–3, from −7 to +7 since the 17 October alpha.
+
+[Olympus firmware research](../projects/oly-fw-analysis.md)
+{ .card-meta }
+
+</div>
+
+</div>
+
 ## Projects for this camera
+
+Each card says what the project has for this camera and where to get it. A project can be listed here for a small part of its work; its own page covers the rest.
+
+### Mods and ports
+
+These change the camera's firmware.
 
 <div class="project-grid" markdown="1">
 
@@ -17,7 +43,13 @@ E122: foundational HSL research; exact internal build identity matters.
 
 The research base: PEN-F HSL, firmware formats and tools for many bodies.
 
-Latest: alpha-20261017, 18 Oct 2026
+**For this camera:** Publishes the PEN-F HSL patch as alpha releases: hue and lightness added to the 12-colour saturation editor in COLOR1–3. The project asks for a firsthand hardware report before publishing a flashable patch.
+{ .card-for }
+
+**Get it:** [alpha-20261017 (pre-release)](https://github.com/fishcu/oly_fw_analysis/releases/tag/alpha-20261017), 18 Oct 2026
+{ .card-get }
+
+Research
 { .card-meta }
 
 [Project home](https://github.com/fishcu/oly_fw_analysis) · [Ask or report issues](https://github.com/fishcu/oly_fw_analysis/issues)
@@ -31,7 +63,13 @@ Latest: alpha-20261017, 18 Oct 2026
 
 Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to new burst rates.
 
-Latest: dbv0.4.3, 21 Nov 2026
+**For this camera:** No PEN-F feature is catalogued. Release v0.3.2 lists the PEN-F, but its notes do not say what it adds for this camera.
+{ .card-for }
+
+**Get it:** [dbv0.3.2](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.3.2), 31 Oct 2026
+{ .card-get }
+
+Mod
 { .card-meta }
 
 [Project home](https://github.com/azqeurio/om-c-firmware) · [Ask or report issues](https://github.com/azqeurio/om-c-firmware/issues)
@@ -39,11 +77,27 @@ Latest: dbv0.4.3, 21 Nov 2026
 
 </div>
 
+</div>
+
+Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
+
+### Research, tools and references
+
+These do not change the camera. They help people study firmware, build or check mods, or install official updates.
+
+<div class="project-grid" markdown="1">
+
 <div class="project-card" markdown="1">
 
 [OM-Emu](../projects/om-emu.md){ .card-title }
 
 Run OM SYSTEM and Olympus camera firmware in your browser.
+
+**For this camera:** An emulator; it does not change the camera. Covers this camera for: Browser player (released), Native card file system (released).
+{ .card-for }
+
+**Get it:** [Try it in your browser](https://flatpanda.github.io/om-emu/)
+{ .card-get }
 
 Emulator
 { .card-meta }
@@ -59,6 +113,12 @@ Emulator
 
 Read MN103 camera firmware in Ghidra, with the decompiler.
 
+**For this camera:** A tool; it does not change the camera. Covers this camera for: MN103 disassembly and decompiler (released), Pointer-register calling convention (released).
+{ .card-for }
+
+**Get it:** [Install and use](https://github.com/nsud-dev/ghidra-mn103/blob/main/README.md)
+{ .card-get }
+
 Tool
 { .card-meta }
 
@@ -68,8 +128,6 @@ Tool
 </div>
 
 </div>
-
-Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
 
 ## Claims and test evidence
 

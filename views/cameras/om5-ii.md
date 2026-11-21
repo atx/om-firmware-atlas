@@ -209,6 +209,12 @@ ISP player, ISP fitter (.cube look to preset) and ISP neurofit (preset from RAW 
 
 ## Projects for this camera
 
+Each card says what the project has for this camera and where to get it. A project can be listed here for a small part of its work; its own page covers the rest.
+
+### Mods and ports
+
+These change the camera's firmware.
+
 <div class="project-grid" markdown="1">
 
 <div class="project-card" markdown="1">
@@ -217,10 +223,36 @@ ISP player, ISP fitter (.cube look to preset) and ISP neurofit (preset from RAW 
 
 Looks and a full colour editor for the OM-5 Mark II. Experimental.
 
-Latest: v0.2.0-alpha1, 20 Nov 2026
+**For this camera:** 9 features, including Color Profiles 1–3 and Monochrome Profiles 1–3, Custom looks and Colour editor; all are listed above.
+{ .card-for }
+
+**Get it:** [v0.2.0-alpha1 (pre-release)](https://github.com/xulfr/caduceus-om5/releases/tag/v0.2.0-alpha1), 20 Nov 2026 · [Install guide](https://github.com/xulfr/caduceus-om5/blob/main/docs/INSTALL.md)
+{ .card-get }
+
+Mod
 { .card-meta }
 
 [Project home](https://github.com/xulfr/caduceus-om5) · [Ask or report issues](https://github.com/xulfr/caduceus-om5/issues)
+{ .card-links }
+
+</div>
+
+<div class="project-card" markdown="1">
+
+[OMKit](../projects/omkit.md){ .card-title }
+
+A loader flashed once, then core, modules and settings from the SD card. OM-5 Mark II.
+
+**For this camera:** 5 features, including Card-loaded core and modules, Creative profiles (CREATPRF) and Film look (FILMLOOK); all are listed above.
+{ .card-for }
+
+**Get it:** [v0.1.0](https://github.com/necrostaz/omkit/releases/tag/v0.1.0), 20 Nov 2026 · [Install guide](https://github.com/necrostaz/omkit/blob/a29db07f4cab2f9f9688462975ffa510b4d6fd97/docs/platform/om5m2/fw1100/install.md)
+{ .card-get }
+
+Mod
+{ .card-meta }
+
+[Project home](https://github.com/necrostaz/omkit) · [Ask or report issues](https://github.com/necrostaz/omkit/issues)
 { .card-links }
 
 </div>
@@ -231,7 +263,13 @@ Latest: v0.2.0-alpha1, 20 Nov 2026
 
 Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to new burst rates.
 
-Latest: dbv0.4.3, 21 Nov 2026
+**For this camera:** Korean menus and Hybrid Shutter, both beta. The v0.4.3 notes list the OM-5 Mark II build as not working, so read each release's notes for this camera before installing.
+{ .card-for }
+
+**Get it:** [dbv0.4.3](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3), 21 Nov 2026
+{ .card-get }
+
+Mod
 { .card-meta }
 
 [Project home](https://github.com/azqeurio/om-c-firmware) · [Ask or report issues](https://github.com/azqeurio/om-c-firmware/issues)
@@ -239,11 +277,27 @@ Latest: dbv0.4.3, 21 Nov 2026
 
 </div>
 
+</div>
+
+Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
+
+### Research, tools and references
+
+These do not change the camera. They help people study firmware, build or check mods, or install official updates.
+
+<div class="project-grid" markdown="1">
+
 <div class="project-card" markdown="1">
 
 [OM-Emu](../projects/om-emu.md){ .card-title }
 
 Run OM SYSTEM and Olympus camera firmware in your browser.
+
+**For this camera:** An emulator; it does not change the camera. Covers this camera for: Browser player (released), Native card file system (released).
+{ .card-for }
+
+**Get it:** [Try it in your browser](https://flatpanda.github.io/om-emu/)
+{ .card-get }
 
 Emulator
 { .card-meta }
@@ -259,6 +313,12 @@ Emulator
 
 Read MN103 camera firmware in Ghidra, with the decompiler.
 
+**For this camera:** A tool; it does not change the camera. Covers this camera for: MN103 disassembly and decompiler (released), Pointer-register calling convention (released).
+{ .card-for }
+
+**Get it:** [Install and use](https://github.com/nsud-dev/ghidra-mn103/blob/main/README.md)
+{ .card-get }
+
 Tool
 { .card-meta }
 
@@ -267,23 +327,7 @@ Tool
 
 </div>
 
-<div class="project-card" markdown="1">
-
-[OMKit](../projects/omkit.md){ .card-title }
-
-A loader flashed once, then core, modules and settings from the SD card. OM-5 Mark II.
-
-Latest: v0.1.0, 20 Nov 2026
-{ .card-meta }
-
-[Project home](https://github.com/necrostaz/omkit) · [Ask or report issues](https://github.com/necrostaz/omkit/issues)
-{ .card-links }
-
 </div>
-
-</div>
-
-Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
 
 ## Claims and test evidence
 

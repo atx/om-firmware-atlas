@@ -28,6 +28,15 @@ records:
   related_projects:
   - project.om-emu
   tagline: 'The research base: PEN-F HSL, firmware formats and tools for many bodies.'
+  camera_notes:
+  - camera_id: camera.pen-f
+    note: "Publishes the PEN-F HSL patch as alpha releases: hue and lightness added to the 12-colour saturation editor in COLOR1–3. The project asks for a firsthand hardware report before publishing a flashable patch."
+  - camera_id: camera.om5
+    note: "Research notes only: the findings compare this camera's firmware with the PEN-F. No patch for this camera."
+  - camera_id: camera.ep7
+    note: "Research notes only: the findings compare this camera's firmware with the PEN-F. No patch for this camera."
+  - camera_id: camera.om3
+    note: "Research notes only: the findings compare this camera's firmware with the PEN-F, and some OM-3 technical-reference entries cite them. No patch for this camera."
   description:
   - 'fishcu''s Olympus firmware research is a shared notebook and toolkit for studying and modifying Olympus
     and OM SYSTEM firmware: update files, start-up, settings, image processing and camera interfaces.

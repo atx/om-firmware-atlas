@@ -29,6 +29,9 @@ records:
   - project.om-emu
   - project.oly-fw-analysis
   tagline: Groundwork for bringing Caduceus to the original OM-5. Not released.
+  camera_notes:
+  - camera_id: camera.om5
+    note: "Not released: an experimental branch offered to Caduceus for OM-5 as a pull request. Its test steps C1 to C5 passed on the owner's OM-5; the COLOR 1–3 back end runs in an emulator only, with no Picture Mode entry yet."
   description:
   - tadejs's fork of Caduceus for E-P7 carries a port to the original OM-5 (2022, firmware 1.2). It is a separate
     project from Caduceus for OM-5, which targets the Mark II and has no working build for the original body. The

@@ -8,7 +8,7 @@ Foundational firmware work with deep PEN-F coverage.
 
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
-| [oly-fw-analysis.yaml](../../../records/projects/oly-fw-analysis.yaml) | Project scope, related work and contribution destination | 3,643 | ~911 |
+| [oly-fw-analysis.yaml](../../../records/projects/oly-fw-analysis.yaml) | Project scope, related work and contribution destination | 4,396 | ~1,099 |
 | [fishcu.yaml](../../../records/sources/fishcu.yaml) | Find the relevant source/observation ID; use bounded reads | 6,505 | ~1,627 |
 | [em5-iii-notes.yaml](../../../records/evidence/em5-iii-notes.yaml) | Find the relevant source/observation ID; use bounded reads | 7,246 | ~1,812 |
 
