@@ -148,6 +148,8 @@ Unofficial and for the E-PM2 only; installing is at your own risk.
 
 [Olympus PEN E-PM2](../cameras/epm2.md).
 
+[Report a camera result](../../docs/report.md) with the exact model, starting firmware, build, file hash if known, steps and outcome.
+
 ## Related work
 
 [OM-Emu](om-emu.md), [Caduceus for E-P7](caduceus-ep7.md). These links do not assign ownership or imply identical implementations.

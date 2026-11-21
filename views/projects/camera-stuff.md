@@ -28,6 +28,8 @@ Caduceus for OM-3 credits this fork for its fix for bad bytes in EDITS.BIN, and 
 
 [OM SYSTEM OM-3](../cameras/om3.md).
 
+[Report a camera result](../../docs/report.md) with the exact model, starting firmware, build, file hash if known, steps and outcome.
+
 ## Related work
 
 [Caduceus for OM-3](caduceus-om3.md). These links do not assign ownership or imply identical implementations.

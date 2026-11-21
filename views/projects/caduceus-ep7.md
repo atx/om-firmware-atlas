@@ -390,6 +390,8 @@ Beta. The author warns that flashing modified firmware can crash or brick the ca
 
 [Caduceus Discord](../community/caduceus-discord.md), [r/M43](../community/m43.md). For a reproducible bug, use the project's issue tracker.
 
+[Report a camera result](../../docs/report.md) with the exact model, starting firmware, build, file hash if known, steps and outcome.
+
 ## Related work
 
 [Caduceus for OM-3](caduceus-om3.md), [Olympus firmware research](oly-fw-analysis.md). These links do not assign ownership or imply identical implementations.

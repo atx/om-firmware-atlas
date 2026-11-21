@@ -537,6 +537,8 @@ After updating, assign your custom modes once.
 
 [Caduceus Discord](../community/caduceus-discord.md), [r/M43](../community/m43.md). For a reproducible bug, use the project's issue tracker.
 
+[Report a camera result](../../docs/report.md) with the exact model, starting firmware, build, file hash if known, steps and outcome.
+
 ## Related work
 
 [Caduceus for E-P7](caduceus-ep7.md), [OM-Emu](om-emu.md). These links do not assign ownership or imply identical implementations.

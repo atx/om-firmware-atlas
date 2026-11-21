@@ -82,6 +82,8 @@ Panel table analysed; paused because the owner sees no pink cast on the OM-5 scr
 
 [OM SYSTEM OM-5](../cameras/om5.md).
 
+[Report a camera result](../../docs/report.md) with the exact model, starting firmware, build, file hash if known, steps and outcome.
+
 ## Related work
 
 [Caduceus for E-P7](caduceus-ep7.md), [Caduceus for OM-5](caduceus-om5.md), [Caduceus for OM-3](caduceus-om3.md), [OM-Emu](om-emu.md), [Olympus firmware research](oly-fw-analysis.md). These links do not assign ownership or imply identical implementations.

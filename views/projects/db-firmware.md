@@ -206,6 +206,8 @@ Two added features reset the camera's settings; save your menus first.
 
 [OM SYSTEM OM-5](../cameras/om5.md), [OM SYSTEM OM-5 Mark II](../cameras/om5-ii.md), [OM SYSTEM OM-3](../cameras/om3.md), [Olympus PEN E-P7](../cameras/ep7.md), [Olympus PEN-F](../cameras/pen-f.md).
 
+[Report a camera result](../../docs/report.md) with the exact model, starting firmware, build, file hash if known, steps and outcome.
+
 ## Related work
 
 None catalogued. These links do not assign ownership or imply identical implementations.

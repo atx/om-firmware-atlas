@@ -124,6 +124,8 @@ Unofficial; only for the OM-5 Mark II on firmware 1.1. Never interrupt the firmw
 
 [OM SYSTEM OM-5 Mark II](../cameras/om5-ii.md).
 
+[Report a camera result](../../docs/report.md) with the exact model, starting firmware, build, file hash if known, steps and outcome.
+
 ## Related work
 
 [Caduceus for OM-5](caduceus-om5.md). These links do not assign ownership or imply identical implementations.

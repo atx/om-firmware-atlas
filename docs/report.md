@@ -11,7 +11,7 @@ You can also post in the project's own issue tracker; a contributor can then cit
 - **Camera:** the exact model and generation, for example OM-5 Mark II rather than OM-5.
 - **Stock firmware:** the version you started from.
 - **Modification:** the project, and the exact build or version.
-- **Package identity:** the file's SHA-256 hash, if you recorded it. Write "unknown" if not; a hash published by the project is not the same as one you checked yourself.
+- **Package identity:** the file's SHA-256 hash (a fingerprint of its contents), if you checked the file on your card. Write "unknown" if not; a hash published by the project is not the same as one you checked yourself.
 - **Test date:** when you tested, or "unknown". The date you post is recorded separately.
 - **What you did and what happened:** include failures, odd behaviour and anything you did not check.
 - **Recovery:** if something went wrong and you restored the camera, describe the state and what you did. One recovery doesn't prove every failure is recoverable.

@@ -153,6 +153,8 @@ Unofficial, for the E-M10 Mark I on firmware 1.4 only; tested on one body. Do no
 
 [Olympus OM-D E-M10 (Mark I)](../cameras/em10.md).
 
+[Report a camera result](../../docs/report.md) with the exact model, starting firmware, build, file hash if known, steps and outcome.
+
 ## Related work
 
 [Caduceus for E-P7](caduceus-ep7.md), [Olympus firmware research](oly-fw-analysis.md). These links do not assign ownership or imply identical implementations.

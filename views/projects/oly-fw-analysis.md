@@ -99,6 +99,8 @@ An early alpha for voluntary testing, with owner-reported checks only.
 
 [Olympus PEN-F](../cameras/pen-f.md), [OM SYSTEM OM-5](../cameras/om5.md), [Olympus PEN E-P7](../cameras/ep7.md), [OM SYSTEM OM-3](../cameras/om3.md).
 
+[Report a camera result](../../docs/report.md) with the exact model, starting firmware, build, file hash if known, steps and outcome.
+
 ## Related work
 
 [OM-Emu](om-emu.md). These links do not assign ownership or imply identical implementations.

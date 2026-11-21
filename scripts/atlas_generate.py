@@ -445,6 +445,9 @@ def render(catalogue):
             communities = [r["id"] for r in catalogue.of_type("community") if row["id"] in r["project_ids"]]
             if communities:
                 text += "\n## Where to talk\n\n" + refs(path, communities) + ". For a reproducible bug, use the project's issue tracker.\n"
+            if any(installs(records, row, camera_id) for camera_id in row["camera_ids"]):
+                text += (f"\n[Report a camera result]({link(path, 'docs/report.md')}) with the exact model, "
+                         "starting firmware, build, file hash if known, steps and outcome.\n")
             text += "\n## Related work\n\n" + refs(path, row["related_projects"]) + ". These links do not assign ownership or imply identical implementations.\n"
             text += f"\n## Research notes\n\n{row['status_summary']}\n"
             if row.get("work_items"):

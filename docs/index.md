@@ -56,7 +56,7 @@ Features, releases and screenshots from every catalogued project.
 
 ### [Join the community](community.md)
 
-Talk to the people building these, report a result, or add a project.
+[Join Discord](https://discord.gg/fKpcKGsNPY), [report a camera result](report.md) or [contribute to the Atlas](add.md).
 
 </div>
 
