@@ -31,7 +31,7 @@ These do not change the camera. They help people study firmware, build or check 
 
 <div class="project-card" markdown="1">
 
-[Olympus firmware notes (E-M5 Mark III)](../projects/em5-iii-notes.md){ .card-title }
+[Olympus firmware notes (E-M5 Mark III)](../projects/em5-iii-notes.md#for-em5-iii){ .card-title }
 
 How the E-M5 Mark III firmware works, and bringing OM-5 features to it.
 
@@ -51,7 +51,7 @@ Research
 
 <div class="project-card" markdown="1">
 
-[Ghidra MN103 processor module](../projects/ghidra-mn103.md){ .card-title }
+[Ghidra MN103 processor module](../projects/ghidra-mn103.md#for-em5-iii){ .card-title }
 
 Read MN103 camera firmware in Ghidra, with the decompiler.
 
@@ -71,7 +71,7 @@ Tool
 
 <div class="project-card" markdown="1">
 
-[Olympus firmware research](../projects/oly-fw-analysis.md){ .card-title }
+[Olympus firmware research](../projects/oly-fw-analysis.md#for-em5-iii){ .card-title }
 
 The research base: PEN-F HSL, firmware formats and tools for many bodies.
 

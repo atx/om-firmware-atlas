@@ -9,7 +9,7 @@ E139: one mod builder for firmware 1.6; owner camera reports per mod, no Atlas e
 
 <div class="glance" markdown="1">
 
-**Releases for this camera:** [E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md) (mod-builder-1.18).
+**Releases for this camera:** [E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md#for-em1-iii) (mod-builder-1.18).
 
 **Jump to:** [What you can do](#features) · [Projects](#projects) · [Test evidence](#evidence)
 
@@ -31,7 +31,7 @@ Features as each project describes them, with their status. Follow a project's o
 
 Replaces the 7:6 aspect with 65:24 in the menu, live-view frame, AF areas and raw frame. Worked on the camera (1.5 build).
 
-[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md)
+[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md#for-em1-iii)
 { .card-meta }
 
 </div>
@@ -43,7 +43,7 @@ Replaces the 7:6 aspect with 65:24 in the menu, live-view frame, AF areas and ra
 
 Creates 3- and 4-frame multiple exposures correctly; the live preview is missing between frames 2–3 and 3–4 (fix in test 1.746, awaiting a camera result). Worked on the camera (1.5 build).
 
-[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md)
+[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md#for-em1-iii)
 { .card-meta }
 
 </div>
@@ -55,7 +55,7 @@ Creates 3- and 4-frame multiple exposures correctly; the live preview is missing
 
 Removes the lens check for in-camera focus stacking. Worked on the camera (1.5 build).
 
-[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md)
+[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md#for-em1-iii)
 { .card-meta }
 
 </div>
@@ -67,7 +67,7 @@ Removes the lens check for in-camera focus stacking. Worked on the camera (1.5 b
 
 Key Line II gets grey toning instead of colour. Worked on the camera (1.5 build).
 
-[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md)
+[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md#for-em1-iii)
 { .card-meta }
 
 </div>
@@ -79,7 +79,7 @@ Key Line II gets grey toning instead of colour. Worked on the camera (1.5 build)
 
 The arrow keys can take 25 functions for stills and 15 for movies. Not tested on the camera.
 
-[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md)
+[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md#for-em1-iii)
 { .card-meta }
 
 </div>
@@ -91,7 +91,7 @@ The arrow keys can take 25 functions for stills and 15 for movies. Not tested on
 
 Flash in handheld High Res Shot, with Fill In and Manual flash for every flash type (tripod and handheld). Flash worked on the camera (1.5 build); Fill In plus Manual for all flash types is test 1.745. The 1.18 notes say fully manual flash does not work in handheld High Res.
 
-[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md)
+[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md#for-em1-iii)
 { .card-meta }
 
 </div>
@@ -103,7 +103,7 @@ Flash in handheld High Res Shot, with Fill In and Manual flash for every flash t
 
 Art filters and e-Portrait with High Res Shot; colour and tone only, not the effect pass. Worked on the camera (1.5 build).
 
-[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md)
+[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md#for-em1-iii)
 { .card-meta }
 
 </div>
@@ -115,7 +115,7 @@ Art filters and e-Portrait with High Res Shot; colour and tone only, not the eff
 
 The bottom-right Super Control Panel cell opens the main menu. Worked on the camera (1.6 test build 1.679).
 
-[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md)
+[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md#for-em1-iii)
 { .card-meta }
 
 </div>
@@ -127,7 +127,7 @@ The bottom-right Super Control Panel cell opens the main menu. Worked on the cam
 
 Sharpness −2 is off and +2 is the stock +2 strength, in even steps. Worked on the camera (test build 1.680).
 
-[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md)
+[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md#for-em1-iii)
 { .card-meta }
 
 </div>
@@ -139,7 +139,7 @@ Sharpness −2 is off and +2 is the stock +2 strength, in even steps. Worked on 
 
 Assign to Custom Mode works with the dial on movie, and that C slot opens in video. Worked on the camera (test build 1.681).
 
-[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md)
+[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md#for-em1-iii)
 { .card-meta }
 
 </div>
@@ -151,7 +151,7 @@ Assign to Custom Mode works with the dial on movie, and that C slot opens in vid
 
 Edit Filename also offers an underscore after Z. Worked on the camera (test build 1.700).
 
-[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md)
+[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md#for-em1-iii)
 { .card-meta }
 
 </div>
@@ -163,7 +163,7 @@ Edit Filename also offers an underscore after Z. Worked on the camera (test buil
 
 ISO-Auto can choose ISO 64; in P, A and S with ISO-Auto Default 200. M reached 64 on the camera (1.706); the P/A/S version was in test builds 1.708 and 1.709.
 
-[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md)
+[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md#for-em1-iii)
 { .card-meta }
 
 </div>
@@ -175,7 +175,7 @@ ISO-Auto can choose ISO 64; in P, A and S with ISO-Auto Default 200. M reached 6
 
 The 29-minute and 2-hour limits raised to 9 hours; file size, battery and heat still stop recording. Built into test 1.709; no camera result stated.
 
-[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md)
+[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md#for-em1-iii)
 { .card-meta }
 
 </div>
@@ -187,7 +187,7 @@ The 29-minute and 2-hour limits raised to 9 hours; file size, battery and heat s
 
 Gradation gets 19 more curves after Low Key. The art-curve version worked on the camera; the designed set was in test build 1.741.
 
-[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md)
+[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md#for-em1-iii)
 { .card-meta }
 
 </div>
@@ -199,7 +199,7 @@ Gradation gets 19 more curves after Low Key. The art-curve version worked on the
 
 The Frame art effect becomes a plain white border, with a width setting. Worked on the camera (test build 1.664).
 
-[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md)
+[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md#for-em1-iii)
 { .card-meta }
 
 </div>
@@ -211,7 +211,7 @@ The Frame art effect becomes a plain white border, with a width setting. Worked 
 
 White-border Frame masks for Panorama, where stock has none and froze. Worked on the camera (test build 1.665).
 
-[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md)
+[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md#for-em1-iii)
 { .card-meta }
 
 </div>
@@ -223,7 +223,7 @@ White-border Frame masks for Panorama, where stock has none and froze. Worked on
 
 XPAN icons in the Super Control Panel option lists; the main cell still showed a 17:9 label on the camera (1.666).
 
-[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md)
+[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md#for-em1-iii)
 { .card-meta }
 
 </div>
@@ -235,7 +235,7 @@ XPAN icons in the Super Control Panel option lists; the main cell still showed a
 
 Custom becomes a film-look mode with six of Caduceus's film recipes picked in the builder. Worked on the camera (test build 1.691).
 
-[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md)
+[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md#for-em1-iii)
 { .card-meta }
 
 </div>
@@ -247,7 +247,7 @@ Custom becomes a film-look mode with six of Caduceus's film recipes picked in th
 
 The Shooting Menu 1 title shows your own text, up to 36 characters. Worked on the camera (test build 1.701); an @ does not display.
 
-[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md)
+[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md#for-em1-iii)
 { .card-meta }
 
 </div>
@@ -266,11 +266,11 @@ These change the camera's firmware.
 
 <div class="project-card" markdown="1">
 
-[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md){ .card-title }
+[E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md#for-em1-iii){ .card-title }
 
 Pick firmware mods for the E-M1 Mark III and build your own update file.
 
-**For this camera:** 19 features, including Panorama 65:24, Multiple Exposure with 3 and 4 frames and Focus stacking with any lens; all are listed above.
+**For this camera:** 19 features, including Panorama 65:24, Multiple Exposure with 3 and 4 frames and Focus stacking with any lens.
 { .card-for }
 
 **Get it:** [mod-builder-1.18](https://github.com/dfeldt91-blip/E-M1-Miii/releases/tag/mod-builder-1.18), 21 Nov 2026 · [Builder guide](https://github.com/dfeldt91-blip/E-M1-Miii/blob/ae16f3d2836e7273164c7cd3497237117c8b9ff9/builder/README.md)

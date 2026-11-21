@@ -134,6 +134,41 @@ def camera_release(row, camera_id):
     return (stable or releases or [None])[0]
 
 
+def project_target(origin, project, camera_id=None):
+    target = link(origin, view_path(project))
+    return target + "#for-" + slug(camera_id) if camera_id else target
+
+
+def testing_requests(project):
+    return [item for item in project.get("work_items", [])
+            if item.get("tester_camera_id") and item["state"] in ("open", "needs-evidence")]
+
+
+def install_guide(project):
+    return next((item for item in project.get("links", []) if "install" in item["label"].lower()), None)
+
+
+def project_actions(project, records):
+    guide = install_guide(project)
+    links = [{"label": "Project home", "url": project["url"]},
+             {"label": "Ask or report issues", "url": project["contribution_home"]}, *project.get("links", [])]
+    released = [c for c in project["camera_ids"] if camera_release(project, c)]
+    requests = testing_requests(project)
+    if guide and released:
+        label = "Read the install guide"
+        if len(released) == 1 and len(project["camera_ids"]) > 1:
+            label = f"Read the {short_name(records[released[0]]['title'])} install guide"
+        primary = {"label": label, "url": guide["url"]}
+    elif requests:
+        primary = {"label": "View the testing request", "url": requests[0]["url"]}
+    else:
+        primary = links[0]
+    buttons = [f"[{cell(primary['label'])}]({primary['url']}){{ .btn .btn-primary }}"]
+    buttons.extend(f"[{cell(item['label'])}]({item['url']}){{ .btn .btn-ghost }}"
+                   for item in links if item["url"] != primary["url"])
+    return '<div class="cta-row" markdown="1">\n\n' + "\n".join(buttons) + "\n\n</div>\n"
+
+
 GLANCE_SECTIONS = (("features", "What you can do"), ("projects", "Projects"), ("evidence", "Test evidence"),
                    ("talk", "Where to talk"), ("platform", "Platform"))
 
@@ -143,7 +178,7 @@ def glance(origin, camera, mods, records, page):
     released, waiting = [], []
     for project in mods:
         release = camera_release(project, camera["id"])
-        name = f"[{cell(project['title'])}]({link(origin, view_path(project))})"
+        name = f"[{cell(project['title'])}]({project_target(origin, project, camera['id'])})"
         noted = any(n["camera_id"] == camera["id"] for n in project.get("camera_notes", []))
         if release:
             tag = release["tag"] + (", pre-release" if release["prerelease"] else "")
@@ -176,7 +211,7 @@ def for_camera(origin, row, camera):
     features = [f for f in row.get("features", []) if camera_id in f["camera_ids"]]
     if len(features) > 3:
         names = [f["name"] for f in features[:3]]
-        listed = f"{len(features)} features, including {names[0]}, {names[1]} and {names[2]}; all are listed above"
+        listed = f"{len(features)} features, including {names[0]}, {names[1]} and {names[2]}"
     else:
         listed = ", ".join(f"{f['name']} ({label(f['status'])})" for f in features)
     if note:
@@ -188,7 +223,7 @@ def for_camera(origin, row, camera):
         text = f"{kind[0].upper()}{kind[1:]}; it does not change the camera." + (f" Covers this camera for: {listed}." if listed else " Its own page says what it holds for this model.")
     release = camera_release(row, camera_id)
     links = row.get("links", [])
-    guide = next((item for item in links if "install" in item["label"].lower()), None)
+    guide = install_guide(row)
     if not guide:
         guide = next((item for item in links if any(word in item["label"].lower()
                      for word in ("guide", "try it", "use"))), None)
@@ -216,7 +251,8 @@ def project_card(catalogue, origin, row, image=False, features=0, links=False, c
     if image and row.get("images"):
         picture = row["images"][0]
         text += f"![{cell(picture['alt'])}]({asset_link(origin, picture['path'])})\n{{ .card-image }}\n\n"
-    text += f"[{cell(row['title'])}]({link(origin, view_path(row))}){{ .card-title }}\n\n"
+    target = project_target(origin, row, camera["id"] if camera else None)
+    text += f"[{cell(row['title'])}]({target}){{ .card-title }}\n\n"
     text += f"{row.get('tagline', row['summary'])}\n\n"
     if features and row.get("features"):
         names = [f["name"] for f in row["features"] if f["status"] != "planned"][:features]
@@ -350,7 +386,7 @@ def render(catalogue):
                 for feature, project in offered:
                     text += '<div class="feature-card" markdown="1">\n\n'
                     text += f"**{cell(feature['name'])}** {pill(feature['status'])}\n{{ .feature-head }}\n\n{feature['summary']}\n\n"
-                    text += f"[{cell(project['title'])}]({link(path, view_path(project))})" + (f" · since {feature['since']}" if feature.get("since") else "") + "\n{ .card-meta }\n\n</div>\n\n"
+                    text += f"[{cell(project['title'])}]({project_target(path, project, row['id'])})" + (f" · since {feature['since']}" if feature.get("since") else "") + "\n{ .card-meta }\n\n</div>\n\n"
                 text += "</div>\n"
             text += "\n## Projects for this camera { #projects }\n\n"
             if projects:
@@ -413,20 +449,29 @@ def render(catalogue):
             text = GENERATED + f"# {row['title']}\n\n{row.get('tagline', row['summary'])}\n\n"
             if any(installs(records, row, camera_id) for camera_id in row["camera_ids"]):
                 text += risk_note(path) + "\n"
-            buttons = [f"[Project home]({row['url']}){{ .btn .btn-primary }}", f"[Ask or report issues]({row['contribution_home']}){{ .btn .btn-ghost }}"]
-            buttons += [f"[{cell(l['label'])}]({l['url']}){{ .btn .btn-ghost }}" for l in row.get("links", [])]
-            text += '<div class="cta-row" markdown="1">\n\n' + "\n".join(buttons) + "\n\n</div>\n"
+            text += project_actions(row, records)
             facts = [f"**Type:** {label(row['kind'])}"]
-            offered = [c for c in row["camera_ids"] if camera_release(row, c)
-                       or any(c in f["camera_ids"] for f in row.get("features", []))] or row["camera_ids"]
-            if offered:
-                facts.append("**For:** " + ", ".join(f"[{cell(short_name(records[c]['title']))}]({link(path, view_path(records[c]))})" for c in offered))
+            if row["camera_ids"]:
+                facts.append("**Camera details:** " + ", ".join(
+                    f"[{cell(short_name(records[c]['title']))}](#for-{slug(c)})" for c in row["camera_ids"]))
             release = latest_release(row)
             if release:
                 facts.append(f"**Latest release:** [{cell(release['tag'])}]({release['url']}), {nice_date(release['date'])}")
             if row.get("maintainers"):
                 facts.append("**Maintained by** " + ", ".join(f"[{cell(m['label'])}]({m['url']})" for m in row["maintainers"]))
             text += "\n" + " · ".join(facts) + "\n{ .facts }\n"
+            if row["camera_ids"]:
+                text += "\n## Cameras\n\n"
+                requests = testing_requests(row)
+                for camera_id in row["camera_ids"]:
+                    camera = records[camera_id]
+                    title = short_name(camera["title"])
+                    text += f"### {cell(title)} {{ #for-{slug(camera_id)} }}\n\n"
+                    text += for_camera(path, row, camera)
+                    for item in requests:
+                        if item["tester_camera_id"] == camera_id:
+                            text += f"[View the testing request]({item['url']}) · "
+                    text += f"[Camera overview and test results]({link(path, view_path(camera))})\n\n"
             images = row.get("images", [])
             if images:
                 picture = images[0]
@@ -465,7 +510,6 @@ def render(catalogue):
                     if release.get("warning"):
                         text += f"{release['warning']}\n{{ .release-warning }}\n\n"
                     text += "</div>\n\n"
-            text += "\n## Cameras\n\n" + refs(path, row["camera_ids"]) + ".\n"
             communities = [r["id"] for r in catalogue.of_type("community") if row["id"] in r["project_ids"]]
             if communities:
                 text += "\n## Where to talk\n\n" + refs(path, communities) + ". For a reproducible bug, use the project's issue tracker.\n"

@@ -63,7 +63,8 @@
           "work_items": {"type": "array", "items": {"type": "object", "additionalProperties": false,
             "required": ["summary", "state", "url"], "properties": {
               "summary": {"$ref": "#/$defs/text"}, "state": {"enum": ["proposed", "open", "paused", "needs-evidence"]},
-              "url": {"type": "string", "format": "uri"}, "owner": {"type": ["string", "null"]}
+              "url": {"type": "string", "format": "uri"}, "owner": {"type": ["string", "null"]},
+              "tester_camera_id": {"type": "string"}
             }}},
           "tagline": {"$ref": "#/$defs/text"},
           "camera_notes": {"type": "array", "items": {"type": "object", "additionalProperties": false,

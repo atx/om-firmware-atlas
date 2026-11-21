@@ -9,9 +9,9 @@ Original E144: several projects have distinct experiments. Mark II results do no
 
 <div class="glance" markdown="1">
 
-**Releases for this camera:** [db firmware / om-c-firmware](../projects/db-firmware.md) (dbv0.4.3; see its card below).
+**Releases for this camera:** [db firmware / om-c-firmware](../projects/db-firmware.md#for-om5) (dbv0.4.3; see its card below).
 
-**No release for this camera yet:** [Caduceus port for the original OM-5 (tadejs)](../projects/caduceus-om5-tadejs.md), [Caduceus for OM-5](../projects/caduceus-om5.md).
+**No release for this camera yet:** [Caduceus port for the original OM-5 (tadejs)](../projects/caduceus-om5-tadejs.md#for-om5), [Caduceus for OM-5](../projects/caduceus-om5.md#for-om5).
 
 **Jump to:** [What you can do](#features) · [Projects](#projects) · [Test evidence](#evidence) · [Where to talk](#talk) · [Platform](#platform)
 
@@ -33,7 +33,7 @@ Features as each project describes them, with their status. Follow a project's o
 
 SD updater, re-encoded LZ4 parts, a patched label, a half-press hook and a card read, each passed on the owner's OM-5 with normal shooting, playback and menus.
 
-[Caduceus port for the original OM-5 (tadejs)](../projects/caduceus-om5-tadejs.md)
+[Caduceus port for the original OM-5 (tadejs)](../projects/caduceus-om5-tadejs.md#for-om5)
 { .card-meta }
 
 </div>
@@ -45,7 +45,7 @@ SD updater, re-encoded LZ4 parts, a patched label, a half-press hook and a card 
 
 For a COLOR profile, the capture path reads that profile's 12 saturation values. Emulator only; no Picture Mode entry exists yet.
 
-[Caduceus port for the original OM-5 (tadejs)](../projects/caduceus-om5-tadejs.md)
+[Caduceus port for the original OM-5 (tadejs)](../projects/caduceus-om5-tadejs.md#for-om5)
 { .card-meta }
 
 </div>
@@ -57,7 +57,7 @@ For a COLOR profile, the capture path reads that profile's 12 saturation values.
 
 Panel table analysed; paused because the owner sees no pink cast on the OM-5 screen. Nothing built.
 
-[Caduceus port for the original OM-5 (tadejs)](../projects/caduceus-om5-tadejs.md)
+[Caduceus port for the original OM-5 (tadejs)](../projects/caduceus-om5-tadejs.md#for-om5)
 { .card-meta }
 
 </div>
@@ -69,7 +69,7 @@ Panel table analysed; paused because the owner sees no pink cast on the OM-5 scr
 
 The aperture ring on Panasonic lenses that have one controls the aperture.
 
-[db firmware / om-c-firmware](../projects/db-firmware.md)
+[db firmware / om-c-firmware](../projects/db-firmware.md#for-om5)
 { .card-meta }
 
 </div>
@@ -81,7 +81,7 @@ The aperture ring on Panasonic lenses that have one controls the aperture.
 
 Korean language support on several bodies.
 
-[db firmware / om-c-firmware](../projects/db-firmware.md)
+[db firmware / om-c-firmware](../projects/db-firmware.md#for-om5)
 { .card-meta }
 
 </div>
@@ -93,7 +93,7 @@ Korean language support on several bodies.
 
 Switches to the electronic shutter on overexposure in P or A mode and, since v0.4.3, below the slowest mechanical speed in S or M mode. v0.4.3 lists nine bodies, including the OM-3, OM-5, OM-5 Mark II and E-P7; its OM-5 and OM-5 Mark II builds are listed as not working.
 
-[db firmware / om-c-firmware](../projects/db-firmware.md) · since dbv0.4.2
+[db firmware / om-c-firmware](../projects/db-firmware.md#for-om5) · since dbv0.4.2
 { .card-meta }
 
 </div>
@@ -112,7 +112,7 @@ These change the camera's firmware.
 
 <div class="project-card" markdown="1">
 
-[db firmware / om-c-firmware](../projects/db-firmware.md){ .card-title }
+[db firmware / om-c-firmware](../projects/db-firmware.md#for-om5){ .card-title }
 
 Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to new burst rates.
 
@@ -132,7 +132,7 @@ Mod
 
 <div class="project-card" markdown="1">
 
-[Caduceus port for the original OM-5 (tadejs)](../projects/caduceus-om5-tadejs.md){ .card-title }
+[Caduceus port for the original OM-5 (tadejs)](../projects/caduceus-om5-tadejs.md#for-om5){ .card-title }
 
 Groundwork for bringing Caduceus to the original OM-5. Not released.
 
@@ -152,7 +152,7 @@ Experimental fork
 
 <div class="project-card" markdown="1">
 
-[Caduceus for OM-5](../projects/caduceus-om5.md){ .card-title }
+[Caduceus for OM-5](../projects/caduceus-om5.md#for-om5){ .card-title }
 
 Looks and a full colour editor for the OM-5 Mark II. Experimental.
 
@@ -181,7 +181,7 @@ These do not change the camera. They help people study firmware, build or check 
 
 <div class="project-card" markdown="1">
 
-[Olympus firmware research](../projects/oly-fw-analysis.md){ .card-title }
+[Olympus firmware research](../projects/oly-fw-analysis.md#for-om5){ .card-title }
 
 The research base: PEN-F HSL, firmware formats and tools for many bodies.
 
@@ -201,7 +201,7 @@ Research
 
 <div class="project-card" markdown="1">
 
-[OM-Emu](../projects/om-emu.md){ .card-title }
+[OM-Emu](../projects/om-emu.md#for-om5){ .card-title }
 
 Run OM SYSTEM and Olympus camera firmware in your browser.
 
@@ -221,7 +221,7 @@ Emulator
 
 <div class="project-card" markdown="1">
 
-[Historical manual update research](../projects/manual-update.md){ .card-title }
+[Historical manual update research](../projects/manual-update.md#for-om5){ .card-title }
 
 How to install official OM SYSTEM firmware from an SD card.
 
@@ -241,7 +241,7 @@ Reference
 
 <div class="project-card" markdown="1">
 
-[Ghidra MN103 processor module](../projects/ghidra-mn103.md){ .card-title }
+[Ghidra MN103 processor module](../projects/ghidra-mn103.md#for-om5){ .card-title }
 
 Read MN103 camera firmware in Ghidra, with the decompiler.
 

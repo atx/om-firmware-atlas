@@ -271,8 +271,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/caduceus-ep7.yaml": {
-      "approx_tokens": 2974,
-      "bytes": 11895,
+      "approx_tokens": 2983,
+      "bytes": 11932,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/caduceus-om3.yaml": {

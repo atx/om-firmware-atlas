@@ -9,9 +9,9 @@ E147: advanced Caduceus work, other modifications and an established research no
 
 <div class="glance" markdown="1">
 
-**Releases for this camera:** [Caduceus for OM-3](../projects/caduceus-om3.md) (v0.40.2), [db firmware / om-c-firmware](../projects/db-firmware.md) (dbv0.4.3).
+**Releases for this camera:** [Caduceus for OM-3](../projects/caduceus-om3.md#for-om3) (v0.40.2), [db firmware / om-c-firmware](../projects/db-firmware.md#for-om3) (dbv0.4.3).
 
-**No release for this camera yet:** [OM-3 downstream experiments](../projects/camera-stuff.md).
+**No release for this camera yet:** [OM-3 downstream experiments](../projects/camera-stuff.md#for-om3).
 
 **Jump to:** [What you can do](#features) · [Projects](#projects) · [Test evidence](#evidence) · [Where to talk](#talk)
 
@@ -33,7 +33,7 @@ Features as each project describes them, with their status. Follow a project's o
 
 FILM 1–20 appear after COLOR 1–4, with their names on the title, quick menu, shooting screen and viewfinder.
 
-[Caduceus for OM-3](../projects/caduceus-om3.md) · since v0.24.1
+[Caduceus for OM-3](../projects/caduceus-om3.md#for-om3) · since v0.24.1
 { .card-meta }
 
 </div>
@@ -45,7 +45,7 @@ FILM 1–20 appear after COLOR 1–4, with their names on the title, quick menu,
 
 Looks inspired by Portra, Gold, Ektar, Ektachrome, Kodachrome, CineStill 800T, Velvia, Provia, Superia and more, made only from the camera's own settings.
 
-[Caduceus for OM-3](../projects/caduceus-om3.md)
+[Caduceus for OM-3](../projects/caduceus-om3.md#for-om3)
 { .card-meta }
 
 </div>
@@ -57,7 +57,7 @@ Looks inspired by Portra, Gold, Ektar, Ektachrome, Kodachrome, CineStill 800T, V
 
 Hue and luminance for each of 12 colours next to the camera's saturation, with Color Mix and RGB curves since v0.30.
 
-[Caduceus for OM-3](../projects/caduceus-om3.md) · since v0.11
+[Caduceus for OM-3](../projects/caduceus-om3.md#for-om3) · since v0.11
 { .card-meta }
 
 </div>
@@ -69,7 +69,7 @@ Hue and luminance for each of 12 colours next to the camera's saturation, with C
 
 Tint shadows and highlights separately in 12 colours, with a Tone Balance row. Shows in live view.
 
-[Caduceus for OM-3](../projects/caduceus-om3.md) · since v0.26
+[Caduceus for OM-3](../projects/caduceus-om3.md#for-om3) · since v0.26
 { .card-meta }
 
 </div>
@@ -81,7 +81,7 @@ Tint shadows and highlights separately in 12 colours, with a Tone Balance row. S
 
 Colour grain made by the camera's image processor, as fast as a photo without grain.
 
-[Caduceus for OM-3](../projects/caduceus-om3.md) · since v0.25
+[Caduceus for OM-3](../projects/caduceus-om3.md#for-om3) · since v0.25
 { .card-meta }
 
 </div>
@@ -93,7 +93,7 @@ Colour grain made by the camera's image processor, as fast as a photo without gr
 
 A Glow / Clarity row, and halation: a red glow around bright lights, strength 0–5.
 
-[Caduceus for OM-3](../projects/caduceus-om3.md) · since v0.28
+[Caduceus for OM-3](../projects/caduceus-om3.md#for-om3) · since v0.28
 { .card-meta }
 
 </div>
@@ -105,7 +105,7 @@ A Glow / Clarity row, and halation: a red glow around bright lights, strength 0�
 
 Edits stay with each film over power off. A * marks what changed; hold OK to reset.
 
-[Caduceus for OM-3](../projects/caduceus-om3.md) · since v0.25
+[Caduceus for OM-3](../projects/caduceus-om3.md#for-om3) · since v0.25
 { .card-meta }
 
 </div>
@@ -117,7 +117,7 @@ Edits stay with each film over power off. A * marks what changed; hold OK to res
 
 Films, your changes and the Extras settings live in the camera's memory, so any card works, or none.
 
-[Caduceus for OM-3](../projects/caduceus-om3.md) · since v0.29
+[Caduceus for OM-3](../projects/caduceus-om3.md#for-om3) · since v0.29
 { .card-meta }
 
 </div>
@@ -129,7 +129,7 @@ Films, your changes and the Extras settings live in the camera's memory, so any 
 
 Each film and COLOR remembers its white balance mode and Kelvin. From v0.40.1, film compensation shows in the Super Control Panel and edits there are saved with the film.
 
-[Caduceus for OM-3](../projects/caduceus-om3.md) · since v0.28
+[Caduceus for OM-3](../projects/caduceus-om3.md#for-om3) · since v0.28
 { .card-meta }
 
 </div>
@@ -141,7 +141,7 @@ Each film and COLOR remembers its white balance mode and Kelvin. From v0.40.1, f
 
 All four arrow keys in Button Function; each Creative Dial position set to CRT, ART, COLOR or MONO, with its own film.
 
-[Caduceus for OM-3](../projects/caduceus-om3.md) · since v0.27
+[Caduceus for OM-3](../projects/caduceus-om3.md#for-om3) · since v0.27
 { .card-meta }
 
 </div>
@@ -153,7 +153,7 @@ All four arrow keys in Button Function; each Creative Dial position set to CRT, 
 
 Each JPEG records its film and recipe in EXIF, so LookLab can open the film from a photo.
 
-[Caduceus for OM-3](../projects/caduceus-om3.md) · since v0.27
+[Caduceus for OM-3](../projects/caduceus-om3.md#for-om3) · since v0.27
 { .card-meta }
 
 </div>
@@ -165,7 +165,7 @@ Each JPEG records its film and recipe in EXIF, so LookLab can open the film from
 
 Make and change films in your browser with a preview on sample photos or your own, starting from 62 looks. Nothing is uploaded.
 
-[Caduceus for OM-3](../projects/caduceus-om3.md)
+[Caduceus for OM-3](../projects/caduceus-om3.md#for-om3)
 { .card-meta }
 
 </div>
@@ -177,7 +177,7 @@ Make and change films in your browser with a preview on sample photos or your ow
 
 LookLab finds the camera settings closest to a .cube LUT or a Lightroom preset, with a match score.
 
-[Caduceus for OM-3](../projects/caduceus-om3.md)
+[Caduceus for OM-3](../projects/caduceus-om3.md#for-om3)
 { .card-meta }
 
 </div>
@@ -189,7 +189,7 @@ LookLab finds the camera settings closest to a .cube LUT or a Lightroom preset, 
 
 Extends in-camera focus stacking to more lenses, including the M.Zuiko 17mm F1.8 II.
 
-[Caduceus for OM-3](../projects/caduceus-om3.md) · since v0.40
+[Caduceus for OM-3](../projects/caduceus-om3.md#for-om3) · since v0.40
 { .card-meta }
 
 </div>
@@ -201,7 +201,7 @@ Extends in-camera focus stacking to more lenses, including the M.Zuiko 17mm F1.8
 
 The aperture ring on Panasonic lenses that have one sets the aperture.
 
-[Caduceus for OM-3](../projects/caduceus-om3.md)
+[Caduceus for OM-3](../projects/caduceus-om3.md#for-om3)
 { .card-meta }
 
 </div>
@@ -213,7 +213,7 @@ The aperture ring on Panasonic lenses that have one sets the aperture.
 
 XPan, 21:9 and 5:4 for JPEGs. RAW retains the full sensor with crop metadata.
 
-[Caduceus for OM-3](../projects/caduceus-om3.md) · since v0.40-alpha
+[Caduceus for OM-3](../projects/caduceus-om3.md#for-om3) · since v0.40-alpha
 { .card-meta }
 
 </div>
@@ -225,7 +225,7 @@ XPan, 21:9 and 5:4 for JPEGs. RAW retains the full sensor with crop metadata.
 
 Black or white JPEG borders and adjustable film grain with Fine, Medium and Coarse sizes. v0.40.2 reduces colour banding and red–green speckle.
 
-[Caduceus for OM-3](../projects/caduceus-om3.md) · since v0.40-alpha
+[Caduceus for OM-3](../projects/caduceus-om3.md#for-om3) · since v0.40-alpha
 { .card-meta }
 
 </div>
@@ -237,7 +237,7 @@ Black or white JPEG borders and adjustable film grain with Fine, Medium and Coar
 
 Choose which of 17 items appear on the rear screen in Information 1, 2 and 3.
 
-[Caduceus for OM-3](../projects/caduceus-om3.md) · since v0.40
+[Caduceus for OM-3](../projects/caduceus-om3.md#for-om3) · since v0.40
 { .card-meta }
 
 </div>
@@ -249,7 +249,7 @@ Choose which of 17 items appear on the rear screen in Information 1, 2 and 3.
 
 Korean language support on several bodies.
 
-[db firmware / om-c-firmware](../projects/db-firmware.md)
+[db firmware / om-c-firmware](../projects/db-firmware.md#for-om3)
 { .card-meta }
 
 </div>
@@ -261,7 +261,7 @@ Korean language support on several bodies.
 
 Switches to the electronic shutter on overexposure in P or A mode and, since v0.4.3, below the slowest mechanical speed in S or M mode. v0.4.3 lists nine bodies, including the OM-3, OM-5, OM-5 Mark II and E-P7; its OM-5 and OM-5 Mark II builds are listed as not working.
 
-[db firmware / om-c-firmware](../projects/db-firmware.md) · since dbv0.4.2
+[db firmware / om-c-firmware](../projects/db-firmware.md#for-om3) · since dbv0.4.2
 { .card-meta }
 
 </div>
@@ -280,11 +280,11 @@ These change the camera's firmware.
 
 <div class="project-card" markdown="1">
 
-[Caduceus for OM-3](../projects/caduceus-om3.md){ .card-title }
+[Caduceus for OM-3](../projects/caduceus-om3.md#for-om3){ .card-title }
 
 Film looks and a full colour editor, built into the OM SYSTEM OM-3.
 
-**For this camera:** 18 features, including Your films in Picture Mode, 20 film simulations and Colour editor on the camera; all are listed above.
+**For this camera:** 18 features, including Your films in Picture Mode, 20 film simulations and Colour editor on the camera.
 { .card-for }
 
 **Get it:** [v0.40.2](https://github.com/androidfanman/caduceus-om3/releases/tag/v0.40.2), 20 Nov 2026 · [Install guide](https://androidfanman.github.io/caduceus-om3/pages/install/)
@@ -300,7 +300,7 @@ Mod
 
 <div class="project-card" markdown="1">
 
-[db firmware / om-c-firmware](../projects/db-firmware.md){ .card-title }
+[db firmware / om-c-firmware](../projects/db-firmware.md#for-om3){ .card-title }
 
 Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to new burst rates.
 
@@ -320,7 +320,7 @@ Mod
 
 <div class="project-card" markdown="1">
 
-[OM-3 downstream experiments](../projects/camera-stuff.md){ .card-title }
+[OM-3 downstream experiments](../projects/camera-stuff.md#for-om3){ .card-title }
 
 A downstream OM-3 fork for trying fixes before sending them upstream.
 
@@ -349,7 +349,7 @@ These do not change the camera. They help people study firmware, build or check 
 
 <div class="project-card" markdown="1">
 
-[Olympus firmware research](../projects/oly-fw-analysis.md){ .card-title }
+[Olympus firmware research](../projects/oly-fw-analysis.md#for-om3){ .card-title }
 
 The research base: PEN-F HSL, firmware formats and tools for many bodies.
 
@@ -369,7 +369,7 @@ Research
 
 <div class="project-card" markdown="1">
 
-[OM-Emu](../projects/om-emu.md){ .card-title }
+[OM-Emu](../projects/om-emu.md#for-om3){ .card-title }
 
 Run OM SYSTEM and Olympus camera firmware in your browser.
 
@@ -389,7 +389,7 @@ Emulator
 
 <div class="project-card" markdown="1">
 
-[Historical manual update research](../projects/manual-update.md){ .card-title }
+[Historical manual update research](../projects/manual-update.md#for-om3){ .card-title }
 
 How to install official OM SYSTEM firmware from an SD card.
 

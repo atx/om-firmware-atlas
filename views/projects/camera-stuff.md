@@ -15,18 +15,27 @@ A downstream OM-3 fork for trying fixes before sending them upstream.
 
 </div>
 
-**Type:** experimental fork · **For:** [OM-3](../cameras/om3.md) · **Maintained by** [fernandezk26](https://github.com/fernandezk26)
+**Type:** experimental fork · **Camera details:** [OM-3](#for-om3) · **Maintained by** [fernandezk26](https://github.com/fernandezk26)
 { .facts }
+
+## Cameras
+
+### OM-3 { #for-om3 }
+
+**For this camera:** Nothing to install from here. It is a fork where fixes are tried on an OM-3 before being offered to Caduceus for OM-3; use that project's releases.
+{ .card-for }
+
+**Get it:** No release for this camera yet.
+{ .card-get }
+
+[Camera overview and test results](../cameras/om3.md)
+
 
 ## About
 
 fernandezk26's fork of Caduceus for OM-3 is where changes are tried on an OM-3 before being offered back as pull requests. Its v0.25.1 branch added a white-balance grid restart fix and automatic SD loading.
 
 Caduceus for OM-3 credits this fork for its fix for bad bytes in EDITS.BIN, and for loading the films at power-on in v0.26.2 to v0.27. The fork publishes no releases of its own.
-
-## Cameras
-
-[OM SYSTEM OM-3](../cameras/om3.md).
 
 [Report a camera result](../../docs/report.md) with the exact model, starting firmware, build, file hash if known, steps and outcome.
 

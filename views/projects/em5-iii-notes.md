@@ -14,8 +14,21 @@ How the E-M5 Mark III firmware works, and bringing OM-5 features to it.
 
 </div>
 
-**Type:** research · **For:** [OM-D E-M5 Mark III](../cameras/em5-iii.md) · **Maintained by** [nsud-dev](https://github.com/nsud-dev)
+**Type:** research · **Camera details:** [OM-D E-M5 Mark III](#for-em5-iii) · **Maintained by** [nsud-dev](https://github.com/nsud-dev)
 { .facts }
+
+## Cameras
+
+### OM-D E-M5 Mark III { #for-em5-iii }
+
+**For this camera:** Notes and tools only; no builds are published. The author's own test builds on one E-M5 III cover focus stacking with any lens, Live ND and its live-view preview ported from the OM-5, a Color / Monochrome Profile editor, and a parked USB webcam.
+{ .card-for }
+
+**Get it:** [Firmware guides](https://github.com/nsud-dev/olympus-firmware-notes/blob/b6823403a48709da06a6a7d5ef7510be3d8143f8/docs/guides/README.md)
+{ .card-get }
+
+[Camera overview and test results](../cameras/em5-iii.md)
+
 
 ## About
 
@@ -128,10 +141,6 @@ Walk through E-M5 III 1.7 boot, button input, shooting, live view, updates and f
 </div>
 
 </div>
-
-## Cameras
-
-[Olympus OM-D E-M5 Mark III](../cameras/em5-iii.md).
 
 ## Related work
 

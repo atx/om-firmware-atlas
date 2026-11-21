@@ -17,8 +17,21 @@ Groundwork for bringing Caduceus to the original OM-5. Not released.
 
 </div>
 
-**Type:** experimental fork · **For:** [OM-5](../cameras/om5.md) · **Maintained by** [tadejs](https://github.com/tadejs)
+**Type:** experimental fork · **Camera details:** [OM-5](#for-om5) · **Maintained by** [tadejs](https://github.com/tadejs)
 { .facts }
+
+## Cameras
+
+### OM-5 { #for-om5 }
+
+**For this camera:** Not released: an experimental branch offered to Caduceus for OM-5 as a pull request. Its test steps C1 to C5 passed on the owner's OM-5; the COLOR 1–3 back end runs in an emulator only, with no Picture Mode entry yet.
+{ .card-for }
+
+**Get it:** No release for this camera yet.
+{ .card-get }
+
+[Camera overview and test results](../cameras/om5.md)
+
 
 ## About
 
@@ -77,10 +90,6 @@ Panel table analysed; paused because the owner sees no pink cast on the OM-5 scr
 </div>
 
 </div>
-
-## Cameras
-
-[OM SYSTEM OM-5](../cameras/om5.md).
 
 [Report a camera result](../../docs/report.md) with the exact model, starting firmware, build, file hash if known, steps and outcome.
 

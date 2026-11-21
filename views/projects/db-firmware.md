@@ -16,8 +16,61 @@ Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to
 
 </div>
 
-**Type:** mod · **For:** [OM-5](../cameras/om5.md), [OM-5 Mark II](../cameras/om5-ii.md), [OM-3](../cameras/om3.md), [PEN E-P7](../cameras/ep7.md), [PEN-F](../cameras/pen-f.md) · **Latest release:** [dbv0.4.3](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3), 21 Nov 2026 · **Maintained by** [azqeurio](https://github.com/azqeurio)
+**Type:** mod · **Camera details:** [OM-5](#for-om5), [OM-5 Mark II](#for-om5-ii), [OM-3](#for-om3), [PEN E-P7](#for-ep7), [PEN-F](#for-pen-f) · **Latest release:** [dbv0.4.3](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3), 21 Nov 2026 · **Maintained by** [azqeurio](https://github.com/azqeurio)
 { .facts }
+
+## Cameras
+
+### OM-5 { #for-om5 }
+
+**For this camera:** Panasonic aperture rings, Korean menus and Hybrid Shutter, all beta. The v0.4.3 notes list the OM-5 build as not working, so read each release's notes for this camera before installing.
+{ .card-for }
+
+**Get it:** [dbv0.4.3](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3), 21 Nov 2026. Check the release notes for files and instructions for this model.
+{ .card-get }
+
+[Camera overview and test results](../cameras/om5.md)
+
+### OM-5 Mark II { #for-om5-ii }
+
+**For this camera:** Korean menus and Hybrid Shutter, both beta. The v0.4.3 notes list the OM-5 Mark II build as not working, so read each release's notes for this camera before installing.
+{ .card-for }
+
+**Get it:** [dbv0.4.3](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3), 21 Nov 2026. Check the release notes for files and instructions for this model.
+{ .card-get }
+
+[Camera overview and test results](../cameras/om5-ii.md)
+
+### OM-3 { #for-om3 }
+
+**For this camera:** Listed for this camera: Korean menus (beta), Hybrid Shutter (beta).
+{ .card-for }
+
+**Get it:** [dbv0.4.3](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3), 21 Nov 2026. Check the release notes for files and instructions for this model.
+{ .card-get }
+
+[Camera overview and test results](../cameras/om3.md)
+
+### PEN E-P7 { #for-ep7 }
+
+**For this camera:** Listed for this camera: Hybrid Shutter (beta).
+{ .card-for }
+
+**Get it:** [dbv0.4.3](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3), 21 Nov 2026. Check the release notes for files and instructions for this model.
+{ .card-get }
+
+[Camera overview and test results](../cameras/ep7.md)
+
+### PEN-F { #for-pen-f }
+
+**For this camera:** No PEN-F feature is catalogued. Release v0.3.2 lists the PEN-F, but its notes do not say what it adds for this camera.
+{ .card-for }
+
+**Get it:** [dbv0.3.2](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.3.2), 31 Oct 2026. Check the release notes for files and instructions for this model.
+{ .card-get }
+
+[Camera overview and test results](../cameras/pen-f.md)
+
 
 ## About
 
@@ -201,10 +254,6 @@ Two added features reset the camera's settings; save your menus first.
 
 </div>
 
-
-## Cameras
-
-[OM SYSTEM OM-5](../cameras/om5.md), [OM SYSTEM OM-5 Mark II](../cameras/om5-ii.md), [OM SYSTEM OM-3](../cameras/om3.md), [Olympus PEN E-P7](../cameras/ep7.md), [Olympus PEN-F](../cameras/pen-f.md).
 
 [Report a camera result](../../docs/report.md) with the exact model, starting firmware, build, file hash if known, steps and outcome.
 

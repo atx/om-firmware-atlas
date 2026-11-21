@@ -11,14 +11,26 @@ Pick firmware mods for the E-M1 Mark III and build your own update file.
 <div class="cta-row" markdown="1">
 
 [Project home](https://github.com/dfeldt91-blip/E-M1-Miii){ .btn .btn-primary }
-[Ask or report issues](https://github.com/dfeldt91-blip/E-M1-Miii){ .btn .btn-ghost }
 [Builder guide](https://github.com/dfeldt91-blip/E-M1-Miii/blob/ae16f3d2836e7273164c7cd3497237117c8b9ff9/builder/README.md){ .btn .btn-ghost }
 [Latest release](https://github.com/dfeldt91-blip/E-M1-Miii/releases/tag/mod-builder-1.18){ .btn .btn-ghost }
 
 </div>
 
-**Type:** mod · **For:** [OM-D E-M1 Mark III](../cameras/em1-iii.md) · **Latest release:** [mod-builder-1.18](https://github.com/dfeldt91-blip/E-M1-Miii/releases/tag/mod-builder-1.18), 21 Nov 2026 · **Maintained by** [dfeldt91-blip](https://github.com/dfeldt91-blip)
+**Type:** mod · **Camera details:** [OM-D E-M1 Mark III](#for-em1-iii) · **Latest release:** [mod-builder-1.18](https://github.com/dfeldt91-blip/E-M1-Miii/releases/tag/mod-builder-1.18), 21 Nov 2026 · **Maintained by** [dfeldt91-blip](https://github.com/dfeldt91-blip)
 { .facts }
+
+## Cameras
+
+### OM-D E-M1 Mark III { #for-em1-iii }
+
+**For this camera:** 19 features, including Panorama 65:24, Multiple Exposure with 3 and 4 frames and Focus stacking with any lens.
+{ .card-for }
+
+**Get it:** [mod-builder-1.18](https://github.com/dfeldt91-blip/E-M1-Miii/releases/tag/mod-builder-1.18), 21 Nov 2026 · [Builder guide](https://github.com/dfeldt91-blip/E-M1-Miii/blob/ae16f3d2836e7273164c7cd3497237117c8b9ff9/builder/README.md)
+{ .card-get }
+
+[Camera overview and test results](../cameras/em1-iii.md)
+
 
 ## About
 
@@ -297,10 +309,6 @@ Unofficial; flashing modified firmware is at your own risk. The apps are unsigne
 
 </div>
 
-
-## Cameras
-
-[Olympus OM-D E-M1 Mark III](../cameras/em1-iii.md).
 
 [Report a camera result](../../docs/report.md) with the exact model, starting firmware, build, file hash if known, steps and outcome.
 

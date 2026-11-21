@@ -10,17 +10,40 @@ Looks and a full colour editor for the OM-5 Mark II. Experimental.
 
 <div class="cta-row" markdown="1">
 
-[Project home](https://github.com/xulfr/caduceus-om5){ .btn .btn-primary }
+[Read the OM-5 Mark II install guide](https://github.com/xulfr/caduceus-om5/blob/main/docs/INSTALL.md){ .btn .btn-primary }
+[Project home](https://github.com/xulfr/caduceus-om5){ .btn .btn-ghost }
 [Ask or report issues](https://github.com/xulfr/caduceus-om5/issues){ .btn .btn-ghost }
 [Website](https://xulfr.github.io/caduceus-om5/){ .btn .btn-ghost }
 [Safety](https://github.com/xulfr/caduceus-om5/blob/main/docs/SAFETY.md){ .btn .btn-ghost }
-[Install guide](https://github.com/xulfr/caduceus-om5/blob/main/docs/INSTALL.md){ .btn .btn-ghost }
 [LookLab](https://xulfr.github.io/caduceus-om5/looklab/){ .btn .btn-ghost }
 
 </div>
 
-**Type:** mod · **For:** [OM-5 Mark II](../cameras/om5-ii.md) · **Latest release:** [v0.2.0-alpha1](https://github.com/xulfr/caduceus-om5/releases/tag/v0.2.0-alpha1), 20 Nov 2026 · **Maintained by** [xulfr](https://github.com/xulfr)
+**Type:** mod · **Camera details:** [OM-5](#for-om5), [OM-5 Mark II](#for-om5-ii) · **Latest release:** [v0.2.0-alpha1](https://github.com/xulfr/caduceus-om5/releases/tag/v0.2.0-alpha1), 20 Nov 2026 · **Maintained by** [xulfr](https://github.com/xulfr)
 { .facts }
+
+## Cameras
+
+### OM-5 { #for-om5 }
+
+**For this camera:** No working build for this camera. One test build (pre-alpha 1) failed to start on an owner's original OM-5, and OM's firmware was put back from the card. The releases are for the OM-5 Mark II only, and Mark II results do not apply here. Current original OM-5 work is the tadejs port.
+{ .card-for }
+
+**Get it:** No release for this camera yet.
+{ .card-get }
+
+[Camera overview and test results](../cameras/om5.md)
+
+### OM-5 Mark II { #for-om5-ii }
+
+**For this camera:** 9 features, including Color Profiles 1–3 and Monochrome Profiles 1–3, Custom looks and Colour editor.
+{ .card-for }
+
+**Get it:** [v0.2.0-alpha1 (pre-release)](https://github.com/xulfr/caduceus-om5/releases/tag/v0.2.0-alpha1), 20 Nov 2026 · [Install guide](https://github.com/xulfr/caduceus-om5/blob/main/docs/INSTALL.md)
+{ .card-get }
+
+[Camera overview and test results](../cameras/om5-ii.md)
+
 
 ![The OM-5 Mark II Picture Mode screen showing Color Profile 2 with the look Portra 160](../../docs/assets/projects/caduceus-om5/picture-mode-look.png)
 { .hero-image }
@@ -202,10 +225,6 @@ Experimental. The installer keeps its experimental-build acknowledgement; instal
 
 </div>
 
-
-## Cameras
-
-[OM SYSTEM OM-5](../cameras/om5.md), [OM SYSTEM OM-5 Mark II](../cameras/om5-ii.md).
 
 ## Where to talk
 

@@ -193,6 +193,9 @@ class Catalogue:
             if row["type"] == "reference":
                 errors.extend(self.reference_errors(node_id, row, check_ref))
             if row["type"] == "project":
+                for item in row.get("work_items", []):
+                    if "tester_camera_id" in item and item["tester_camera_id"] not in row["camera_ids"]:
+                        errors.append(f"{node_id}: testing request names a camera outside the project.")
                 noted = [note["camera_id"] for note in row.get("camera_notes", [])]
                 for camera in noted:
                     if camera not in row["camera_ids"]:

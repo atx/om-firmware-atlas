@@ -9,7 +9,7 @@ E122: foundational HSL research; exact internal build identity matters.
 
 <div class="glance" markdown="1">
 
-**Releases for this camera:** [Olympus firmware research](../projects/oly-fw-analysis.md) (alpha-20261017, pre-release; see its card below), [db firmware / om-c-firmware](../projects/db-firmware.md) (dbv0.3.2; see its card below).
+**Releases for this camera:** [Olympus firmware research](../projects/oly-fw-analysis.md#for-pen-f) (alpha-20261017, pre-release; see its card below), [db firmware / om-c-firmware](../projects/db-firmware.md#for-pen-f) (dbv0.3.2; see its card below).
 
 **Jump to:** [What you can do](#features) · [Projects](#projects) · [Test evidence](#evidence) · [Platform](#platform)
 
@@ -31,7 +31,7 @@ Features as each project describes them, with their status. Follow a project's o
 
 Hue and lightness added to the 12-colour saturation editor in COLOR1–3, from −7 to +7 since the 17 October alpha.
 
-[Olympus firmware research](../projects/oly-fw-analysis.md)
+[Olympus firmware research](../projects/oly-fw-analysis.md#for-pen-f)
 { .card-meta }
 
 </div>
@@ -50,7 +50,7 @@ These change the camera's firmware.
 
 <div class="project-card" markdown="1">
 
-[Olympus firmware research](../projects/oly-fw-analysis.md){ .card-title }
+[Olympus firmware research](../projects/oly-fw-analysis.md#for-pen-f){ .card-title }
 
 The research base: PEN-F HSL, firmware formats and tools for many bodies.
 
@@ -70,7 +70,7 @@ Research
 
 <div class="project-card" markdown="1">
 
-[db firmware / om-c-firmware](../projects/db-firmware.md){ .card-title }
+[db firmware / om-c-firmware](../projects/db-firmware.md#for-pen-f){ .card-title }
 
 Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to new burst rates.
 
@@ -99,7 +99,7 @@ These do not change the camera. They help people study firmware, build or check 
 
 <div class="project-card" markdown="1">
 
-[OM-Emu](../projects/om-emu.md){ .card-title }
+[OM-Emu](../projects/om-emu.md#for-pen-f){ .card-title }
 
 Run OM SYSTEM and Olympus camera firmware in your browser.
 
@@ -119,7 +119,7 @@ Emulator
 
 <div class="project-card" markdown="1">
 
-[Ghidra MN103 processor module](../projects/ghidra-mn103.md){ .card-title }
+[Ghidra MN103 processor module](../projects/ghidra-mn103.md#for-pen-f){ .card-title }
 
 Read MN103 camera firmware in Ghidra, with the decompiler.
 

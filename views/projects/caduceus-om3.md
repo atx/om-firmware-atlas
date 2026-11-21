@@ -10,18 +10,31 @@ Film looks and a full colour editor, built into the OM SYSTEM OM-3.
 
 <div class="cta-row" markdown="1">
 
-[Project home](https://github.com/androidfanman/caduceus-om3){ .btn .btn-primary }
+[Read the install guide](https://androidfanman.github.io/caduceus-om3/pages/install/){ .btn .btn-primary }
+[Project home](https://github.com/androidfanman/caduceus-om3){ .btn .btn-ghost }
 [Ask or report issues](https://github.com/androidfanman/caduceus-om3/issues){ .btn .btn-ghost }
 [Tour](https://androidfanman.github.io/caduceus-om3/){ .btn .btn-ghost }
-[Install guide](https://androidfanman.github.io/caduceus-om3/pages/install/){ .btn .btn-ghost }
 [Using it](https://androidfanman.github.io/caduceus-om3/pages/using/){ .btn .btn-ghost }
 [LookLab](https://androidfanman.github.io/caduceus-om3/looklab/){ .btn .btn-ghost }
 [Roadmap](https://androidfanman.github.io/caduceus-om3/pages/roadmap/){ .btn .btn-ghost }
 
 </div>
 
-**Type:** mod · **For:** [OM-3](../cameras/om3.md) · **Latest release:** [v0.40.2](https://github.com/androidfanman/caduceus-om3/releases/tag/v0.40.2), 20 Nov 2026 · **Maintained by** [androidfanman](https://github.com/androidfanman)
+**Type:** mod · **Camera details:** [OM-3](#for-om3) · **Latest release:** [v0.40.2](https://github.com/androidfanman/caduceus-om3/releases/tag/v0.40.2), 20 Nov 2026 · **Maintained by** [androidfanman](https://github.com/androidfanman)
 { .facts }
+
+## Cameras
+
+### OM-3 { #for-om3 }
+
+**For this camera:** 18 features, including Your films in Picture Mode, 20 film simulations and Colour editor on the camera.
+{ .card-for }
+
+**Get it:** [v0.40.2](https://github.com/androidfanman/caduceus-om3/releases/tag/v0.40.2), 20 Nov 2026 · [Install guide](https://androidfanman.github.io/caduceus-om3/pages/install/)
+{ .card-get }
+
+[Camera overview and test results](../cameras/om3.md)
+
 
 ![A Paris street scene at night with warm, soft colour](../../docs/assets/projects/caduceus-om3/film-portra-400.jpg)
 { .hero-image }
@@ -528,10 +541,6 @@ After updating, assign your custom modes once.
 
 </div>
 
-
-## Cameras
-
-[OM SYSTEM OM-3](../cameras/om3.md).
 
 ## Where to talk
 
