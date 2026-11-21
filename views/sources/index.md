@@ -9,6 +9,7 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | [r/M43 community page](community.m43.md) | Public photography venue; Caduceus relevance supplied by the Atlas maintainer. |
 | [db firmware v0.4.1 release](db.release041.md) | Release-centred feature claims and named limitations, not an independent camera audit. |
 | [db firmware v0.4.2 beta](db.release042.md) | Hybrid Shutter and OM-5 port changes reported by the maintainer. |
+| [db firmware v0.4.3 beta](db.release043.md) | Hybrid Shutter in S/M as well as P/A across nine bodies, Quasi-LUT fixes, and a known issue that the OM-5 and OM-5 Mark II firmware does not work. |
 | [db firmware releases](db.releases.md) | Beta release notes through v0.4.2, in Korean and English. |
 | [Author's note on project status](em1m3.author-note.md) | The author asked on 2026-11-20 that the Atlas record the project as inactive but open to continue, functional, with one known preview issue. Historical: the README of 2026-11-21 says the project continues. |
 | [E-M1 III mod builder guide](em1m3.builder.md) | What the builder does, the mod list with the owner's camera status per mod, install steps and credits. |

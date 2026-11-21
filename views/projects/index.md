@@ -75,6 +75,20 @@ Latest: v87, 21 Nov 2026
 
 <div class="project-card" markdown="1">
 
+[db firmware / om-c-firmware](db-firmware.md){ .card-title }
+
+Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to new burst rates.
+
+Panasonic aperture rings · Korean menus · Quasi-LUT and DBLink
+{ .card-features }
+
+Latest: dbv0.4.3, 21 Nov 2026
+{ .card-meta }
+
+</div>
+
+<div class="project-card" markdown="1">
+
 [E-M1 Mark III Mod Builder](em1-iii-mod-builder.md){ .card-title }
 
 Pick firmware mods for the E-M1 Mark III and build your own update file.
@@ -83,20 +97,6 @@ Panorama 65:24 · Multiple Exposure with 3 and 4 frames · Focus stacking with a
 { .card-features }
 
 Latest: mod-builder-1.18, 21 Nov 2026
-{ .card-meta }
-
-</div>
-
-<div class="project-card" markdown="1">
-
-[db firmware / om-c-firmware](db-firmware.md){ .card-title }
-
-Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to new burst rates.
-
-Panasonic aperture rings · Korean menus · Quasi-LUT and DBLink
-{ .card-features }
-
-Latest: dbv0.4.2, 20 Nov 2026
 { .card-meta }
 
 </div>

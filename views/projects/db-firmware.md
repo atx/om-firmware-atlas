@@ -12,7 +12,7 @@ Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to
 
 </div>
 
-**Type:** mod · **Latest release:** [dbv0.4.2](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.2), 20 Nov 2026 · **Maintained by** [azqeurio](https://github.com/azqeurio)
+**Type:** mod · **Latest release:** [dbv0.4.3](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3), 21 Nov 2026 · **Maintained by** [azqeurio](https://github.com/azqeurio)
 { .facts }
 
 ## About
@@ -23,7 +23,7 @@ Recent releases list aperture-ring support for Panasonic lenses, extra burst rat
 
 The author owns only some of the supported bodies and says the patch can't be guaranteed to work on every model. v0.4.1 lists known issues for the OM-5 build.
 
-The v0.4.2 beta notes list Hybrid Shutter for the OM-3 and OM-5 Mark II, and changes to the separate OM-5 build based on Mark II firmware.
+The v0.4.2 beta notes list Hybrid Shutter for the OM-3 and OM-5 Mark II, and changes to the separate OM-5 build based on Mark II firmware. v0.4.3 extends Hybrid Shutter to S and M mode and lists it for nine bodies, fixes Quasi-LUT conversion, grain and the OM-3 indicator, and lists the OM-5 and OM-5 Mark II builds as not working.
 
 > **Before you install:** Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
 
@@ -98,9 +98,9 @@ A 5 GHz Wi-Fi hotspot, and the electronic shutter sound through the speaker.
 **Hybrid Shutter** <span class="pill pill-beta">Beta</span>
 { .feature-head }
 
-The release notes describe automatic switching to the electronic shutter when overexposure occurs in P or A mode.
+Switches to the electronic shutter on overexposure in P or A mode and, since v0.4.3, below the slowest mechanical speed in S or M mode. v0.4.3 lists nine bodies, including the OM-3, OM-5, OM-5 Mark II and E-P7; its OM-5 and OM-5 Mark II builds are listed as not working.
 
-[OM-3](../cameras/om3.md), [OM-5 Mark II](../cameras/om5-ii.md) · since dbv0.4.2
+[OM-3](../cameras/om3.md), [OM-5 Mark II](../cameras/om5-ii.md), [OM-5](../cameras/om5.md), [PEN E-P7](../cameras/ep7.md) · since dbv0.4.2
 { .card-meta }
 
 </div>
@@ -108,6 +108,19 @@ The release notes describe automatic switching to the electronic shutter when ov
 </div>
 
 ## Releases
+
+<div class="release-item" markdown="1">
+
+**[db firmware v0.4.3 beta](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.3)** · 21 Nov 2026
+{ .release-head }
+
+- Hybrid Shutter in S and M mode switches to the electronic shutter below the slowest mechanical speed; P and A switch on overexposure.
+- The maintainer reports better Quasi-LUT conversion from LUT and XMP, fixed grain and OM-3 indicator, and a faster macOS Quasi-LUT editor.
+
+The maintainer calls this a beta. Known issue in the notes: the OM-5 and OM-5 Mark II firmware is not working. No test procedure, results or hashes are given.
+{ .release-warning }
+
+</div>
 
 <div class="release-item" markdown="1">
 
@@ -197,12 +210,13 @@ None catalogued. These links do not assign ownership or imply identical implemen
 
 ## Research notes
 
-The latest reviewed release is v0.4.2 beta. Its feature and fix claims are attributed to the maintainer.
+The latest reviewed release is v0.4.3 beta (2026-11-21). Its feature and fix claims are attributed to the maintainer, and its notes say the OM-5 and OM-5 Mark II firmware does not work in this version.
 
 ## Sources and record
 
 - [db firmware v0.4.1 release](../sources/db.release041.md)
 - [db firmware releases](../sources/db.releases.md)
 - [db firmware v0.4.2 beta](../sources/db.release042.md)
+- [db firmware v0.4.3 beta](../sources/db.release043.md)
 
-[Canonical record](../../records/projects/db-firmware.yaml) · Substantively reviewed: 2026-11-20.
+[Canonical record](../../records/projects/db-firmware.yaml) · Substantively reviewed: 2026-11-21.

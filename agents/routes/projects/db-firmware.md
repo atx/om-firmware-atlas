@@ -4,11 +4,11 @@
 
 Release-centred controls, localisation and other modifications.
 
-[Contribution home](https://github.com/azqeurio/om-c-firmware/issues). The latest reviewed release is v0.4.2 beta. Its feature and fix claims are attributed to the maintainer.
+[Contribution home](https://github.com/azqeurio/om-c-firmware/issues). The latest reviewed release is v0.4.3 beta (2026-11-21). Its feature and fix claims are attributed to the maintainer, and its notes say the OM-5 and OM-5 Mark II firmware does not work in this version.
 
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
-| [db-firmware.yaml](../../../records/projects/db-firmware.yaml) | Project scope, related work and contribution destination | 6,874 | ~1,719 |
-| [db.yaml](../../../records/sources/db.yaml) | Find the relevant source/observation ID; use bounded reads | 2,185 | ~547 |
+| [db-firmware.yaml](../../../records/projects/db-firmware.yaml) | Project scope, related work and contribution destination | 8,185 | ~2,047 |
+| [db.yaml](../../../records/sources/db.yaml) | Find the relevant source/observation ID; use bounded reads | 2,885 | ~722 |
 
 Follow only relevant camera/topic routes. Upstream policies apply to work there; Atlas does not assign ownership across projects.
