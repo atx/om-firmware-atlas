@@ -13,7 +13,7 @@ Groundwork for bringing Caduceus to the original OM-5. Not released.
 
 </div>
 
-**Type:** experimental fork · **Maintained by** [tadejs](https://github.com/tadejs)
+**Type:** experimental fork · **For:** [OM-5](../cameras/om5.md) · **Maintained by** [tadejs](https://github.com/tadejs)
 { .facts }
 
 ## About

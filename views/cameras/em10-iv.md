@@ -7,7 +7,17 @@ E140: port/signature research and emulator coverage; no physical feature report 
 **Model code:** E140 · **Also known as:** E-M10 IV, E-M10 Mark IV, EM10IV · **Catalogue depth:** discovery only
 { .facts }
 
-## Projects for this camera
+<div class="glance" markdown="1">
+
+**Releases for this camera:** none yet.
+
+**No release for this camera yet:** [Caduceus for E-P7](../projects/caduceus-ep7.md).
+
+**Jump to:** [Projects](#projects) · [Test evidence](#evidence) · [Where to talk](#talk)
+
+</div>
+
+## Projects for this camera { #projects }
 
 Each card says what the project has for this camera and where to get it. A project can be listed here for a small part of its work; its own page covers the rest.
 
@@ -69,11 +79,11 @@ Emulator
 
 </div>
 
-## Claims and test evidence
+## Claims and test evidence { #evidence }
 
 No feature-level assertion is catalogued yet. This is a coverage gap, not a finding that modifications are impossible.
 
-## Where to talk
+## Where to talk { #talk }
 
 [Caduceus Discord](../community/caduceus-discord.md), [r/M43](../community/m43.md). For a reproducible bug, use the project's own issue tracker.
 

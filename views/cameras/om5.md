@@ -7,7 +7,17 @@ Original E144: several projects have distinct experiments. Mark II results do no
 **Model code:** E144 · **Also known as:** Original OM-5, OM5 · **Catalogue depth:** initial review
 { .facts }
 
-## What you can do with this camera
+<div class="glance" markdown="1">
+
+**Releases for this camera:** [db firmware / om-c-firmware](../projects/db-firmware.md) (dbv0.4.3; see its card below).
+
+**No release for this camera yet:** [Caduceus port for the original OM-5 (tadejs)](../projects/caduceus-om5-tadejs.md), [Caduceus for OM-5](../projects/caduceus-om5.md).
+
+**Jump to:** [What you can do](#features) · [Projects](#projects) · [Test evidence](#evidence) · [Where to talk](#talk) · [Platform](#platform)
+
+</div>
+
+## What you can do with this camera { #features }
 
 Features as each project describes them, with their status. Follow a project's own guide before installing anything.
 
@@ -87,7 +97,7 @@ Switches to the electronic shutter on overexposure in P or A mode and, since v0.
 
 </div>
 
-## Projects for this camera
+## Projects for this camera { #projects }
 
 Each card says what the project has for this camera and where to get it. A project can be listed here for a small part of its work; its own page covers the rest.
 
@@ -249,7 +259,7 @@ Tool
 
 </div>
 
-## Claims and test evidence
+## Claims and test evidence { #evidence }
 
 | Scoped assertion | Project / build | Availability | Evidence |
 |---|---|---|---|
@@ -260,11 +270,11 @@ Tool
 
 Results belong to the named project and package. Emulator output does not establish physical-camera behaviour.
 
-## Where to talk
+## Where to talk { #talk }
 
 [Caduceus Discord](../community/caduceus-discord.md), [r/M43](../community/m43.md). For a reproducible bug, use the project's own issue tracker.
 
-## Platform and built-in features (om5 firmware 1.2, build 1200)
+## Platform and built-in features (om5 firmware 1.2, build 1200) { #platform }
 
 What the stock firmware itself contains, separate from what projects add. Follow an entry for its sources.
 

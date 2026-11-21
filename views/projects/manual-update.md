@@ -11,7 +11,7 @@ How to install official OM SYSTEM firmware from an SD card.
 
 </div>
 
-**Type:** reference · **Maintained by** [iKenndac](https://github.com/iKenndac)
+**Type:** reference · **For:** [OM-5](../cameras/om5.md), [OM-3](../cameras/om3.md) · **Maintained by** [iKenndac](https://github.com/iKenndac)
 { .facts }
 
 ## About

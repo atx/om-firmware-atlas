@@ -7,7 +7,15 @@ E101, TruePic VI (2012): one camera-tested mod; its addresses and edits do not c
 **Model code:** E101 · **Also known as:** E-PM2, PEN mini E-PM2, EPM2 · **Catalogue depth:** initial review
 { .facts }
 
-## What you can do with this camera
+<div class="glance" markdown="1">
+
+**Releases for this camera:** [EPM2Mod](../projects/epm2mod.md) (v2026.11.20-rc.1, pre-release).
+
+**Jump to:** [What you can do](#features) · [Projects](#projects) · [Test evidence](#evidence) · [Platform](#platform)
+
+</div>
+
+## What you can do with this camera { #features }
 
 Features as each project describes them, with their status. Follow a project's own guide before installing anything.
 
@@ -87,7 +95,7 @@ A Custom Menu J row, Off by default, that writes EPM2LOG.BIN to the card for dev
 
 </div>
 
-## Projects for this camera
+## Projects for this camera { #projects }
 
 Each card says what the project has for this camera and where to get it. A project can be listed here for a small part of its work; its own page covers the rest.
 
@@ -121,7 +129,7 @@ Mod
 
 Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
 
-## Claims and test evidence
+## Claims and test evidence { #evidence }
 
 | Scoped assertion | Project / build | Availability | Evidence |
 |---|---|---|---|
@@ -129,7 +137,7 @@ Installing modified firmware is at your own risk. Follow the project's own guide
 
 Results belong to the named project and package. Emulator output does not establish physical-camera behaviour.
 
-## Platform and built-in features (E-PM2 firmware 1.6, build 1600)
+## Platform and built-in features (E-PM2 firmware 1.6, build 1600) { #platform }
 
 What the stock firmware itself contains, separate from what projects add. Follow an entry for its sources.
 

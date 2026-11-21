@@ -16,7 +16,7 @@ Film looks and a full colour editor, built into the OM SYSTEM OM-3.
 
 </div>
 
-**Type:** mod · **Latest release:** [v0.40.2](https://github.com/androidfanman/caduceus-om3/releases/tag/v0.40.2), 20 Nov 2026 · **Maintained by** [androidfanman](https://github.com/androidfanman)
+**Type:** mod · **For:** [OM-3](../cameras/om3.md) · **Latest release:** [v0.40.2](https://github.com/androidfanman/caduceus-om3/releases/tag/v0.40.2), 20 Nov 2026 · **Maintained by** [androidfanman](https://github.com/androidfanman)
 { .facts }
 
 ![A Paris street scene at night with warm, soft colour](../../docs/assets/projects/caduceus-om3/film-portra-400.jpg)

@@ -7,7 +7,15 @@ E122: foundational HSL research; exact internal build identity matters.
 **Model code:** E122 · **Also known as:** PEN-F, PENF · **Catalogue depth:** initial review
 { .facts }
 
-## What you can do with this camera
+<div class="glance" markdown="1">
+
+**Releases for this camera:** [Olympus firmware research](../projects/oly-fw-analysis.md) (alpha-20261017, pre-release; see its card below), [db firmware / om-c-firmware](../projects/db-firmware.md) (dbv0.3.2; see its card below).
+
+**Jump to:** [What you can do](#features) · [Projects](#projects) · [Test evidence](#evidence) · [Platform](#platform)
+
+</div>
+
+## What you can do with this camera { #features }
 
 Features as each project describes them, with their status. Follow a project's own guide before installing anything.
 
@@ -27,7 +35,7 @@ Hue and lightness added to the 12-colour saturation editor in COLOR1–3, from �
 
 </div>
 
-## Projects for this camera
+## Projects for this camera { #projects }
 
 Each card says what the project has for this camera and where to get it. A project can be listed here for a small part of its work; its own page covers the rest.
 
@@ -129,7 +137,7 @@ Tool
 
 </div>
 
-## Claims and test evidence
+## Claims and test evidence { #evidence }
 
 | Scoped assertion | Project / build | Availability | Evidence |
 |---|---|---|---|
@@ -137,7 +145,7 @@ Tool
 
 Results belong to the named project and package. Emulator output does not establish physical-camera behaviour.
 
-## Platform and built-in features (pen-f firmware 3.1, build 3101)
+## Platform and built-in features (pen-f firmware 3.1, build 3101) { #platform }
 
 What the stock firmware itself contains, separate from what projects add. Follow an entry for its sources.
 

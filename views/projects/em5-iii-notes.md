@@ -14,7 +14,7 @@ How the E-M5 Mark III firmware works, and bringing OM-5 features to it.
 
 </div>
 
-**Type:** research · **Maintained by** [nsud-dev](https://github.com/nsud-dev)
+**Type:** research · **For:** [OM-D E-M5 Mark III](../cameras/em5-iii.md) · **Maintained by** [nsud-dev](https://github.com/nsud-dev)
 { .facts }
 
 ## About

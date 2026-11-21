@@ -16,7 +16,7 @@ A loader flashed once, then core, modules and settings from the SD card. OM-5 Ma
 
 </div>
 
-**Type:** mod · **Latest release:** [v0.1.0](https://github.com/necrostaz/omkit/releases/tag/v0.1.0), 20 Nov 2026 · **Maintained by** [necrostaz](https://github.com/necrostaz)
+**Type:** mod · **For:** [OM-5 Mark II](../cameras/om5-ii.md) · **Latest release:** [v0.1.0](https://github.com/necrostaz/omkit/releases/tag/v0.1.0), 20 Nov 2026 · **Maintained by** [necrostaz](https://github.com/necrostaz)
 { .facts }
 
 ## About

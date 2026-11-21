@@ -13,7 +13,7 @@ Pick firmware mods for the E-M1 Mark III and build your own update file.
 
 </div>
 
-**Type:** mod · **Latest release:** [mod-builder-1.18](https://github.com/dfeldt91-blip/E-M1-Miii/releases/tag/mod-builder-1.18), 21 Nov 2026 · **Maintained by** [dfeldt91-blip](https://github.com/dfeldt91-blip)
+**Type:** mod · **For:** [OM-D E-M1 Mark III](../cameras/em1-iii.md) · **Latest release:** [mod-builder-1.18](https://github.com/dfeldt91-blip/E-M1-Miii/releases/tag/mod-builder-1.18), 21 Nov 2026 · **Maintained by** [dfeldt91-blip](https://github.com/dfeldt91-blip)
 { .facts }
 
 ## About

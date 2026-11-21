@@ -15,7 +15,7 @@ The original Caduceus: HSLFX colour editing and 29 film looks for the PEN E-P7.
 
 </div>
 
-**Type:** mod · **Latest release:** [v0.34a](https://github.com/cakelesscoder/caduceus-ep7/releases/tag/v0.34a), 15 Nov 2026 · **Maintained by** [cakelesscoder](https://github.com/cakelesscoder)
+**Type:** mod · **For:** [PEN E-P7](../cameras/ep7.md) · **Latest release:** [v0.34a](https://github.com/cakelesscoder/caduceus-ep7/releases/tag/v0.34a), 15 Nov 2026 · **Maintained by** [cakelesscoder](https://github.com/cakelesscoder)
 { .facts }
 
 ![Eight film looks shown on four sample scenes](../../docs/assets/projects/caduceus-ep7/film-looks.jpg)

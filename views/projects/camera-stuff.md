@@ -11,7 +11,7 @@ A downstream OM-3 fork for trying fixes before sending them upstream.
 
 </div>
 
-**Type:** experimental fork · **Maintained by** [fernandezk26](https://github.com/fernandezk26)
+**Type:** experimental fork · **For:** [OM-3](../cameras/om3.md) · **Maintained by** [fernandezk26](https://github.com/fernandezk26)
 { .facts }
 
 ## About

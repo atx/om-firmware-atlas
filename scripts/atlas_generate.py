@@ -114,6 +114,34 @@ def camera_release(row, camera_id):
     return (stable or releases or [None])[0]
 
 
+GLANCE_SECTIONS = (("features", "What you can do"), ("projects", "Projects"), ("evidence", "Test evidence"),
+                   ("talk", "Where to talk"), ("platform", "Platform"))
+
+
+def glance(origin, camera, mods, records, page):
+    """A short summary at the top of a camera page: releases, work in progress and jump links."""
+    released, waiting = [], []
+    for project in mods:
+        release = camera_release(project, camera["id"])
+        name = f"[{cell(project['title'])}]({link(origin, view_path(project))})"
+        noted = any(n["camera_id"] == camera["id"] for n in project.get("camera_notes", []))
+        if release:
+            tag = release["tag"] + (", pre-release" if release["prerelease"] else "")
+            released.append(f"{name} ({cell(tag)}" + ("; see its card below)" if noted else ")"))
+        else:
+            waiting.append(name)
+    lines = []
+    if released:
+        lines.append("**Releases for this camera:** " + ", ".join(released) + ".")
+    else:
+        lines.append("**Releases for this camera:** none yet.")
+    if waiting:
+        lines.append("**No release for this camera yet:** " + ", ".join(waiting) + ".")
+    jumps = [f"[{title}](#{anchor})" for anchor, title in GLANCE_SECTIONS if "{ #" + anchor + " }" in page]
+    lines.append("**Jump to:** " + " · ".join(jumps))
+    return '\n<div class="glance" markdown="1">\n\n' + "\n\n".join(lines) + "\n\n</div>\n"
+
+
 def installs(records, project, camera_id):
     """Whether a project offers something to put on this camera: a mod, or a published patch with a capability."""
     return project["kind"] in MOD_KINDS or any(
@@ -194,7 +222,12 @@ def showcase_markdown(catalogue, origin):
     text += '<div class="project-grid featured" markdown="1">\n\n'
     text += "".join(project_card(catalogue, origin, row, image=True, features=4) for row in projects)
     text += f"</div>\n\n[See every project]({link(origin, 'views/projects/index.md')}){{ .btn .btn-ghost }}\n\n</section>\n\n"
-    releases = all_releases(catalogue)[:6]
+    seen, releases = set(), []
+    for release, project in all_releases(catalogue):
+        if project["id"] not in seen:
+            seen.add(project["id"])
+            releases.append((release, project))
+    releases = releases[:6]
     if releases:
         text += '<section class="releases-strip" markdown="1">\n\n<p class="eyebrow">Latest releases</p>\n\n'
         text += "## Fresh from the projects.\n\n"
@@ -285,7 +318,7 @@ def render(catalogue):
             offered = [(f, p) for p in projects for f in p.get("features", []) if row["id"] in f["camera_ids"]
                        and (p["kind"] in MOD_KINDS or (f.get("capability_id") and records[f["capability_id"]]["availability"] == "published-release"))]
             if offered:
-                text += "\n## What you can do with this camera\n\n"
+                text += "\n## What you can do with this camera { #features }\n\n"
                 text += "Features as each project describes them, with their status. Follow a project's own guide before installing anything.\n\n"
                 text += '<div class="feature-grid" markdown="1">\n\n'
                 for feature, project in offered:
@@ -293,7 +326,7 @@ def render(catalogue):
                     text += f"**{cell(feature['name'])}** {pill(feature['status'])}\n{{ .feature-head }}\n\n{feature['summary']}\n\n"
                     text += f"[{cell(project['title'])}]({link(path, view_path(project))})" + (f" · since {feature['since']}" if feature.get("since") else "") + "\n{ .card-meta }\n\n</div>\n\n"
                 text += "</div>\n"
-            text += "\n## Projects for this camera\n\n"
+            text += "\n## Projects for this camera { #projects }\n\n"
             if projects:
                 text += "Each card says what the project has for this camera and where to get it. A project can be listed here for a small part of its work; its own page covers the rest.\n\n"
                 if mods:
@@ -309,7 +342,7 @@ def render(catalogue):
             else:
                 text += "No project is catalogued for this camera yet. This is a coverage gap, not a finding that nobody is working on it.\n"
             caps = [r for r in catalogue.of_type("capability") if r["camera_id"] == row["id"]]
-            text += "\n## Claims and test evidence\n\n"
+            text += "\n## Claims and test evidence { #evidence }\n\n"
             if caps:
                 text += "| Scoped assertion | Project / build | Availability | Evidence |\n|---|---|---|---|\n"
                 for cap in caps:
@@ -321,18 +354,19 @@ def render(catalogue):
                 text += "No feature-level assertion is catalogued yet. This is a coverage gap, not a finding that modifications are impossible.\n"
             venues = [r["id"] for r in catalogue.of_type("community") if set(r["project_ids"]) & set(row["project_ids"])]
             if venues:
-                text += "\n## Where to talk\n\n" + refs(path, venues) + ". For a reproducible bug, use the project's own issue tracker.\n"
+                text += "\n## Where to talk { #talk }\n\n" + refs(path, venues) + ". For a reproducible bug, use the project's own issue tracker.\n"
             firmwares = [r for r in catalogue.of_type("firmware") if r["camera_id"] == row["id"]]
             for firmware in firmwares:
                 platform = trait_rows(catalogue, "platform", [firmware["id"]])
                 native = trait_rows(catalogue, "native-feature", [firmware["id"]])
                 if platform or native:
-                    text += f"\n## Platform and built-in features ({cell(firmware['title'])})\n\n"
+                    text += f"\n## Platform and built-in features ({cell(firmware['title'])}) {{ #platform }}\n\n"
                     text += "What the stock firmware itself contains, separate from what projects add. Follow an entry for its sources.\n\n"
                     text += "| | Value | Status |\n|---|---|---|\n"
                     for r in platform + native:
                         text += f"| [{cell(trait_title(catalogue, r))}]({link(path, view_path(r))}) | {cell(trait_value(r))} | {REFERENCE_STATUS[reference_status(records, r)][0]} |\n"
             text += "\n## Firmware\n\n" + refs(path, [r["id"] for r in firmwares]) + ".\n"
+            text = text.replace("{ .facts }\n", "{ .facts }\n" + glance(path, row, mods, records, text), 1)
         elif kind == "firmware":
             text += f"\n**Camera:** {ref(path, row['camera_id'])}. **Advertised version:** {row['version']}. **Internal build:** {label(row['internal_build'])}.\n"
             text += f"\n**Container SHA-256:** `{row['container_sha256']}`\n" if row["container_sha256"] else "\n**Container SHA-256:** not recorded in this entry.\n"
@@ -352,6 +386,10 @@ def render(catalogue):
             buttons += [f"[{cell(l['label'])}]({l['url']}){{ .btn .btn-ghost }}" for l in row.get("links", [])]
             text += '<div class="cta-row" markdown="1">\n\n' + "\n".join(buttons) + "\n\n</div>\n"
             facts = [f"**Type:** {label(row['kind'])}"]
+            offered = [c for c in row["camera_ids"] if camera_release(row, c)
+                       or any(c in f["camera_ids"] for f in row.get("features", []))] or row["camera_ids"]
+            if offered:
+                facts.append("**For:** " + ", ".join(f"[{cell(short_name(records[c]['title']))}]({link(path, view_path(records[c]))})" for c in offered))
             release = latest_release(row)
             if release:
                 facts.append(f"**Latest release:** [{cell(release['tag'])}]({release['url']}), {nice_date(release['date'])}")

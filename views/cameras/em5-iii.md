@@ -7,7 +7,15 @@ E137: firmware 1.7 studied in depth; focus stacking with any lens, a Live ND por
 **Model code:** E137 · **Also known as:** E-M5 III, E-M5 Mark III, EM5III, EM5 Mk3 · **Catalogue depth:** initial review
 { .facts }
 
-## Projects for this camera
+<div class="glance" markdown="1">
+
+**Releases for this camera:** none yet.
+
+**Jump to:** [Projects](#projects) · [Test evidence](#evidence) · [Platform](#platform)
+
+</div>
+
+## Projects for this camera { #projects }
 
 Each card says what the project has for this camera and where to get it. A project can be listed here for a small part of its work; its own page covers the rest.
 
@@ -80,7 +88,7 @@ Research
 
 </div>
 
-## Claims and test evidence
+## Claims and test evidence { #evidence }
 
 | Scoped assertion | Project / build | Availability | Evidence |
 |---|---|---|---|
@@ -94,7 +102,7 @@ Research
 
 Results belong to the named project and package. Emulator output does not establish physical-camera behaviour.
 
-## Platform and built-in features (E-M5 Mark III firmware 1.7, build 1700)
+## Platform and built-in features (E-M5 Mark III firmware 1.7, build 1700) { #platform }
 
 What the stock firmware itself contains, separate from what projects add. Follow an entry for its sources.
 

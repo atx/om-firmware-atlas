@@ -563,3 +563,7 @@ kbd {
 .prose p.hero-visual-caption { margin-top: 12px; font-size: .85rem; color: var(--muted); }
 .home-prose .showcase .btn { margin-top: .4rem; }
 .home-prose .showcase h2, .home-prose .releases-strip h2 { margin-bottom: 1.6rem; }
+
+/* Camera page summary */
+.glance { margin: 1rem 0 1.4rem; padding: 14px 18px; border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: var(--radius); background: var(--panel); }
+.prose .glance p { margin: .35rem 0; font-size: .93rem; line-height: 1.55; }
